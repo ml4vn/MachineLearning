@@ -8,7 +8,7 @@
 - 20 tệp PDF/Word khớp SHA256 với biên bản xuất đã kiểm tra. Tổng cộng 120 trang PDF; số bảng/hình trong DOCX khớp biên bản gốc.
 - Giữ nguyên 345 tệp nguồn đi kèm trong `readings/`; manifest lưu checksum từng tệp. Quy tắc Git giữ nguyên byte của các bản xuất này, kể cả xuống dòng và khoảng trắng trong SVG sinh tự động.
 - Bản Markdown chứa đủ 86 bảng, 55 hình minh họa, 86 công thức và 60 câu tự kiểm. Đã dùng bộ phân tích GitHub Flavored Markdown để đối chiếu số bảng, số hàng/cột của từng bảng và các khối công thức với nguồn JSON.
-- Đã kiểm 349 liên kết nội bộ, gồm đường dẫn PDF/Word, hình, mục lục và liên kết đọc trước ↔ Python; không có liên kết nội bộ bị thiếu tại thời điểm kiểm.
+- Đã kiểm 351 liên kết nội bộ, gồm đường dẫn PDF/Word, hình, mục lục và liên kết đọc trước ↔ Python; không có liên kết nội bộ bị thiếu tại thời điểm kiểm.
 
 ## Khả năng chạy từ gói bàn giao
 

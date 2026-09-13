@@ -19,7 +19,6 @@ jobs:
     env:
       PYTHONUTF8: '1'
       MPLBACKEND: Agg
-      MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
     steps:
       - uses: actions/checkout@v6
         with:
@@ -35,6 +34,10 @@ jobs:
       - name: Check readings and course links
         run: python tools/check_course.py
       - name: Mathematical and edge-case tests
+        env:
+          MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
         run: python run_tests.py
       - name: Run all ten small examples sequentially
+        env:
+          MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
         run: python run_all.py --mode toy --dpi 80

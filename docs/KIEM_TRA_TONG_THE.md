@@ -50,6 +50,6 @@ Log đầy đủ nằm tại `outputs/clean_run/`, mỗi bài có log riêng và
 
 ## Giới hạn của việc kiểm
 
-Đã kiểm thực thi local trên Windows. Workflow cho Ubuntu và Windows đã được chuẩn bị, nhưng chưa gọi là GitHub CI đã chạy. Tại lần bàn giao Python ban đầu, repository đích chưa được cung cấp; đích hiện đã được chỉ định là `ml4vn/MachineLearning`. Xem [hướng dẫn đăng tải](GITHUB.md) để phân biệt trạng thái chuẩn bị local với việc công bố và kết quả CI trên GitHub.
+Biên bản này ghi kết quả kiểm thực thi local trên Windows. Tại lần bàn giao Python ban đầu, repository đích chưa được cung cấp; đích hiện là `ml4vn/MachineLearning`. Các kết quả CI được ghi riêng tại [GitHub Actions](https://github.com/ml4vn/MachineLearning/actions), không suy ra từ lượt kiểm local. Xem [hướng dẫn đăng tải](GITHUB.md) để phân biệt việc chuẩn bị local, công bố và kiểm tra trên GitHub.
 
 Các con số mặc định nhằm tái lập case đã duyệt trong slide. Nếu đổi seed, dữ liệu, tham số hoặc phiên bản thư viện, cần báo cấu hình mới và phân tích kết quả; không sửa số liệu đầu ra để khớp mốc cũ. Test công khai đã xuất hiện trong pilot của giáo trình; việc chạy lại không tạo một phép đánh giá mới chưa từng được xem.
