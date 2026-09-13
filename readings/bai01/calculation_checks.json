@@ -1,0 +1,30 @@
+{
+  "source_slide_count": 64,
+  "source_data_sha256": "5a5f32dd9bb3797b8e728a1b98958789d2b13f294a69fdfbc5727f8a9611aa07",
+  "source_records_checked": 7,
+  "movie_count": 9742,
+  "cosine_3_axes": {
+    "260": 0.9999999999999998,
+    "1580": 0.8164965809277259,
+    "480": 0.9999999999999998,
+    "1214": 0.7071067811865475,
+    "1": 0.0
+  },
+  "cosine_full": {
+    "260": 0.6666666666666666,
+    "1580": 0.6666666666666666,
+    "480": 0.8660254037844387,
+    "1214": 0.4082482904638631,
+    "1": 0.0
+  },
+  "zero_vector_verified": true,
+  "exercise_cosine": 0.5,
+  "questions": 6,
+  "prerequisite_questions": 2,
+  "status": "pass",
+  "planned_pages": 12,
+  "main_sections": 10,
+  "equations": 9,
+  "figures": 5,
+  "docx_sha256": "82d59540b2d4a5496c0db4e2d31ba8a928482857e93dab78cab8a0ab377c1608"
+}

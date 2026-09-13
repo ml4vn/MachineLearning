@@ -1,0 +1,56 @@
+{
+  "source_slide_count": 60,
+  "train_source_sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
+  "train_rows_recomputed": 12000,
+  "validation_rows_recomputed": 3000,
+  "display_source_id": "train:24814",
+  "display_raw_pixel_verified": true,
+  "pca_refitted": true,
+  "k90": 82,
+  "k90_evr": 0.9001215026744254,
+  "k90_previous_evr": 0.8992717959390805,
+  "reconstruction": [
+    {
+      "k": 2,
+      "train_evr": 0.46830407865190227,
+      "validation_mse": 0.04661844525914814,
+      "train_mse": 0.0463744081993328
+    },
+    {
+      "k": 16,
+      "train_evr": 0.7659102095648508,
+      "validation_mse": 0.02070311034786639,
+      "train_mse": 0.020417263065346462
+    },
+    {
+      "k": 64,
+      "train_evr": 0.8824213561722076,
+      "validation_mse": 0.010561734931280922,
+      "train_mse": 0.010255184975970858
+    },
+    {
+      "k": 128,
+      "train_evr": 0.9292814927013373,
+      "validation_mse": 0.006498545119837053,
+      "train_mse": 0.0061680535679125405
+    }
+  ],
+  "logistic_check": "Forward predictions recomputed from stored coefficients; logistic not refitted",
+  "validation_correct_pixel": 2500,
+  "validation_correct_pca64": 2511,
+  "test_metrics_computed": false,
+  "toy_coordinate_mse": 0.25,
+  "toy_ddof1_eigenvalues": [
+    5.999999999999999,
+    0.6666666666666669
+  ],
+  "angle_checks": 1801,
+  "questions": 6,
+  "prerequisite_questions": 2,
+  "status": "pass",
+  "planned_pages": 12,
+  "main_sections": 10,
+  "equations": 10,
+  "figures": 6,
+  "docx_sha256": "251f346a170302bbf2f9b78e3ec2d5aa7753fa6430507af91295b32d6265065c"
+}

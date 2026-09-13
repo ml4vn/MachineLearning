@@ -1,0 +1,19 @@
+{
+  "pdf_pages": 12,
+  "planned_pages": 12,
+  "missing_headings": [],
+  "all_footers": true,
+  "docx_tables": 8,
+  "docx_images": 25,
+  "docx_explicit_pagebreaks": 11,
+  "docx_sha256": "82d59540b2d4a5496c0db4e2d31ba8a928482857e93dab78cab8a0ab377c1608",
+  "pdf_sha256": "9261716f35083c4dd2767554bf923721b128900deda13fb472a81c55410b1d93",
+  "status": "complete",
+  "step_1": "audit and plan saved before authoring",
+  "step_2": "authored and verified",
+  "visual_pages_reviewed": 12,
+  "renderer": "Microsoft Word 15 PDF export then Poppler 144 dpi",
+  "canonical_renderer_limitation": "render_docx.py attempted; bundled LibreOffice absent on Windows",
+  "calculation_checks": "calculation_checks.json",
+  "completed_at": "2026-09-13T07:21:53"
+}

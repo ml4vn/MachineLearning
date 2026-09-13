@@ -1,0 +1,8 @@
+# Python 3.12; scikit-learn cố định để khớp giao thức của slide.
+numpy>=1.26,<3
+pandas>=2.2,<4
+scipy>=1.11,<2
+scikit-learn==1.6.1
+matplotlib==3.10.3
+openpyxl>=3.1.5,<4
+threadpoolctl>=3.5,<4

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "formula_01.png",
+    "latex": "\\mathrm{Accuracy}=\\frac{TP+TN}{TP+TN+FP+FN}",
+    "meaning": "Một chỉ số có thể tính đúng trên một quy trình không hợp lệ. Phép cộng đúng chưa bảo đảm thông tin đầu vào được dùng đúng lúc."
+  },
+  {
+    "file": "formula_02.png",
+    "latex": "y=\\mathbf{1}\\{date(t_{giao})>date(t_{hen})\\}",
+    "meaning": "Hàm chỉ báo bằng 1 nếu điều kiện đúng, bằng 0 nếu sai. date lấy phần ngày. Giao chiều đúng ngày hẹn vẫn là nhãn 0 theo quy ước case."
+  },
+  {
+    "file": "formula_03.png",
+    "latex": "\\mu_{tr}=\\frac{1}{n}\\sum_{i\\in train}x_i,\\quad s_{tr}=\\sqrt{\\frac{1}{n}\\sum_{i\\in train}(x_i-\\mu_{tr})^2}",
+    "meaning": "StandardScaler ở bài tính dùng phương sai với mẫu số n. Chỉ các giá trị train tham gia học μ và s. Giả sử s>0; đặc trưng hằng cần xử lý riêng."
+  },
+  {
+    "file": "formula_04.png",
+    "latex": "z_{moi}=\\frac{x_{moi}-\\mu_{tr}}{s_{tr}}",
+    "meaning": "Điểm mới được transform theo cùng μtrain,strain. Không tính lại trung bình từ một tập test riêng hoặc gộp test vào train để vừa thang."
+  },
+  {
+    "file": "formula_05.png",
+    "latex": "d_{z}(a,b)=\\frac{|a-b|}{s},\\qquad s>0",
+    "meaning": "Khoảng cách đổi tỷ lệ nhưng thứ tự không đổi trong ví dụ một chiều này. Tính không hợp lệ của fit gộp không biến mất chỉ vì dự đoán chưa thay đổi."
+  },
+  {
+    "file": "formula_06.png",
+    "latex": "\\mu=1,\\quad s=\\sqrt{\\frac{(0-1)^2+(2-1)^2}{2}}=1,\\quad z(10)=9",
+    "meaning": "Không dùng x=10 để học μ,s. Trừ trung bình train và chia độ lệch chuẩn train khi transform điểm mới."
+  }
+]

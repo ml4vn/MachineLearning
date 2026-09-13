@@ -1,0 +1,27 @@
+{
+  "features": [
+    "distance_km",
+    "promised_days",
+    "price",
+    "freight_value",
+    "n_items",
+    "weight_g"
+  ],
+  "solver": "newton-cg",
+  "C": 1,
+  "penalty": "l2",
+  "impute_and_scale": "fit initial train only",
+  "threshold_grid": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "criterion": "hypothetical FP+5FN",
+  "tie_rule": "fewer alerts then larger threshold",
+  "selected": 0.1,
+  "selection_split": "validation",
+  "test_exposure": "historical Olist holdout already seen in the course pilot, not a new independent study"
+}

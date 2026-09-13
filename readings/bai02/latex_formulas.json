@@ -1,0 +1,32 @@
+[
+  {
+    "file": "formula_01.png",
+    "latex": "d((1,1),(0,3))=\\sqrt{(1-0)^2+(1-3)^2}=\\sqrt{5}",
+    "meaning": "Lấy chênh lệch ở từng tọa độ, bình phương riêng rồi cộng. Không cộng hai chênh lệch trước khi bình phương."
+  },
+  {
+    "file": "formula_02.png",
+    "latex": "d(x,p)=\\sqrt{\\sum_{j=1}^{D}(x_j-p_j)^2}",
+    "meaning": "**Khoảng cách Euclid:** x là query, p là một vector train, D là số chiều, j chỉ tọa độ. Các tọa độ phải thống nhất ý nghĩa và cách biến đổi. Xếp tăng d² cho cùng thứ tự như xếp tăng d vì căn tăng trên số không âm."
+  },
+  {
+    "file": "formula_03.png",
+    "latex": "s(x)=\\frac{1}{k}\\sum_{i\\in N_k(x)}\\mathbf{1}(y_i=1)",
+    "meaning": "**Tỷ lệ phiếu spam:** Nₖ(x) là tập chỉ số k láng giềng, yᵢ = 1 mã hóa spam; ký hiệu 1(điều kiện) bằng 1 khi đúng và 0 khi sai. Với hai lớp, phiếu đều và k lẻ, dự đoán spam nếu s > 1/2. Cần 1 ≤ k ≤ số mẫu train."
+  },
+  {
+    "file": "formula_04.png",
+    "latex": "z_j=\\frac{x_j-\\mu_j}{\\sigma_j},\\qquad \\sigma_j>0",
+    "meaning": "**Chuẩn hóa theo cột:** μⱼ và σⱼ là trung bình và độ lệch chuẩn của đặc trưng j trên train [3]. Trừ để đặt gốc, chia để đo theo đơn vị độ lệch chuẩn. z có thể âm hoặc lớn hơn 1."
+  },
+  {
+    "file": "formula_05.png",
+    "latex": "z_1\\approx\\frac{123-79.31018}{59.10396}\\approx0.7392,\\quad z_2\\approx\\frac{14/123-0.018052}{0.047065}\\approx2.0348",
+    "meaning": "Biến đổi query và mọi vector train bằng cùng thống kê mục 6. Các giá trị gần đúng ở đây chỉ để theo dõi; không làm tròn trước khi xếp láng giềng."
+  },
+  {
+    "file": "formula_06.png",
+    "latex": "d^2(z_x,z_p)=\\sum_{j=1}^{D}\\frac{(x_j-p_j)^2}{\\sigma_j^2}",
+    "meaning": "Sau chuẩn hóa dùng chung μ, σ, hai trung bình triệt tiêu khi lấy chênh lệch. Chia σ thay đổi tỷ trọng; chỉ trừ trung bình không đổi khoảng cách đôi một."
+  }
+]

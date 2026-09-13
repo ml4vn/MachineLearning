@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "validation_recomputed": [
+    {
+      "scaled": false,
+      "k": 3,
+      "f1": 0.7623318385650224,
+      "wrong": 53
+    },
+    {
+      "scaled": false,
+      "k": 5,
+      "f1": 0.7358490566037735,
+      "wrong": 56
+    },
+    {
+      "scaled": false,
+      "k": 11,
+      "f1": 0.5833333333333334,
+      "wrong": 80
+    },
+    {
+      "scaled": true,
+      "k": 3,
+      "f1": 0.8837209302325582,
+      "wrong": 30
+    },
+    {
+      "scaled": true,
+      "k": 5,
+      "f1": 0.8862745098039215,
+      "wrong": 29
+    },
+    {
+      "scaled": true,
+      "k": 11,
+      "f1": 0.896,
+      "wrong": 26
+    }
+  ],
+  "test_confusion_matrix": [
+    [
+      892,
+      12
+    ],
+    [
+      17,
+      111
+    ]
+  ],
+  "test_rows_compared": 1032,
+  "predictions_and_scores_match": true
+}

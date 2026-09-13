@@ -1,0 +1,4 @@
+validation_position,source_id,label,baseline,mlp
+60,train:19257,Shirt,T-shirt/top,Shirt
+23,train:34152,Shirt,Pullover,Pullover
+161,train:18208,Shirt,Shirt,T-shirt/top

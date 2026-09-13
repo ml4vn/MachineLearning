@@ -1,0 +1,42 @@
+{
+  "source_slide_count": 68,
+  "source_data_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "deduplicated_rows": 5159,
+  "split_counts": [
+    3095,
+    1032,
+    1032
+  ],
+  "real_records_recounted": 9,
+  "real_neighbor_sets_verified": 2,
+  "toy_squared_distances": [
+    2,
+    2,
+    5,
+    18,
+    9
+  ],
+  "exercise_squared_distances": [
+    5,
+    1,
+    8,
+    13,
+    10
+  ],
+  "train_mean": [
+    79.31017770597738,
+    0.01805199024951043
+  ],
+  "train_scale": [
+    59.10396149794299,
+    0.047064939324231815
+  ],
+  "questions": 6,
+  "prerequisite_questions": 2,
+  "status": "pass",
+  "planned_pages": 12,
+  "main_sections": 10,
+  "equations": 6,
+  "figures": 4,
+  "docx_sha256": "3b895b3d0c4c159b04c83c7831d4cf2e2028ee434340841b98bb560157284cc6"
+}

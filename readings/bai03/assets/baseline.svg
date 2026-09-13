@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="624.367969pt" height="163.318pt" viewBox="0 0 624.367969 163.318" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-13T07:55:35.982753</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.3, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 163.318 
+L 624.367969 163.318 
+L 624.367969 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 45.647969 138.472063 
+L 306.307969 138.472063 
+L 306.307969 24.752063 
+L 45.647969 24.752063 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 57.496151 138.472063 
+L 136.484029 138.472063 
+L 136.484029 55.459401 
+L 57.496151 55.459401 
+z
+" clip-path="url(#p919382a8b3)" style="fill: #52637b"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 215.471908 138.472063 
+L 294.459787 138.472063 
+L 294.459787 46.368413 
+L 215.471908 46.368413 
+z
+" clip-path="url(#p919382a8b3)" style="fill: #1d4f7a"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m97fd8b6c1b" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m97fd8b6c1b" x="96.99009" y="138.472063" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="96.99009" y="153.830344" transform="rotate(-0 96.99009 153.830344)">Luôn ham</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m97fd8b6c1b" x="254.965848" y="138.472063" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="254.965848" y="153.830344" transform="rotate(-0 254.965848 153.830344)">kNN đã khóa</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <defs>
+       <path id="mb7f6b2e924" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mb7f6b2e924" x="45.647969" y="138.472063" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="38.647969" y="142.651203" transform="rotate(-0 38.647969 142.651203)">0%</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mb7f6b2e924" x="45.647969" y="91.088729" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="38.647969" y="95.26787" transform="rotate(-0 38.647969 95.26787)">50%</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#mb7f6b2e924" x="45.647969" y="43.705396" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="38.647969" y="47.884536" transform="rotate(-0 38.647969 47.884536)">100%</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_5">
+    <path d="M 45.647969 138.472063 
+L 45.647969 24.752063 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 45.647969 138.472063 
+L 306.307969 138.472063 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="96.99009" y="50.379714" transform="rotate(-0 96.99009 50.379714)">87,60%</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="254.965848" y="41.288725" transform="rotate(-0 254.965848 41.288725)">97,19%</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="175.977969" y="18.752062" transform="rotate(-0 175.977969 18.752062)">Tỷ lệ đúng chung</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_7">
+    <path d="M 356.507969 138.472063 
+L 617.167969 138.472063 
+L 617.167969 24.752063 
+L 356.507969 24.752063 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 368.356151 138.472063 
+L 447.344029 138.472063 
+L 447.344029 138.472063 
+L 368.356151 138.472063 
+z
+" clip-path="url(#pc4da769067)" style="fill: #52637b"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 526.331908 138.472063 
+L 605.319787 138.472063 
+L 605.319787 56.291594 
+L 526.331908 56.291594 
+z
+" clip-path="url(#pc4da769067)" style="fill: #1d4f7a"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_3">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m97fd8b6c1b" x="407.85009" y="138.472063" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="407.85009" y="153.830344" transform="rotate(-0 407.85009 153.830344)">Luôn ham</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m97fd8b6c1b" x="565.825848" y="138.472063" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="565.825848" y="153.830344" transform="rotate(-0 565.825848 153.830344)">kNN đã khóa</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_4">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mb7f6b2e924" x="356.507969" y="138.472063" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="349.507969" y="142.651203" transform="rotate(-0 349.507969 142.651203)">0%</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#mb7f6b2e924" x="356.507969" y="91.088729" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="349.507969" y="95.26787" transform="rotate(-0 349.507969 95.26787)">50%</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mb7f6b2e924" x="356.507969" y="43.705396" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="349.507969" y="47.884536" transform="rotate(-0 349.507969 47.884536)">100%</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_10">
+    <path d="M 356.507969 138.472063 
+L 356.507969 24.752063 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 356.507969 138.472063 
+L 617.167969 138.472063 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="407.85009" y="133.392375" transform="rotate(-0 407.85009 133.392375)">0,00%</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="565.825848" y="51.211906" transform="rotate(-0 565.825848 51.211906)">86,72%</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 13.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="486.837969" y="18.752062" transform="rotate(-0 486.837969 18.752062)">Tỷ lệ spam được tìm thấy</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p919382a8b3">
+   <rect x="45.647969" y="24.752062" width="260.66" height="113.72"/>
+  </clipPath>
+  <clipPath id="pc4da769067">
+   <rect x="356.507969" y="24.752062" width="260.66" height="113.72"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,52 @@
+[
+  {
+    "file": "formula_01.png",
+    "latex": "h_1=ReLU(x_1+x_2),\\qquad h_2=ReLU(x_1+x_2-1)",
+    "meaning": "Hai hàm ẩn này do người thiết kế đặt sẵn cho ví dụ; chưa phải kết quả thuật toán tự học."
+  },
+  {
+    "file": "formula_02.png",
+    "latex": "a_j=\\sum_r W_{jr}x_r+b_j,\\quad h_j=ReLU(a_j),\\quad s=\\sum_jv_jh_j+c",
+    "meaning": "W,b là trọng số/bias tầng ẩn; v,c của tầng ra. Chỉ số j chỉ đơn vị ẩn, r chỉ đầu vào; x ở ví dụ này là vector cột."
+  },
+  {
+    "file": "formula_03.png",
+    "latex": "p=\\frac{1}{1+e^{-s}},\\qquad L=-\\frac{1}{n}\\sum_i[y_i\\ln p_i+(1-y_i)\\ln(1-p_i)]",
+    "meaning": "p là xác suất gán cho nhãn 1. L là BCE trung bình, dùng log tự nhiên. Ví dụ tay không có L2; n=4. Với nhãn 0, loss đọc xác suất 1−p."
+  },
+  {
+    "file": "formula_04.png",
+    "latex": "p_c=\\frac{e^{s_c}}{\\sum_{j=1}^{10}e^{s_j}},\\qquad L_{CE}=-\\frac{1}{n}\\sum_i\\ln p_{i,y_i}",
+    "meaning": "Mỗi ảnh có 10 logits s và 10 xác suất tổng bằng 1. yᵢ là chỉ số lớp thật, pᵢ,yᵢ là xác suất của lớp ấy. Chọn lớp có xác suất lớn nhất [3]."
+  },
+  {
+    "file": "formula_05.png",
+    "latex": "\\frac{\\partial L}{\\partial v_j}=\\frac{1}{4}\\sum_i(p_i-y_i)h_{ij},\\qquad\\frac{\\partial L}{\\partial c}=\\frac{1}{4}\\sum_i(p_i-y_i)",
+    "meaning": "Cộng từng cột rồi chia 4: gradient theo (v₁,v₂,c)=(0;0,125;0). Chưa chia 4 thì đang lấy gradient tổng loss."
+  },
+  {
+    "file": "formula_06.png",
+    "latex": "(v_1,v_2,c)_{moi}=(0,0,0)-8(0,0.125,0)=(0,-1,0)",
+    "meaning": "Chọn η=8 chỉ cho phép tính minh họa này. Tính lại s=(0,0,0,−1), p≈(0,5;0,5;0,5;0,26894)."
+  },
+  {
+    "file": "formula_07.png",
+    "latex": "2\\times2+2+2\\times1+1=9",
+    "meaning": "Bốn trọng số tầng ẩn, hai bias ẩn, hai trọng số tầng ra và một bias ra. Sigmoid không thêm tham số. Nếu giữ tầng ẩn cố định thì số tham số đang học có thể chỉ là ba."
+  },
+  {
+    "file": "formula_08.png",
+    "latex": "v_{2,moi}=0-8\\left(\\frac{0.5}{4}\\right)=-1",
+    "meaning": "B. A quên chia số điểm khi loss là trung bình; C đảo dấu cập nhật gradient descent."
+  },
+  {
+    "file": "formula_09.png",
+    "latex": "\\delta=p-y,\\quad\\frac{\\partial L}{\\partial v_j}=\\delta h_j,\\quad\\frac{\\partial L}{\\partial c}=\\delta",
+    "meaning": "δ≈−0,449176. Đây là một điểm, không phải trung bình nhiều điểm. Tất cả số dùng tham số cũ."
+  },
+  {
+    "file": "formula_10.png",
+    "latex": "\\delta_j=\\delta v_j\\,\\mathbf{1}_{a_j>0},\\quad\\frac{\\partial L}{\\partial W_{jr}}=\\delta_jx_r,\\quad\\frac{\\partial L}{\\partial b_j}=\\delta_j",
+    "meaning": "Hệ số chỉ báo bằng 1 khi aⱼ>0 và bằng 0 khi aⱼ<0; tại 0, đạo hàm ReLU cần quy ước. δ₁≈−0,314423; δ₂≈0,224588. Ví dụ ∂L/∂W₁₁=δ₁×0,6≈−0,188654. GD với η=0,1 cho W₁₁ mới≈0,518865; các tham số khác cũng được cập nhật đồng thời."
+  }
+]

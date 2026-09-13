@@ -1,0 +1,85 @@
+{
+  "source_slide_count": 60,
+  "source_sha256": "cee5d8df21bb930d03c1130bff0478edc1934c5206030e9be6ec5223d1783825",
+  "calendar_labels_recomputed": 79686,
+  "approval_before_cutoff_delivered_after": 1490,
+  "shared_train_test_customers": 363,
+  "scaler_train_mean": 1,
+  "scaler_train_sd": 1,
+  "scaler_leaky_sd": 4.320493798938574,
+  "folds": [
+    {
+      "train": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "validation": [
+        1,
+        2
+      ]
+    },
+    {
+      "train": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "validation": [
+        3,
+        4
+      ]
+    },
+    {
+      "train": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "validation": [
+        5,
+        6
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "split": "row",
+      "accuracy": 0.975,
+      "shared": 118
+    },
+    {
+      "split": "group",
+      "accuracy": 0.425,
+      "shared": 0
+    }
+  ],
+  "selection": [
+    {
+      "k": 1,
+      "selected": 0.49982000000000004,
+      "fresh": 0.50028
+    },
+    {
+      "k": 10,
+      "selected": 0.5746600000000001,
+      "fresh": 0.49844000000000005
+    },
+    {
+      "k": 100,
+      "selected": 0.6239600000000001,
+      "fresh": 0.49926
+    }
+  ],
+  "questions": 6,
+  "prerequisite_questions": 2,
+  "status": "pass",
+  "planned_pages": 12,
+  "main_sections": 10,
+  "equations": 6,
+  "figures": 6,
+  "docx_sha256": "46a38f7a0c2d91c8c6c29e4587410ceb879457c3964f25777ba1d935c71a5095"
+}

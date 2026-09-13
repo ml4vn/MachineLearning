@@ -1,0 +1,199 @@
+{
+  "source_slide_count": 68,
+  "source_sha256": "cee5d8df21bb930d03c1130bff0478edc1934c5206030e9be6ec5223d1783825",
+  "calendar_labels_recomputed": 79686,
+  "refit_score_comparisons": {
+    "train": 29031,
+    "validation": 10389,
+    "test": 40266
+  },
+  "manual_test_paths": 40266,
+  "leaf_frequency_checks": {
+    "2": {
+      "n": 297,
+      "positive": 33
+    },
+    "7": {
+      "n": 1126,
+      "positive": 31
+    },
+    "8": {
+      "n": 799,
+      "positive": 10
+    },
+    "10": {
+      "n": 650,
+      "positive": 20
+    },
+    "11": {
+      "n": 304,
+      "positive": 21
+    },
+    "13": {
+      "n": 258,
+      "positive": 24
+    },
+    "15": {
+      "n": 1062,
+      "positive": 44
+    },
+    "16": {
+      "n": 316,
+      "positive": 23
+    },
+    "20": {
+      "n": 6467,
+      "positive": 179
+    },
+    "21": {
+      "n": 12434,
+      "positive": 257
+    },
+    "23": {
+      "n": 1223,
+      "positive": 56
+    },
+    "24": {
+      "n": 566,
+      "positive": 10
+    },
+    "25": {
+      "n": 315,
+      "positive": 20
+    },
+    "27": {
+      "n": 360,
+      "positive": 48
+    },
+    "30": {
+      "n": 275,
+      "positive": 8
+    },
+    "32": {
+      "n": 360,
+      "positive": 41
+    },
+    "34": {
+      "n": 466,
+      "positive": 21
+    },
+    "35": {
+      "n": 610,
+      "positive": 51
+    },
+    "39": {
+      "n": 226,
+      "positive": 1
+    },
+    "40": {
+      "n": 200,
+      "positive": 6
+    },
+    "42": {
+      "n": 200,
+      "positive": 12
+    },
+    "43": {
+      "n": 238,
+      "positive": 5
+    },
+    "44": {
+      "n": 279,
+      "positive": 20
+    }
+  },
+  "validation_ap": {
+    "3": 0.08166584123807037,
+    "6": 0.10047835839265155
+  },
+  "selected_depth": 6,
+  "selected_threshold": 0.1,
+  "validation_scan": [
+    {
+      "threshold": 0.05,
+      "tn": 8905,
+      "fp": 850,
+      "fn": 509,
+      "tp": 125,
+      "cost": 3395,
+      "alerts": 975
+    },
+    {
+      "threshold": 0.1,
+      "tn": 9468,
+      "fp": 287,
+      "fn": 569,
+      "tp": 65,
+      "cost": 3132,
+      "alerts": 352
+    },
+    {
+      "threshold": 0.15,
+      "tn": 9755,
+      "fp": 0,
+      "fn": 634,
+      "tp": 0,
+      "cost": 3170,
+      "alerts": 0
+    },
+    {
+      "threshold": 0.2,
+      "tn": 9755,
+      "fp": 0,
+      "fn": 634,
+      "tp": 0,
+      "cost": 3170,
+      "alerts": 0
+    },
+    {
+      "threshold": 0.3,
+      "tn": 9755,
+      "fp": 0,
+      "fn": 634,
+      "tp": 0,
+      "cost": 3170,
+      "alerts": 0
+    },
+    {
+      "threshold": 0.5,
+      "tn": 9755,
+      "fp": 0,
+      "fn": 634,
+      "tp": 0,
+      "cost": 3170,
+      "alerts": 0
+    }
+  ],
+  "test": {
+    "tn": 34659,
+    "fp": 2129,
+    "fn": 3046,
+    "tp": 432,
+    "cost": 17359,
+    "alerts": 2561
+  },
+  "toy_root": {
+    "feature": 1,
+    "threshold": 15.0,
+    "after": 0.25,
+    "gain": 0.25
+  },
+  "toy_child": {
+    "feature": 0,
+    "threshold": 10.0,
+    "after": 0.0,
+    "gain": 0.375
+  },
+  "ccp_alphas": [
+    0.0,
+    0.25
+  ],
+  "questions": 6,
+  "prerequisite_questions": 2,
+  "status": "pass",
+  "planned_pages": 12,
+  "main_sections": 10,
+  "equations": 7,
+  "figures": 6,
+  "docx_sha256": "b67f21c2e606f003eba5c5f7cae985bc3ff110a5da36727fc72b8ad898432e1f"
+}
