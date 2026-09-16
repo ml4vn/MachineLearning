@@ -10,7 +10,7 @@ import math
 import struct
 
 ROOT=Path(__file__).resolve().parent
-EXPECTED_PNG=[2,4,5,4,5,7,5,6,8,9]
+EXPECTED_PNG=[3,5,6,7,6,9,6,8,10,11]
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)

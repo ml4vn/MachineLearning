@@ -1,10 +1,13 @@
 # Bài 06 · Cây quyết định và cảnh báo giao trễ
 
+
+**Lộ trình thực hành cập nhật:** [Dự đoán → chạy → đối chiếu → giải thích](HUONG_DAN_V3.md). Tài liệu đọc trước v3; slide v3.
+
 [← Mục lục khóa học](../../README.md) · [📖 Tài liệu đọc trước Bài 06](../../readings/bai06/README.md)
 
 **PGS.TS Nguyễn Văn Hậu** · 90–120 phút phần chính; 30 phút mở rộng.
 
-Cùng câu hỏi của Bài 05, ta thay hàm tuyến tính bằng **chuỗi câu hỏi theo thứ tự**. Bạn sẽ tự kiểm một cây 12 đơn mô phỏng, thấy ảnh hưởng của độ sâu, rồi theo một đơn Olist thật qua từng nút. Nội dung bám 68 slide Bài 06 v2.
+Cùng câu hỏi của Bài 05, ta thay hàm tuyến tính bằng **chuỗi câu hỏi theo thứ tự**. Bạn sẽ tự kiểm một cây 12 đơn mô phỏng, thấy ảnh hưởng của độ sâu, rồi theo một đơn Olist thật qua từng nút. Nội dung bám slide Bài 06 v3.
 
 ## 1. Mục tiêu và chạy chương trình
 
@@ -68,7 +71,7 @@ Moons có 600 điểm, noise = 0,30, chia train/validation 300/300. Chương tr�
 
 `max_depth` chặn độ sâu; `min_samples_leaf` chặn các vùng quá ít mẫu. Cây khớp hoàn hảo train có thể ghi nhớ nhiễu và kém hơn cây khác trên validation.
 
-Với cây 12 đơn, cắt tỉa xét $R_\alpha(T)=R(T)+\alpha|L(T)|$, R là tổng Gini lá có trọng số theo toàn train:
+Với cây 12 đơn, cắt tỉa xét $R_\alpha(T)=R(T)+\alpha|L(T)|$, R là tổng Gini lá có trọng số theo toàn train; L(T) là tập các lá, |L(T)| là số lá, alpha là mức phạt thêm một lá:
 
 | Cây con | Số lá | R | Mục tiêu khi alpha = 0,30 |
 |---|---:|---:|---:|
@@ -95,7 +98,7 @@ Nguồn [Olist trên Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-e
 | max_depth = 3, min_samples_leaf = 200 | 0,081666 |
 | max_depth = 6, min_samples_leaf = 200 | 0,100478 |
 
-Chọn AP validation cao hơn; hòa thì ưu tiên ít lá. Với cấu hình mặc định, chọn độ sâu 6, có 23 lá/45 nút. Sau đó quét cùng lưới ngưỡng Bài 05 theo FP+5FN; validation chọn 0,10. Lưu `model_policy.json` trước khi đánh giá test, không fit lại train+validation.
+**AP (Average Precision)** tổng hợp precision theo các mức tăng recall trên tập validation; không đồng nhất với accuracy hay diện tích hình thang dưới đường PR. **ROC AUC** đo khả năng xếp điểm dương cao hơn điểm âm (cặp hòa tính nửa điểm); “validation” chỉ tập dữ liệu dùng để tính chỉ số, không phải một thuật toán mới. Case này chọn độ sâu bằng AP, không chọn bằng ROC AUC. Chọn AP validation cao hơn; hòa thì ưu tiên ít lá. Với cấu hình mặc định, chọn độ sâu 6, có 23 lá/45 nút. Sau đó quét cùng lưới ngưỡng Bài 05 theo FP+5FN; validation chọn 0,10. Lưu `model_policy.json` trước khi đánh giá test, không fit lại train+validation.
 
 `real_tree_top.png` chỉ hiển thị ba tầng đầu; dấu (...) nghĩa là còn nhánh. `tree_nodes.json` chứa toàn cây, ngưỡng chuẩn hóa và ngưỡng hệ gốc, số mẫu, số dương, Gini và điểm. `real_one_path.png` và CSV minh họa một đơn đến **tận lá**; ví dụ chọn có chủ đích từ TP nếu có, không dùng thay cho đánh giá toàn bộ test.
 

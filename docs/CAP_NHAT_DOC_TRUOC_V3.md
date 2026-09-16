@@ -2,6 +2,8 @@
 
 Ngày cập nhật: 16/09/2026.
 
+Biên bản này mô tả đợt cập nhật tài liệu đọc trước. Đợt Python tiếp theo đã hoàn tất phần đồng bộ tại [Python v3](PYTHON_V3.md).
+
 Đủ Bài 1–10, mỗi bài có bản đọc trực tiếp trên GitHub, nguồn Markdown, Word, PDF, hình và nguồn nội dung có cấu trúc. Các liên kết Word/PDF cũ được giữ nguyên để sinh viên tiếp tục sử dụng.
 
 ## Nội dung và phiên bản

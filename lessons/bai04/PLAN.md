@@ -1,3 +1,5 @@
+> Kế hoạch gốc của phiên bản trước. Kế hoạch đối chiếu hiện tại: [Hướng dẫn v3](HUONG_DAN_V3.md) và [phạm vi cập nhật](../../docs/PYTHON_V3.md).
+
 # Kế hoạch Bài 04 — Hồi quy tuyến tính và Gradient Descent
 
 ## 1. Đối chiếu bài giảng

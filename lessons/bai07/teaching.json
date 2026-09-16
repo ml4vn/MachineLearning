@@ -1,0 +1,50 @@
+{
+  "lesson": 7,
+  "reading_version": "v3",
+  "slide_version": "v2",
+  "slide_manifest_sha256": "c24c477b4566b424a42c655825efaa4af493e0e2506b6377a12ecfe647865581",
+  "recap_title": "Đánh giá cả quy trình học",
+  "stages": [
+    {
+      "title": "Chốt thời điểm",
+      "explain": "Chỉ dùng thông tin có sẵn khi cần dự đoán.",
+      "formula": "$t_{feature}\\leq t_{prediction}$"
+    },
+    {
+      "title": "Tách vai trò",
+      "explain": "Train học tham số; validation chọn cấu hình; test báo kết quả.",
+      "formula": "$train\\ \\to\\ validation\\ \\to\\ test$"
+    },
+    {
+      "title": "Kiểm rò rỉ",
+      "explain": "Fit biến đổi trong từng fold, kiểm nhóm lặp và thời gian nhãn.",
+      "formula": "$fit(train),\\ transform(test)$"
+    }
+  ],
+  "takeaway": "Tài liệu đọc trước v3; slide Bài 7 hiện là v2. Nested CV và rolling CV là phần mở rộng.",
+  "question": "Đơn được duyệt trước mốc chia nhưng chỉ giao xong sau mốc có nhãn để huấn luyện tại mốc đó chưa?",
+  "answer": "Chưa; thời điểm có đặc trưng và thời điểm nhãn khả dụng khác nhau. Cần kiểm cả hai.",
+  "outputs": [
+    "results.json"
+  ],
+  "slide_sections": [
+    {
+      "start": 8,
+      "end": 18,
+      "first_title": "Nhãn trễ và cột tạo nhãn",
+      "last_title": "Q2 · Pipeline có cứu cột tương lai?"
+    },
+    {
+      "start": 19,
+      "end": 28,
+      "first_title": "Vai trò train, validation, test",
+      "last_title": "Tóm tắt trước giờ nghỉ"
+    },
+    {
+      "start": 30,
+      "end": 47,
+      "first_title": "Chia Olist theo thời gian",
+      "last_title": "Phiếu kiểm năm câu"
+    }
+  ]
+}

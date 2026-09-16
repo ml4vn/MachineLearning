@@ -1,3 +1,5 @@
+> Biên bản của phiên bản gốc; số hình và hướng dẫn đã được cập nhật. Xem [kiểm tra Python v3](../../docs/KIEM_TRA_PYTHON_V3.md) để biết kết quả mới.
+
 # Hoàn tất Bài 09
 
 Đã hoàn thành sáu bước; 6 kiểm thử đạt và `--mode all` chạy thành công từ IDX gốc. Đã chạy lại sau điều chỉnh bố cục hình, kết quả không thay đổi.

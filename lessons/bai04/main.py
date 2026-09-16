@@ -14,6 +14,8 @@ from mlcourse.olist import prepare_olist,FEATURES
 from lessons.bai04.algorithms import loss_gradient,gradient_descent
 
 def toy(args):
+    from mlcourse.teaching_visuals import gd_two_parameters
+    gd_two_parameters(args)
     x=np.array([1.,2.,3.,4.]);y=np.array([3.,4.,6.,7.]);z=x-x.mean()
     # Giữ trung tâm y=5, nên biến đích của bài toán một tham số là y-5.
     theta,hist=gradient_descent(z[:,None],y-5,eta=args.toy_eta,steps=8)
@@ -86,6 +88,7 @@ def real(args):
     rows.append({'model':f'GD_{args.steps}_steps','split':'test',**scores(te.delivery_days,pred_gd)})
     if not np.allclose(pred_ols,prediction_table.distance,atol=1e-10): raise AssertionError('OLS không khớp sau đổi thang')
     prediction_table['GD']=pred_gd
+    prediction_table['error_prediction_minus_actual']=pred_ols-te.delivery_days.to_numpy()
     prediction_table['residual_actual_minus_prediction']=te.delivery_days.to_numpy()-pred_ols
     write_csv(args.output_dir/'test_predictions.csv',prediction_table);write_csv(args.output_dir/'model_metrics.csv',rows)
     raw_w=float(ols.coef_[0]/scaler.scale_[0]);raw_b=float(ols.intercept_-ols.coef_[0]*scaler.mean_[0]/scaler.scale_[0])
@@ -99,10 +102,10 @@ def real(args):
     xx=np.linspace(0,float(tr.distance_km.max()),200)
     axes[0,0].plot(xx,raw_b+raw_w*xx,c=COLORS[3],lw=2,label='OLS trên toàn train')
     axes[0,0].set(xlabel='Khoảng cách đường chim bay (km)',ylabel='Thời gian giao thành công (ngày)',title='Dữ liệu thật và mô hình');axes[0,0].legend()
-    residual=prediction_table.residual_actual_minus_prediction
+    residual=prediction_table.error_prediction_minus_actual
     axes[0,1].hist(residual,bins=70,color=COLORS[0],alpha=.85)
-    axes[0,1].axvline(0,ls='--',c=COLORS[3]);axes[0,1].set(xlabel='Thực tế − dự đoán (ngày)',ylabel='Số đơn',title='Residual trên toàn bộ test')
-    save_figure(fig,args,'real_regression','Dữ liệu Olist lịch sử · Residual dương: mô hình dự đoán thời gian ngắn hơn thực tế · Không phải khoảng cam kết.')
+    axes[0,1].axvline(0,ls='--',c=COLORS[3]);axes[0,1].set(xlabel='Dự đoán − thực tế (ngày)',ylabel='Số đơn',title='Sai số e trên toàn bộ test')
+    save_figure(fig,args,'real_regression','Dữ liệu Olist lịch sử · e dương: mô hình dự đoán thời gian dài hơn thực tế · Không phải khoảng cam kết.')
     fig,axes=figure('Bài 4 · Đường hội tụ và mốc so sánh',2)
     axes[0,0].plot([r['step'] for r in hist],[r['loss'] for r in hist])
     optimum=np.mean((ols.predict(xt[:,None])-y)**2)/2

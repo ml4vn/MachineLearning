@@ -1,3 +1,5 @@
+> Biên bản của phiên bản gốc; số hình và hướng dẫn đã được cập nhật. Xem [kiểm tra Python v3](../../docs/KIEM_TRA_PYTHON_V3.md) để biết kết quả mới.
+
 # Hoàn tất Bài 03
 
 Đã thực hiện đủ sáu bước; năm kiểm thử đơn vị đạt và lệnh `--mode all` chạy thành công từ SMS gốc. Mô hình cố định tái tạo đúng TN/FP/FN/TP = 892/12/17/111. Ngưỡng được chọn trên validation: 8 phiếu cho 5FP+FN và 4 phiếu cho FP+5FN; chi phí test tương ứng 56 và 93.

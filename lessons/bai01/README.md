@@ -1,5 +1,8 @@
 # Bài 01 · Vector và độ tương đồng cosine
 
+
+**Lộ trình thực hành cập nhật:** [Dự đoán → chạy → đối chiếu → giải thích](HUONG_DAN_V3.md). Tài liệu đọc trước v3; slide v3.
+
 [← Mục lục khóa học](../../README.md) · [📖 Tài liệu đọc trước Bài 01](../../readings/bai01/README.md)
 
 **Câu hỏi:** Sau The Matrix, những phim nào giống về các nhãn đã mã hóa?
@@ -9,8 +12,7 @@ Ta chưa có bằng chứng về sở thích của một người cụ thể.
 Sau bài này, bạn chuyển nhãn thành vector, giải thích dot/chuẩn/cosine,
 tính một ví dụ bằng tay, kiểm bằng thư viện và đọc giới hạn của kết quả.
 Cần biết phép cộng, nhân, căn bậc hai và danh sách Python.
-Liên hệ slide v2: biểu diễn S5–11; toán S12–34; giới hạn S36–43;
-case thật S44–51; mở rộng S57–63.
+Đối chiếu slide v3 theo bảng trong hướng dẫn thực hành mới.
 
 ## Chạy từ thư mục gốc repository
 ```bash

@@ -1,3 +1,5 @@
+> Biên bản của phiên bản gốc; số hình và hướng dẫn đã được cập nhật. Xem [kiểm tra Python v3](../../docs/KIEM_TRA_PYTHON_V3.md) để biết kết quả mới.
+
 # Hoàn tất Bài 05
 
 Đã hoàn thành sáu bước: rà soát 68 slide, lưu kế hoạch, triển khai mã, chạy kiểm chứng, viết hướng dẫn, kiểm tra trực quan.

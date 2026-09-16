@@ -1,5 +1,8 @@
 # Bài 02 · kNN: nhìn SMS thật, đo gần và bỏ phiếu
 
+
+**Lộ trình thực hành cập nhật:** [Dự đoán → chạy → đối chiếu → giải thích](HUONG_DAN_V3.md). Tài liệu đọc trước v3; slide v3.
+
 [← Mục lục khóa học](../../README.md) · [📖 Tài liệu đọc trước Bài 02](../../readings/bai02/README.md)
 
 **Câu hỏi:** Một tin nhắn có hình thức gần spam trong tập train có được kNN dự đoán là spam?
@@ -8,7 +11,7 @@ Bạn sẽ nhìn văn bản gốc, đếm đặc trưng và truy tới từng l�
 ## Mục tiêu và kiến thức cần có
 Biết dùng vector, khoảng cách Euclid, trung bình và độ lệch chuẩn.
 Sau lab, bạn giải thích kNN bằng bốn bước và biết vì sao thang đo, k và cách chia tập quan trọng.
-Slide v2: dữ liệu S2–17; thuật toán S19–30; chuẩn hóa S31–43; case S44–56.
+Đối chiếu slide v3 theo bảng trong hướng dẫn thực hành mới.
 
 ## Chạy
 ```bash

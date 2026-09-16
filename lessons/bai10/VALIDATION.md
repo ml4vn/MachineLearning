@@ -1,3 +1,5 @@
+> Biên bản của phiên bản gốc; số hình và hướng dẫn đã được cập nhật. Xem [kiểm tra Python v3](../../docs/KIEM_TRA_PYTHON_V3.md) để biết kết quả mới.
+
 # Hoàn tất Bài 10
 
 Đã hoàn thành sáu bước; 7 kiểm thử đạt. `--mode all` tự xử lý IDX, fit baseline và thực sự huấn luyện đủ 3 seed × 50 epoch.

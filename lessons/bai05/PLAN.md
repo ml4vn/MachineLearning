@@ -1,3 +1,5 @@
+> Kế hoạch gốc của phiên bản trước. Kế hoạch đối chiếu hiện tại: [Hướng dẫn v3](HUONG_DAN_V3.md) và [phạm vi cập nhật](../../docs/PYTHON_V3.md).
+
 # Kế hoạch Bài 05 — Logistic Regression
 
 ## 1. Rà soát

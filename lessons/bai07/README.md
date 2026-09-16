@@ -1,5 +1,8 @@
 # Bài 07 · Đánh giá đáng tin cậy
 
+
+**Lộ trình thực hành cập nhật:** [Dự đoán → chạy → đối chiếu → giải thích](HUONG_DAN_V3.md). Tài liệu đọc trước v3; slide v2.
+
 [← Mục lục khóa học](../../README.md) · [📖 Tài liệu đọc trước Bài 07](../../readings/bai07/README.md)
 
 **PGS.TS Nguyễn Văn Hậu** · 90 phút phần chính, 45 phút mở rộng.

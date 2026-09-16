@@ -1,0 +1,141 @@
+{
+  "status": "pass",
+  "date": "2026-09-16",
+  "algorithm_files_unchanged": true,
+  "unit_tests": 60,
+  "output_checks": 107,
+  "example_checks": 22,
+  "png_count": 71,
+  "preview_count": 16,
+  "runs": [
+    {
+      "lesson": 1,
+      "exit_code": 0,
+      "seconds": 27.14
+    },
+    {
+      "lesson": 2,
+      "exit_code": 0,
+      "seconds": 27.51
+    },
+    {
+      "lesson": 3,
+      "exit_code": 0,
+      "seconds": 24.48
+    },
+    {
+      "lesson": 4,
+      "exit_code": 0,
+      "seconds": 62.89
+    },
+    {
+      "lesson": 5,
+      "exit_code": 0,
+      "seconds": 67.98
+    },
+    {
+      "lesson": 6,
+      "exit_code": 0,
+      "seconds": 82.6
+    },
+    {
+      "lesson": 7,
+      "exit_code": 0,
+      "seconds": 78.37
+    },
+    {
+      "lesson": 8,
+      "exit_code": 0,
+      "seconds": 204.77
+    },
+    {
+      "lesson": 9,
+      "exit_code": 0,
+      "seconds": 137.61
+    },
+    {
+      "lesson": 10,
+      "exit_code": 0,
+      "seconds": 265.96
+    }
+  ],
+  "previews": [
+    {
+      "path": "docs/figures/v3/bai01_summary.png",
+      "sha256": "728942038fe0a1b32bcde78c57b5b636c0efef96a3d64765cc59b5a062d85255"
+    },
+    {
+      "path": "docs/figures/v3/bai02_summary.png",
+      "sha256": "03639461d38806548e6b2ba9b071b138e7a7e9bed2e287e59381058d8c63d92e"
+    },
+    {
+      "path": "docs/figures/v3/bai03_summary.png",
+      "sha256": "21560532ae3425853be370bc47763161f7fb96bd9c6615e0ba2ecd54bbb9908e"
+    },
+    {
+      "path": "docs/figures/v3/bai04_summary.png",
+      "sha256": "13c2489a89acb9b193a3fd12a8e81af7607cda02c04467fc79484ff06f247d8d"
+    },
+    {
+      "path": "docs/figures/v3/bai04_toy_loss_surface.png",
+      "sha256": "687f73455f209813d885e091deeeadca6107f14c0015102c6c5ddee1c872df27"
+    },
+    {
+      "path": "docs/figures/v3/bai04_toy_wb_update.png",
+      "sha256": "8d6dd9e6e65899e8b0bb67379d4fc68492537403b2a962da324a98c8ac5911e3"
+    },
+    {
+      "path": "docs/figures/v3/bai05_summary.png",
+      "sha256": "bddacf21e076d0fa747134c1d882a85bf152285a9b7986910350bff4914e662d"
+    },
+    {
+      "path": "docs/figures/v3/bai06_summary.png",
+      "sha256": "d4cb56aacc9330331bd2b4813146dc2d6524abe6e362815a8a3af55f3d8ac745"
+    },
+    {
+      "path": "docs/figures/v3/bai06_toy_gini_trace.png",
+      "sha256": "e8937db49f9b45fdb84218769f34b1170c50889bee81da49cfb33543c9a6d244"
+    },
+    {
+      "path": "docs/figures/v3/bai07_summary.png",
+      "sha256": "6c4f3af2f4d71da529a04d935fa1d891781cf98e907864e2d009e08c01432c58"
+    },
+    {
+      "path": "docs/figures/v3/bai08_summary.png",
+      "sha256": "655253834290bcf8a22e96234edd67afbca31835b70f39b52d2509b2777ee8ec"
+    },
+    {
+      "path": "docs/figures/v3/bai08_toy_silhouette.png",
+      "sha256": "eec03ab097448f5edff9548d89efb5c8a296dfb7a610653b21ab3bf64c1cd213"
+    },
+    {
+      "path": "docs/figures/v3/bai09_summary.png",
+      "sha256": "b08e495710bfa7811a77a44ac0e04a68585729fccff71c98670ed9320bacf4a0"
+    },
+    {
+      "path": "docs/figures/v3/bai09_toy_covariance.png",
+      "sha256": "7f725bbf1af0f0e2d70627a59e3981584d483fe24ede534774e5d2ab91cc79b7"
+    },
+    {
+      "path": "docs/figures/v3/bai10_summary.png",
+      "sha256": "089adb4b05c184e3c7f9411995cc7bbe9186a30e72d788b38d1d2b6f2c906b65"
+    },
+    {
+      "path": "docs/figures/v3/bai10_toy_backprop_path.png",
+      "sha256": "fec2fa5d24e131a6b3e76aac2d57473b2eb1a1aa004ebbc7a034279c70827898"
+    }
+  ],
+  "visual_review": "Reviewed 16 new images and 5 existing images with changed text or sign; checked all 71 PNG dimensions. Source algorithms unchanged.",
+  "slide_versions": {
+    "1": "v3",
+    "2": "v3",
+    "3": "v3",
+    "4": "v3",
+    "5": "v3",
+    "6": "v3",
+    "7": "v2",
+    "8": "v3",
+    "9": "v3",
+    "10": "v3"
+  }
+}

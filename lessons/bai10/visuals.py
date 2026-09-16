@@ -18,7 +18,7 @@ def plot_toy(args, report):
     axes[0,2].contourf(xx,yy,z>=0,levels=[-.5,.5,1.5],colors=COLORS[:2],alpha=.25)
     axes[0,2].contour(xx,yy,z,levels=[0],colors=[COLORS[2]])
     axes[0,2].scatter(*XOR.T,c=[COLORS[c] for c in XOR_Y],s=140)
-    axes[0,2].set(xlabel="x₁",ylabel="x₂",title="Nghiệm dựng: z=2h₁−4h₂−1")
+    axes[0,2].set(xlabel="x₁",ylabel="x₂",title="Nghiệm dựng: s=2h₁−4h₂−1")
     save_figure(fig,args,"toy_xor","Tầng ẩn được đặt sẵn trong ví dụ này. Nghiệm dựng đúng 4/4 điểm; không phải kết quả học sau một bước GD.")
     fig,axes=figure("Một bước GD: tính lại xác suất rồi mới kết luận",ncols=2)
     labels=["(0,0)","(0,1)","(1,0)","(1,1)"]; pos=np.arange(4)
@@ -27,13 +27,14 @@ def plot_toy(args, report):
     axes[0,0].set(xticks=pos,xticklabels=labels,ylim=(0,1),xlabel="Điểm XOR",ylabel="p(y=1)");axes[0,0].legend()
     vals=[report["initial_loss"],report["next_loss"],report["constructed_loss"]]
     bars=axes[0,1].bar(["Ban đầu","Sau 1 bước","Nghiệm dựng"],vals,color=COLORS[:3]);axes[0,1].bar_label(bars,fmt="%.4f",padding=5);axes[0,1].set(ylabel="BCE trung bình",ylim=(0,.85))
-    save_figure(fig,args,"toy_update",r"$\nabla_{(v_1,v_2,c)}L=(0,1/8,0)$; sau bước: (0,−1,0). η=8 chỉ được kiểm trên ví dụ riêng này.")
+    save_figure(fig,args,"toy_update",r"$\nabla_{(v_1,v_2,b)}L=(0,1/8,0)$; sau bước: (0,−1,0). η=8 chỉ được kiểm trên ví dụ riêng này.")
     fig,axes=figure("Backpropagation: chín đạo hàm được kiểm độc lập",ncols=2)
     ax=axes[0,0];ax.axis("off");t=report["tiny"]
-    text=["x = (0,6; 0,2),  y = 1",f"a = W x + b = ({t['preactivation'][0]:.2f}; {t['preactivation'][1]:.2f})",f"h = ReLU(a) = ({t['hidden'][0]:.2f}; {t['hidden'][1]:.2f})",f"z = vᵀh+c = {t['logit']:.3f}",f"p = σ(z) = {t['probability']:.6f}",f"δ = p−y = {t['delta']:.6f}",r"$\delta_h=\delta\,v\odot\mathbf{1}_{a>0}$",r"$\nabla_W L=\delta_h x^T$"]
+    text=["x = (0,6; 0,2),  y = 1",f"a = W₁ x + b₁ = ({t['preactivation'][0]:.2f}; {t['preactivation'][1]:.2f})",f"h = ReLU(a) = ({t['hidden'][0]:.2f}; {t['hidden'][1]:.2f})",f"s = vᵀh+b = {t['logit']:.3f}",f"p = σ(s) = {t['probability']:.6f}",f"δ = p−y = {t['delta']:.6f}",r"$\delta_h=\delta\,v\odot\mathbf{1}_{a>0}$",r"$\nabla_{W_1} L=\delta_h x^T$"]
     for i,line in enumerate(text): ax.text(.02,.93-i*.115,line,fontsize=17,color=COLORS[0 if i<5 else 3])
     ax=axes[0,1];ax.scatter(t["gradient"],report["numeric_gradient"],s=65,color=COLORS[2]);ax.plot([-.5,.2],[-.5,.2],"--",color=COLORS[0]);ax.set(xlabel="Gradient theo quy tắc dây chuyền",ylabel="Gradient sai phân hữu hạn",title=f"Sai khác lớn nhất: {report['max_gradient_error']:.2e}")
-    for i,name in enumerate(PARAM_NAMES): ax.annotate(name,(t["gradient"][i],report["numeric_gradient"][i]),xytext=(4,7 if i%2 else -13),textcoords="offset points",fontsize=10)
+    slide_names=[r'$w_{11}$',r'$w_{12}$',r'$w_{21}$',r'$w_{22}$',r'$b_{1,1}$',r'$b_{1,2}$',r'$v_1$',r'$v_2$',r'$b$']
+    for i,name in enumerate(slide_names): ax.annotate(name,(t["gradient"][i],report["numeric_gradient"][i]),xytext=(4,7 if i%2 else -13),textcoords="offset points",fontsize=10)
     save_figure(fig,args,"toy_backprop","Tất cả gradient dùng cùng tham số cũ. Ví dụ tránh điểm gãy ReLU; bảng 9 tham số và cập nhật nằm trong CSV.")
 
 def plot_real(args,d,report,arrays):

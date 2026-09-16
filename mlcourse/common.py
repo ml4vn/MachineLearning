@@ -74,6 +74,8 @@ def write_csv(path, records):
     df.to_csv(path, index=False, encoding="utf-8-sig")
 
 def finish(args, lesson: int, results):
+    from .teaching_visuals import recap
+    recap(args, lesson)
     versions = {}
     for name in ["numpy", "pandas", "scipy", "scikit-learn", "matplotlib"]:
         versions[name] = importlib.metadata.version(name)

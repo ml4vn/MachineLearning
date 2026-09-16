@@ -1,3 +1,5 @@
+> Kế hoạch gốc của phiên bản trước. Kế hoạch đối chiếu hiện tại: [Hướng dẫn v3](HUONG_DAN_V3.md) và [phạm vi cập nhật](../../docs/PYTHON_V3.md).
+
 # Kế hoạch Bài 09 — PCA và biểu diễn ảnh
 
 Nguồn chuẩn: 60 slide Bài09_v2, pca_lab.py và case_audit.json. Tiếp nối hình học của Bài 08; kết nối ảnh Fashion-MNIST với Bài 10.

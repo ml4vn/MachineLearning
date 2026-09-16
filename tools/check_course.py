@@ -11,6 +11,7 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_readings import render_reading
+from build_lab_guides import render as render_lab_guide
 
 
 def main() -> None:
@@ -22,6 +23,10 @@ def main() -> None:
         number = item["lesson"]
         folder = ROOT / "readings" / f"bai{number:02d}"
         content = json.loads((folder / "content.json").read_text(encoding="utf-8"))
+        lab = ROOT / "lessons" / f"bai{number:02d}"
+        teaching = json.loads((lab / "teaching.json").read_text(encoding="utf-8"))
+        if (lab / "HUONG_DAN_V3.md").read_text(encoding="utf-8") != render_lab_guide(teaching):
+            errors.append(f"Bài {number}: hướng dẫn thực hành chưa đồng bộ teaching.json")
         if len(content["pages"]) != item["pdf_pages"] or content["lesson"] != number:
             errors.append(f"Bài {number}: số mục/trang không khớp manifest")
         if (folder / "README.md").read_text(encoding="utf-8") != render_reading(content):

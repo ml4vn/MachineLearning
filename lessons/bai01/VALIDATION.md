@@ -1,3 +1,5 @@
+> Biên bản của phiên bản gốc; số hình và hướng dẫn đã được cập nhật. Xem [kiểm tra Python v3](../../docs/KIEM_TRA_PYTHON_V3.md) để biết kết quả mới.
+
 # Kiểm tra hoàn tất Bài 01
 
 - Đã chạy chế độ all từ ZIP MovieLens gốc có SHA256 đúng registry.

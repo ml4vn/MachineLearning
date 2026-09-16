@@ -1,3 +1,5 @@
+> Biên bản của phiên bản gốc; số hình và hướng dẫn đã được cập nhật. Xem [kiểm tra Python v3](../../docs/KIEM_TRA_PYTHON_V3.md) để biết kết quả mới.
+
 # Hoàn tất Bài 04
 
 Đã hoàn thành sáu bước. Bảy kiểm thử đạt; chạy `--mode all` thành công từ Olist ZIP gốc và chạy thêm thí nghiệm eta = 1,8 để kiểm hành vi phân kỳ minh họa.

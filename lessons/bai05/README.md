@@ -1,10 +1,13 @@
 # Bài 05 · Logistic Regression và nguy cơ giao trễ
 
+
+**Lộ trình thực hành cập nhật:** [Dự đoán → chạy → đối chiếu → giải thích](HUONG_DAN_V3.md). Tài liệu đọc trước v3; slide v3.
+
 [← Mục lục khóa học](../../README.md) · [📖 Tài liệu đọc trước Bài 05](../../readings/bai05/README.md)
 
 **PGS.TS Nguyễn Văn Hậu** · 90 phút phần chính, 30–45 phút mở rộng.
 
-Tiếp nối Bài 04, ta giữ dữ liệu đơn hàng nhưng đổi câu hỏi: **đơn này có nguy cơ giao trễ không?** Mã bám 68 slide Bài 05 v2, gồm ví dụ tính tay, mô hình thật, ngưỡng cảnh báo và kiểm chứng từng phép tính.
+Tiếp nối Bài 04, ta giữ dữ liệu đơn hàng nhưng đổi câu hỏi: **đơn này có nguy cơ giao trễ không?** Mã bám slide Bài 05 v3, gồm ví dụ tính tay, mô hình thật, ngưỡng cảnh báo và kiểm chứng từng phép tính.
 
 ## 1. Mục tiêu và cách chạy
 
@@ -89,7 +92,7 @@ Tệp `one_order_calculation.csv` đưa một đơn train gần 100 km qua giá 
 
 ## 7. Chọn ngưỡng trên validation
 
-Mục tiêu giả định: cost = FP + 5FN. Quét [0,05;0,10;0,15;0,20;0,30;0,50] trên validation. Nếu hòa cost, chọn ít cảnh báo hơn rồi ngưỡng lớn hơn. Lưu chính sách trong `model_policy.json` trước khi tính báo cáo test. Không tái fit train+validation.
+Mục tiêu giả định: $K=FP+5FN$ (`cost` trong mã). K khác với `C` là tham số regularization của thư viện. Quét [0,05;0,10;0,15;0,20;0,30;0,50] trên validation. Nếu hòa cost, chọn ít cảnh báo hơn rồi ngưỡng lớn hơn. Lưu chính sách trong `model_policy.json` trước khi tính báo cáo test. Không tái fit train+validation.
 
 | Ngưỡng | FP validation | FN validation | Cost |
 |---:|---:|---:|---:|

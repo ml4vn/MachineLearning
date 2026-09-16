@@ -28,7 +28,7 @@ def matrix(ax, report, title):
 def toy(args):
     y = np.array([1,0,1,1,0,1,0,0,0,0])
     s = np.array([.95,.90,.85,.70,.60,.55,.40,.30,.20,.10])
-    reports = [dict(threshold=t, **measure(y, s >= t)) for t in [.5,.85,.9,args.threshold]]
+    reports = [dict(threshold=t, **measure(y, s >= t)) for t in [.5,.8,.9,args.threshold]]
     d = pd.DataFrame({'id':list('ABCDEFGHIJ'), 'y':y, 'score':s, 'prediction':s >= args.threshold})
     write_csv(args.output_dir/'toy_rows.csv', d)
     write_csv(args.output_dir/'toy_thresholds.csv', reports)
@@ -41,7 +41,7 @@ def toy(args):
     ax.set(xlabel='Điểm', yticks=range(10), yticklabels=list('ABCDEFGHIJ'), xlim=(-.04,1.04))
     ax.invert_yaxis();ax.legend(loc='lower right')
     matrix(axes[0,1], reports[-1], r'Quyết định: $\hat y=1$ nếu $s\geq t$')
-    save_figure(fig,args,'toy_confusion','Dữ liệu mô phỏng · Tăng ngưỡng không bảo đảm precision tăng; hãy so ngưỡng 0,85 và 0,90.')
+    save_figure(fig,args,'toy_confusion','Dữ liệu mô phỏng · Tăng ngưỡng không bảo đảm precision tăng; hãy so ngưỡng 0,80 và 0,90.')
     return {'thresholds':reports, 'auc_four_points':auc_pairwise([1,1,0,0],[.8,.4,.6,.2])}
 
 def real(args):

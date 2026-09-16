@@ -1,3 +1,5 @@
+> Kế hoạch gốc của phiên bản trước. Kế hoạch đối chiếu hiện tại: [Hướng dẫn v3](HUONG_DAN_V3.md) và [phạm vi cập nhật](../../docs/PYTHON_V3.md).
+
 # Kế hoạch Bài 10 — MLP từ XOR đến ảnh thật
 
 Nguồn: 68 slide Bài10_v2, mlp_lab.py, case_audit.json. Giữ nguyên split Fashion-MNIST của Bài 09 nhưng tự tạo lại từ IDX; không phụ thuộc kết quả chạy bài trước.

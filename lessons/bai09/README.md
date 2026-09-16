@@ -1,5 +1,8 @@
 # Bài 09 · PCA: ít tọa độ hơn, giữ được điều gì?
 
+
+**Lộ trình thực hành cập nhật:** [Dự đoán → chạy → đối chiếu → giải thích](HUONG_DAN_V3.md). Tài liệu đọc trước v3; slide v3.
+
 [← Mục lục khóa học](../../README.md) · [📖 Tài liệu đọc trước Bài 09](../../readings/bai09/README.md)
 
 **Sau bài này:** bạn đọc một ảnh thành vector, tính phép chiếu và tái tạo, giải thích EVR/MSE, dùng PCA đúng tập dữ liệu và nhận ra giới hạn của giảm chiều tuyến tính. Ôn vector, dot product, trung bình; phần trị riêng có thể học sau khi đã hiểu hình chiếu.

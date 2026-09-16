@@ -17,6 +17,8 @@ from mlcourse.classification import fit_logistic,transform,evaluate,select_thres
 from lessons.bai06.algorithms import gini,enumerate_splits,export_tree,walk,impurity_contributions,toy_data
 
 def toy(args):
+    from mlcourse.teaching_visuals import gini_trace
+    gini_trace(args)
     X,y=toy_data();root=enumerate_splits(X,y);best=max(root,key=lambda r:r['gain'])
     right=X[:,1]>15;child=enumerate_splits(X[right],y[right]);best_child=max(child,key=lambda r:r['gain'])
     m=DecisionTreeClassifier(random_state=args.seed).fit(X,y)

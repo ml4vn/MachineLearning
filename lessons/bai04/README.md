@@ -1,10 +1,13 @@
 # Bài 04 · Hồi quy tuyến tính và Gradient Descent
 
+
+**Lộ trình thực hành cập nhật:** [Dự đoán → chạy → đối chiếu → giải thích](HUONG_DAN_V3.md). Tài liệu đọc trước v3; slide v3.
+
 [← Mục lục khóa học](../../README.md) · [📖 Tài liệu đọc trước Bài 04](../../readings/bai04/README.md)
 
 **PGS.TS Nguyễn Văn Hậu** · 90 phút phần chính, 30–45 phút mở rộng.
 
-Tại lúc duyệt một đơn hàng, ta có thể ước lượng thời gian giao thành công từ khoảng cách không? Bài thực hành đi từ bốn điểm tính tay đến dữ liệu Olist thật, bám 68 slide Bài 04 v2.
+Tại lúc duyệt một đơn hàng, ta có thể ước lượng thời gian giao thành công từ khoảng cách không? Bài thực hành đi từ bốn điểm tính tay đến dữ liệu Olist thật, bám slide Bài 04 v3.
 
 ## 1. Mục tiêu và chuẩn bị
 
@@ -40,7 +43,7 @@ $$\hat y=b+wx,\qquad e_i=\hat y_i-y_i,\qquad J=\frac1{2n}\sum_i e_i^2.$$
 | w | Ngày trên một đơn vị x | Khi đổi về hệ gốc: ngày/km |
 | J | Ngày²; bằng MSE/2 | Mục tiêu dùng khi học |
 
-Sai số `e` trong GD là **dự đoán − thực tế**. Biểu đồ residual thật dùng **thực tế − dự đoán**, được ghi rõ trên trục; hai quy ước chỉ khác dấu. Cộng sai số có dấu có thể triệt tiêu, nên không dùng tổng đó thay MAE/MSE.
+Sai số `e` trong GD là **dự đoán − thực tế**. Biểu đồ sai số thật cũng dùng **dự đoán − thực tế**; giá trị dương nghĩa là dự đoán thời gian dài hơn thực tế. CSV giữ thêm cột residual ngược dấu để tương thích với bản cũ. Cộng sai số có dấu có thể triệt tiêu, nên không dùng tổng đó thay MAE/MSE.
 
 ## 3. Bốn điểm để tính tay
 

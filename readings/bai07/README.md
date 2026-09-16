@@ -6,7 +6,7 @@ Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật H
 
 [← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai07_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai07_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai07/README.md)
 
-**Tài liệu đọc trước v3 · Đối chiếu slide v2.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
+**Tài liệu đọc trước v3 · Đối chiếu slide v2.** Python đã đồng bộ ví dụ và hướng dẫn theo cùng nguồn slide; xem [các quy ước đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 

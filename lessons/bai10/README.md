@@ -1,8 +1,11 @@
 # Bài 10 · Mạng neuron: từ một bước tính tay đến nhận dạng ảnh
 
+
+**Lộ trình thực hành cập nhật:** [Dự đoán → chạy → đối chiếu → giải thích](HUONG_DAN_V3.md). Tài liệu đọc trước v3; slide v3.
+
 [← Mục lục khóa học](../../README.md) · [📖 Tài liệu đọc trước Bài 10](../../readings/bai10/README.md)
 
-**Mục tiêu:** giải thích vai trò của phi tuyến, tính forward/loss/backprop, phân biệt gradient với cập nhật Adam, đọc đường học và chọn checkpoint đúng quy trình. Nội dung bám Bài10_v2, tiếp nối cùng dữ liệu Fashion-MNIST của Bài 09. Cần ôn dot product, sigmoid/BCE ở Bài 05 và chia tập ở Bài 07.
+**Mục tiêu:** giải thích vai trò của phi tuyến, tính forward/loss/backprop, phân biệt gradient với cập nhật Adam, đọc đường học và chọn checkpoint đúng quy trình. Nội dung bám Bài10_v3, tiếp nối cùng dữ liệu Fashion-MNIST của Bài 09. Cần ôn dot product, sigmoid/BCE ở Bài 05 và chia tập ở Bài 07.
 
 ## 1. Chạy trọn bài
 
@@ -48,9 +51,9 @@ Hai tọa độ ẩn trong bảng được **đặt sẵn** để minh họa. Tr
 
 ## 4. Một bước học tầng ra, tính được bằng tay
 
-Giữ H cố định, đặt v₁=v₂=c=0. Khi đó mọi logit bằng 0, p=0,5; BCE trung bình bằng ln2. Với $\delta_i=p_i-y_i$:
+Giữ H cố định, đặt v₁=v₂=b=0. Khi đó mọi logit bằng 0, p=0,5; BCE trung bình bằng ln2. Với $\delta_i=p_i-y_i$:
 
-$$\nabla_vL=H^T(p-y)/n,\qquad \partial L/\partial c=\operatorname{mean}(p-y).$$
+$$\nabla_vL=H^T(p-y)/n,\qquad \partial L/\partial b=\operatorname{mean}(p-y).$$
 
 Gradient là (0; 1/8; 0). GD với η=8 cho tham số mới (0; −1; 0). Logit mới: 0,0,0,−1; xác suất: 0,5; 0,5; 0,5; 0,268941. BCE giảm từ 0,693147 xuống **0,598176**; quy tắc p≥0,5 cho 3/4 đúng.
 
@@ -58,14 +61,14 @@ Gradient v₁ bằng 0 chỉ nói tổng đóng góp tại **vị trí hiện t�
 
 ## 5. Backpropagation cho toàn bộ mạng nhỏ
 
-Ví dụ x=(0,6;0,2), y=1; W có các hàng (0,5;−0,4), (0,3;0,8), b=(0,1;0,1), v=(0,7;−0,5), c=0,2.
+Ví dụ x=(0,6;0,2), y=1; W₁ có các hàng (0,5;−0,4), (0,3;0,8), b₁=(0,1;0,1), v=(0,7;−0,5), b=0,2.
 
 | Đại lượng | Giá trị hoặc công thức |
 |---|---|
-| a=Wx+b | (0,32; 0,44) |
+| a=W₁x+b₁ | (0,32; 0,44) |
 | h=ReLU(a) | (0,32; 0,44) |
-| z=vᵀh+c | 0,204 |
-| p=σ(z) | 0,550823865 |
+| s=vᵀh+b (mã: logit) | 0,204 |
+| p=σ(s) | 0,550823865 |
 | δ=p−y | −0,449176135 |
 | δh=δv ⊙ 1(a>0) | (−0,314423295; 0,224588068) |
 | ∂L/∂W₁₁=δh₁x₁ | −0,188653977 |
@@ -145,3 +148,7 @@ Lệnh này chỉ suy luận, không fit lại. Đầu vào là NPY uint8 28×28
 | 9 PNG, `real_details.json`, `results.json` | Hình và kết quả đầy đủ |
 
 Bài 10 khép lại chuỗi: biểu diễn → láng giềng → độ đo → tối ưu → xác suất → cây → kiểm chứng → phân cụm → giảm chiều → học biểu diễn phi tuyến. Năng lực biểu diễn, khả năng tối ưu và chất lượng ngoài mẫu là ba câu hỏi liên quan nhưng phải được kiểm riêng.
+
+## Đối chiếu tên biến mạng nhỏ
+
+Slide dùng $W_1,b_1$ cho tầng ẩn, $v,b$ cho tầng ra và $s$ cho score. Hàm `tiny_forward` giữ tên nội bộ `W,b,v,c,z` để bảo toàn giao diện; lần lượt tương ứng $W_1,b_1,v,b,s$. `PARAM_NAMES` trong CSV được giữ và có thêm cột `slide_parameter`. Mạng ảnh dùng mỗi hàng là một quan sát (`X @ W1`), nên shape ma trận khác cách viết vector cột trên slide; phép tính tương đương.

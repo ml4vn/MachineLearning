@@ -1,3 +1,5 @@
+> Kế hoạch gốc của phiên bản trước. Kế hoạch đối chiếu hiện tại: [Hướng dẫn v3](HUONG_DAN_V3.md) và [phạm vi cập nhật](../../docs/PYTHON_V3.md).
+
 # Kế hoạch Bài 08 — K-means và phân nhóm khách hàng
 
 Đối chiếu 60 slide Bài08_v2, mã nguồn thí nghiệm và case_audit.json. Mục tiêu: nối hóa đơn thật → RFM → hình học khoảng cách → Lloyd → đánh giá và giới hạn của phân nhóm.

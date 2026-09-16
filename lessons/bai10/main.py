@@ -29,8 +29,10 @@ def toy(args):
     np.testing.assert_allclose(tiny["gradient"], numeric, rtol=1e-7, atol=1e-9)
     report = dict(hidden=H, gradient=gradient, next_parameters=updated, next_logits=H@updated[:2]+updated[2], next_probabilities=sigmoid(H@updated[:2]+updated[2]), initial_loss=bce_logits(np.zeros(4), XOR_Y), next_loss=bce_logits(H@updated[:2]+updated[2], XOR_Y), constructed_parameters=target, constructed_logits=H@target[:2]+target[2], constructed_loss=bce_logits(H@target[:2]+target[2], XOR_Y), tiny=tiny, numeric_gradient=numeric, max_gradient_error=float(np.max(np.abs(numeric-tiny["gradient"]))))
     write_csv(args.output_dir / "toy_xor.csv", pd.DataFrame(dict(x1=XOR[:,0], x2=XOR[:,1], y=XOR_Y, h1=H[:,0], h2=H[:,1], next_logit=report["next_logits"], next_probability=report["next_probabilities"], constructed_logit=report["constructed_logits"])))
-    write_csv(args.output_dir / "toy_backprop.csv", pd.DataFrame(dict(parameter=PARAM_NAMES, before=TINY_THETA, analytic=tiny["gradient"], finite_difference=numeric, after_GD_eta_0_1=TINY_THETA-.1*tiny["gradient"])))
+    write_csv(args.output_dir / "toy_backprop.csv", pd.DataFrame(dict(parameter=PARAM_NAMES, slide_parameter=["w11","w12","w21","w22","b1_1","b1_2","v1","v2","b"], before=TINY_THETA, analytic=tiny["gradient"], finite_difference=numeric, after_GD_eta_0_1=TINY_THETA-.1*tiny["gradient"])))
     write_json(args.output_dir / "toy_details.json", report)
+    from mlcourse.teaching_visuals import backprop_path
+    backprop_path(args, tiny)
     plot_toy(args, report)
     return report
 

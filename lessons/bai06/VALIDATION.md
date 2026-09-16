@@ -1,3 +1,5 @@
+> Biên bản của phiên bản gốc; số hình và hướng dẫn đã được cập nhật. Xem [kiểm tra Python v3](../../docs/KIEM_TRA_PYTHON_V3.md) để biết kết quả mới.
+
 # Hoàn tất Bài 06
 
 Đã thực hiện đủ sáu bước. Sáu kiểm thử đơn vị đạt và lệnh `--mode all` chạy từ Olist gốc thành công.

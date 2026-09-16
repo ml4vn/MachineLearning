@@ -16,6 +16,8 @@ from mlcourse.data import entries, verify
 from lessons.bai08.algorithms import POINTS, NAMES, FEATURES, lloyd, exhaustive_sse, silhouette_manual, prepare_rfm, independent_rfm_check
 
 def toy(args):
+    from mlcourse.teaching_visuals import silhouette_trace
+    silhouette_trace(args)
     history = lloyd(POINTS, POINTS[[0, 2]])
     best = exhaustive_sse(POINTS)
     starts = []

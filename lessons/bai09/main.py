@@ -11,6 +11,8 @@ from mlcourse.fashion import NAMES, load_fashion, membership, fit_pixel_baseline
 from lessons.bai09.algorithms import POINTS, fit_pca_eigh, project_reconstruct
 
 def toy(args):
+    from mlcourse.teaching_visuals import covariance_trace
+    covariance_trace(args)
     mu, ev, W = fit_pca_eigh(POINTS)
     scores, rec = project_reconstruct(POINTS, mu, W, 1)
     theta = np.linspace(0, np.pi, 361); directions = np.array([np.cos(theta), np.sin(theta)]).T

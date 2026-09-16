@@ -1,3 +1,5 @@
+> Biên bản của phiên bản gốc; số hình và hướng dẫn đã được cập nhật. Xem [kiểm tra Python v3](../../docs/KIEM_TRA_PYTHON_V3.md) để biết kết quả mới.
+
 # Hoàn tất Bài 02
 
 Đã hoàn thành đủ sáu bước: đối chiếu slide v2, lưu kế hoạch, lập trình, kiểm thử, biên soạn hướng dẫn và kiểm tra trực quan.

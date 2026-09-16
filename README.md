@@ -4,7 +4,7 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-Khóa học gồm **10 tài liệu đọc trước và 10 bài thực hành Python hoàn chỉnh**. Mỗi bài dẫn từ dữ liệu và ví dụ tính tay đến thuật toán, chương trình chạy được, hình minh họa và kết quả kiểm chứng. Tài liệu đọc trước đã cập nhật **v3**, đối chiếu slide v3 của Bài 1–6 và 8–10; riêng Bài 7 đối chiếu slide v2 hiện có. Bộ thực hành Python vẫn theo phiên bản trước. Xem [đối chiếu phiên bản](docs/DOI_CHIEU_HOC_LIEU.md) và [nhật ký cập nhật](docs/CAP_NHAT_DOC_TRUOC_V3.md).
+Khóa học gồm **10 tài liệu đọc trước và 10 bài thực hành Python hoàn chỉnh**. Mỗi bài dẫn từ dữ liệu và ví dụ tính tay đến thuật toán, chương trình chạy được, hình minh họa và kết quả kiểm chứng. Tài liệu đọc trước đã cập nhật **v3**, đối chiếu slide v3 của Bài 1–6 và 8–10; riêng Bài 7 đối chiếu slide v2 hiện có. Python thực hành đã được đồng bộ ví dụ, ký hiệu, hình và hướng dẫn theo cùng phiên bản; các thuật toán đã kiểm chứng được giữ nguyên. Xem [đối chiếu phiên bản](docs/DOI_CHIEU_HOC_LIEU.md) và [nhật ký cập nhật](docs/CAP_NHAT_DOC_TRUOC_V3.md).
 
 Repository: [ml4vn/MachineLearning](https://github.com/ml4vn/MachineLearning).
 
@@ -119,7 +119,7 @@ python run_all.py --mode all
 
 `run_all.py` chạy tuần tự; chỉ sang bài kế tiếp khi bài trước trả mã thành công, dừng rõ ràng khi lỗi. Có thể chọn `--start 6 --end 10`. Mỗi bài có `run.log`; `outputs/run_summary.json` ghi thời gian và mã thoát. Chạy toàn bộ case thật cần tải đủ dữ liệu trước, vài GB RAM và thời gian cho XLSX, PCA, huấn luyện mạng; thời gian tùy máy. Bài 10 mặc định thực sự chạy 150 epoch cộng dồn qua ba seed.
 
-Khi dùng `run_all.py --seed N`, chương trình truyền N cho cả split Fashion của Bài 09 và `--split-seed` của Bài 10 để giữ cùng tập ảnh. Sau lượt `--mode all` mặc định, có thể chạy `python validate_outputs.py` để kiểm 91 điều kiện về số liệu tham chiếu và 55 ảnh 3840×2160. Bộ kiểm này dành cho cấu hình mặc định; không dùng để bác bỏ các thí nghiệm đã chủ động đổi seed hoặc tham số.
+Khi dùng `run_all.py --seed N`, chương trình truyền N cho cả split Fashion của Bài 09 và `--split-seed` của Bài 10 để giữ cùng tập ảnh. Sau lượt `--mode all` mặc định, có thể chạy `python validate_outputs.py` để kiểm 107 điều kiện về số liệu tham chiếu và 71 ảnh 3840×2160. Bộ kiểm này dành cho cấu hình mặc định; không dùng để bác bỏ các thí nghiệm đã chủ động đổi seed hoặc tham số.
 
 `run_tests.py` chạy **60 kiểm thử** toán học, đối chiếu thư viện và các trường hợp biên, không cần tải dataset. [Workflow CI](.github/workflows/tests.yml) cài thư viện rồi chạy các kiểm thử và toàn bộ ví dụ nhỏ. CI không tự tải bộ dữ liệu thật. Kết quả chạy thật và giới hạn tái lập được lưu trong [báo cáo kiểm tra](docs/KIEM_TRA_TONG_THE.md).
 
@@ -149,3 +149,7 @@ Số liệu trên các tập test công khai đã có trong bộ bài giảng. V
 Repository gồm mã, 10 tài liệu đọc trước, hình, bảng tham chiếu, hướng dẫn và cấu hình kiểm tra. `.gitignore` loại các archive dữ liệu tải mới, output của chương trình và venv. [Hướng dẫn GitHub](docs/GITHUB.md) dành cho giảng viên đăng bộ này lên `ml4vn/MachineLearning`; sinh viên dùng mục cài đặt và bảng bài học ở trên.
 
 [Ghi chú đối chiếu học liệu](docs/DOI_CHIEU_HOC_LIEU.md) giải thích các mức độ đơn giản hóa và khác biệt số học nhỏ giữa tài liệu với mã. PDF và Word được giữ nguyên theo bản đã kiểm tra, đối chiếu SHA256 trong [manifest tài liệu](docs/reading_manifest.json). Chưa tự áp một giấy phép mở cho toàn bộ giáo trình; điều kiện của dữ liệu bên thứ ba được ghi riêng và không thay đổi theo giấy phép mã nguồn sau này.
+
+## Lộ trình thực hành cập nhật
+
+Mỗi bài có hướng dẫn **dự đoán → chạy → đối chiếu → giải thích**, bảng nối với slide và hình `summary_v3.png`. Xem [phạm vi cập nhật Python v3](docs/PYTHON_V3.md) và [kết quả kiểm tra](docs/KIEM_TRA_PYTHON_V3.md).

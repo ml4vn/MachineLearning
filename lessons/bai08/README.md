@@ -1,8 +1,11 @@
 # Bài 08 · K-means: từ hóa đơn thật đến nhóm khách hàng
 
+
+**Lộ trình thực hành cập nhật:** [Dự đoán → chạy → đối chiếu → giải thích](HUONG_DAN_V3.md). Tài liệu đọc trước v3; slide v3.
+
 [← Mục lục khóa học](../../README.md) · [📖 Tài liệu đọc trước Bài 08](../../readings/bai08/README.md)
 
-**Mục tiêu:** tự lập RFM, giải thích từng bước Lloyd, chọn cách biểu diễn và đọc cụm một cách có cơ sở. Bám sát Bài08_v2: dữ liệu → RFM → thuật toán → đánh giá → giới hạn. Cần biết vector, khoảng cách và trung bình; ôn Bài 01–02 khi cần.
+**Mục tiêu:** tự lập RFM, giải thích từng bước Lloyd, chọn cách biểu diễn và đọc cụm một cách có cơ sở. Bám sát Bài08_v3: dữ liệu → RFM → thuật toán → đánh giá → giới hạn. Cần biết vector, khoảng cách và trung bình; ôn Bài 01–02 khi cần.
 
 ## 1. Chạy bài
 
@@ -44,7 +47,7 @@ Chuẩn hóa ngày mua về đầu ngày trước khi trừ. M là tiền của 
 
 ## 4. Khoảng cách quyết định cách nhìn
 
-Dùng `log1p(R,F,M)`, sau đó StandardScaler với trung bình và độ lệch chuẩn của 4.338 khách. Đây là phân tích mô tả một ảnh chụp dữ liệu: chưa có mục tiêu đánh giá khả năng dự báo tương lai. Nếu xây dựng đánh giá ngoài mẫu, phải fit cả biến đổi trên tập huấn luyện.
+Theo slide: $r$ là RFM thô, $u=\log(1+r)$, $x=(u-m)/s$; $\mu_k$ chỉ tâm cụm. Mã dùng `X0`, `np.log1p(X0)`, `X` tương ứng. Dùng `log1p(R,F,M)`, sau đó StandardScaler với trung bình và độ lệch chuẩn của 4.338 khách. Đây là phân tích mô tả một ảnh chụp dữ liệu: chưa có mục tiêu đánh giá khả năng dự báo tương lai. Nếu xây dựng đánh giá ngoài mẫu, phải fit cả biến đổi trên tập huấn luyện.
 
 Log giảm ảnh hưởng đuôi dài; chuẩn hóa đặt ba tọa độ trên thang so sánh được. Với RFM thô, phương sai tiền chiếm gần toàn bộ tổng phương sai; silhouette cao vẫn có thể chỉ tách vài khách chi tiêu đặc biệt lớn. Không so trực tiếp SSE thô với SSE đã chuẩn hóa vì chúng thuộc hai không gian khác nhau.
 

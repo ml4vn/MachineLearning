@@ -1,0 +1,59 @@
+{
+  "lesson": 6,
+  "reading_version": "v3",
+  "slide_version": "v3",
+  "slide_manifest_sha256": "627a8b1ba2563df099b1129a74afd490d7addcf5c1b1b58055f11458d08bb1a9",
+  "recap_title": "Từ đếm lớp đến một cây có kiểm soát",
+  "stages": [
+    {
+      "title": "Đo mức lẫn",
+      "explain": "Tại mỗi nút, p là tỷ lệ lớp trễ; p=0,5 lẫn nhiều nhất.",
+      "formula": "$G=1-p^2-(1-p)^2$"
+    },
+    {
+      "title": "Chọn và lặp",
+      "explain": "Quét nhát cắt; chọn giảm Gini lớn nhất rồi lặp tại các nút con.",
+      "formula": "$\\Delta G=G-\\sum_c(n_c/n)G_c$"
+    },
+    {
+      "title": "Kiểm soát cây",
+      "explain": "So độ sâu hoặc cắt tỉa bằng validation; L(T) là tập các lá.",
+      "formula": "$R_\\alpha(T)=R(T)+\\alpha|L(T)|$"
+    }
+  ],
+  "takeaway": "CART tham lam tại từng nút; nhiều lá hơn chưa bảo đảm tốt hơn trên dữ liệu mới.",
+  "question": "Nút gốc có 6/12 đơn trễ. Sau chia: trái 4/4, phải 2/8. Tính Gini sau chia và mức giảm.",
+  "answer": "Gốc 0,5; trái 0; phải 0,375. Sau chia = (4/12)×0+(8/12)×0,375=0,25; mức giảm=0,25.",
+  "outputs": [
+    "toy_gini_trace.png",
+    "toy_tree.png",
+    "toy_complexity.png",
+    "toy_root_candidates.csv"
+  ],
+  "slide_sections": [
+    {
+      "start": 13,
+      "end": 20,
+      "first_title": "Gini: mức lẫn nhãn tại một nút",
+      "last_title": "Tổng kết: cách tính và so sánh Gini"
+    },
+    {
+      "start": 21,
+      "end": 34,
+      "first_title": "Q3 · Mẫu số và trọng số",
+      "last_title": "CART chạy trên 12 đơn như thế nào?"
+    },
+    {
+      "start": 36,
+      "end": 46,
+      "first_title": "Độ sâu, số lá và tổng số nút",
+      "last_title": "Tổng kết: CART, độ phức tạp và cắt tỉa"
+    },
+    {
+      "start": 48,
+      "end": 67,
+      "first_title": "Trở lại dữ liệu Olist: ba tập theo thời gian",
+      "last_title": "Tổng quan Bài 6"
+    }
+  ]
+}

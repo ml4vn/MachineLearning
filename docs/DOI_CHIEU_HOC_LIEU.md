@@ -23,7 +23,7 @@ Một khác biệt số học đã được ghi rõ ở Bài 10: tài liệu ghi
 
 Mỗi README được tạo từ toàn bộ `content.json` v3, gồm 105 bảng, 56 hình minh họa, 101 công thức và 60 câu tự kiểm. PDF/Word được sao chép nguyên vẹn từ bộ v3 đã duyệt: 141 trang, Bài 6 có 15 trang và các bài còn lại có 14 trang. SHA256 của cả 20 tệp khớp biên bản nguồn.
 
-Tài liệu Bài 7 thuộc đợt cập nhật v3 nhưng đối chiếu slide v2. Python chưa được nâng cấp trong đợt này: Bài 3 còn minh họa ngưỡng 0,85 thay vì 0,80; Bài 4 còn thiếu trực quan mặt 3D J(w,b) và cần đối chiếu quy ước dấu sai số; Bài 10 cần nối ký hiệu và minh họa một đường gradient với slide mới. Các thuật toán hiện có vẫn dùng được, nhưng sinh viên cần đọc đúng cấu hình ví dụ trước khi so số liệu.
+Tài liệu Bài 7 thuộc đợt cập nhật v3 nhưng đối chiếu slide v2. Python đã được đồng bộ hướng dẫn và minh họa: Bài 3 dùng ngưỡng 0,80; Bài 4 bổ sung mặt 3D J(w,b) và thống nhất dấu sai số; Bài 10 nối ký hiệu và thêm một đường gradient trước khi đọc toàn bộ mạng. Xem [phạm vi và cách tái tạo](PYTHON_V3.md). Mã thuật toán, seed, dữ liệu và cách chia tập được giữ nguyên.
 
 Để tái tạo hoặc kiểm bản Markdown sau khi chủ động sửa `content.json`:
 

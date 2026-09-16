@@ -1,3 +1,5 @@
+> Kế hoạch gốc của phiên bản trước. Kế hoạch đối chiếu hiện tại: [Hướng dẫn v3](HUONG_DAN_V3.md) và [phạm vi cập nhật](../../docs/PYTHON_V3.md).
+
 # Bài 02 — kNN và chuẩn hóa đặc trưng
 
 ## Rà soát và kế hoạch trước khi viết mã

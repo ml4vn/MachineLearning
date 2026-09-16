@@ -1,10 +1,13 @@
 # Bài 03 · Đánh giá bộ phân loại
 
+
+**Lộ trình thực hành cập nhật:** [Dự đoán → chạy → đối chiếu → giải thích](HUONG_DAN_V3.md). Tài liệu đọc trước v3; slide v3.
+
 [← Mục lục khóa học](../../README.md) · [📖 Tài liệu đọc trước Bài 03](../../readings/bai03/README.md)
 
 **PGS.TS Nguyễn Văn Hậu** · Thời lượng gợi ý: 60–90 phút phần chính, 30 phút mở rộng.
 
-Bạn sẽ đi từ **điểm số → quyết định → bốn nhóm lỗi → chỉ số → chính sách cảnh báo**. Bài thực hành bám sát 64 slide Bài 03 v2 và nối trực tiếp case SMS của Bài 02. Không cần chạy Bài 02 trước: bài này tự đọc dữ liệu, chia tập và fit lại mô hình tham chiếu.
+Bạn sẽ đi từ **điểm số → quyết định → bốn nhóm lỗi → chỉ số → chính sách cảnh báo**. Bài thực hành bám sát slide Bài 03 v3 và nối trực tiếp case SMS của Bài 02. Không cần chạy Bài 02 trước: bài này tự đọc dữ liệu, chia tập và fit lại mô hình tham chiếu.
 
 ## 1. Chuẩn bị và chạy
 
@@ -20,7 +23,7 @@ python -m unittest lessons.bai03.tests -v
 Thử thay ngưỡng mô phỏng, giữ riêng kết quả thí nghiệm:
 
 ```bash
-python -m lessons.bai03.main --mode toy --threshold 0.85 --output-dir outputs/bai03_t085
+python -m lessons.bai03.main --mode toy --threshold 0.80 --output-dir outputs/bai03_t080
 python lessons/bai03/main.py --mode real
 ```
 
@@ -50,7 +53,7 @@ Nếu mẫu số bằng 0, hàm trả `None`, JSON ghi `null`; ô CSV để tr�
 
 Với t = 0,5: TP = 4, FP = 2, FN = 0, TN = 4. Accuracy = 0,8; precision = 2/3; recall = 1; F1 = 0,8. Kiểm tra lề: TP + FN luôn là 4 spam; TN + FP luôn là 6 ham.
 
-Với t = 0,85, precision = 2/3. Tăng t lên 0,90, precision giảm còn 1/2. Số cảnh báo và recall không tăng khi tăng ngưỡng trên cùng một tập điểm; precision không có bảo đảm đơn điệu tương tự.
+Với t = 0,80, precision = 2/3. Tăng t lên 0,90, precision giảm còn 1/2. Số cảnh báo và recall không tăng khi tăng ngưỡng trên cùng một tập điểm; precision không có bảo đảm đơn điệu tương tự.
 
 ## 4. Dữ liệu thật và mô hình cố định
 
@@ -102,7 +105,7 @@ Có **năm** PNG cho một lần chạy `all`: `toy_confusion`, `real_confusion`
 4. Có nên chọn lại ngưỡng sau khi xem chi phí test không?
 5. Nếu mô hình cho một tin 11/11 phiếu, tin đó chắc chắn spam chưa?
 
-**Đáp án:** 1 FP. 2 Chưa, recall spam bằng 0. 3 Không, ví dụ 0,85 → 0,90 làm precision giảm. 4 Không trong quy trình báo cáo test đã chốt; nếu phát triển tiếp phải ghi nhận test đã được dùng và có tập đánh giá phù hợp. 5 Chưa, đó là phiếu láng giềng, chưa chứng minh hiệu chuẩn hoặc độ chắc chắn.
+**Đáp án:** 1 FP. 2 Chưa, recall spam bằng 0. 3 Không, ví dụ 0,80 → 0,90 làm precision giảm. 4 Không trong quy trình báo cáo test đã chốt; nếu phát triển tiếp phải ghi nhận test đã được dùng và có tập đánh giá phù hợp. 5 Chưa, đó là phiếu láng giềng, chưa chứng minh hiệu chuẩn hoặc độ chắc chắn.
 
 ## 9. Bài tập có hướng giải
 

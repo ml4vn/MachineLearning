@@ -1,0 +1,52 @@
+{
+  "lesson": 8,
+  "reading_version": "v3",
+  "slide_version": "v3",
+  "slide_manifest_sha256": "50f54504ca2219482251b18696a444bc2c95b06826aaf713e59ed398f8a72f03",
+  "recap_title": "Biểu diễn RFM rồi mới gom cụm",
+  "stages": [
+    {
+      "title": "Tạo tọa độ",
+      "explain": "r là RFM thô; u=log(1+r); x là u đã chuẩn hóa.",
+      "formula": "$r\\to u\\to x$"
+    },
+    {
+      "title": "Lặp hai bước",
+      "explain": "Giữ tâm để gán cụm; giữ nhãn để tính trung bình cụm.",
+      "formula": "$J=\\sum_i\\|x_i-\\mu_{c_i}\\|^2$"
+    },
+    {
+      "title": "Đọc chất lượng",
+      "explain": "Silhouette so gần trong cụm với xa tới cụm khác; không phải accuracy.",
+      "formula": "$s(i)=(b(i)-a(i))/\\max(a(i),b(i))$"
+    }
+  ],
+  "takeaway": "μ chỉ tâm cụm; trung bình và độ lệch chuẩn tiền xử lý là m và s. SSE khác hệ tọa độ không so trực tiếp.",
+  "question": "Với cụm {0,2} và {10,12}, hãy tính a, b và silhouette của điểm 2.",
+  "answer": "a=2; b=(8+10)/2=9; silhouette=(9−2)/9=7/9≈0,777778.",
+  "outputs": [
+    "toy_half_steps.png",
+    "toy_silhouette.png",
+    "toy_lloyd_history.json"
+  ],
+  "slide_sections": [
+    {
+      "start": 5,
+      "end": 20,
+      "first_title": "Bốn dòng mua của khách 12755",
+      "last_title": "Biểu diễn quyết định cách đo gần"
+    },
+    {
+      "start": 22,
+      "end": 40,
+      "first_title": "K và tâm cụm",
+      "last_title": "Câu 4 · Dừng và tối ưu"
+    },
+    {
+      "start": 44,
+      "end": 55,
+      "first_title": "Silhouette: gần nhóm mình, xa nhóm khác",
+      "last_title": "Đánh giá và lựa chọn số cụm"
+    }
+  ]
+}
