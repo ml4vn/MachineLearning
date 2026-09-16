@@ -36,6 +36,11 @@
   },
   {
     "file": "formula_08.png",
+    "latex": "K=c_{FP}FP+c_{FN}FN",
+    "meaning": "K là tổng chi phí trên tập đang đánh giá; c là chi phí cho một lỗi tương ứng. Hệ số chi phí do bối cảnh quyết định, không tự suy ra từ accuracy."
+  },
+  {
+    "file": "formula_09.png",
     "latex": "\\mathrm{Accuracy}=\\frac{16}{20}=0.8,\\quad P=R=\\frac{3}{5}=0.6,\\quad F_1=\\frac{6}{6+2+2}=0.6",
     "meaning": "Hai mẫu số precision và recall tình cờ cùng bằng 5. Chúng vẫn là hai tập khác nhau. TP = 3, FP = 5 − 3 = 2, FN = 5 − 3 = 2, TN = 20 − 3 − 2 − 2 = 13."
   }

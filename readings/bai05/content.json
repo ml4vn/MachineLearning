@@ -56,7 +56,71 @@
         {
           "type": "cue",
           "kind": "try",
-          "text": "**Cách học:** dự kiến 30–40 phút, không cần lập trình. Ôn scaler ở bài 2, ma trận nhầm lẫn ở bài 3 và cập nhật gradient ở bài 4. Làm mục 9 trước khi xem phụ lục A."
+          "text": "**Cách học:** dự kiến 40–50 phút, không cần lập trình. Ôn scaler ở bài 2, ma trận nhầm lẫn ở bài 3 và cập nhật gradient ở bài 4. Làm mục 9 trước khi xem phụ lục A."
+        }
+      ]
+    },
+    {
+      "title": "Lộ trình đọc và đối chiếu với bài giảng",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 5, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+        },
+        {
+          "type": "h",
+          "text": "Đọc để chuẩn bị điều gì"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Từ điểm tuyến tính đến xác suất",
+            "BCE và một bước gradient",
+            "Chọn ngưỡng theo K = FP + 5FN",
+            "AP, AUC và vai trò của L2"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Slide",
+            "Mốc ôn tập trong bài giảng"
+          ],
+          "rows": [
+            [
+              "17",
+              "Một dự đoán Logistic"
+            ],
+            [
+              "23",
+              "BCE: từ một mẫu đến cả tập"
+            ],
+            [
+              "36",
+              "Học Logistic: khởi tạo rồi lặp"
+            ],
+            [
+              "59",
+              "Đánh giá theo đúng thứ tự"
+            ],
+            [
+              "65",
+              "Bài 5 · Từ đơn hàng đến quyết định"
+            ]
+          ],
+          "widths": [
+            0.7,
+            6.1
+          ]
+        },
+        {
+          "type": "cue",
+          "kind": "remember",
+          "text": "Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp."
         }
       ]
     },
@@ -540,7 +604,7 @@
         },
         {
           "type": "p",
-          "text": "Giả định lớp học: chi phí C=FP+5FN, tức bỏ lọt nặng bằng năm cảnh báo nhầm. Quét sáu ngưỡng dưới đây; nếu hòa chọn ít cảnh báo hơn, rồi ngưỡng lớn hơn. C trong chi phí này khác tham số C=1 của mức phạt trong phần mềm."
+          "text": "Giả định lớp học: chi phí K=FP+5FN, tức bỏ lọt nặng bằng năm cảnh báo nhầm. Quét sáu ngưỡng dưới đây; nếu hòa chọn ít cảnh báo hơn, rồi ngưỡng lớn hơn. K trong chi phí này khác tham số C=1 của mức phạt trong phần mềm."
         },
         {
           "type": "table",
@@ -629,6 +693,73 @@
           "type": "cue",
           "kind": "remember",
           "text": "**Kết luận có giới hạn:** có đánh đổi trên tập đã chọn, chưa đủ bằng chứng để triển khai. Không gọi 446 là tiền tiết kiệm, không suy cảnh báo đã làm giảm trễ, và không coi đổi ngưỡng là cải thiện xác suất p."
+        }
+      ]
+    },
+    {
+      "title": "Đọc AP và AUC trước khi chọn mô hình",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ngưỡng biến xác suất thành nhãn; AP và ROC-AUC đánh giá khả năng xếp hạng qua nhiều ngưỡng. Validation là tập dùng để so sánh các lựa chọn, không phải một loại AUC mới."
+        },
+        {
+          "type": "equation",
+          "tex": "AP=\\sum_j(R_j-R_{j-1})P_j",
+          "meaning": "P và R là precision và recall tại các mức điểm giảm dần; AP cộng precision có trọng số theo phần recall tăng thêm. Không đồng nhất AP với mọi cách tính diện tích đường PR.",
+          "width": null
+        },
+        {
+          "type": "table",
+          "head": [
+            "Xếp hạng từ cao xuống",
+            "Nhãn thật",
+            "Precision nếu dừng ở đây"
+          ],
+          "rows": [
+            [
+              "1",
+              "1",
+              "1"
+            ],
+            [
+              "2",
+              "0",
+              "1/2"
+            ],
+            [
+              "3",
+              "1",
+              "2/3"
+            ],
+            [
+              "4",
+              "0",
+              "1/2"
+            ]
+          ],
+          "widths": [
+            2.4,
+            1.4,
+            3
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Hai mẫu dương xuất hiện ở hạng 1 và 3, nên AP = (1 + 2/3)/2 = 5/6. Trong bốn cặp dương–âm, điểm dương cao hơn ba lần, nên ROC-AUC = 3/4. Nếu bằng điểm, một cặp được tính nửa điểm."
+        },
+        {
+          "type": "h",
+          "text": "Hai chữ cần phân biệt"
+        },
+        {
+          "type": "p",
+          "text": "K = FP + 5FN là chi phí cảnh báo. C của LogisticRegression điều khiển mức regularization: C nhỏ hơn tương ứng phạt mạnh hơn trong cùng cách thiết lập. C không phải learning rate η."
+        },
+        {
+          "type": "cue",
+          "kind": "try",
+          "text": "Tự kiểm: AP cao có bảo đảm ít FN tại ngưỡng 0,5 không? Không; xếp hạng và quyết định ở một ngưỡng là hai câu hỏi khác nhau."
         }
       ]
     },
@@ -751,7 +882,7 @@
         },
         {
           "type": "p",
-          "text": "Bám Bài 05 v2, slide 1–30, 32–60; mở rộng 61–68. Kèm bảng mô hình, dự đoán, toy bốn hàng, hai ví dụ ngày lịch và cấu hình đã khóa. Mọi điểm dự đoán được tái tính và đối chiếu bản slide; các bảng số đếm được tính lại từ CSV."
+          "text": "Đối chiếu Bài 5 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm bảng mô hình, dự đoán, toy bốn hàng, hai ví dụ ngày lịch và cấu hình đã khóa. Mọi điểm dự đoán được tái tính và đối chiếu bản slide; các bảng số đếm được tính lại từ CSV."
         },
         {
           "type": "link",
@@ -853,7 +984,7 @@
         },
         {
           "type": "p",
-          "text": "Đây là ví dụ mô phỏng giữ từ slide mở rộng, không phải Olist. Ở mỗi nhóm x có đúng một nhãn 1; số còn lại là nhãn 0. Tổng 19 quan sát và 4 nhãn 1."
+          "text": "Đây là ví dụ mô phỏng đọc thêm tùy chọn, không phải Olist. Ở mỗi nhóm x có đúng một nhãn 1; số còn lại là nhãn 0. Tổng 19 quan sát và 4 nhãn 1."
         },
         {
           "type": "table",
@@ -954,5 +1085,7 @@
       "label": "[4] Stanford CS229 Logistic regression",
       "url": "https://cs229.stanford.edu/notes2022fall/main_notes.pdf"
     }
-  ]
+  ],
+  "reading_version": "v3",
+  "slide_version": "v3"
 }

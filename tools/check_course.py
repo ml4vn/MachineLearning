@@ -22,8 +22,8 @@ def main() -> None:
         number = item["lesson"]
         folder = ROOT / "readings" / f"bai{number:02d}"
         content = json.loads((folder / "content.json").read_text(encoding="utf-8"))
-        if len(content["pages"]) != 12 or content["lesson"] != number:
-            errors.append(f"Bài {number}: không đủ 10 mục và 2 phụ lục")
+        if len(content["pages"]) != item["pdf_pages"] or content["lesson"] != number:
+            errors.append(f"Bài {number}: số mục/trang không khớp manifest")
         if (folder / "README.md").read_text(encoding="utf-8") != render_reading(content):
             errors.append(f"Bài {number}: Markdown chưa đồng bộ content.json")
         for page in content["pages"]:
@@ -63,7 +63,7 @@ def main() -> None:
     if errors:
         print("\n".join(errors))
         raise SystemExit(1)
-    print(json.dumps({"passed": True, "lessons": 10, "pdf_pages_in_original_exports": 120, "unchanged_source_files": copied_count, "local_links_checked": links, "content_blocks": counts}, ensure_ascii=False, indent=2))
+    print(json.dumps({"passed": True, "lessons": 10, "pdf_pages": sum(x["pdf_pages"] for x in manifest["lessons"]), "verified_files": copied_count, "local_links_checked": links, "content_blocks": counts}, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

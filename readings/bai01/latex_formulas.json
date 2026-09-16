@@ -31,16 +31,21 @@
   },
   {
     "file": "formula_07.png",
+    "latex": "\\cos(x,y)=\\frac{x^{\\mathsf{T}}y}{\\|x\\|\\|y\\|}",
+    "meaning": "Chỉ tính khi cả hai vector khác 0. Điểm cao biểu thị gần hướng trong cách biểu diễn đã chọn, không phải xác suất người xem thích phim."
+  },
+  {
+    "file": "formula_08.png",
     "latex": "u^{\\mathsf{T}}v=1,\\quad\\|u\\|_2=\\|v\\|_2=\\sqrt{2},\\quad\\operatorname{cos}(u,v)=\\frac{1}{2}",
     "meaning": "Chỉ Action đóng góp vào dot. Mẫu số là √2 × √2 = 2. Hai vector đều khác 0; cosine bằng 0,5."
   },
   {
-    "file": "formula_08.png",
+    "file": "formula_09.png",
     "latex": "\\operatorname{cos}(cu,v)=\\frac{c\\,u^{\\mathsf{T}}v}{|c|\\,\\|u\\|_2\\|v\\|_2}=\\operatorname{cos}(u,v),\\quad c>0",
     "meaning": "Chuẩn của cu bằng |c| nhân chuẩn u. Với c dương, tử và mẫu rút gọn cùng hệ số. Với c âm, cosine đổi dấu; với c bằng 0, công thức mất điều kiện."
   },
   {
-    "file": "formula_09.png",
+    "file": "formula_10.png",
     "latex": "\\|\\widehat u-\\widehat v\\|_2^2=2-2\\operatorname{cos}(u,v)",
     "meaning": "Hai vector mũ ở đây là vector đơn vị của u và v. Khai triển bình phương chuẩn của hiệu: mỗi chuẩn bình phương bằng 1; tích vô hướng của hai vector đơn vị chính là cosine."
   }

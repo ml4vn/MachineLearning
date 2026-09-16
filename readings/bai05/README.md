@@ -4,24 +4,28 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang](Bai05_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai05_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai05/README.md)
+[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai05_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai05_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai05/README.md)
+
+**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
 ## Mục lục
 
 - [1 Bài học này giải quyết vấn đề gì](#muc-1)
-- [2 Bạn cần biết gì trước khi bắt đầu](#muc-2)
-- [3 Dữ liệu của bài học trông như thế nào](#muc-3)
-- [4 Ý tưởng chính của phương pháp là gì](#muc-4)
-- [5 Những khái niệm và công thức nào cần nắm](#muc-5)
-- [6 Phương pháp được thực hiện như thế nào](#muc-6)
-- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-7)
-- [8 Đọc kết quả và tránh hiểu nhầm](#muc-8)
-- [9 Tự kiểm tra trước khi đến lớp](#muc-9)
-- [10 Những điều cần nhớ](#muc-10)
-- [Phụ lục A Đáp án có giải thích](#muc-11)
-- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-12)
+- [Lộ trình đọc và đối chiếu với bài giảng](#muc-2)
+- [2 Bạn cần biết gì trước khi bắt đầu](#muc-3)
+- [3 Dữ liệu của bài học trông như thế nào](#muc-4)
+- [4 Ý tưởng chính của phương pháp là gì](#muc-5)
+- [5 Những khái niệm và công thức nào cần nắm](#muc-6)
+- [6 Phương pháp được thực hiện như thế nào](#muc-7)
+- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-8)
+- [8 Đọc kết quả và tránh hiểu nhầm](#muc-9)
+- [Đọc AP và AUC trước khi chọn mô hình](#muc-10)
+- [9 Tự kiểm tra trước khi đến lớp](#muc-11)
+- [10 Những điều cần nhớ](#muc-12)
+- [Phụ lục A Đáp án có giải thích](#muc-13)
+- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-14)
 
 <a id="muc-1"></a>
 
@@ -46,9 +50,34 @@ Bài 4 dự đoán đơn Olist mất bao nhiêu ngày để giao. Bài 5 hỏi *
 - Tính một bước gradient từ bốn hàng mô phỏng.
 - Giải thích vì sao đổi ngưỡng có đánh đổi và vì sao accuracy cao chưa đủ.
 
-> ✏️ **Cách học:** dự kiến 30–40 phút, không cần lập trình. Ôn scaler ở bài 2, ma trận nhầm lẫn ở bài 3 và cập nhật gradient ở bài 4. Làm mục 9 trước khi xem phụ lục A.
+> ✏️ **Cách học:** dự kiến 40–50 phút, không cần lập trình. Ôn scaler ở bài 2, ma trận nhầm lẫn ở bài 3 và cập nhật gradient ở bài 4. Làm mục 9 trước khi xem phụ lục A.
 
 <a id="muc-2"></a>
+
+## Lộ trình đọc và đối chiếu với bài giảng
+
+Bản tài liệu cập nhật v3 • Đối chiếu Bài 5, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+
+### Đọc để chuẩn bị điều gì
+
+- Từ điểm tuyến tính đến xác suất
+- BCE và một bước gradient
+- Chọn ngưỡng theo K = FP + 5FN
+- AP, AUC và vai trò của L2
+
+Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học.
+
+| Slide | Mốc ôn tập trong bài giảng |
+| --- | --- |
+| 17 | Một dự đoán Logistic |
+| 23 | BCE: từ một mẫu đến cả tập |
+| 36 | Học Logistic: khởi tạo rồi lặp |
+| 59 | Đánh giá theo đúng thứ tự |
+| 65 | Bài 5 · Từ đơn hàng đến quyết định |
+
+> 📌 Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp.
+
+<a id="muc-3"></a>
 
 ## 2 Bạn cần biết gì trước khi bắt đầu
 
@@ -73,7 +102,7 @@ Lớp dương là **trễ = 1**. Cảnh báo khi p ≥ τ; không cảnh báo kh
 
 > ✏️ **K1:** p=0,2 bằng bao nhiêu phần trăm? **K2:** khi z=0, tính p=1/(1+exp(−z)), rồi áp dụng ngưỡng τ=0,5. Chú ý dấu bằng. Đáp án ở phụ lục A.
 
-<a id="muc-3"></a>
+<a id="muc-4"></a>
 
 ## 3 Dữ liệu của bài học trông như thế nào
 
@@ -102,7 +131,7 @@ Train: duyệt 01–10/2017 và giao trước 01/11/2017. Validation: duyệt 11
 
 > 📌 **Giới hạn dữ liệu:** chỉ đơn đã giao và đủ điều kiện. 16 đơn thiếu toàn bộ khối lượng bị tổng hợp thành 0 trong bảng đóng băng; đó không phải đo được 0 gram. Giữ bảng để khớp slide, sửa xử lý thiếu cần thí nghiệm mới.
 
-<a id="muc-4"></a>
+<a id="muc-5"></a>
 
 ## 4 Ý tưởng chính của phương pháp là gì
 
@@ -129,7 +158,7 @@ Dùng một tọa độ x với w=0,4; b=−2 và x=3. Khi đó z=−0,8 và p�
 
 > 🔎 **Vì sao không dùng thẳng z?** Điểm tuyến tính không bị chặn trong [0,1]. Có thể dùng nhiều cách tạo mô hình phân loại; logistic chọn giả định log-odds tuyến tính và hàm sigmoid, không phải lựa chọn duy nhất có đầu ra xác suất.
 
-<a id="muc-5"></a>
+<a id="muc-6"></a>
 
 ## 5 Những khái niệm và công thức nào cần nắm
 
@@ -159,7 +188,7 @@ Loss train trong tính tay là BCE trung bình, không có phạt, với n>0. Kh
 
 > ✏️ **Dừng để kiểm:** cùng p=0,8 nhưng y đổi từ 1 sang 0 thì loss tăng hay giảm? Dùng đường đúng trên hình trước khi bấm máy.
 
-<a id="muc-6"></a>
+<a id="muc-7"></a>
 
 ## 6 Phương pháp được thực hiện như thế nào
 
@@ -196,7 +225,7 @@ Tính các gradient tại cùng bộ tham số cũ rồi cập nhật đồng th
 
 > 📌 **Đúng quy trình:** fit tiền xử lý và mô hình trên train; chọn ngưỡng trên validation theo mục tiêu định trước; khóa trước khi đọc test. Trong bộ bài, test lịch sử đã được xem ở pilot nên lần trình bày lại không là kiểm độc lập mới.
 
-<a id="muc-7"></a>
+<a id="muc-8"></a>
 
 ## 7 Cùng làm một ví dụ từ đầu đến cuối
 
@@ -229,7 +258,7 @@ BCE trung bình giảm từ ln 2 ≈ 0,6931 xuống 0,4886. Hàng B vẫn bị c
 
 > 📌 Ví dụ này chỉ để nhìn quá trình cập nhật. Bốn điểm phân tách hoàn toàn nên logistic không phạt không có nghiệm tối ưu hữu hạn; không dùng loss giảm để khẳng định mọi bài đều có nghiệm hữu hạn duy nhất.
 
-<a id="muc-8"></a>
+<a id="muc-9"></a>
 
 ## 8 Đọc kết quả và tránh hiểu nhầm
 
@@ -237,7 +266,7 @@ Mô hình thật dùng sáu đặc trưng như mục 3. Đơn fc9bc4ba… của 
 
 ### Chọn ngưỡng trên validation, theo tiêu chí đã định
 
-Giả định lớp học: chi phí C=FP+5FN, tức bỏ lọt nặng bằng năm cảnh báo nhầm. Quét sáu ngưỡng dưới đây; nếu hòa chọn ít cảnh báo hơn, rồi ngưỡng lớn hơn. C trong chi phí này khác tham số C=1 của mức phạt trong phần mềm.
+Giả định lớp học: chi phí K=FP+5FN, tức bỏ lọt nặng bằng năm cảnh báo nhầm. Quét sáu ngưỡng dưới đây; nếu hòa chọn ít cảnh báo hơn, rồi ngưỡng lớn hơn. K trong chi phí này khác tham số C=1 của mức phạt trong phần mềm.
 
 | Ngưỡng τ | 0,05 | 0,10 | 0,15 | 0,20 | 0,30 | 0,50 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -258,7 +287,34 @@ Tại τ=0,50, accuracy=91,36% nhưng recall=0 vì không cảnh báo đơn nào
 
 > 📌 **Kết luận có giới hạn:** có đánh đổi trên tập đã chọn, chưa đủ bằng chứng để triển khai. Không gọi 446 là tiền tiết kiệm, không suy cảnh báo đã làm giảm trễ, và không coi đổi ngưỡng là cải thiện xác suất p.
 
-<a id="muc-9"></a>
+<a id="muc-10"></a>
+
+## Đọc AP và AUC trước khi chọn mô hình
+
+Ngưỡng biến xác suất thành nhãn; AP và ROC-AUC đánh giá khả năng xếp hạng qua nhiều ngưỡng. Validation là tập dùng để so sánh các lựa chọn, không phải một loại AUC mới.
+
+```math
+AP=\sum_j(R_j-R_{j-1})P_j
+```
+
+P và R là precision và recall tại các mức điểm giảm dần; AP cộng precision có trọng số theo phần recall tăng thêm. Không đồng nhất AP với mọi cách tính diện tích đường PR.
+
+| Xếp hạng từ cao xuống | Nhãn thật | Precision nếu dừng ở đây |
+| --- | --- | --- |
+| 1 | 1 | 1 |
+| 2 | 0 | 1/2 |
+| 3 | 1 | 2/3 |
+| 4 | 0 | 1/2 |
+
+Hai mẫu dương xuất hiện ở hạng 1 và 3, nên AP = (1 + 2/3)/2 = 5/6. Trong bốn cặp dương–âm, điểm dương cao hơn ba lần, nên ROC-AUC = 3/4. Nếu bằng điểm, một cặp được tính nửa điểm.
+
+### Hai chữ cần phân biệt
+
+K = FP + 5FN là chi phí cảnh báo. C của LogisticRegression điều khiển mức regularization: C nhỏ hơn tương ứng phạt mạnh hơn trong cùng cách thiết lập. C không phải learning rate η.
+
+> ✏️ Tự kiểm: AP cao có bảo đảm ít FN tại ngưỡng 0,5 không? Không; xếp hạng và quyết định ở một ngưỡng là hai câu hỏi khác nhau.
+
+<a id="muc-11"></a>
 
 ## 9 Tự kiểm tra trước khi đến lớp
 
@@ -290,7 +346,7 @@ Làm trước khi đọc phụ lục A. Ghi cả phép tính và câu giải th�
 
 > ✏️ **Tự đánh giá:** nhãn ngày lịch → câu 1; mô hình/quyết định → câu 2; odds → câu 3; học tham số → câu 4,5; đọc bằng chứng → câu 6.
 
-<a id="muc-10"></a>
+<a id="muc-12"></a>
 
 ## 10 Những điều cần nhớ
 
@@ -313,7 +369,7 @@ Làm trước khi đọc phụ lục A. Ghi cả phép tính và câu giải th�
 
 ### Nguồn và dữ liệu để kiểm lại
 
-Bám Bài 05 v2, slide 1–30, 32–60; mở rộng 61–68. Kèm bảng mô hình, dự đoán, toy bốn hàng, hai ví dụ ngày lịch và cấu hình đã khóa. Mọi điểm dự đoán được tái tính và đối chiếu bản slide; các bảng số đếm được tính lại từ CSV.
+Đối chiếu Bài 5 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm bảng mô hình, dự đoán, toy bốn hàng, hai ví dụ ngày lịch và cấu hình đã khóa. Mọi điểm dự đoán được tái tính và đối chiếu bản slide; các bảng số đếm được tính lại từ CSV.
 
 [\[1\] Olist Brazilian E-Commerce Public Dataset Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
@@ -325,7 +381,7 @@ Bám Bài 05 v2, slide 1–30, 32–60; mở rộng 61–68. Kèm bảng mô hì
 
 > 🔎 **Nối sang bài 6:** giữ case Olist và mục tiêu để so cách mô hình hóa. Cây quyết định dùng các câu hỏi chia nhánh; nhiều nhánh hơn không tự bảo đảm chất lượng tốt hơn trên dữ liệu mới.
 
-<a id="muc-11"></a>
+<a id="muc-13"></a>
 
 ## Phụ lục A Đáp án có giải thích
 
@@ -361,13 +417,13 @@ Vì y=1, loss=−ln p. Với p=0,8: loss≈0,2231; p=0,2: loss≈1,6094. Log c�
 
 > ✏️ **Ôn theo lỗi:** câu 1 → mục 3; câu 2 → mục 4; câu 3,5 → mục 5; câu 4 → mục 6–7; câu 6 → mục 8.
 
-<a id="muc-12"></a>
+<a id="muc-14"></a>
 
 ## Phụ lục B Kiến thức mở rộng tùy chọn
 
 ### 19 quan sát thiết kế để kiểm một quan hệ đẹp
 
-Đây là ví dụ mô phỏng giữ từ slide mở rộng, không phải Olist. Ở mỗi nhóm x có đúng một nhãn 1; số còn lại là nhãn 0. Tổng 19 quan sát và 4 nhãn 1.
+Đây là ví dụ mô phỏng đọc thêm tùy chọn, không phải Olist. Ở mỗi nhóm x có đúng một nhãn 1; số còn lại là nhãn 0. Tổng 19 quan sát và 4 nhãn 1.
 
 | x | Số quan sát | Số nhãn 1 | Tần suất | Odds từ tần suất |
 | --- | --- | --- | --- | --- |

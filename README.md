@@ -4,13 +4,13 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-Khóa học gồm **10 tài liệu đọc trước và 10 bài thực hành Python hoàn chỉnh**. Mỗi bài dẫn từ dữ liệu và ví dụ tính tay đến thuật toán, chương trình chạy được, hình minh họa và kết quả kiểm chứng. Học liệu bám các bài giảng v2, dành cho sinh viên cần nhìn rõ từng bước trước khi mở rộng mô hình.
+Khóa học gồm **10 tài liệu đọc trước và 10 bài thực hành Python hoàn chỉnh**. Mỗi bài dẫn từ dữ liệu và ví dụ tính tay đến thuật toán, chương trình chạy được, hình minh họa và kết quả kiểm chứng. Tài liệu đọc trước đã cập nhật **v3**, đối chiếu slide v3 của Bài 1–6 và 8–10; riêng Bài 7 đối chiếu slide v2 hiện có. Bộ thực hành Python vẫn theo phiên bản trước. Xem [đối chiếu phiên bản](docs/DOI_CHIEU_HOC_LIEU.md) và [nhật ký cập nhật](docs/CAP_NHAT_DOC_TRUOC_V3.md).
 
 Repository: [ml4vn/MachineLearning](https://github.com/ml4vn/MachineLearning).
 
 ## Đọc trước rồi thực hành
 
-Mở **Đọc trực tiếp** để học ngay trên GitHub với bảng, hình và công thức. Chọn **PDF** để đọc/in theo bố cục 12 trang mỗi bài, **Word** để tải bản có thể chỉnh sửa. Khi đã hiểu ví dụ, chuyển sang **Python** của cùng bài. Tài liệu đọc trước không yêu cầu đã biết lập trình.
+Mở **Đọc trực tiếp** để học ngay trên GitHub với bảng, hình và công thức. Chọn **PDF** để đọc/in theo bố cục 14 trang mỗi bài, riêng Bài 6 có 15 trang (tổng 141 trang), **Word** để tải bản có thể chỉnh sửa. Khi đã hiểu ví dụ, chuyển sang **Python** của cùng bài. Tài liệu đọc trước không yêu cầu đã biết lập trình.
 
 | Bài | Nội dung | Đọc trực tiếp | PDF | Word | Python |
 |---|---|---|---|---|---|
@@ -25,7 +25,7 @@ Mở **Đọc trực tiếp** để học ngay trên GitHub với bảng, hình 
 | 09 | PCA | [Đọc](readings/bai09/README.md) | [PDF](readings/bai09/Bai09_Kien_thuc_nen_tang_va_doc_truoc.pdf) | [Word](readings/bai09/Bai09_Kien_thuc_nen_tang_va_doc_truoc.docx) | [Thực hành](lessons/bai09/README.md) |
 | 10 | Mạng neural | [Đọc](readings/bai10/README.md) | [PDF](readings/bai10/Bai10_Kien_thuc_nen_tang_va_doc_truoc.pdf) | [Word](readings/bai10/Bai10_Kien_thuc_nen_tang_va_doc_truoc.docx) | [Thực hành](lessons/bai10/README.md) |
 
-Mỗi tài liệu giữ cùng 10 mục: vấn đề → tiên quyết → dữ liệu → ý tưởng → khái niệm/công thức → quy trình → ví dụ → đọc kết quả → tự kiểm → ghi nhớ. Có phụ lục đáp án giải thích và kiến thức mở rộng. Đọc trước khoảng 30–40 phút là dự kiến, điều chỉnh theo tốc độ của người học.
+Mỗi tài liệu giữ cùng 10 mục: vấn đề → tiên quyết → dữ liệu → ý tưởng → khái niệm/công thức → quy trình → ví dụ → đọc kết quả → tự kiểm → ghi nhớ. Có phụ lục đáp án giải thích và kiến thức mở rộng. Thời gian đọc dự kiến được ghi trong từng bài; điều chỉnh theo tốc độ của người học. Bản v3 bổ sung các phần kết nối với slide và tổng kết trực quan.
 
 ![Ví dụ gradient descent](docs/figures/bai04.png)
 

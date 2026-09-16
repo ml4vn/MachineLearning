@@ -26,26 +26,31 @@
   },
   {
     "file": "formula_06.png",
+    "latex": "J(w,b)=\\frac{1}{8}\\sum_{i=1}^{4}(wx_i+b-y_i)^2",
+    "meaning": "Bốn điểm là (1,3), (2,4), (3,6), (4,7). Mỗi cặp tham số (w,b) xác định một đường dự đoán và một độ cao J."
+  },
+  {
+    "file": "formula_07.png",
     "latex": "g_w=\\frac{-3-0.5-0.5-3}{4}=-1.75,\\qquad w_1=0-0.4(-1.75)=0.7",
     "meaning": "J ban đầu = (4+1+1+4)/8 = 1,25. Sau bước đầu, dự đoán là 3,95; 4,65; 5,35; 6,05 và J = 0,33125. Tính loss bằng dự đoán mới để kiểm tác dụng thật của bước."
   },
   {
-    "file": "formula_07.png",
+    "file": "formula_08.png",
     "latex": "\\widehat y=7.908191785+0.005639149\\,x",
     "meaning": "Ở đây x theo km, ŷ theo ngày. Đơn có khoảng cách 400 km cho dự đoán khoảng 10,16 ngày. Các hệ số học từ train, không phải đường mô phỏng của mục 7."
   },
   {
-    "file": "formula_08.png",
+    "file": "formula_09.png",
     "latex": "\\mathrm{MAE}=\\frac{1}{n}\\sum_{i=1}^{n}|e_i|,\\qquad\\mathrm{RMSE}=\\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}e_i^2}",
     "meaning": "Trong công thức đánh giá này, n là số đơn ở tập đang chấm. MAE và RMSE đều theo ngày; RMSE nhạy hơn với những sai số có độ lớn lớn vì bình phương trước khi lấy trung bình."
   },
   {
-    "file": "formula_09.png",
+    "file": "formula_10.png",
     "latex": "w_{\\mathrm{new}}=0.5-0.1(-2)=0.7",
     "meaning": "w tăng 0,2 vì trừ một số âm. Đây là hướng giảm cục bộ của J; chưa bảo đảm mọi độ dài bước đều giảm loss. Ôn mục 5 nếu nhầm dấu."
   },
   {
-    "file": "formula_10.png",
+    "file": "formula_11.png",
     "latex": "J(w)=0.625w^2-1.75w+1.25,\\qquad J^{\\prime}(w)=1.25w-1.75",
     "meaning": "Đây là hàm sau khi đặt z=x−2,5 và giữ chặn trung tâm a=5 cho bốn điểm mô phỏng. Không dùng nguyên các hệ số này cho dữ liệu Olist thật."
   }

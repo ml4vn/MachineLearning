@@ -35,7 +35,71 @@
         {
           "type": "cue",
           "kind": "try",
-          "text": "**Cách học:** dành khoảng 30–40 phút, chuẩn bị giấy và máy tính căn. Đọc mục 1–8, làm mục 9 rồi xem phụ lục A. Không cần lập trình; phụ lục B dành cho người muốn hiểu sâu hơn."
+          "text": "**Cách học:** dành khoảng 40–50 phút, chuẩn bị giấy và máy tính căn. Đọc mục 1–8, làm mục 9 rồi xem phụ lục A. Không cần lập trình; phụ lục B dành cho người muốn hiểu sâu hơn."
+        }
+      ]
+    },
+    {
+      "title": "Lộ trình đọc và đối chiếu với bài giảng",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 2, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+        },
+        {
+          "type": "h",
+          "text": "Đọc để chuẩn bị điều gì"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Khoảng cách giữa hai tin nhắn",
+            "Chuẩn hóa chỉ từ train",
+            "Bỏ phiếu của k láng giềng",
+            "Chọn k trên validation"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Slide",
+            "Mốc ôn tập trong bài giảng"
+          ],
+          "rows": [
+            [
+              "14",
+              "Tổng kết · Văn bản thành hai tọa độ"
+            ],
+            [
+              "29",
+              "Tổng kết · Từ khoảng cách đến một dự đoán"
+            ],
+            [
+              "40",
+              "Tổng kết · Một hệ tọa độ cho mọi tập"
+            ],
+            [
+              "54",
+              "Tổng kết · Kiểm từng bước của thực nghiệm"
+            ],
+            [
+              "60",
+              "Tổng quan · kNN học từ láng giềng"
+            ]
+          ],
+          "widths": [
+            0.7,
+            6.1
+          ]
+        },
+        {
+          "type": "cue",
+          "kind": "remember",
+          "text": "Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp."
         }
       ]
     },
@@ -537,6 +601,64 @@
       ]
     },
     {
+      "title": "Kết nối trực quan từ khoảng cách đến lựa chọn k",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Với mỗi tin nhắn mới, KNN đo khoảng cách tới các điểm train, lấy k điểm gần nhất rồi bỏ phiếu. Validation dùng để chọn k; test dùng để báo cáo sau khi đã khóa lựa chọn."
+        },
+        {
+          "type": "equation",
+          "tex": "z_j=\\frac{x_j-\\mu_j}{s_j}",
+          "meaning": "Trung bình μ và độ lệch chuẩn s được ước lượng trên train. Dùng nguyên các giá trị này để biến đổi validation, test và tin nhắn mới.",
+          "width": null
+        },
+        {
+          "type": "table",
+          "head": [
+            "Bước",
+            "Câu hỏi cần trả lời"
+          ],
+          "rows": [
+            [
+              "Biểu diễn",
+              "Độ dài tin nhắn và tỷ lệ chữ số có đơn vị/thang đo gì?"
+            ],
+            [
+              "Chuẩn hóa",
+              "Đã dùng thống kê của train chưa?"
+            ],
+            [
+              "Tìm láng giềng",
+              "Khoảng cách được tính trong cùng không gian đã chuẩn hóa chưa?"
+            ],
+            [
+              "Bỏ phiếu",
+              "Đang dùng k nào? Có quy tắc xử lý hòa phiếu không?"
+            ],
+            [
+              "Chọn mô hình",
+              "Chọn k bằng F1 validation, không bằng kết quả test."
+            ]
+          ],
+          "widths": [
+            1.5,
+            5.3
+          ]
+        },
+        {
+          "type": "cue",
+          "kind": "remember",
+          "text": "Case-study dùng k = 11 vì F1 validation tốt nhất trong các giá trị đã thử. Đây không phải khẳng định k = 11 tốt cho mọi dữ liệu."
+        },
+        {
+          "type": "cue",
+          "kind": "try",
+          "text": "Tự kiểm: vì sao không fit scaler trên toàn bộ dữ liệu? Vì thống kê của tập giữ lại sẽ đi vào quá trình xây dựng mô hình."
+        }
+      ]
+    },
+    {
       "title": "9 Tự kiểm tra trước khi đến lớp",
       "blocks": [
         {
@@ -665,7 +787,7 @@
         },
         {
           "type": "p",
-          "text": "Bám Bài 2 v2, slide 2–7, 11–30, 36–56. Số liệu và mã bản ghi khớp các CSV kèm tài liệu; bản SMS gốc giữ ở Bai02_v2/data. Dữ liệu UCI công bố theo CC BY 4.0; đã ghi tác giả và nguồn."
+          "text": "Đối chiếu Bài 2 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Số liệu và mã bản ghi khớp các CSV kèm tài liệu; bản SMS gốc giữ ở Bai02_v2/data. Dữ liệu UCI công bố theo CC BY 4.0; đã ghi tác giả và nguồn."
         },
         {
           "type": "link",
@@ -834,5 +956,7 @@
       "label": "[3] scikit-learn 1.6 StandardScaler",
       "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.preprocessing.StandardScaler.html"
     }
-  ]
+  ],
+  "reading_version": "v3",
+  "slide_version": "v3"
 }

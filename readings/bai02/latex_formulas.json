@@ -26,6 +26,11 @@
   },
   {
     "file": "formula_06.png",
+    "latex": "z_j=\\frac{x_j-\\mu_j}{s_j}",
+    "meaning": "Trung bình μ và độ lệch chuẩn s được ước lượng trên train. Dùng nguyên các giá trị này để biến đổi validation, test và tin nhắn mới."
+  },
+  {
+    "file": "formula_07.png",
     "latex": "d^2(z_x,z_p)=\\sum_{j=1}^{D}\\frac{(x_j-p_j)^2}{\\sigma_j^2}",
     "meaning": "Sau chuẩn hóa dùng chung μ, σ, hai trung bình triệt tiêu khi lấy chênh lệch. Chia σ thay đổi tỷ trọng; chỉ trừ trung bình không đổi khoảng cách đôi một."
   }

@@ -4,24 +4,28 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang](Bai07_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai07_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai07/README.md)
+[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai07_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai07_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai07/README.md)
+
+**Tài liệu đọc trước v3 · Đối chiếu slide v2.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
 ## Mục lục
 
 - [1 Bài học này giải quyết vấn đề gì](#muc-1)
-- [2 Bạn cần biết gì trước khi bắt đầu](#muc-2)
-- [3 Dữ liệu của bài học trông như thế nào](#muc-3)
-- [4 Ý tưởng chính của phương pháp là gì](#muc-4)
-- [5 Những khái niệm và công thức nào cần nắm](#muc-5)
-- [6 Phương pháp được thực hiện như thế nào](#muc-6)
-- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-7)
-- [8 Đọc kết quả và tránh hiểu nhầm](#muc-8)
-- [9 Tự kiểm tra trước khi đến lớp](#muc-9)
-- [10 Những điều cần nhớ](#muc-10)
-- [Phụ lục A Đáp án có giải thích](#muc-11)
-- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-12)
+- [Lộ trình đọc và đối chiếu với bài giảng](#muc-2)
+- [2 Bạn cần biết gì trước khi bắt đầu](#muc-3)
+- [3 Dữ liệu của bài học trông như thế nào](#muc-4)
+- [4 Ý tưởng chính của phương pháp là gì](#muc-5)
+- [5 Những khái niệm và công thức nào cần nắm](#muc-6)
+- [6 Phương pháp được thực hiện như thế nào](#muc-7)
+- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-8)
+- [8 Đọc kết quả và tránh hiểu nhầm](#muc-9)
+- [Nối quy trình kiểm chứng với các bài đã cập nhật](#muc-10)
+- [9 Tự kiểm tra trước khi đến lớp](#muc-11)
+- [10 Những điều cần nhớ](#muc-12)
+- [Phụ lục A Đáp án có giải thích](#muc-13)
+- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-14)
 
 <a id="muc-1"></a>
 
@@ -40,9 +44,31 @@ Một cách dự đoán trễ Olist đạt accuracy 100%. Trước khi tin kết
 - Đặt tiền xử lý đúng trong mỗi lần chia train/validation.
 - Chọn cách chia theo thời gian hoặc nhóm cho đúng mục tiêu đánh giá.
 
-> ✏️ Dự kiến 30–40 phút; ôn scaler bài 2 và chỉ số bài 3. Không cần chạy Python. Hãy làm mục 9 trước khi xem đáp án; phần mở rộng là tùy chọn.
+> ✏️ Dự kiến 40–50 phút; ôn scaler bài 2 và chỉ số bài 3. Không cần chạy Python. Hãy làm mục 9 trước khi xem đáp án; phần mở rộng là tùy chọn.
 
 <a id="muc-2"></a>
+
+## Lộ trình đọc và đối chiếu với bài giảng
+
+Bản tài liệu cập nhật v3 • Đối chiếu Bài 7, slide v2. Bài 7 chưa có slide v3 trong bộ nguồn; tài liệu này ghi đúng nguồn v2 và cập nhật kết nối với các bài còn lại.
+
+### Đọc để chuẩn bị điều gì
+
+- Thông tin nào có tại lúc dự đoán
+- Chia theo thời gian hoặc nhóm
+- Fit mọi phép biến đổi trên train
+- Tách chọn mô hình khỏi báo cáo test
+
+Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học.
+
+| Slide | Mốc ôn tập trong bài giảng |
+| --- | --- |
+| 28 | Tóm tắt trước giờ nghỉ |
+| 47 | Phiếu kiểm năm câu |
+
+> 📌 Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp.
+
+<a id="muc-3"></a>
 
 ## 2 Bạn cần biết gì trước khi bắt đầu
 
@@ -66,7 +92,7 @@ Một chỉ số có thể tính đúng trên một quy trình không hợp lệ
 
 > ✏️ **K1:** 10 đơn có 8 đúng hạn, 2 trễ; luôn dự đoán không trễ thì accuracy và recall lớp trễ là bao nhiêu? **K2:** scaler dùng lại trung bình train cho điểm mới là fit hay transform?
 
-<a id="muc-3"></a>
+<a id="muc-4"></a>
 
 ## 3 Dữ liệu của bài học trông như thế nào
 
@@ -87,7 +113,7 @@ Tên cột và tương quan với nhãn không đủ xác nhận tính hợp l�
 
 > 📌 Một dòng là một đơn sau tổng hợp mặt hàng. Bảng hiện tại chỉ gồm đơn đã giao đủ điều kiện; khác quần thể tất cả đơn đang mở tại một thời điểm.
 
-<a id="muc-4"></a>
+<a id="muc-5"></a>
 
 ## 4 Ý tưởng chính của phương pháp là gì
 
@@ -107,7 +133,7 @@ Pipeline ghép các bước, giúp fit đúng tập trong mỗi fold. Nó không
 
 > ✏️ Nếu đưa “ngày giao thực tế” vào một Pipeline hoàn chỉnh rồi dự đoán ở lúc duyệt, lỗi còn ở đâu? Câu trả lời: thông tin tương lai vẫn nằm trong đầu vào.
 
-<a id="muc-5"></a>
+<a id="muc-6"></a>
 
 ## 5 Những khái niệm và công thức nào cần nắm
 
@@ -137,7 +163,7 @@ Con số đúng vì q chứa thông tin tạo nhãn. q chưa có lúc duyệt n�
 
 > 📌 Cần chỉ rõ cột nào vượt ranh giới thông tin và tại sao; không dùng một ngưỡng accuracy để kết luận rò rỉ.
 
-<a id="muc-6"></a>
+<a id="muc-7"></a>
 
 ## 6 Phương pháp được thực hiện như thế nào
 
@@ -159,7 +185,7 @@ Hình chỉ giải thích cơ chế K-fold thông thường [3]. Với dữ li�
 
 > ✏️ **Dừng để kiểm:** ở fold 3, scaler học từ các hàng nào? Đáp án: 1,2,3,4; hàng 5,6 chỉ được transform.
 
-<a id="muc-7"></a>
+<a id="muc-8"></a>
 
 ## 7 Cùng làm một ví dụ từ đầu đến cuối
 
@@ -188,7 +214,7 @@ Khoảng cách đổi tỷ lệ nhưng thứ tự không đổi trong ví dụ m
 
 > 📌 Không tổng quát phản ví dụ một chiều thành mọi bài toán nhiều chiều; từng tọa độ có thể bị đổi tỷ lệ khác nhau.
 
-<a id="muc-8"></a>
+<a id="muc-9"></a>
 
 ## 8 Đọc kết quả và tránh hiểu nhầm
 
@@ -209,7 +235,24 @@ Mô phỏng có 200 nhóm ×4 dòng, nhãn cố định ngẫu nhiên trong nhó
 
 > 📌 Olist có 363 khách xuất hiện cả train và test. Điều này có thể phù hợp mục tiêu dự đoán đơn tương lai của khách cũ; cần giữ nhóm riêng nếu đánh giá khách hoàn toàn mới. Không cộng chênh lệch điểm từ các quần thể khác nhau thành “thiệt hại rò rỉ”.
 
-<a id="muc-9"></a>
+<a id="muc-10"></a>
+
+## Nối quy trình kiểm chứng với các bài đã cập nhật
+
+Bài 7 hiện đối chiếu với slide v2, là bản mới nhất có trong bộ nguồn. Các nguyên tắc dưới đây liên kết trực tiếp với case-study trong Bài 2–6 và các phép biến đổi trong Bài 8–10.
+
+| Tình huống | Cách làm đúng |
+| --- | --- |
+| Scaler trong KNN hoặc RFM | Fit trên dữ liệu được phép dùng để xây dựng mô hình; giữ lại tập kiểm chứng theo mục tiêu đánh giá. |
+| Ngưỡng cảnh báo Olist | Chọn bằng validation và chi phí đã định nghĩa; khóa trước khi báo cáo test. |
+| PCA trước phân loại | Fit trung bình và các hướng PCA trên train; transform validation và test. |
+| Mạng nơ-ron | Dùng validation để chọn checkpoint; test không chọn epoch. |
+
+Nếu dự đoán ở thời điểm duyệt đơn, ngày giao hàng thực tế chưa tồn tại. Không dùng nó làm đặc trưng. Nhãn train cũng phải đã quan sát được tại thời điểm cắt dữ liệu.
+
+> ✏️ Tự kiểm: chia ngẫu nhiên có luôn sai không? Không. Cách chia phải mô phỏng đúng loại dữ liệu mới sẽ gặp: tương lai, khách hàng mới hoặc mẫu độc lập cùng phân phối.
+
+<a id="muc-11"></a>
 
 ## 9 Tự kiểm tra trước khi đến lớp
 
@@ -239,7 +282,7 @@ Mô phỏng có 200 nhóm ×4 dòng, nhãn cố định ngẫu nhiên trong nhó
 
 > ✏️ Mục tiêu tự kiểm: thời điểm → 1,4; công cụ/quy trình → 2,3,5; giới hạn bằng chứng → 6.
 
-<a id="muc-10"></a>
+<a id="muc-12"></a>
 
 ## 10 Những điều cần nhớ
 
@@ -271,7 +314,7 @@ Bám Bài 07 v2, 54 slide chính và 6 mở rộng. Mã đi kèm tính lại nh�
 
 > 🔎 Nối sang bài 8: phân cụm không có nhãn đích để học nhưng vẫn cần mục tiêu, mốc chốt dữ liệu và giới hạn diễn giải rõ ràng.
 
-<a id="muc-11"></a>
+<a id="muc-13"></a>
 
 ## Phụ lục A Đáp án có giải thích
 
@@ -307,7 +350,7 @@ B. Bộ nhớ hưởng lợi từ nhóm đã thấy, đúng cơ chế và số �
 
 > ✏️ Ôn câu 1,4 ở mục 3,8; câu 2,3,5 ở mục 4–7; câu 6 ở mục 8.
 
-<a id="muc-12"></a>
+<a id="muc-14"></a>
 
 ## Phụ lục B Kiến thức mở rộng tùy chọn
 

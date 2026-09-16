@@ -4,24 +4,28 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang](Bai01_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai01_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai01/README.md)
+[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai01_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai01_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai01/README.md)
+
+**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
 ## Mục lục
 
 - [1 Bài học này giải quyết vấn đề gì](#muc-1)
-- [2 Bạn cần biết gì trước khi bắt đầu](#muc-2)
-- [3 Dữ liệu của bài học trông như thế nào](#muc-3)
-- [4 Ý tưởng chính của phương pháp là gì](#muc-4)
-- [5 Những khái niệm và công thức nào cần nắm](#muc-5)
-- [6 Phương pháp được thực hiện như thế nào](#muc-6)
-- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-7)
-- [8 Đọc kết quả và tránh hiểu nhầm](#muc-8)
-- [9 Tự kiểm tra trước khi đến lớp](#muc-9)
-- [10 Những điều cần nhớ](#muc-10)
-- [Phụ lục A Đáp án có giải thích](#muc-11)
-- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-12)
+- [Lộ trình đọc và đối chiếu với bài giảng](#muc-2)
+- [2 Bạn cần biết gì trước khi bắt đầu](#muc-3)
+- [3 Dữ liệu của bài học trông như thế nào](#muc-4)
+- [4 Ý tưởng chính của phương pháp là gì](#muc-5)
+- [5 Những khái niệm và công thức nào cần nắm](#muc-6)
+- [6 Phương pháp được thực hiện như thế nào](#muc-7)
+- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-8)
+- [8 Đọc kết quả và tránh hiểu nhầm](#muc-9)
+- [Kết nối trực quan từ vector đến đề xuất phim](#muc-10)
+- [9 Tự kiểm tra trước khi đến lớp](#muc-11)
+- [10 Những điều cần nhớ](#muc-12)
+- [Phụ lục A Đáp án có giải thích](#muc-13)
+- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-14)
 
 <a id="muc-1"></a>
 
@@ -42,9 +46,34 @@ Bạn muốn tìm những phim có nhãn gần với **The Matrix**. Một ngư�
 - Phân biệt điểm 0 với trường hợp công thức không xác định.
 - Đọc thứ hạng và giải thích giới hạn của biểu diễn.
 
-> ✏️ **Cách học:** đọc 10 mục chính, làm câu hỏi ở mục 9 rồi đối chiếu phụ lục A. Chuẩn bị giấy và máy tính căn bậc hai. Không cần biết Python; phụ lục B là tùy chọn. Dành khoảng 30–40 phút, điều chỉnh theo tốc độ của bạn.
+> ✏️ **Cách học:** đọc 10 mục chính, làm câu hỏi ở mục 9 rồi đối chiếu phụ lục A. Chuẩn bị giấy và máy tính căn bậc hai. Không cần biết Python; phụ lục B là tùy chọn. Dành khoảng 40–50 phút, điều chỉnh theo tốc độ của bạn.
 
 <a id="muc-2"></a>
+
+## Lộ trình đọc và đối chiếu với bài giảng
+
+Bản tài liệu cập nhật v3 • Đối chiếu Bài 1, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+
+### Đọc để chuẩn bị điều gì
+
+- Biểu diễn phim thành vector
+- Tích vô hướng và độ dài
+- Cosine và cách xếp hạng
+- Kiểm tra giới hạn của biểu diễn
+
+Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học.
+
+| Slide | Mốc ôn tập trong bài giảng |
+| --- | --- |
+| 12 | Tổng kết · Nhãn phim thành vector |
+| 22 | Tổng kết · Dot chuẩn L2 và cosine |
+| 35 | Tổng kết · Tính và đọc một điểm cosine |
+| 43 | Tổng kết · Khi nào được diễn giải cosine |
+| 56 | Tổng quan · Biểu diễn quyết định cách so sánh |
+
+> 📌 Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp.
+
+<a id="muc-3"></a>
 
 ## 2 Bạn cần biết gì trước khi bắt đầu
 
@@ -69,7 +98,7 @@ Chuẩn L2 đo độ dài mũi tên từ gốc đến (3; 4). Số 25 là bình 
 
 > ✏️ **Kiểm nhanh:** (K1) tính 2×1 + 0×3 + 1×2; (K2) tính √(1² + 1² + 0²). Nếu vướng, làm theo thứ tự bình phương → cộng → căn. Đáp án ở phụ lục A.
 
-<a id="muc-3"></a>
+<a id="muc-4"></a>
 
 ## 3 Dữ liệu của bài học trông như thế nào
 
@@ -96,7 +125,7 @@ Giữ thứ tự **Action → Comedy → Sci-Fi**. Mỗi vị trí bằng 1 nế
 
 Các phim trên được chọn có chủ đích để minh họa, không phải mẫu ngẫu nhiên của kho. Số 0 ở Comedy chỉ nói nhãn này không xuất hiện trong bản ghi; nó không phải điểm đánh giá 0 sao hay nhận xét về mọi cảnh phim.
 
-<a id="muc-4"></a>
+<a id="muc-5"></a>
 
 ## 4 Ý tưởng chính của phương pháp là gì
 
@@ -120,7 +149,7 @@ Ví dụ (3; 4) chia cho 5 thành (0,6; 0,8). Hai tọa độ không bằng 1, n
 
 > 📌 **Giữ đúng phạm vi hình:** các hình phẳng ở đây giải thích hướng và độ dài. Không bỏ một tọa độ của vector phim rồi xem góc 2D là góc chính xác của vector 3D.
 
-<a id="muc-5"></a>
+<a id="muc-6"></a>
 
 ## 5 Những khái niệm và công thức nào cần nắm
 
@@ -152,7 +181,7 @@ u^{\mathsf{T}}v=\sum_{j=1}^{d}u_jv_j
 
 > 📌 **Miền giá trị:** cosine của vector thực khác 0 thuộc [−1; 1]; với mọi tọa độ không âm thì thuộc [0; 1]. Cosine không có đơn vị. Không chia dot cho số chiều để thay mẫu số.
 
-<a id="muc-6"></a>
+<a id="muc-7"></a>
 
 ## 6 Phương pháp được thực hiện như thế nào
 
@@ -175,7 +204,7 @@ Khi có nhiều phim, máy tính lặp lại cùng quy trình. Muốn kiểm cà
 
 > ✏️ **Tự nói lại:** trước khi bấm phép chia, bạn cần kiểm hai điều gì? Hãy nêu điều kiện về tọa độ và điều kiện về chuẩn.
 
-<a id="muc-7"></a>
+<a id="muc-8"></a>
 
 ## 7 Cùng làm một ví dụ từ đầu đến cuối
 
@@ -206,7 +235,7 @@ Kết luận: hai phim có cosine khoảng 0,8165 **theo ba nhãn đã chọn**.
 
 > 🔎 **Kiểm kết quả:** Star Wars và Jurassic Park đồng hạng; Toy Story có chuẩn 1 nên điểm 0 hoàn toàn xác định. Hãy che hàng Alien và tự tính lại trước khi đọc tiếp.
 
-<a id="muc-8"></a>
+<a id="muc-9"></a>
 
 ## 8 Đọc kết quả và tránh hiểu nhầm
 
@@ -226,7 +255,30 @@ Với đủ nhãn, The Matrix có 3 nhãn. Star Wars có 3 nhãn và chung 2, n�
 
 > 📌 **Điều kiện sử dụng:** Casablanca có Drama và Romance nên thành vector 0 trên ba trục hiện tại; cosine không xác định. Toy Story có Comedy nên khác vector 0, dù cosine với Matrix bằng 0.
 
-<a id="muc-9"></a>
+<a id="muc-10"></a>
+
+## Kết nối trực quan từ vector đến đề xuất phim
+
+Một vector không tự biết nội dung phim. Ta chọn các trục đặc trưng, rồi mới dùng hình học để so sánh. Với ba trục Action, Comedy, Sci-Fi, mỗi số 1 nghĩa là phim có thể loại tương ứng.
+
+```math
+\cos(x,y)=\frac{x^{\mathsf{T}}y}{\|x\|\|y\|}
+```
+
+Chỉ tính khi cả hai vector khác 0. Điểm cao biểu thị gần hướng trong cách biểu diễn đã chọn, không phải xác suất người xem thích phim.
+
+| Phim | Vector | Điều cần thấy |
+| --- | --- | --- |
+| The Matrix | (1, 0, 1) | Mốc so sánh |
+| Star Wars | (1, 0, 1) | Giống hoàn toàn trong ba trục này |
+| Men in Black | (1, 1, 1) | Thêm Comedy nên hướng thay đổi |
+| Casablanca | (0, 0, 0) | Chưa được mô tả bằng ba trục này |
+
+Mở rộng lên nhiều thể loại có thể đổi thứ hạng. Vì vậy, phải hỏi “giống theo đặc trưng nào?” trước khi đọc danh sách đề xuất.
+
+> ✏️ Tự kiểm: nhân vector khác 0 với 3 có đổi cosine không? Không, vì tích vô hướng và độ dài cùng được nhân 3.
+
+<a id="muc-11"></a>
 
 ## 9 Tự kiểm tra trước khi đến lớp
 
@@ -262,7 +314,7 @@ Làm trước khi xem phụ lục A. Với câu trắc nghiệm, chọn một đ
 
 > ✏️ **Mang đến lớp:** một phép tính bạn tự kiểm được và một câu hỏi còn vướng. Có thể chọn bất kỳ hai phim trong bảng mục 3 để thực hiện quy trình mục 6.
 
-<a id="muc-10"></a>
+<a id="muc-12"></a>
 
 ## 10 Những điều cần nhớ
 
@@ -285,7 +337,7 @@ Một điểm tương tự chỉ có ý nghĩa sau khi ta xác định rõ đố
 
 ### Nguồn để đọc và kiểm lại
 
-Nhãn và phép tính trong tài liệu bám slide Bài 1 v2, đặc biệt các slide 5–21, 23–42 và 44–51. Dữ liệu latest có thể thay đổi; khi tái lập, dùng bản movies.csv đi kèm. [1] mô tả dữ liệu; [2] mô tả phép tính và quy ước thư viện.
+Đối chiếu Bài 1 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu latest có thể thay đổi; khi tái lập, dùng bản movies.csv đi kèm. [1] mô tả dữ liệu; [2] mô tả phép tính và quy ước thư viện.
 
 [\[1\] GroupLens MovieLens latest và README của bản dữ liệu](https://grouplens.org/datasets/movielens/latest/)
 
@@ -293,7 +345,7 @@ Nhãn và phép tính trong tài liệu bám slide Bài 1 v2, đặc biệt các
 
 **Nối sang bài 2:** khi chuyển sang SMS, ta cần định nghĩa lại đặc trưng và cách đo gần nhau, sau đó dùng nhãn của các láng giềng để dự đoán. Không mang nguyên các trục thể loại phim sang dữ liệu tin nhắn.
 
-<a id="muc-11"></a>
+<a id="muc-13"></a>
 
 ## Phụ lục A Đáp án có giải thích
 
@@ -329,7 +381,7 @@ The Matrix có 3 nhãn. Star Wars có 3, chung 2 nên cosine = 2/√9 = 2/3. Jur
 
 > ✏️ **Tự đánh giá:** nếu sai thao tác số, ôn mục 2 và 7; nếu sai ý nghĩa, ôn mục 3 và 8. Ghi bước chưa hiểu để hỏi trên lớp, thay vì chỉ chép đáp án.
 
-<a id="muc-12"></a>
+<a id="muc-14"></a>
 
 ## Phụ lục B Kiến thức mở rộng tùy chọn
 

@@ -19,11 +19,11 @@ Các con số cần so cùng dữ liệu, bộ lọc, tập train/validation/tes
 
 Một khác biệt số học đã được ghi rõ ở Bài 10: tài liệu ghi sai lệch gradient sai phân khoảng **7,55×10⁻¹¹**, còn hàm BCE ổn định số của bộ Python cho khoảng **4,12×10⁻¹¹** trong lần kiểm. Hai biểu thức BCE tương đương về toán học nhưng thứ tự phép tính số thực khác nhau. Cả hai đều xác nhận chín gradient tại điểm đang xét với sai lệch rất nhỏ; không dùng sự khác nhau này làm bằng chứng chất lượng mô hình.
 
-## Bản đọc trực tiếp trên GitHub
+## Bản đọc trực tiếp trên GitHub v3
 
-Mỗi README trong `readings/` được tạo từ toàn bộ `content.json`: đủ 10 mục và hai phụ lục, 86 bảng, 55 hình minh họa, 86 công thức và 60 câu tự kiểm của cả bộ. Câu tự kiểm này thuộc tài liệu đọc trước; bộ quiz 40 câu/bài là học liệu riêng, không thuộc gói đăng tải hiện tại.
+Mỗi README được tạo từ toàn bộ `content.json` v3, gồm 105 bảng, 56 hình minh họa, 101 công thức và 60 câu tự kiểm. PDF/Word được sao chép nguyên vẹn từ bộ v3 đã duyệt: 141 trang, Bài 6 có 15 trang và các bài còn lại có 14 trang. SHA256 của cả 20 tệp khớp biên bản nguồn.
 
-Đã sửa cách xuất Markdown: các hàng bảng liền nhau, ký tự `|` trong nhãn thể loại được escape, công thức dùng khối `math`, nguồn và liên kết chuyển sang đường dẫn phù hợp. Nội dung gốc trong PDF/DOCX không bị viết lại. Các tệp nhị phân được đối chiếu SHA256 với biên bản xuất trước đó; cả 10 PDF có 12 trang.
+Tài liệu Bài 7 thuộc đợt cập nhật v3 nhưng đối chiếu slide v2. Python chưa được nâng cấp trong đợt này: Bài 3 còn minh họa ngưỡng 0,85 thay vì 0,80; Bài 4 còn thiếu trực quan mặt 3D J(w,b) và cần đối chiếu quy ước dấu sai số; Bài 10 cần nối ký hiệu và minh họa một đường gradient với slide mới. Các thuật toán hiện có vẫn dùng được, nhưng sinh viên cần đọc đúng cấu hình ví dụ trước khi so số liệu.
 
 Để tái tạo hoặc kiểm bản Markdown sau khi chủ động sửa `content.json`:
 

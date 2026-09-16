@@ -31,7 +31,59 @@
         {
           "type": "cue",
           "kind": "try",
-          "text": "Dự kiến 30–40 phút; ôn scaler bài 2 và chỉ số bài 3. Không cần chạy Python. Hãy làm mục 9 trước khi xem đáp án; phần mở rộng là tùy chọn."
+          "text": "Dự kiến 40–50 phút; ôn scaler bài 2 và chỉ số bài 3. Không cần chạy Python. Hãy làm mục 9 trước khi xem đáp án; phần mở rộng là tùy chọn."
+        }
+      ]
+    },
+    {
+      "title": "Lộ trình đọc và đối chiếu với bài giảng",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 7, slide v2. Bài 7 chưa có slide v3 trong bộ nguồn; tài liệu này ghi đúng nguồn v2 và cập nhật kết nối với các bài còn lại."
+        },
+        {
+          "type": "h",
+          "text": "Đọc để chuẩn bị điều gì"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Thông tin nào có tại lúc dự đoán",
+            "Chia theo thời gian hoặc nhóm",
+            "Fit mọi phép biến đổi trên train",
+            "Tách chọn mô hình khỏi báo cáo test"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Slide",
+            "Mốc ôn tập trong bài giảng"
+          ],
+          "rows": [
+            [
+              "28",
+              "Tóm tắt trước giờ nghỉ"
+            ],
+            [
+              "47",
+              "Phiếu kiểm năm câu"
+            ]
+          ],
+          "widths": [
+            0.7,
+            6.1
+          ]
+        },
+        {
+          "type": "cue",
+          "kind": "remember",
+          "text": "Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp."
         }
       ]
     },
@@ -412,6 +464,53 @@
       ]
     },
     {
+      "title": "Nối quy trình kiểm chứng với các bài đã cập nhật",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bài 7 hiện đối chiếu với slide v2, là bản mới nhất có trong bộ nguồn. Các nguyên tắc dưới đây liên kết trực tiếp với case-study trong Bài 2–6 và các phép biến đổi trong Bài 8–10."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Tình huống",
+            "Cách làm đúng"
+          ],
+          "rows": [
+            [
+              "Scaler trong KNN hoặc RFM",
+              "Fit trên dữ liệu được phép dùng để xây dựng mô hình; giữ lại tập kiểm chứng theo mục tiêu đánh giá."
+            ],
+            [
+              "Ngưỡng cảnh báo Olist",
+              "Chọn bằng validation và chi phí đã định nghĩa; khóa trước khi báo cáo test."
+            ],
+            [
+              "PCA trước phân loại",
+              "Fit trung bình và các hướng PCA trên train; transform validation và test."
+            ],
+            [
+              "Mạng nơ-ron",
+              "Dùng validation để chọn checkpoint; test không chọn epoch."
+            ]
+          ],
+          "widths": [
+            2,
+            4.8
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Nếu dự đoán ở thời điểm duyệt đơn, ngày giao hàng thực tế chưa tồn tại. Không dùng nó làm đặc trưng. Nhãn train cũng phải đã quan sát được tại thời điểm cắt dữ liệu."
+        },
+        {
+          "type": "cue",
+          "kind": "try",
+          "text": "Tự kiểm: chia ngẫu nhiên có luôn sai không? Không. Cách chia phải mô phỏng đúng loại dữ liệu mới sẽ gặp: tương lai, khách hàng mới hoặc mẫu độc lập cùng phân phối."
+        }
+      ]
+    },
+    {
       "title": "9 Tự kiểm tra trước khi đến lớp",
       "blocks": [
         {
@@ -694,5 +793,7 @@
       "label": "[3] scikit-learn 1.6 – Cross-validation",
       "url": "https://scikit-learn.org/1.6/modules/cross_validation.html"
     }
-  ]
+  ],
+  "reading_version": "v3",
+  "slide_version": "v2"
 }

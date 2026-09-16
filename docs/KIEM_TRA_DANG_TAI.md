@@ -1,5 +1,7 @@
 # Kiểm tra bộ học liệu để đăng GitHub
 
+**Biên bản lịch sử của lần đóng gói v2 (13/09/2026).** Các số liệu 12 trang/bài và 120 trang bên dưới thuộc bản cũ. Trạng thái phát hành tài liệu đọc trước hiện tại được ghi trong [cập nhật v3](CAP_NHAT_DOC_TRUOC_V3.md) và [manifest hiện tại](reading_manifest.json).
+
 Đích phát hành: `ml4vn/MachineLearning`. Mô tả khóa học, giảng viên và đơn vị dùng đúng thông tin do chủ repository cung cấp.
 
 ## Nội dung và tính toàn vẹn

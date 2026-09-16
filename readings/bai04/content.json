@@ -60,7 +60,75 @@
         {
           "type": "cue",
           "kind": "try",
-          "text": "**Cách học:** dự kiến 30–40 phút; không cần lập trình. Chuẩn bị giấy nháp và máy tính. Hoàn thành 10 mục chính và sáu câu tự kiểm; phần learning rate nâng cao nằm ở phụ lục B."
+          "text": "**Cách học:** dự kiến 40–50 phút; không cần lập trình. Chuẩn bị giấy nháp và máy tính. Hoàn thành 10 mục chính và sáu câu tự kiểm; phần learning rate nâng cao nằm ở phụ lục B."
+        }
+      ]
+    },
+    {
+      "title": "Lộ trình đọc và đối chiếu với bài giảng",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 4, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+        },
+        {
+          "type": "h",
+          "text": "Đọc để chuẩn bị điều gì"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Từ dữ liệu đến đường hồi quy",
+            "Sai số và hàm J",
+            "Cập nhật đồng thời w, b",
+            "Đọc mặt 3D và đường đồng mức"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Slide",
+            "Mốc ôn tập trong bài giảng"
+          ],
+          "rows": [
+            [
+              "20",
+              "Tổng kết · Dự đoán, đo sai, rồi học"
+            ],
+            [
+              "32",
+              "Tổng kết · Một bước, hai cách nhìn"
+            ],
+            [
+              "42",
+              "Tổng kết · Vòng lặp Gradient Descent"
+            ],
+            [
+              "48",
+              "Chuẩn hóa · Vì sao đáp án D đúng?"
+            ],
+            [
+              "60",
+              "Tổng kết · Đọc kết quả cùng giới hạn"
+            ],
+            [
+              "65",
+              "Tổng quan · Một đường học từ sai số"
+            ]
+          ],
+          "widths": [
+            0.7,
+            6.1
+          ]
+        },
+        {
+          "type": "cue",
+          "kind": "remember",
+          "text": "Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp."
         }
       ]
     },
@@ -327,6 +395,32 @@
           "type": "cue",
           "kind": "try",
           "text": "**Tự nói lại:** nếu tính g_b bằng w vừa cập nhật, ta còn đang làm đúng bước GD đồng thời ở mục 5 không? Giải thích bằng thời điểm lấy sai số."
+        }
+      ]
+    },
+    {
+      "title": "Từ mặt chi phí 3D đến đường đồng mức",
+      "blocks": [
+        {
+          "type": "equation",
+          "tex": "J(w,b)=\\frac{1}{8}\\sum_{i=1}^{4}(wx_i+b-y_i)^2",
+          "meaning": "Bốn điểm là (1,3), (2,4), (3,6), (4,7). Mỗi cặp tham số (w,b) xác định một đường dự đoán và một độ cao J.",
+          "width": null
+        },
+        {
+          "type": "figure",
+          "name": "surface_v3",
+          "caption": "Mặt J theo hai tham số w và b. Điểm thấp nhất ở w = 1,4; b = 1,5; J = 0,025.",
+          "width": 5.6
+        },
+        {
+          "type": "p",
+          "text": "Nhìn từ trên xuống, nối các cặp (w,b) có cùng J ta được đường đồng mức. Trục w và b là tham số của mô hình, không phải hai đặc trưng đầu vào."
+        },
+        {
+          "type": "cue",
+          "kind": "remember",
+          "text": "Một bước gradient descent dùng cùng bộ tham số cũ để tính cả hai đạo hàm, rồi cập nhật đồng thời w và b. Bước quá lớn có thể vượt qua vùng chi phí thấp."
         }
       ]
     },
@@ -603,7 +697,7 @@
         },
         {
           "type": "p",
-          "text": "Bám Bài 04 v2: slide 1–45, 47–62; phần sâu ở 63–68. CSV bốn đơn thật có mã đầy đủ, bảng mô hình và bảng toy được kèm theo. Các phép tính tay, nhãn từ timestamps và MAE/RMSE đã được tái tính bằng nguồn dữ liệu này."
+          "text": "Đối chiếu Bài 4 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. CSV bốn đơn thật có mã đầy đủ, bảng mô hình và bảng toy được kèm theo. Các phép tính tay, nhãn từ timestamps và MAE/RMSE đã được tái tính bằng nguồn dữ liệu này."
         },
         {
           "type": "link",
@@ -751,5 +845,7 @@
       "label": "[3] Stanford CS229 Linear regression and LMS",
       "url": "https://cs229.stanford.edu/notes2022fall/main_notes.pdf"
     }
-  ]
+  ],
+  "reading_version": "v3",
+  "slide_version": "v3"
 }

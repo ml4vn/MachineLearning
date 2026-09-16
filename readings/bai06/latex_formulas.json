@@ -16,22 +16,37 @@
   },
   {
     "file": "formula_04.png",
+    "latex": "R(T)=\\sum_{\\ell\\in\\mathcal{L}(T)}\\frac{n_\\ell}{N}G(\\ell)",
+    "meaning": "T là cây; ℒ(T) là tập lá; nℓ là số mẫu tại lá ℓ; N là số mẫu train. R đo độ không thuần còn lại, có trọng số theo số mẫu."
+  },
+  {
+    "file": "formula_05.png",
+    "latex": "R_\\alpha(T)=R(T)+\\alpha|\\mathcal{L}(T)|",
+    "meaning": "L = |ℒ(T)| là số lá; α không âm là mức phạt mỗi lá. L ở đây không phải nhãn “nhánh trái”. Độ sâu đếm số cạnh từ gốc tới lá sâu nhất."
+  },
+  {
+    "file": "formula_06.png",
     "latex": "G_{goc}=0.5,\\quad G_{sau}=\\frac{4}{12}0+\\frac{8}{12}0.375=0.25",
     "meaning": "Chia hẹn≤15: bên trái M01,M04,M07,M10 đều trễ; bên phải 8 đơn có 2 trễ. Giảm Gini ở gốc là 0,5−0,25=0,25."
   },
   {
-    "file": "formula_05.png",
+    "file": "formula_07.png",
     "latex": "\\Delta G_{toan\\ cay}=0.25+\\frac{8}{12}\\times0.375=0.50",
     "meaning": "Ở nhánh hẹn>15, chia x≤10 cho 6 nhãn 0 và 2 nhãn 1. Giảm Gini tại nhánh là 0,375; đóng góp toàn cây phải nhân 8/12. Ba lá đều thuần trên bảng này."
   },
   {
-    "file": "formula_06.png",
-    "latex": "\\Delta C=(2129-359)+5(3046-3317)=1770-1355=415",
+    "file": "formula_08.png",
+    "latex": "AP=\\sum_j(R_j-R_{j-1})P_j",
+    "meaning": "P là precision, R là recall. Mỗi nhóm mẫu đồng điểm được xét cùng nhau khi hạ ngưỡng."
+  },
+  {
+    "file": "formula_09.png",
+    "latex": "\\Delta K=(2129-359)+5(3046-3317)=1770-1355=415",
     "meaning": "Cây tăng 1.770 FP, giảm 271 FN; chi phí lớn hơn logistic 415 đơn vị giả định. Logistic có chi phí nhỏ hơn trên test này. Hệ số 5 là lựa chọn mô phỏng chi phí, không phải giá tiền đã đo."
   },
   {
-    "file": "formula_07.png",
-    "latex": "R(T)=\\sum_{l\\in leaves(T)}\\frac{n_l}{N}G_l,\\qquad R_\\alpha(T)=R(T)+\\alpha|leaves(T)|",
+    "file": "formula_10.png",
+    "latex": "R(T)=\\sum_{\\ell\\in\\mathcal{L}(T)}\\frac{n_\\ell}{N}G(\\ell),\\qquad R_\\alpha(T)=R(T)+\\alpha|\\mathcal{L}(T)|",
     "meaning": "R là Gini các lá có trọng số theo toàn bộ N mẫu train. α≥0 phạt số lá. Đây không phải tỷ lệ phân loại sai và không phải chi phí FP+5FN [3]."
   }
 ]

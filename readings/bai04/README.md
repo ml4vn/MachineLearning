@@ -4,24 +4,28 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang](Bai04_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai04_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai04/README.md)
+[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai04_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai04_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai04/README.md)
+
+**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
 ## Mục lục
 
 - [1 Bài học này giải quyết vấn đề gì](#muc-1)
-- [2 Bạn cần biết gì trước khi bắt đầu](#muc-2)
-- [3 Dữ liệu của bài học trông như thế nào](#muc-3)
-- [4 Ý tưởng chính của phương pháp là gì](#muc-4)
-- [5 Những khái niệm và công thức nào cần nắm](#muc-5)
-- [6 Phương pháp được thực hiện như thế nào](#muc-6)
-- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-7)
-- [8 Đọc kết quả và tránh hiểu nhầm](#muc-8)
-- [9 Tự kiểm tra trước khi đến lớp](#muc-9)
-- [10 Những điều cần nhớ](#muc-10)
-- [Phụ lục A Đáp án có giải thích](#muc-11)
-- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-12)
+- [Lộ trình đọc và đối chiếu với bài giảng](#muc-2)
+- [2 Bạn cần biết gì trước khi bắt đầu](#muc-3)
+- [3 Dữ liệu của bài học trông như thế nào](#muc-4)
+- [4 Ý tưởng chính của phương pháp là gì](#muc-5)
+- [5 Những khái niệm và công thức nào cần nắm](#muc-6)
+- [6 Phương pháp được thực hiện như thế nào](#muc-7)
+- [Từ mặt chi phí 3D đến đường đồng mức](#muc-8)
+- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-9)
+- [8 Đọc kết quả và tránh hiểu nhầm](#muc-10)
+- [9 Tự kiểm tra trước khi đến lớp](#muc-11)
+- [10 Những điều cần nhớ](#muc-12)
+- [Phụ lục A Đáp án có giải thích](#muc-13)
+- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-14)
 
 <a id="muc-1"></a>
 
@@ -48,9 +52,35 @@ Một người mua muốn biết **đơn hàng mất khoảng bao nhiêu ngày t
 - Tính một bước GD bằng bảng bốn điểm và kiểm loss sau cập nhật.
 - Diễn giải MAE/RMSE trên dữ liệu thật mà không biến trung bình thành lời bảo đảm.
 
-> ✏️ **Cách học:** dự kiến 30–40 phút; không cần lập trình. Chuẩn bị giấy nháp và máy tính. Hoàn thành 10 mục chính và sáu câu tự kiểm; phần learning rate nâng cao nằm ở phụ lục B.
+> ✏️ **Cách học:** dự kiến 40–50 phút; không cần lập trình. Chuẩn bị giấy nháp và máy tính. Hoàn thành 10 mục chính và sáu câu tự kiểm; phần learning rate nâng cao nằm ở phụ lục B.
 
 <a id="muc-2"></a>
+
+## Lộ trình đọc và đối chiếu với bài giảng
+
+Bản tài liệu cập nhật v3 • Đối chiếu Bài 4, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+
+### Đọc để chuẩn bị điều gì
+
+- Từ dữ liệu đến đường hồi quy
+- Sai số và hàm J
+- Cập nhật đồng thời w, b
+- Đọc mặt 3D và đường đồng mức
+
+Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học.
+
+| Slide | Mốc ôn tập trong bài giảng |
+| --- | --- |
+| 20 | Tổng kết · Dự đoán, đo sai, rồi học |
+| 32 | Tổng kết · Một bước, hai cách nhìn |
+| 42 | Tổng kết · Vòng lặp Gradient Descent |
+| 48 | Chuẩn hóa · Vì sao đáp án D đúng? |
+| 60 | Tổng kết · Đọc kết quả cùng giới hạn |
+| 65 | Tổng quan · Một đường học từ sai số |
+
+> 📌 Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp.
+
+<a id="muc-3"></a>
 
 ## 2 Bạn cần biết gì trước khi bắt đầu
 
@@ -74,7 +104,7 @@ y là giá trị quan sát; ŷ là giá trị dự đoán. Nếu x đo bằng **
 
 > ✏️ **K1:** với ŷ = 0,5x + 2, x = 4 và y = 5, tính ŷ và e = ŷ−y. **K2:** tính trung bình của 3,4,6,7. Đáp án ở phụ lục A.
 
-<a id="muc-3"></a>
+<a id="muc-4"></a>
 
 ## 3 Dữ liệu của bài học trông như thế nào
 
@@ -97,7 +127,7 @@ distance_km là khoảng cách đường chim bay giữa các tâm vùng bưu ch
 
 > 📌 **Phạm vi:** bảng đã lọc đơn hoàn tất và đủ điều kiện. Đây không đại diện tự động cho mọi đơn vừa đặt. Ảnh chụp dữ liệu tĩnh chưa xác nhận lịch sử sẵn có của mọi trường.
 
-<a id="muc-4"></a>
+<a id="muc-5"></a>
 
 ## 4 Ý tưởng chính của phương pháp là gì
 
@@ -116,7 +146,7 @@ Một đường tạo ra bốn dự đoán, do đó tạo ra bốn sai số. Ta 
 
 > 🔎 **Hai không gian:** hình trên đặt x,y là dữ liệu. Đồ thị loss ở mục 7 đặt w,J là tham số và mất mát. Một điểm trên đồ thị loss đại diện cho cả một đường dự đoán, không phải một đơn hàng.
 
-<a id="muc-5"></a>
+<a id="muc-6"></a>
 
 ## 5 Những khái niệm và công thức nào cần nắm
 
@@ -146,7 +176,7 @@ t là số bước; η > 0 là learning rate điều khiển độ dài bước.
 
 > 📌 **Đúng hướng chưa đủ:** gradient cho hướng giảm cục bộ, nhưng một bước quá dài vẫn làm loss tăng. Learning rate phù hợp phụ thuộc thang đo và hàm mục tiêu; 0,4 của ví dụ nhỏ không phải quy tắc cho mọi dữ liệu.
 
-<a id="muc-6"></a>
+<a id="muc-7"></a>
 
 ## 6 Phương pháp được thực hiện như thế nào
 
@@ -174,7 +204,25 @@ Trong thực hành Olist, giá trị khoảng cách thiếu được điền tru
 
 > ✏️ **Tự nói lại:** nếu tính g_b bằng w vừa cập nhật, ta còn đang làm đúng bước GD đồng thời ở mục 5 không? Giải thích bằng thời điểm lấy sai số.
 
-<a id="muc-7"></a>
+<a id="muc-8"></a>
+
+## Từ mặt chi phí 3D đến đường đồng mức
+
+```math
+J(w,b)=\frac{1}{8}\sum_{i=1}^{4}(wx_i+b-y_i)^2
+```
+
+Bốn điểm là (1,3), (2,4), (3,6), (4,7). Mỗi cặp tham số (w,b) xác định một đường dự đoán và một độ cao J.
+
+![Mặt J theo hai tham số w và b. Điểm thấp nhất ở w = 1,4; b = 1,5; J = 0,025.](assets/surface_v3.png)
+
+*Mặt J theo hai tham số w và b. Điểm thấp nhất ở w = 1,4; b = 1,5; J = 0,025.*
+
+Nhìn từ trên xuống, nối các cặp (w,b) có cùng J ta được đường đồng mức. Trục w và b là tham số của mô hình, không phải hai đặc trưng đầu vào.
+
+> 📌 Một bước gradient descent dùng cùng bộ tham số cũ để tính cả hai đạo hàm, rồi cập nhật đồng thời w và b. Bước quá lớn có thể vượt qua vùng chi phí thấp.
+
+<a id="muc-9"></a>
 
 ## 7 Cùng làm một ví dụ từ đầu đến cuối
 
@@ -201,7 +249,7 @@ Bước tiếp theo g_w = −0,875 nên w₂ = 1,05. Nghiệm tối ưu w* = 1,4
 
 > 📌 z âm nghĩa là thấp hơn khoảng cách trung bình, không phải khoảng cách vật lý âm. Căn giữa không tự động loại bỏ hệ số chặn trong mọi mô hình.
 
-<a id="muc-8"></a>
+<a id="muc-10"></a>
 
 ## 8 Đọc kết quả và tránh hiểu nhầm
 
@@ -233,7 +281,7 @@ Trên tập này, đường khoảng cách có MAE và RMSE thấp hơn hai mố
 
 > ✏️ **Tự kiểm:** RMSE lớn hơn MAE có tự chứng minh dữ liệu bị lỗi không? Không; hai chỉ số tổng hợp sai số theo cách khác nhau.
 
-<a id="muc-9"></a>
+<a id="muc-11"></a>
 
 ## 9 Tự kiểm tra trước khi đến lớp
 
@@ -265,7 +313,7 @@ Tự trả lời trước khi mở phụ lục A. Với câu tính, ghi phép th
 
 > ✏️ **Tự đánh giá:** câu 1,6 kiểm quy trình dữ liệu; câu 2,3 kiểm phép tính; câu 4 kiểm mô hình và tối ưu; câu 5 kiểm diễn giải. Ghi rõ phần chưa chắc để hỏi trên lớp.
 
-<a id="muc-10"></a>
+<a id="muc-12"></a>
 
 ## 10 Những điều cần nhớ
 
@@ -288,7 +336,7 @@ Tự trả lời trước khi mở phụ lục A. Với câu tính, ghi phép th
 
 ### Nguồn và dữ liệu để kiểm lại
 
-Bám Bài 04 v2: slide 1–45, 47–62; phần sâu ở 63–68. CSV bốn đơn thật có mã đầy đủ, bảng mô hình và bảng toy được kèm theo. Các phép tính tay, nhãn từ timestamps và MAE/RMSE đã được tái tính bằng nguồn dữ liệu này.
+Đối chiếu Bài 4 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. CSV bốn đơn thật có mã đầy đủ, bảng mô hình và bảng toy được kèm theo. Các phép tính tay, nhãn từ timestamps và MAE/RMSE đã được tái tính bằng nguồn dữ liệu này.
 
 [\[1\] Olist Brazilian E-Commerce Public Dataset Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
@@ -298,7 +346,7 @@ Bám Bài 04 v2: slide 1–45, 47–62; phần sâu ở 63–68. CSV bốn đơn
 
 > 🔎 **Nối sang bài 5:** “giao trong bao nhiêu ngày?” khác “có giao trễ ngày hẹn không?”. Bài 5 đổi nhãn sang 0/1, dùng logistic để tạo điểm xác suất rồi chọn ngưỡng ra quyết định.
 
-<a id="muc-11"></a>
+<a id="muc-13"></a>
 
 ## Phụ lục A Đáp án có giải thích
 
@@ -334,7 +382,7 @@ Scaler đã học trung bình và độ lệch chuẩn từ test nên test ảnh
 
 > ✏️ **Cách ôn:** câu 1,6 → mục 3,6; câu 2,3 → mục 5,7; câu 4 → mục 4,7; câu 5 → mục 8.
 
-<a id="muc-12"></a>
+<a id="muc-14"></a>
 
 ## Phụ lục B Kiến thức mở rộng tùy chọn
 

@@ -6,46 +6,56 @@
   },
   {
     "file": "formula_02.png",
+    "latex": "C=\\frac{1}{n}X_c^{\\mathsf{T}}X_c",
+    "meaning": "Trong ví dụ bốn điểm, mỗi hàng Xc là một điểm đã center. Quy ước 1/n ở đây cho C có đường chéo 2,5 và ngoài đường chéo 2."
+  },
+  {
+    "file": "formula_03.png",
+    "latex": "Cw_j=\\lambda_j w_j,\\qquad \\|w_j\\|=1",
+    "meaning": "w là hướng riêng đơn vị; λ là phương sai theo hướng đó với cùng quy ước chuẩn hóa. Sắp λ từ lớn xuống nhỏ để chọn hướng đầu."
+  },
+  {
+    "file": "formula_04.png",
     "latex": "\\mu=\\frac{1}{n}\\sum_{i=1}^{n}x_i,\\qquad x_c=x-\\mu",
     "meaning": "Định tâm: trừ cùng một vector trung bình train khỏi mỗi ảnh train, validation hay ảnh mới."
   },
   {
-    "file": "formula_03.png",
+    "file": "formula_05.png",
     "latex": "z=W_k^{\\mathsf{T}}(x-\\mu),\\qquad\\hat{x}=\\mu+W_kz",
     "meaning": "z có k tọa độ; x̂ có d tọa độ. Tái tạo cộng lại trung bình. Trong mã lưu mẫu theo hàng, phép nhân viết tương đương Z=(X−μ)Wₖ."
   },
   {
-    "file": "formula_04.png",
+    "file": "formula_06.png",
     "latex": "w_1=\\arg\\max_{\\|w\\|=1}\\operatorname{Var}(w^{\\mathsf{T}}x_c)",
     "meaning": "Ràng buộc ‖w‖=1 là cần thiết: nếu nhân hướng với 100 thì phương sai score nhân 10.000 dù hướng không tốt hơn. Các trục sau trực giao với các trục trước."
   },
   {
-    "file": "formula_05.png",
+    "file": "formula_07.png",
     "latex": "EVR(k)=\\frac{\\lambda_1+\\cdots+\\lambda_k}{\\lambda_1+\\cdots+\\lambda_d}",
     "meaning": "λ₁≥λ₂≥…≥0 là phương sai trên các trục PCA theo cùng quy ước. Mẫu số phải dương. EVR là tỷ lệ phương sai, không là xác suất ảnh được phân loại đúng."
   },
   {
-    "file": "formula_06.png",
+    "file": "formula_08.png",
     "latex": "\\hat{x}_A=(5,5)+\\frac{-3}{\\sqrt{2}}\\frac{(1,1)}{\\sqrt{2}}=(3.5,3.5)",
     "meaning": "Tái tạo A từ chỉ z₁. Không được dùng z₂ vì thành phần đó đã bị bỏ."
   },
   {
-    "file": "formula_07.png",
+    "file": "formula_09.png",
     "latex": "\\|x_A-\\hat{x}_A\\|^2=(-0.5)^2+(0.5)^2=0.5",
     "meaning": "Mỗi điểm có cùng tổng bình phương lỗi 0,5. Trung bình trên bốn điểm vẫn 0,5; chia thêm hai tọa độ được MSE mỗi tọa độ 0,25."
   },
   {
-    "file": "formula_08.png",
+    "file": "formula_10.png",
     "latex": "z=\\frac{-1-2}{\\sqrt{2}}=\\frac{-3}{\\sqrt{2}},\\quad\\hat{x}=(5,5)+(-1.5,-1.5)=(3.5,3.5)",
     "meaning": "B có cùng score với A. Không thể suy ngược duy nhất A hay B từ score này."
   },
   {
-    "file": "formula_09.png",
+    "file": "formula_11.png",
     "latex": "(0.2-(-0.1))^2=0.09,\\qquad (0.2-0)^2=0.04",
     "meaning": "Bảng mục 8 dùng 0,09: lỗi trước clip. Clip thay đổi quy tắc tái tạo; cần báo rõ nếu muốn đánh giá riêng 0,04."
   },
   {
-    "file": "formula_10.png",
+    "file": "formula_12.png",
     "latex": "MSE_{train,pixel}=\\frac{n-1}{nd}\\sum_{j=k+1}^{d}\\lambda_j",
     "meaning": "Công thức trên dùng λ của covariance chia n−1, dữ liệu train đã định tâm, phép chiếu trực giao không clip, d tọa độ. Không áp dụng trực tiếp cho MSE validation."
   }

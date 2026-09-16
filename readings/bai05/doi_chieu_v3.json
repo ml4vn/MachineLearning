@@ -1,0 +1,30 @@
+{
+  "reading_version": "v3",
+  "slide_version": "v3",
+  "manifest": "Bai05_v3\\source\\slide_manifest.json",
+  "manifest_sha256": "1b3162b8f1870524a54cdba2284c51c8ba25c1675ccc546f6a71c0fe905d91e6",
+  "summary_slides": [
+    [
+      "17",
+      "Một dự đoán Logistic"
+    ],
+    [
+      "23",
+      "BCE: từ một mẫu đến cả tập"
+    ],
+    [
+      "36",
+      "Học Logistic: khởi tạo rồi lặp"
+    ],
+    [
+      "59",
+      "Đánh giá theo đúng thứ tự"
+    ],
+    [
+      "65",
+      "Bài 5 · Từ đơn hàng đến quyết định"
+    ]
+  ],
+  "new_core_bridge": "Đọc AP và AUC trước khi chọn mô hình",
+  "original_source_sha256": "5c272a15d56fa07cabc463711020f90ba331fee67d1b0a2c4717ffe32e388ce6"
+}

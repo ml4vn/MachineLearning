@@ -4,24 +4,29 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang](Bai06_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai06_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai06/README.md)
+[← Mục lục khóa học](../../README.md) · [📄 PDF 15 trang](Bai06_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai06_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai06/README.md)
+
+**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
 ## Mục lục
 
 - [1 Bài học này giải quyết vấn đề gì](#muc-1)
-- [2 Bạn cần biết gì trước khi bắt đầu](#muc-2)
-- [3 Dữ liệu của bài học trông như thế nào](#muc-3)
-- [4 Ý tưởng chính của phương pháp là gì](#muc-4)
-- [5 Những khái niệm và công thức nào cần nắm](#muc-5)
-- [6 Phương pháp được thực hiện như thế nào](#muc-6)
-- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-7)
-- [8 Đọc kết quả và tránh hiểu nhầm](#muc-8)
-- [9 Tự kiểm tra trước khi đến lớp](#muc-9)
-- [10 Những điều cần nhớ](#muc-10)
-- [Phụ lục A Đáp án có giải thích](#muc-11)
-- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-12)
+- [Lộ trình đọc và đối chiếu với bài giảng](#muc-2)
+- [2 Bạn cần biết gì trước khi bắt đầu](#muc-3)
+- [3 Dữ liệu của bài học trông như thế nào](#muc-4)
+- [4 Ý tưởng chính của phương pháp là gì](#muc-5)
+- [5 Những khái niệm và công thức nào cần nắm](#muc-6)
+- [6 Phương pháp được thực hiện như thế nào](#muc-7)
+- [CART và ý nghĩa của cắt tỉa](#muc-8)
+- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-9)
+- [8 Đọc kết quả và tránh hiểu nhầm](#muc-10)
+- [AP trên validation đo điều gì](#muc-11)
+- [9 Tự kiểm tra trước khi đến lớp](#muc-12)
+- [10 Những điều cần nhớ](#muc-13)
+- [Phụ lục A Đáp án có giải thích](#muc-14)
+- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-15)
 
 <a id="muc-1"></a>
 
@@ -40,9 +45,33 @@ Bài 5 tạo xác suất trễ bằng logistic. Bài 6 giữ mục tiêu Olist �
 - Dựng cây ba lá từ 12 hàng mô phỏng có thể kiểm bằng tay.
 - Phân biệt học cấu trúc cây, chọn ngưỡng và đánh giá kết quả.
 
-> ✏️ **Cách học:** dự kiến 30–40 phút; không cần lập trình. Đọc mục 1–8, tự làm mục 9 rồi xem đáp án. Phụ lục B dành cho người muốn hiểu thêm về cắt tỉa.
+> ✏️ **Cách học:** dự kiến 40–50 phút; không cần lập trình. Đọc mục 1–8, tự làm mục 9 rồi xem đáp án. Phụ lục B dành cho người muốn hiểu thêm về cắt tỉa.
 
 <a id="muc-2"></a>
+
+## Lộ trình đọc và đối chiếu với bài giảng
+
+Bản tài liệu cập nhật v3 • Đối chiếu Bài 6, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+
+### Đọc để chuẩn bị điều gì
+
+- Từ câu hỏi chia nhánh đến cây
+- Gini và mức giảm có trọng số
+- CART, lá và cắt tỉa
+- Đọc AP trên validation
+
+Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học.
+
+| Slide | Mốc ôn tập trong bài giảng |
+| --- | --- |
+| 20 | Tổng kết: cách tính và so sánh Gini |
+| 31 | Tổng kết: quét ngưỡng và dựng cây |
+| 46 | Tổng kết: CART, độ phức tạp và cắt tỉa |
+| 67 | Tổng quan Bài 6 |
+
+> 📌 Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp.
+
+<a id="muc-3"></a>
 
 ## 2 Bạn cần biết gì trước khi bắt đầu
 
@@ -66,7 +95,7 @@ Bài 5 tạo xác suất trễ bằng logistic. Bài 6 giữ mục tiêu Olist �
 
 > ✏️ **K1:** lá có 3 đơn trễ trong 12 đơn thì p bao nhiêu? **K2:** nút có 8 hàng trong tổng 12, trọng số của nó trong toàn cây là bao nhiêu? Đáp án ở phụ lục A.
 
-<a id="muc-3"></a>
+<a id="muc-4"></a>
 
 ## 3 Dữ liệu của bài học trông như thế nào
 
@@ -91,7 +120,7 @@ Train: duyệt 01–10/2017, giao trước 01/11/2017. Validation: duyệt 11–
 
 > 📌 Bảng chỉ gồm đơn đã giao đủ điều kiện; đầu vào tại lúc duyệt là giả định cần kiểm khi triển khai. 16 đơn thiếu toàn bộ khối lượng được tổng hợp thành 0 trong bảng đóng băng, không phải đo được 0 gram. Bảng 12 đơn ở mục 7 là **mô phỏng**, tách biệt với Olist.
 
-<a id="muc-4"></a>
+<a id="muc-5"></a>
 
 ## 4 Ý tưởng chính của phương pháp là gì
 
@@ -109,7 +138,7 @@ Cây trả cùng một p cho mọi đầu vào rơi vào cùng lá. p=1 ở hai 
 
 > ✏️ **Dừng để kiểm:** một đơn mới có hẹn 20 và khoảng cách đúng 10 đi đến lá nào? Dùng dấu ≤ ở hình trước khi xem câu 3 mục 9.
 
-<a id="muc-5"></a>
+<a id="muc-6"></a>
 
 ## 5 Những khái niệm và công thức nào cần nắm
 
@@ -137,7 +166,7 @@ L,R là hai nút con, nL+nR=n. So các phép chia hợp lệ tại cùng nút b�
 
 > 📌 Ví dụ p=2/8=0,25: G=2×0,25×0,75=0,375. Không thay p bằng ngưỡng cảnh báo τ trong công thức Gini.
 
-<a id="muc-6"></a>
+<a id="muc-7"></a>
 
 ## 6 Phương pháp được thực hiện như thế nào
 
@@ -158,7 +187,35 @@ Gốc có 11 ngưỡng khoảng cách và một ngưỡng hẹn, tổng 12 ứng
 
 > ✏️ Chọn cấu trúc bằng validation; ngưỡng cảnh báo được chọn sau khi có điểm p. Không nhìn test rồi sửa độ sâu để báo lại như đánh giá độc lập.
 
-<a id="muc-7"></a>
+<a id="muc-8"></a>
+
+## CART và ý nghĩa của cắt tỉa
+
+Tại mỗi nút, CART xét các phép chia hợp lệ, so sánh mức giảm Gini, chọn phép chia tốt nhất tại nút đó rồi lặp trên hai nút con. Khi gặp điều kiện dừng hoặc không còn phép chia hợp lệ, nút trở thành lá; lá không nhất thiết thuần nhất.
+
+```math
+R(T)=\sum_{\ell\in\mathcal{L}(T)}\frac{n_\ell}{N}G(\ell)
+```
+
+T là cây; ℒ(T) là tập lá; nℓ là số mẫu tại lá ℓ; N là số mẫu train. R đo độ không thuần còn lại, có trọng số theo số mẫu.
+
+```math
+R_\alpha(T)=R(T)+\alpha|\mathcal{L}(T)|
+```
+
+L = |ℒ(T)| là số lá; α không âm là mức phạt mỗi lá. L ở đây không phải nhãn “nhánh trái”. Độ sâu đếm số cạnh từ gốc tới lá sâu nhất.
+
+| Cây toy | R(T) | L | Rα với α = 0,1 | Rα với α = 0,3 |
+| --- | --- | --- | --- | --- |
+| Ba lá | 0 | 3 | 0,30 | 0,90 |
+| Hai lá | 0,25 | 2 | 0,45 | 0,85 |
+| Một lá | 0,50 | 1 | 0,60 | 0,80 |
+
+Với α = 0,1, cây ba lá tốt hơn; với α = 0,3, cây một lá tốt hơn. Chọn độ phức tạp bằng validation. CART là cách chọn tham lam tại từng nút, không bảo đảm cây tốt nhất trong mọi cây có thể có.
+
+> ✏️ Tự kiểm: cây có 3 lá có bắt buộc sâu 3 không? Không. Cây toy có 3 lá, độ sâu 2 và 5 nút.
+
+<a id="muc-9"></a>
 
 ## 7 Cùng làm một ví dụ từ đầu đến cuối
 
@@ -193,7 +250,7 @@ Chia hẹn≤15: bên trái M01,M04,M07,M10 đều trễ; bên phải 8 đơn c�
 
 > 📌 Cây phân loại đúng 12/12 mẫu train mô phỏng. Chưa có mẫu kiểm tra mới trong phép tính này, nên không suy ra accuracy 100% ngoài mẫu.
 
-<a id="muc-8"></a>
+<a id="muc-10"></a>
 
 ## 8 Đọc kết quả và tránh hiểu nhầm
 
@@ -215,7 +272,30 @@ Recall cây=432/3.478≈12,42%; precision=432/2.561≈16,87%. Cây có recall ca
 
 > 🔎 Đơn thật fc9bc4ba… đi đến lá có 33/297 mẫu train trễ: p≈0,1111. Với τ=0,10 cây cảnh báo, trong khi đơn này không trễ. Đường đi giải thích phép dự đoán, không bảo đảm dự đoán đúng.
 
-<a id="muc-9"></a>
+<a id="muc-11"></a>
+
+## AP trên validation đo điều gì
+
+Ở một lá, tỷ lệ mẫu train dương tạo điểm dự đoán p. Xếp các mẫu validation theo điểm giảm dần để tính AP. AP validation là AP đo trên tập validation; dùng nó để chọn cấu hình trước khi đánh giá test.
+
+```math
+AP=\sum_j(R_j-R_{j-1})P_j
+```
+
+P là precision, R là recall. Mỗi nhóm mẫu đồng điểm được xét cùng nhau khi hạ ngưỡng.
+
+| Cây toy hai lá | Số dương | Số âm | Điểm p |
+| --- | --- | --- | --- |
+| Lá hẹn ≤ 15 | 4 | 0 | 1 |
+| Lá còn lại | 2 | 6 | 0,25 |
+
+Ở mức điểm 1: precision = 1, recall = 4/6. Lấy thêm nhóm điểm 0,25: precision = 6/12, recall = 1. AP = (4/6)×1 + (1−4/6)×(1/2) = 5/6. Đây là phép tính toy trên 12 mẫu, không phải AP validation của Olist.
+
+Trong case Olist, AP validation của cây độ sâu 3 khoảng 0,0817; của cây độ sâu 6 khoảng 0,1005. Chọn độ sâu 6 trong hai cấu hình đã so sánh. Không đọc 0,1005 thành “đúng 10,05%”.
+
+> ✏️ ROC-AUC cũng đo xếp hạng, so điểm mẫu dương với mẫu âm; AUC validation chỉ rõ tập được dùng để đo. Hai chỉ số không thay thế việc xem FP/FN tại ngưỡng triển khai.
+
+<a id="muc-12"></a>
 
 ## 9 Tự kiểm tra trước khi đến lớp
 
@@ -243,7 +323,7 @@ Ghi phép tính và lý do trước khi mở phụ lục A. Có thể quay lại
 
 > ✏️ **Tự đánh giá:** hiểu nút → câu 1; hiểu học → câu 2; hiểu dự đoán → câu 3,4; hiểu bằng chứng → câu 5,6.
 
-<a id="muc-10"></a>
+<a id="muc-13"></a>
 
 ## 10 Những điều cần nhớ
 
@@ -266,7 +346,7 @@ Ghi phép tính và lý do trước khi mở phụ lục A. Có thể quay lại
 
 ### Nguồn và cách kiểm
 
-Bám Bài 06 v2 và notes 68 slide, ưu tiên phần lõi 1–60; cắt tỉa thuộc mở rộng. Mã nguồn tính lại các phép chia toy, học lại hai cây và đối chiếu toàn bộ điểm dự đoán đã lưu. CSV ví dụ, cấu hình và báo cáo phép tính đi kèm.
+Đối chiếu Bài 6 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Mã nguồn tính lại các phép chia toy, học lại hai cây và đối chiếu toàn bộ điểm dự đoán đã lưu. CSV ví dụ, cấu hình và báo cáo phép tính đi kèm.
 
 [\[1\] Olist – dữ liệu thương mại điện tử Brazil](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
@@ -276,7 +356,7 @@ Bám Bài 06 v2 và notes 68 slide, ưu tiên phần lõi 1–60; cắt tỉa th
 
 > ✏️ Trước giờ học, thử giải thích vì sao “thuần lớp hơn trên train” và “chi phí cảnh báo thấp hơn” là hai câu hỏi khác nhau.
 
-<a id="muc-11"></a>
+<a id="muc-14"></a>
 
 ## Phụ lục A Đáp án có giải thích
 
@@ -305,21 +385,21 @@ p=0,25<0,5 nên không cảnh báo; p=0,25≥0,2 nên cảnh báo. Điểm p và
 ### Câu 6
 
 ```math
-\Delta C=(2129-359)+5(3046-3317)=1770-1355=415
+\Delta K=(2129-359)+5(3046-3317)=1770-1355=415
 ```
 
 Cây tăng 1.770 FP, giảm 271 FN; chi phí lớn hơn logistic 415 đơn vị giả định. Logistic có chi phí nhỏ hơn trên test này. Hệ số 5 là lựa chọn mô phỏng chi phí, không phải giá tiền đã đo.
 
 > ✏️ Ôn lại: câu 1–2 → mục 5–7; câu 3–4 → mục 4; câu 5–6 → mục 8.
 
-<a id="muc-12"></a>
+<a id="muc-15"></a>
 
 ## Phụ lục B Kiến thức mở rộng tùy chọn
 
 ### Cắt tỉa: thêm giá phải trả cho mỗi lá
 
 ```math
-R(T)=\sum_{l\in leaves(T)}\frac{n_l}{N}G_l,\qquad R_\alpha(T)=R(T)+\alpha|leaves(T)|
+R(T)=\sum_{\ell\in\mathcal{L}(T)}\frac{n_\ell}{N}G(\ell),\qquad R_\alpha(T)=R(T)+\alpha|\mathcal{L}(T)|
 ```
 
 R là Gini các lá có trọng số theo toàn bộ N mẫu train. α≥0 phạt số lá. Đây không phải tỷ lệ phân loại sai và không phải chi phí FP+5FN [3].

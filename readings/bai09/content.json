@@ -31,7 +31,71 @@
         {
           "type": "cue",
           "kind": "try",
-          "text": "Dự kiến 30–40 phút, không cần lập trình. Ôn vector/tích vô hướng ở bài 1 và chia dữ liệu ở bài 7. Phụ lục B là phần tùy chọn."
+          "text": "Dự kiến 40–50 phút, không cần lập trình. Ôn vector/tích vô hướng ở bài 1 và chia dữ liệu ở bài 7. Phụ lục B là phần tùy chọn."
+        }
+      ]
+    },
+    {
+      "title": "Lộ trình đọc và đối chiếu với bài giảng",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 9, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+        },
+        {
+          "type": "h",
+          "text": "Đọc để chuẩn bị điều gì"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Chiếu dữ liệu lên hướng mới",
+            "Center và hiệp phương sai",
+            "Trị riêng, EVR và chọn k",
+            "Tái tạo ảnh và đánh giá nhiệm vụ"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Slide",
+            "Mốc ôn tập trong bài giảng"
+          ],
+          "rows": [
+            [
+              "11",
+              "Từ ảnh đến đầu vào PCA"
+            ],
+            [
+              "22",
+              "Chiếu rồi tái tạo: ba thao tác cốt lõi"
+            ],
+            [
+              "31",
+              "PCA giữ hướng biến thiên mạnh"
+            ],
+            [
+              "38",
+              "PCA: học một lần, áp dụng nhất quán"
+            ],
+            [
+              "63",
+              "PCA · Bản đồ toàn bài"
+            ]
+          ],
+          "widths": [
+            0.7,
+            6.1
+          ]
+        },
+        {
+          "type": "cue",
+          "kind": "remember",
+          "text": "Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp."
         }
       ]
     },
@@ -188,6 +252,66 @@
           "type": "cue",
           "kind": "try",
           "text": "Nếu A và B có nhãn khác nhau, việc chúng chiếu vào cùng vị trí có gây khó cho phân loại không? Phương sai lớn không tự động là thông tin tốt nhất cho mọi nhiệm vụ."
+        }
+      ]
+    },
+    {
+      "title": "Vì sao PCA cần hiệp phương sai và trị riêng",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Sau khi trừ trung bình, ta cần tìm hướng mà dữ liệu trải rộng nhất. Hiệp phương sai mô tả từng trục biến thiên bao nhiêu và hai trục có cùng tăng giảm không."
+        },
+        {
+          "type": "equation",
+          "tex": "C=\\frac{1}{n}X_c^{\\mathsf{T}}X_c",
+          "meaning": "Trong ví dụ bốn điểm, mỗi hàng Xc là một điểm đã center. Quy ước 1/n ở đây cho C có đường chéo 2,5 và ngoài đường chéo 2.",
+          "width": null
+        },
+        {
+          "type": "equation",
+          "tex": "Cw_j=\\lambda_j w_j,\\qquad \\|w_j\\|=1",
+          "meaning": "w là hướng riêng đơn vị; λ là phương sai theo hướng đó với cùng quy ước chuẩn hóa. Sắp λ từ lớn xuống nhỏ để chọn hướng đầu.",
+          "width": null
+        },
+        {
+          "type": "table",
+          "head": [
+            "Hướng",
+            "Phương sai",
+            "Ý nghĩa"
+          ],
+          "rows": [
+            [
+              "w₁ = (1,1)/√2",
+              "λ₁ = 4,5",
+              "Hai tọa độ cùng tăng giảm"
+            ],
+            [
+              "w₂ = (1,−1)/√2",
+              "λ₂ = 0,5",
+              "Phần biến thiên vuông góc nhỏ hơn"
+            ],
+            [
+              "Giữ một hướng",
+              "4,5 / (4,5 + 0,5) = 90%",
+              "Giữ 90% phương sai, không phải 90% nhãn đúng"
+            ]
+          ],
+          "widths": [
+            2.1,
+            2.2,
+            2.5
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Dùng 1/(n−1) thay cho 1/n sẽ đổi trị riêng cùng một hệ số, nhưng không đổi hướng riêng hoặc tỷ lệ EVR. Một score là tọa độ trên hướng mới; điểm tái tạo quay về không gian ban đầu."
+        },
+        {
+          "type": "cue",
+          "kind": "try",
+          "text": "Tự kiểm: cần nhãn lớp để tìm hướng PCA không? Không. Vì thế hướng giữ nhiều phương sai chưa chắc phân tách lớp tốt nhất."
         }
       ]
     },
@@ -540,7 +664,7 @@
         },
         {
           "type": "p",
-          "text": "Bám Bài09_v2 và notes. Kèm pixel ảnh train:24814, bảng toy, bảng kết quả và mã kiểm tính. Ảnh lấy từ Fashion-MNIST; hình phép chiếu và đường cong tự dựng từ các phép tính của case."
+          "text": "Đối chiếu Bài 9 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm pixel ảnh train:24814, bảng toy, bảng kết quả và mã kiểm tính. Ảnh lấy từ Fashion-MNIST; hình phép chiếu và đường cong tự dựng từ các phép tính của case."
         },
         {
           "type": "link",
@@ -686,5 +810,7 @@
       "label": "[3] scikit-learn 1.6 — PCA, centering và explained_variance_",
       "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.decomposition.PCA.html"
     }
-  ]
+  ],
+  "reading_version": "v3",
+  "slide_version": "v3"
 }

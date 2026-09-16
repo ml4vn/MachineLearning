@@ -35,7 +35,75 @@
         {
           "type": "cue",
           "kind": "try",
-          "text": "Dự kiến 30–40 phút; không cần lập trình. Ôn tích vô hướng (bài 1), gradient descent (bài 4), logistic (bài 5), chia dữ liệu (bài 7). Đạo hàm đầy đủ ở phụ lục B là tùy chọn."
+          "text": "Dự kiến 40–50 phút; không cần lập trình. Ôn tích vô hướng (bài 1), gradient descent (bài 4), logistic (bài 5), chia dữ liệu (bài 7). Đạo hàm đầy đủ ở phụ lục B là tùy chọn."
+        }
+      ]
+    },
+    {
+      "title": "Lộ trình đọc và đối chiếu với bài giảng",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 10, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+        },
+        {
+          "type": "h",
+          "text": "Đọc để chuẩn bị điều gì"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Vì sao XOR cần tầng ẩn",
+            "Forward và hàm mất mát",
+            "Backprop qua một trọng số",
+            "Validation, checkpoint và test"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Slide",
+            "Mốc ôn tập trong bài giảng"
+          ],
+          "rows": [
+            [
+              "18",
+              "Tổng kết · Học một biểu diễn mới"
+            ],
+            [
+              "30",
+              "Tổng kết · Forward rồi cập nhật"
+            ],
+            [
+              "39",
+              "Tổng kết · Một đường backprop"
+            ],
+            [
+              "45",
+              "Tổng kết · Thuật toán huấn luyện MLP"
+            ],
+            [
+              "57",
+              "Tổng kết · Đánh giá có quy trình"
+            ],
+            [
+              "63",
+              "Bài 10 · Từ biểu diễn đến bằng chứng"
+            ]
+          ],
+          "widths": [
+            0.7,
+            6.1
+          ]
+        },
+        {
+          "type": "cue",
+          "kind": "remember",
+          "text": "Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp."
         }
       ]
     },
@@ -243,8 +311,8 @@
         },
         {
           "type": "equation",
-          "tex": "a_j=\\sum_r W_{jr}x_r+b_j,\\quad h_j=ReLU(a_j),\\quad s=\\sum_jv_jh_j+c",
-          "meaning": "W,b là trọng số/bias tầng ẩn; v,c của tầng ra. Chỉ số j chỉ đơn vị ẩn, r chỉ đầu vào; x ở ví dụ này là vector cột.",
+          "tex": "a_j=\\sum_r w_{jr}x_r+b_{1,j},\\quad h_j=ReLU(a_j),\\quad s=\\sum_jv_jh_j+b",
+          "meaning": "W₁,b₁ là ma trận trọng số/vector bias tầng ẩn; v,b của tầng ra. Chỉ số j chỉ đơn vị ẩn, r chỉ đầu vào; x ở ví dụ này là vector cột.",
           "width": null
         },
         {
@@ -314,7 +382,7 @@
         },
         {
           "type": "p",
-          "text": "Nếu tầng ẩn được phép học, sai số phải truyền qua tầng ra và đạo hàm activation về W,b. Nếu giữ tầng ẩn cố định như XOR mục 7, chỉ cập nhật v,c. Dự đoán ảnh mới chỉ chạy forward, không cần nhãn và không cập nhật trọng số."
+          "text": "Nếu tầng ẩn được phép học, sai số phải truyền qua tầng ra và đạo hàm activation về W₁,b₁. Nếu giữ tầng ẩn cố định như XOR mục 7, chỉ cập nhật v,b. Dự đoán ảnh mới chỉ chạy forward, không cần nhãn và không cập nhật trọng số."
         },
         {
           "type": "h",
@@ -331,7 +399,50 @@
         {
           "type": "cue",
           "kind": "try",
-          "text": "Có được cập nhật v rồi dùng v mới để tính gradient W trong cùng lượt backprop không? Không trong phép cập nhật đồng thời đang mô tả."
+          "text": "Có được cập nhật v rồi dùng v mới để tính gradient W₁ trong cùng lượt backprop không? Không trong phép cập nhật đồng thời đang mô tả."
+        }
+      ]
+    },
+    {
+      "title": "Theo dõi một đường backprop trước khi học công thức tổng quát",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Xét một mẫu x = (0,6; 0,2), y = 1. Forward cho h₁ = 0,32; h₂ = 0,44; điểm s = 0,204; p = 0,550824. Trọng số từ h₁ đến đầu ra là v₁ = 0,7; trọng số đang theo dõi w₁₁ = 0,5."
+        },
+        {
+          "type": "equation",
+          "tex": "\\delta=p-y=-0.449176",
+          "meaning": "Với sigmoid và binary cross-entropy của một mẫu, δ là đạo hàm của loss theo điểm s.",
+          "width": null
+        },
+        {
+          "type": "equation",
+          "tex": "\\frac{\\partial\\ell}{\\partial w_{11}}=\\delta\\,v_1\\,\\mathbf{1}_{a_1>0}\\,x_1",
+          "meaning": "Đi ngược đầu ra → h₁ → a₁ → w₁₁. ReLU có đạo hàm 1 tại a₁ = 0,32 > 0; x₁ = 0,6 là đầu vào của trọng số này.",
+          "width": null
+        },
+        {
+          "type": "equation",
+          "tex": "\\frac{\\partial\\ell}{\\partial w_{11}}=(-0.449176)(0.7)(1)(0.6)=-0.188654",
+          "meaning": "Mọi thừa số được lấy từ cùng lượt forward, trước khi cập nhật bất kỳ tham số nào.",
+          "width": null
+        },
+        {
+          "type": "equation",
+          "tex": "w_{11}^{new}=0.5-0.1(-0.188654)=0.518865",
+          "meaning": "Learning rate η = 0,1. Đây là minh họa một thành phần của bước cập nhật; huấn luyện toàn mạng tính gradient cho tất cả tham số.",
+          "width": null
+        },
+        {
+          "type": "cue",
+          "kind": "remember",
+          "text": "b là bias đầu ra; b₁ là vector bias tầng ẩn; W₁ là ma trận trọng số tầng ẩn và w₁₁ là một phần tử. Ký hiệu ⊙ nếu gặp nghĩa là nhân theo từng phần tử."
+        },
+        {
+          "type": "cue",
+          "kind": "try",
+          "text": "Tự kiểm: nếu a₁ < 0 thì đường gradient qua ReLU này bằng bao nhiêu? Bằng 0; tại đúng a₁ = 0 cần quy ước đạo hàm."
         }
       ]
     },
@@ -340,7 +451,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Giữ h₁,h₂ ở mục 4; chỉ học v₁,v₂,c, khởi tạo cả ba bằng 0. Vì s=0 ở bốn điểm nên p=0,5 và L=ln2. Tính đóng góp gradient tại cùng bộ tham số ban đầu."
+          "text": "Giữ h₁,h₂ ở mục 4; chỉ học v₁,v₂,b, khởi tạo cả ba bằng 0. Vì s=0 ở bốn điểm nên p=0,5 và L=ln2. Tính đóng góp gradient tại cùng bộ tham số ban đầu."
         },
         {
           "type": "table",
@@ -397,13 +508,13 @@
         },
         {
           "type": "equation",
-          "tex": "\\frac{\\partial L}{\\partial v_j}=\\frac{1}{4}\\sum_i(p_i-y_i)h_{ij},\\qquad\\frac{\\partial L}{\\partial c}=\\frac{1}{4}\\sum_i(p_i-y_i)",
-          "meaning": "Cộng từng cột rồi chia 4: gradient theo (v₁,v₂,c)=(0;0,125;0). Chưa chia 4 thì đang lấy gradient tổng loss.",
+          "tex": "\\frac{\\partial L}{\\partial v_j}=\\frac{1}{4}\\sum_i(p_i-y_i)h_{ij},\\qquad\\frac{\\partial L}{\\partial b}=\\frac{1}{4}\\sum_i(p_i-y_i)",
+          "meaning": "Cộng từng cột rồi chia 4: gradient theo (v₁,v₂,b)=(0;0,125;0). Chưa chia 4 thì đang lấy gradient tổng loss.",
           "width": null
         },
         {
           "type": "equation",
-          "tex": "(v_1,v_2,c)_{moi}=(0,0,0)-8(0,0.125,0)=(0,-1,0)",
+          "tex": "(v_1,v_2,b)_{moi}=(0,0,0)-8(0,0.125,0)=(0,-1,0)",
           "meaning": "Chọn η=8 chỉ cho phép tính minh họa này. Tính lại s=(0,0,0,−1), p≈(0,5;0,5;0,5;0,26894).",
           "width": null
         },
@@ -589,7 +700,7 @@
         },
         {
           "type": "p",
-          "text": "Bám Bài10_v2 và notes. Kèm ảnh minh họa, bảng XOR, lịch sử seed chính được chạy lại, báo cáo kiểm gradient và dự đoán. Mã tính kiểm tra thuộc bộ tài liệu đọc trước; số baseline giữ đúng snapshot bài 9."
+          "text": "Đối chiếu Bài 10 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm ảnh minh họa, bảng XOR, lịch sử seed chính được chạy lại, báo cáo kiểm gradient và dự đoán. Mã tính kiểm tra thuộc bộ tài liệu đọc trước; số baseline giữ đúng snapshot bài 9."
         },
         {
           "type": "link",
@@ -688,7 +799,7 @@
         },
         {
           "type": "p",
-          "text": "Ví dụ khác XOR, một điểm x=(0,6;0,2), y=1. Tầng ẩn: hàng W₁=(0,5;−0,4), W₂=(0,3;0,8), b=(0,1;0,1); tầng ra v=(0,7;−0,5), c=0,2. Cả chín tham số đều được phép học; không có L2 ở phép tính này."
+          "text": "Ví dụ khác XOR, một điểm x=(0,6;0,2), y=1. Tầng ẩn: ma trận W₁ có hàng 1 là (0,5;−0,4), hàng 2 là (0,3;0,8), vector b₁=(0,1;0,1); tầng ra v=(0,7;−0,5), b=0,2. Cả chín tham số đều được phép học; không có L2 ở phép tính này."
         },
         {
           "type": "table",
@@ -721,14 +832,14 @@
         },
         {
           "type": "equation",
-          "tex": "\\delta=p-y,\\quad\\frac{\\partial L}{\\partial v_j}=\\delta h_j,\\quad\\frac{\\partial L}{\\partial c}=\\delta",
+          "tex": "\\delta=p-y,\\quad\\frac{\\partial L}{\\partial v_j}=\\delta h_j,\\quad\\frac{\\partial L}{\\partial b}=\\delta",
           "meaning": "δ≈−0,449176. Đây là một điểm, không phải trung bình nhiều điểm. Tất cả số dùng tham số cũ.",
           "width": null
         },
         {
           "type": "equation",
-          "tex": "\\delta_j=\\delta v_j\\,\\mathbf{1}_{a_j>0},\\quad\\frac{\\partial L}{\\partial W_{jr}}=\\delta_jx_r,\\quad\\frac{\\partial L}{\\partial b_j}=\\delta_j",
-          "meaning": "Hệ số chỉ báo bằng 1 khi aⱼ>0 và bằng 0 khi aⱼ<0; tại 0, đạo hàm ReLU cần quy ước. δ₁≈−0,314423; δ₂≈0,224588. Ví dụ ∂L/∂W₁₁=δ₁×0,6≈−0,188654. GD với η=0,1 cho W₁₁ mới≈0,518865; các tham số khác cũng được cập nhật đồng thời.",
+          "tex": "\\delta_j=\\delta v_j\\,\\mathbf{1}_{a_j>0},\\quad\\frac{\\partial L}{\\partial w_{jr}}=\\delta_jx_r,\\quad\\frac{\\partial L}{\\partial b_{1,j}}=\\delta_j",
+          "meaning": "Hệ số chỉ báo bằng 1 khi aⱼ>0 và bằng 0 khi aⱼ<0; tại 0, đạo hàm ReLU cần quy ước. δ₁≈−0,314423; δ₂≈0,224588. Ví dụ ∂L/∂w₁₁=δ₁×0,6≈−0,188654. GD với η=0,1 cho w₁₁ mới≈0,518865; các tham số khác cũng được cập nhật đồng thời.",
           "width": null
         },
         {
@@ -764,5 +875,7 @@
       "label": "[4] scikit-learn 1.6 — MLPClassifier và partial_fit",
       "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.neural_network.MLPClassifier.html"
     }
-  ]
+  ],
+  "reading_version": "v3",
+  "slide_version": "v3"
 }

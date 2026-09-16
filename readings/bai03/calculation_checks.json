@@ -1,65 +1,41 @@
 {
-  "source_slide_count": 64,
-  "source_prediction_sha256": "bb9819b4475497575ebe7de2b1634585f47fc6729787c8b09fe04f5c92996749",
-  "bai02_rows_and_scores_match": 1032,
-  "test_metrics": {
-    "tn": 892,
-    "fp": 12,
-    "fn": 17,
-    "tp": 111,
-    "n": 1032,
-    "accuracy": 0.9718992248062015,
-    "precision": 0.9024390243902439,
-    "recall": 0.8671875,
-    "f1": 0.8844621513944223
+  "source_alignment": {
+    "reading_version": "v3",
+    "slide_version": "v3",
+    "manifest": "Bai03_v3\\source\\slide_manifest.json",
+    "manifest_sha256": "1797b901617b4520bed5b203dc5856d1314aa0e57a6352c1abbabd775e07c332",
+    "summary_slides": [
+      [
+        "14",
+        "Tổng kết · Mỗi tin đi vào đúng một ô"
+      ],
+      [
+        "31",
+        "Tổng kết · Chọn đúng mẫu số"
+      ],
+      [
+        "40",
+        "Tổng kết · Chọn ngưỡng ở đâu?"
+      ],
+      [
+        "49",
+        "Tổng kết · Báo cáo để người khác kiểm lại"
+      ],
+      [
+        "56",
+        "Tổng quan · Từ dự đoán đến quyết định"
+      ]
+    ],
+    "new_core_bridge": "Kết nối từ chỉ số đến ngưỡng ra quyết định",
+    "original_source_sha256": "b666a6f22a9db8a112be7f0f1d1533fa3d6b90453558434d5a27ae36a7fa8869"
   },
-  "toy_thresholds": {
-    "0.5": {
-      "tn": 4,
-      "fp": 2,
-      "fn": 0,
-      "tp": 4,
-      "n": 10,
-      "accuracy": 0.8,
-      "precision": 0.6666666666666666,
-      "recall": 1.0,
-      "f1": 0.8
-    },
-    "0.85": {
-      "tn": 5,
-      "fp": 1,
-      "fn": 2,
-      "tp": 2,
-      "n": 10,
-      "accuracy": 0.7,
-      "precision": 0.6666666666666666,
-      "recall": 0.5,
-      "f1": 0.5714285714285714
-    },
-    "0.9": {
-      "tn": 5,
-      "fp": 1,
-      "fn": 3,
-      "tp": 1,
-      "n": 10,
-      "accuracy": 0.6,
-      "precision": 0.5,
-      "recall": 0.25,
-      "f1": 0.3333333333333333
-    }
-  },
-  "validation_thresholds_checked": 12,
-  "best_min_votes": {
-    "5FP+FN": 8,
-    "FP+5FN": 4
-  },
-  "real_error_records_checked": 4,
-  "questions": 6,
-  "prerequisite_questions": 2,
+  "verification": "Updated examples and selected historical CSV metrics checked in KIEM_TRA_SO_LIEU_V3.json; all final rendered pages visually reviewed.",
   "status": "pass",
-  "planned_pages": 12,
+  "planned_pages": 14,
   "main_sections": 10,
-  "equations": 8,
+  "equations": 9,
   "figures": 4,
-  "docx_sha256": "10fbe59caa14a225e4ef07b6b1d2a6395f7a222e13f01a7ccbb1547ed8576847"
+  "docx_sha256": "74db87446ab45e3265f1dad73c85014f1e724a011a62ce523745d9bedf3d1dc1",
+  "pdf_sha256": "c80ffcafcad6bba4f0f87ae0bf0c26a75982488d4bc1e214edc23236c0d0c712",
+  "actual_pages": 14
 }

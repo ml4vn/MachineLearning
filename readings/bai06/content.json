@@ -31,7 +31,67 @@
         {
           "type": "cue",
           "kind": "try",
-          "text": "**Cách học:** dự kiến 30–40 phút; không cần lập trình. Đọc mục 1–8, tự làm mục 9 rồi xem đáp án. Phụ lục B dành cho người muốn hiểu thêm về cắt tỉa."
+          "text": "**Cách học:** dự kiến 40–50 phút; không cần lập trình. Đọc mục 1–8, tự làm mục 9 rồi xem đáp án. Phụ lục B dành cho người muốn hiểu thêm về cắt tỉa."
+        }
+      ]
+    },
+    {
+      "title": "Lộ trình đọc và đối chiếu với bài giảng",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 6, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+        },
+        {
+          "type": "h",
+          "text": "Đọc để chuẩn bị điều gì"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Từ câu hỏi chia nhánh đến cây",
+            "Gini và mức giảm có trọng số",
+            "CART, lá và cắt tỉa",
+            "Đọc AP trên validation"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học."
+        },
+        {
+          "type": "table",
+          "head": [
+            "Slide",
+            "Mốc ôn tập trong bài giảng"
+          ],
+          "rows": [
+            [
+              "20",
+              "Tổng kết: cách tính và so sánh Gini"
+            ],
+            [
+              "31",
+              "Tổng kết: quét ngưỡng và dựng cây"
+            ],
+            [
+              "46",
+              "Tổng kết: CART, độ phức tạp và cắt tỉa"
+            ],
+            [
+              "67",
+              "Tổng quan Bài 6"
+            ]
+          ],
+          "widths": [
+            0.7,
+            6.1
+          ]
+        },
+        {
+          "type": "cue",
+          "kind": "remember",
+          "text": "Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp."
         }
       ]
     },
@@ -297,6 +357,76 @@
       ]
     },
     {
+      "title": "CART và ý nghĩa của cắt tỉa",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Tại mỗi nút, CART xét các phép chia hợp lệ, so sánh mức giảm Gini, chọn phép chia tốt nhất tại nút đó rồi lặp trên hai nút con. Khi gặp điều kiện dừng hoặc không còn phép chia hợp lệ, nút trở thành lá; lá không nhất thiết thuần nhất."
+        },
+        {
+          "type": "equation",
+          "tex": "R(T)=\\sum_{\\ell\\in\\mathcal{L}(T)}\\frac{n_\\ell}{N}G(\\ell)",
+          "meaning": "T là cây; ℒ(T) là tập lá; nℓ là số mẫu tại lá ℓ; N là số mẫu train. R đo độ không thuần còn lại, có trọng số theo số mẫu.",
+          "width": null
+        },
+        {
+          "type": "equation",
+          "tex": "R_\\alpha(T)=R(T)+\\alpha|\\mathcal{L}(T)|",
+          "meaning": "L = |ℒ(T)| là số lá; α không âm là mức phạt mỗi lá. L ở đây không phải nhãn “nhánh trái”. Độ sâu đếm số cạnh từ gốc tới lá sâu nhất.",
+          "width": null
+        },
+        {
+          "type": "table",
+          "head": [
+            "Cây toy",
+            "R(T)",
+            "L",
+            "Rα với α = 0,1",
+            "Rα với α = 0,3"
+          ],
+          "rows": [
+            [
+              "Ba lá",
+              "0",
+              "3",
+              "0,30",
+              "0,90"
+            ],
+            [
+              "Hai lá",
+              "0,25",
+              "2",
+              "0,45",
+              "0,85"
+            ],
+            [
+              "Một lá",
+              "0,50",
+              "1",
+              "0,60",
+              "0,80"
+            ]
+          ],
+          "widths": [
+            1.3,
+            1,
+            0.6,
+            1.95,
+            1.95
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Với α = 0,1, cây ba lá tốt hơn; với α = 0,3, cây một lá tốt hơn. Chọn độ phức tạp bằng validation. CART là cách chọn tham lam tại từng nút, không bảo đảm cây tốt nhất trong mọi cây có thể có."
+        },
+        {
+          "type": "cue",
+          "kind": "try",
+          "text": "Tự kiểm: cây có 3 lá có bắt buộc sâu 3 không? Không. Cây toy có 3 lá, độ sâu 2 và 5 nút."
+        }
+      ]
+    },
+    {
       "title": "7 Cùng làm một ví dụ từ đầu đến cuối",
       "blocks": [
         {
@@ -480,6 +610,63 @@
       ]
     },
     {
+      "title": "AP trên validation đo điều gì",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ở một lá, tỷ lệ mẫu train dương tạo điểm dự đoán p. Xếp các mẫu validation theo điểm giảm dần để tính AP. AP validation là AP đo trên tập validation; dùng nó để chọn cấu hình trước khi đánh giá test."
+        },
+        {
+          "type": "equation",
+          "tex": "AP=\\sum_j(R_j-R_{j-1})P_j",
+          "meaning": "P là precision, R là recall. Mỗi nhóm mẫu đồng điểm được xét cùng nhau khi hạ ngưỡng.",
+          "width": null
+        },
+        {
+          "type": "table",
+          "head": [
+            "Cây toy hai lá",
+            "Số dương",
+            "Số âm",
+            "Điểm p"
+          ],
+          "rows": [
+            [
+              "Lá hẹn ≤ 15",
+              "4",
+              "0",
+              "1"
+            ],
+            [
+              "Lá còn lại",
+              "2",
+              "6",
+              "0,25"
+            ]
+          ],
+          "widths": [
+            2.8,
+            1.2,
+            1.2,
+            1.6
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Ở mức điểm 1: precision = 1, recall = 4/6. Lấy thêm nhóm điểm 0,25: precision = 6/12, recall = 1. AP = (4/6)×1 + (1−4/6)×(1/2) = 5/6. Đây là phép tính toy trên 12 mẫu, không phải AP validation của Olist."
+        },
+        {
+          "type": "p",
+          "text": "Trong case Olist, AP validation của cây độ sâu 3 khoảng 0,0817; của cây độ sâu 6 khoảng 0,1005. Chọn độ sâu 6 trong hai cấu hình đã so sánh. Không đọc 0,1005 thành “đúng 10,05%”."
+        },
+        {
+          "type": "cue",
+          "kind": "try",
+          "text": "ROC-AUC cũng đo xếp hạng, so điểm mẫu dương với mẫu âm; AUC validation chỉ rõ tập được dùng để đo. Hai chỉ số không thay thế việc xem FP/FN tại ngưỡng triển khai."
+        }
+      ]
+    },
+    {
       "title": "9 Tự kiểm tra trước khi đến lớp",
       "blocks": [
         {
@@ -594,7 +781,7 @@
         },
         {
           "type": "p",
-          "text": "Bám Bài 06 v2 và notes 68 slide, ưu tiên phần lõi 1–60; cắt tỉa thuộc mở rộng. Mã nguồn tính lại các phép chia toy, học lại hai cây và đối chiếu toàn bộ điểm dự đoán đã lưu. CSV ví dụ, cấu hình và báo cáo phép tính đi kèm."
+          "text": "Đối chiếu Bài 6 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Mã nguồn tính lại các phép chia toy, học lại hai cây và đối chiếu toàn bộ điểm dự đoán đã lưu. CSV ví dụ, cấu hình và báo cáo phép tính đi kèm."
         },
         {
           "type": "link",
@@ -671,7 +858,7 @@
         },
         {
           "type": "equation",
-          "tex": "\\Delta C=(2129-359)+5(3046-3317)=1770-1355=415",
+          "tex": "\\Delta K=(2129-359)+5(3046-3317)=1770-1355=415",
           "meaning": "Cây tăng 1.770 FP, giảm 271 FN; chi phí lớn hơn logistic 415 đơn vị giả định. Logistic có chi phí nhỏ hơn trên test này. Hệ số 5 là lựa chọn mô phỏng chi phí, không phải giá tiền đã đo.",
           "width": null
         },
@@ -691,7 +878,7 @@
         },
         {
           "type": "equation",
-          "tex": "R(T)=\\sum_{l\\in leaves(T)}\\frac{n_l}{N}G_l,\\qquad R_\\alpha(T)=R(T)+\\alpha|leaves(T)|",
+          "tex": "R(T)=\\sum_{\\ell\\in\\mathcal{L}(T)}\\frac{n_\\ell}{N}G(\\ell),\\qquad R_\\alpha(T)=R(T)+\\alpha|\\mathcal{L}(T)|",
           "meaning": "R là Gini các lá có trọng số theo toàn bộ N mẫu train. α≥0 phạt số lá. Đây không phải tỷ lệ phân loại sai và không phải chi phí FP+5FN [3].",
           "width": null
         },
@@ -773,5 +960,7 @@
       "label": "[3] scikit-learn 1.6 – Cost complexity pruning",
       "url": "https://scikit-learn.org/1.6/auto_examples/tree/plot_cost_complexity_pruning.html"
     }
-  ]
+  ],
+  "reading_version": "v3",
+  "slide_version": "v3"
 }

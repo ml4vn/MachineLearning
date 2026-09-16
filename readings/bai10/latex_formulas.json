@@ -6,8 +6,8 @@
   },
   {
     "file": "formula_02.png",
-    "latex": "a_j=\\sum_r W_{jr}x_r+b_j,\\quad h_j=ReLU(a_j),\\quad s=\\sum_jv_jh_j+c",
-    "meaning": "W,b là trọng số/bias tầng ẩn; v,c của tầng ra. Chỉ số j chỉ đơn vị ẩn, r chỉ đầu vào; x ở ví dụ này là vector cột."
+    "latex": "a_j=\\sum_r w_{jr}x_r+b_{1,j},\\quad h_j=ReLU(a_j),\\quad s=\\sum_jv_jh_j+b",
+    "meaning": "W₁,b₁ là ma trận trọng số/vector bias tầng ẩn; v,b của tầng ra. Chỉ số j chỉ đơn vị ẩn, r chỉ đầu vào; x ở ví dụ này là vector cột."
   },
   {
     "file": "formula_03.png",
@@ -21,32 +21,52 @@
   },
   {
     "file": "formula_05.png",
-    "latex": "\\frac{\\partial L}{\\partial v_j}=\\frac{1}{4}\\sum_i(p_i-y_i)h_{ij},\\qquad\\frac{\\partial L}{\\partial c}=\\frac{1}{4}\\sum_i(p_i-y_i)",
-    "meaning": "Cộng từng cột rồi chia 4: gradient theo (v₁,v₂,c)=(0;0,125;0). Chưa chia 4 thì đang lấy gradient tổng loss."
+    "latex": "\\delta=p-y=-0.449176",
+    "meaning": "Với sigmoid và binary cross-entropy của một mẫu, δ là đạo hàm của loss theo điểm s."
   },
   {
     "file": "formula_06.png",
-    "latex": "(v_1,v_2,c)_{moi}=(0,0,0)-8(0,0.125,0)=(0,-1,0)",
-    "meaning": "Chọn η=8 chỉ cho phép tính minh họa này. Tính lại s=(0,0,0,−1), p≈(0,5;0,5;0,5;0,26894)."
+    "latex": "\\frac{\\partial\\ell}{\\partial w_{11}}=\\delta\\,v_1\\,\\mathbf{1}_{a_1>0}\\,x_1",
+    "meaning": "Đi ngược đầu ra → h₁ → a₁ → w₁₁. ReLU có đạo hàm 1 tại a₁ = 0,32 > 0; x₁ = 0,6 là đầu vào của trọng số này."
   },
   {
     "file": "formula_07.png",
+    "latex": "\\frac{\\partial\\ell}{\\partial w_{11}}=(-0.449176)(0.7)(1)(0.6)=-0.188654",
+    "meaning": "Mọi thừa số được lấy từ cùng lượt forward, trước khi cập nhật bất kỳ tham số nào."
+  },
+  {
+    "file": "formula_08.png",
+    "latex": "w_{11}^{new}=0.5-0.1(-0.188654)=0.518865",
+    "meaning": "Learning rate η = 0,1. Đây là minh họa một thành phần của bước cập nhật; huấn luyện toàn mạng tính gradient cho tất cả tham số."
+  },
+  {
+    "file": "formula_09.png",
+    "latex": "\\frac{\\partial L}{\\partial v_j}=\\frac{1}{4}\\sum_i(p_i-y_i)h_{ij},\\qquad\\frac{\\partial L}{\\partial b}=\\frac{1}{4}\\sum_i(p_i-y_i)",
+    "meaning": "Cộng từng cột rồi chia 4: gradient theo (v₁,v₂,b)=(0;0,125;0). Chưa chia 4 thì đang lấy gradient tổng loss."
+  },
+  {
+    "file": "formula_10.png",
+    "latex": "(v_1,v_2,b)_{moi}=(0,0,0)-8(0,0.125,0)=(0,-1,0)",
+    "meaning": "Chọn η=8 chỉ cho phép tính minh họa này. Tính lại s=(0,0,0,−1), p≈(0,5;0,5;0,5;0,26894)."
+  },
+  {
+    "file": "formula_11.png",
     "latex": "2\\times2+2+2\\times1+1=9",
     "meaning": "Bốn trọng số tầng ẩn, hai bias ẩn, hai trọng số tầng ra và một bias ra. Sigmoid không thêm tham số. Nếu giữ tầng ẩn cố định thì số tham số đang học có thể chỉ là ba."
   },
   {
-    "file": "formula_08.png",
+    "file": "formula_12.png",
     "latex": "v_{2,moi}=0-8\\left(\\frac{0.5}{4}\\right)=-1",
     "meaning": "B. A quên chia số điểm khi loss là trung bình; C đảo dấu cập nhật gradient descent."
   },
   {
-    "file": "formula_09.png",
-    "latex": "\\delta=p-y,\\quad\\frac{\\partial L}{\\partial v_j}=\\delta h_j,\\quad\\frac{\\partial L}{\\partial c}=\\delta",
+    "file": "formula_13.png",
+    "latex": "\\delta=p-y,\\quad\\frac{\\partial L}{\\partial v_j}=\\delta h_j,\\quad\\frac{\\partial L}{\\partial b}=\\delta",
     "meaning": "δ≈−0,449176. Đây là một điểm, không phải trung bình nhiều điểm. Tất cả số dùng tham số cũ."
   },
   {
-    "file": "formula_10.png",
-    "latex": "\\delta_j=\\delta v_j\\,\\mathbf{1}_{a_j>0},\\quad\\frac{\\partial L}{\\partial W_{jr}}=\\delta_jx_r,\\quad\\frac{\\partial L}{\\partial b_j}=\\delta_j",
-    "meaning": "Hệ số chỉ báo bằng 1 khi aⱼ>0 và bằng 0 khi aⱼ<0; tại 0, đạo hàm ReLU cần quy ước. δ₁≈−0,314423; δ₂≈0,224588. Ví dụ ∂L/∂W₁₁=δ₁×0,6≈−0,188654. GD với η=0,1 cho W₁₁ mới≈0,518865; các tham số khác cũng được cập nhật đồng thời."
+    "file": "formula_14.png",
+    "latex": "\\delta_j=\\delta v_j\\,\\mathbf{1}_{a_j>0},\\quad\\frac{\\partial L}{\\partial w_{jr}}=\\delta_jx_r,\\quad\\frac{\\partial L}{\\partial b_{1,j}}=\\delta_j",
+    "meaning": "Hệ số chỉ báo bằng 1 khi aⱼ>0 và bằng 0 khi aⱼ<0; tại 0, đạo hàm ReLU cần quy ước. δ₁≈−0,314423; δ₂≈0,224588. Ví dụ ∂L/∂w₁₁=δ₁×0,6≈−0,188654. GD với η=0,1 cho w₁₁ mới≈0,518865; các tham số khác cũng được cập nhật đồng thời."
   }
 ]

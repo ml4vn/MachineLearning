@@ -4,24 +4,28 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang](Bai03_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai03_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai03/README.md)
+[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai03_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai03_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai03/README.md)
+
+**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
 ## Mục lục
 
 - [1 Bài học này giải quyết vấn đề gì](#muc-1)
-- [2 Bạn cần biết gì trước khi bắt đầu](#muc-2)
-- [3 Dữ liệu của bài học trông như thế nào](#muc-3)
-- [4 Ý tưởng chính của phương pháp là gì](#muc-4)
-- [5 Những khái niệm và công thức nào cần nắm](#muc-5)
-- [6 Phương pháp được thực hiện như thế nào](#muc-6)
-- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-7)
-- [8 Đọc kết quả và tránh hiểu nhầm](#muc-8)
-- [9 Tự kiểm tra trước khi đến lớp](#muc-9)
-- [10 Những điều cần nhớ](#muc-10)
-- [Phụ lục A Đáp án có giải thích](#muc-11)
-- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-12)
+- [Lộ trình đọc và đối chiếu với bài giảng](#muc-2)
+- [2 Bạn cần biết gì trước khi bắt đầu](#muc-3)
+- [3 Dữ liệu của bài học trông như thế nào](#muc-4)
+- [4 Ý tưởng chính của phương pháp là gì](#muc-5)
+- [5 Những khái niệm và công thức nào cần nắm](#muc-6)
+- [6 Phương pháp được thực hiện như thế nào](#muc-7)
+- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-8)
+- [8 Đọc kết quả và tránh hiểu nhầm](#muc-9)
+- [Kết nối từ chỉ số đến ngưỡng ra quyết định](#muc-10)
+- [9 Tự kiểm tra trước khi đến lớp](#muc-11)
+- [10 Những điều cần nhớ](#muc-12)
+- [Phụ lục A Đáp án có giải thích](#muc-13)
+- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-14)
 
 <a id="muc-1"></a>
 
@@ -42,9 +46,34 @@ kNN đã khóa đúng 1.003/1.032 tin và tìm được 111/128 spam. Nó tốt 
 - Theo dõi điều gì đổi khi thay ngưỡng trên cùng điểm.
 - Viết kết luận gắn chỉ số với dữ liệu và hậu quả lỗi.
 
-> ✏️ **Cách học:** khoảng 30–40 phút, không cần lập trình. Đọc phần chính, tự làm sáu câu ở mục 9 rồi xem phụ lục A. Phần chi phí và chỉ số mở rộng ở phụ lục B là tùy chọn.
+> ✏️ **Cách học:** khoảng 40–50 phút, không cần lập trình. Đọc phần chính, tự làm sáu câu ở mục 9 rồi xem phụ lục A. Phần chi phí và chỉ số mở rộng ở phụ lục B là tùy chọn.
 
 <a id="muc-2"></a>
+
+## Lộ trình đọc và đối chiếu với bài giảng
+
+Bản tài liệu cập nhật v3 • Đối chiếu Bài 3, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+
+### Đọc để chuẩn bị điều gì
+
+- Đếm TP, FP, FN, TN
+- Đọc precision và recall
+- Chọn ngưỡng theo chi phí
+- Khóa lựa chọn trước khi mở test
+
+Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học.
+
+| Slide | Mốc ôn tập trong bài giảng |
+| --- | --- |
+| 14 | Tổng kết · Mỗi tin đi vào đúng một ô |
+| 31 | Tổng kết · Chọn đúng mẫu số |
+| 40 | Tổng kết · Chọn ngưỡng ở đâu? |
+| 49 | Tổng kết · Báo cáo để người khác kiểm lại |
+| 56 | Tổng quan · Từ dự đoán đến quyết định |
+
+> 📌 Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp.
+
+<a id="muc-3"></a>
 
 ## 2 Bạn cần biết gì trước khi bắt đầu
 
@@ -71,7 +100,7 @@ Ví dụ mô phỏng: 15 cảnh báo đúng trong 20 cảnh báo; đồng thời
 
 Một điểm 0,75 không tự bảo đảm 75% khả năng một tin riêng lẻ là spam. Đối với kNN bài 2, điểm là tỷ lệ phiếu trong 11 láng giềng; việc kiểm xác suất cần bước đánh giá riêng.
 
-<a id="muc-3"></a>
+<a id="muc-4"></a>
 
 ## 3 Dữ liệu của bài học trông như thế nào
 
@@ -97,7 +126,7 @@ Tin này là trao đổi cá nhân theo nhãn nguồn. Mô hình cảnh báo spa
 
 > 🔎 **Đọc có căn cứ:** đặt tên lỗi từ cặp y và dự đoán. Không suy chữ in hoa gây ra FP vì mô hình này chỉ dùng số ký tự và tỷ lệ chữ số. Hai ví dụ được chọn để giải thích lỗi, không phải mẫu ngẫu nhiên.
 
-<a id="muc-4"></a>
+<a id="muc-5"></a>
 
 ## 4 Ý tưởng chính của phương pháp là gì
 
@@ -120,7 +149,7 @@ Cộng bốn ô: 892 + 12 + 17 + 111 = 1.032. Hàng ham có 904 tin; hàng spam 
 
 > ✏️ **Dừng để tự nói lại:** mã 1056 đóng góp vào ô nào và cột nào? Nếu chỉ đổi ngưỡng, tổng số spam thật trong hàng có đổi không? Nhãn thật và tập SMS vẫn giữ nguyên.
 
-<a id="muc-5"></a>
+<a id="muc-6"></a>
 
 ## 5 Những khái niệm và công thức nào cần nắm
 
@@ -152,7 +181,7 @@ F1 không chứa TN và không tự biểu diễn tiền, lợi ích hay hậu q
 
 > 📌 **Mẫu số 0:** nếu không có cảnh báo, precision theo phép chia không xác định. Thư viện có thể trả 0 theo quy ước; phải nói rõ “không có cảnh báo”, không xem 0/0 là số 0.
 
-<a id="muc-6"></a>
+<a id="muc-7"></a>
 
 ## 6 Phương pháp được thực hiện như thế nào
 
@@ -180,7 +209,7 @@ Trong bộ bài này, test đã được xem ở bài 2. Bài 3 dùng lại nó 
 
 > ✏️ **Tự kiểm:** đổi ngưỡng có đổi điểm s hoặc nhãn thật y không? Không, nếu mô hình và tập dữ liệu giữ nguyên; chỉ nhãn dự đoán có thể đổi.
 
-<a id="muc-7"></a>
+<a id="muc-8"></a>
 
 ## 7 Cùng làm một ví dụ từ đầu đến cuối
 
@@ -215,23 +244,23 @@ Hai cách tính khớp. 0,8 ở F1 và accuracy trùng nhau trong ví dụ này;
 
 > ✏️ **Tự làm tiếp:** che cột “Ô”, tính lại nhóm của E. Hãy nói rõ E được cảnh báo nhưng có nhãn thật nào.
 
-<a id="muc-8"></a>
+<a id="muc-9"></a>
 
 ## 8 Đọc kết quả và tránh hiểu nhầm
 
-Giữ nguyên 10 điểm và nhãn ở mục 7. Với ngưỡng 0,85, chỉ A,B,C được cảnh báo. Hai TP là A,C; B là FP. D,F chuyển từ TP thành FN. Các nhãn thật không đổi.
+Giữ nguyên 10 điểm và nhãn ở mục 7. Với ngưỡng 0,8, chỉ A,B,C được cảnh báo. Hai TP là A,C; B là FP. D,F chuyển từ TP thành FN. Các nhãn thật không đổi.
 
-![Hình 4. Điểm và nhãn của 10 bản ghi mô phỏng. Các đường lần lượt tại 0,50; 0,85; 0,90. Điểm nằm đúng ngưỡng vẫn được cảnh báo.](assets/threshold.png)
+![Hình 4. Điểm và nhãn của 10 bản ghi mô phỏng. Các đường lần lượt tại 0,50; 0,80; 0,90. Điểm nằm đúng ngưỡng vẫn được cảnh báo.](assets/threshold.png)
 
-*Hình 4. Điểm và nhãn của 10 bản ghi mô phỏng. Các đường lần lượt tại 0,50; 0,85; 0,90. Điểm nằm đúng ngưỡng vẫn được cảnh báo.*
+*Hình 4. Điểm và nhãn của 10 bản ghi mô phỏng. Các đường lần lượt tại 0,50; 0,80; 0,90. Điểm nằm đúng ngưỡng vẫn được cảnh báo.*
 
 | Ngưỡng | TP | FP | FN | TN | Precision | Recall |
 | --- | --- | --- | --- | --- | --- | --- |
 | 0,50 | 4 | 2 | 0 | 4 | 2/3 | 1 |
-| 0,85 | 2 | 1 | 2 | 5 | 2/3 | 1/2 |
+| 0,80 | 2 | 1 | 2 | 5 | 2/3 | 1/2 |
 | 0,90 | 1 | 1 | 3 | 5 | 1/2 | 1/4 |
 
-Tăng ngưỡng từ 0,85 lên 0,90 loại C, một TP, nên precision **giảm từ 2/3 xuống 1/2**. Với điểm cố định, tập cảnh báo ở ngưỡng cao là tập con của ngưỡng thấp: số cảnh báo, TP và FP không tăng; recall không tăng khi có spam thật. Precision là tỷ số nên không có bảo đảm tăng.
+Tăng ngưỡng từ 0,8 lên 0,90 loại C, một TP, nên precision **giảm từ 2/3 xuống 1/2**. Với điểm cố định, tập cảnh báo ở ngưỡng cao là tập con của ngưỡng thấp: số cảnh báo, TP và FP không tăng; recall không tăng khi có spam thật. Precision là tỷ số nên không có bảo đảm tăng.
 
 ### Quay lại dữ liệu thật
 
@@ -244,7 +273,28 @@ Tăng ngưỡng từ 0,85 lên 0,90 loại C, một TP, nên precision **giảm 
 
 > 📌 **Kết luận có phạm vi:** kNN tốt hơn mốc luôn ham trên test lịch sử này. Vẫn cần đọc 12 FP và 17 FN; không gọi một chỉ số là bằng chứng bộ lọc phù hợp mọi tình huống.
 
-<a id="muc-9"></a>
+<a id="muc-10"></a>
+
+## Kết nối từ chỉ số đến ngưỡng ra quyết định
+
+Một ngưỡng phù hợp phụ thuộc hậu quả của hai loại lỗi. Trong bài này, lớp dương là spam. FP là chặn nhầm tin ham; FN là bỏ lọt spam.
+
+```math
+K=c_{FP}FP+c_{FN}FN
+```
+
+K là tổng chi phí trên tập đang đánh giá; c là chi phí cho một lỗi tương ứng. Hệ số chi phí do bối cảnh quyết định, không tự suy ra từ accuracy.
+
+| Ưu tiên | Chi phí minh họa | Ngưỡng được chọn trên validation |
+| --- | --- | --- |
+| Tránh chặn nhầm ham | 5FP + FN | m = 8 láng giềng spam trong 11 |
+| Tránh bỏ lọt spam | FP + 5FN | m = 4 láng giềng spam trong 11 |
+
+Trong ví dụ A–J, ngưỡng τ = 0,8 chọn A, B, C: TP = 2 và FP = 1. Nâng lên 0,9 chỉ chọn A, B: TP = 1 và FP = 1. Precision giảm từ 2/3 xuống 1/2. Vì vậy, precision không nhất thiết tăng ở mọi bước tăng ngưỡng.
+
+> ✏️ Tự kiểm: có được xem test rồi chọn lại m không? Không. Khi đó test đã tham gia chọn mô hình và không còn là phép đánh giá độc lập cho lựa chọn đó.
+
+<a id="muc-11"></a>
 
 ## 9 Tự kiểm tra trước khi đến lớp
 
@@ -260,7 +310,7 @@ Tự trả lời trước khi xem phụ lục A. Với câu trắc nghiệm, ch�
 
 **Câu 3.** Ví dụ mô phỏng có 20 tin, 5 spam thật, 5 cảnh báo, trong đó 3 cảnh báo đúng. Lập bốn ô và tính accuracy, precision, recall, F1.
 
-**Câu 4.** Trên cùng bảng điểm A–J, tăng ngưỡng từ 0,85 lên 0,90 làm precision ra sao?
+**Câu 4.** Trên cùng bảng điểm A–J, tăng ngưỡng từ 0,8 lên 0,90 làm precision ra sao?
 
 - **A.** Tăng vì ngưỡng luôn loại lỗi
 - **B.** Giảm vì loại C là một TP
@@ -276,7 +326,7 @@ Tự trả lời trước khi xem phụ lục A. Với câu trắc nghiệm, ch�
 
 > ✏️ **Mang đến lớp:** một câu diễn giải precision và một câu diễn giải recall dùng hai nhóm mẫu số rõ ràng. Nếu chưa chắc, vẽ cột cảnh báo và hàng spam thật.
 
-<a id="muc-10"></a>
+<a id="muc-12"></a>
 
 ## 10 Những điều cần nhớ
 
@@ -296,7 +346,7 @@ Tự trả lời trước khi xem phụ lục A. Với câu trắc nghiệm, ch�
 
 ### Nguồn để đọc và kiểm lại
 
-Bám Bài 3 v2, slide 1–31 và 33–56; ví dụ A–J và CSV test, validation được cung cấp kèm. Dữ liệu UCI có ghi công Almeida và Hidalgo, CC BY 4.0. Các chỉ số được tái tính trực tiếp và đối chiếu thư viện.
+Đối chiếu Bài 3 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu UCI có ghi công Almeida và Hidalgo, CC BY 4.0. Các chỉ số được tái tính trực tiếp và đối chiếu thư viện.
 
 [\[1\] UCI SMS Spam Collection Almeida và Hidalgo 2011](https://archive.ics.uci.edu/dataset/228/sms+spam+collection)
 
@@ -306,7 +356,7 @@ Bám Bài 3 v2, slide 1–31 và 33–56; ví dụ A–J và CSV test, validatio
 
 > 🔎 **Liên hệ tiếp:** bài 4 chuyển sang dự đoán số ngày giao hàng bằng hồi quy; bài 5 dự đoán nhãn trễ bằng logistic. Khi đầu ra là nhãn, ma trận, precision, recall và ngưỡng của bài này sẽ tiếp tục được sử dụng.
 
-<a id="muc-11"></a>
+<a id="muc-13"></a>
 
 ## Phụ lục A Đáp án có giải thích
 
@@ -335,7 +385,7 @@ Hai mẫu số precision và recall tình cờ cùng bằng 5. Chúng vẫn là 
 
 ### Câu 4
 
-Đáp án B. Ngưỡng 0,85 cảnh báo A,B,C; ngưỡng 0,90 cảnh báo A,B. C là spam thật nên mất một TP: precision từ 2/3 xuống 1/2. A là khẳng định quá mạnh; C nhầm giữ điểm với giữ quyết định.
+Đáp án B. Ngưỡng 0,8 cảnh báo A,B,C; ngưỡng 0,90 cảnh báo A,B. C là spam thật nên mất một TP: precision từ 2/3 xuống 1/2. A là khẳng định quá mạnh; C nhầm giữ điểm với giữ quyết định.
 
 ### Câu 5
 
@@ -347,7 +397,7 @@ F1 spam không đổi vì TP, FP, FN giữ nguyên, còn TN không có trong cô
 
 > ✏️ **Tự sửa:** nhầm ô → mục 4; nhầm tỷ lệ → mục 5 và 7; nhầm ngưỡng hoặc phạm vi → mục 6 và 8.
 
-<a id="muc-12"></a>
+<a id="muc-14"></a>
 
 ## Phụ lục B Kiến thức mở rộng tùy chọn
 

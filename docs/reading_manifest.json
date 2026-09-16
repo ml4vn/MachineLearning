@@ -1,25 +1,13 @@
 {
-  "source": "Bộ tài liệu đọc trước đã hoàn tất ngày 13/09/2026",
+  "source": "Tài liệu đọc trước v3; đồng bộ ngày 16/09/2026",
+  "reading_version": "v3",
   "lessons": [
     {
       "lesson": 1,
       "title": "Vector và độ tương đồng cosine",
-      "pdf_pages": 12,
-      "docx_tables": 8,
-      "docx_images": 25,
-      "blocks": 86,
-      "original_export_hashes_match": true,
+      "slide_version": "v3",
+      "pdf_pages": 14,
       "files": [
-        {
-          "path": "readings/bai01/01_Ke_hoach_va_ra_soat.md",
-          "bytes": 4476,
-          "sha256": "4fb604e2653f337098d113ee81c521ad5115449c2b661417d64da513c544e0d9"
-        },
-        {
-          "path": "readings/bai01/02_Kiem_tra_va_hoan_tat.json",
-          "bytes": 761,
-          "sha256": "689e2faf4abc2f578bdcadacbe19b8be605389431b07bf25cc8ae0e0575e2780"
-        },
         {
           "path": "readings/bai01/assets/angles.png",
           "bytes": 32280,
@@ -72,16 +60,21 @@
         },
         {
           "path": "readings/bai01/assets/formula_07.png",
+          "bytes": 10803,
+          "sha256": "a07b1f533c81daf26c97e108a901bd017ed50f3c8d5527536a03b8dfb8afa6b4"
+        },
+        {
+          "path": "readings/bai01/assets/formula_08.png",
           "bytes": 13096,
           "sha256": "2bba8b4dba70cf39008f9dc2163c211b61fdd2e15f5856e2d75307702e723973"
         },
         {
-          "path": "readings/bai01/assets/formula_08.png",
+          "path": "readings/bai01/assets/formula_09.png",
           "bytes": 17108,
           "sha256": "f38ecc007f9782e33e166a768e8595417f9e0537ebed72ba063defcfd6b95bb2"
         },
         {
-          "path": "readings/bai01/assets/formula_09.png",
+          "path": "readings/bai01/assets/formula_10.png",
           "bytes": 11085,
           "sha256": "330d50c1ffc5f7723c31fc0ff52445789096ba1e4d6d4306bd3191f3a11c2c40"
         },
@@ -132,28 +125,33 @@
         },
         {
           "path": "readings/bai01/Bai01_Kien_thuc_nen_tang_va_doc_truoc.docx",
-          "bytes": 340601,
-          "sha256": "82d59540b2d4a5496c0db4e2d31ba8a928482857e93dab78cab8a0ab377c1608"
+          "bytes": 352618,
+          "sha256": "fb5bc2fb8401a90128a3473aa5ad661ab8cc2ff0a61b1f841a11e17309ece8c5"
+        },
+        {
+          "path": "readings/bai01/Bai01_Kien_thuc_nen_tang_va_doc_truoc.md",
+          "bytes": 22190,
+          "sha256": "2efeabdfa1a1825be028c3f32f85a6327a85d3ae49fc5c563f58373b24c6c5b2"
         },
         {
           "path": "readings/bai01/Bai01_Kien_thuc_nen_tang_va_doc_truoc.pdf",
-          "bytes": 1096831,
-          "sha256": "9261716f35083c4dd2767554bf923721b128900deda13fb472a81c55410b1d93"
+          "bytes": 1118583,
+          "sha256": "de4f9a88f037a6732c505591a8e9c68e059155e816e43f1869793c020733279a"
         },
         {
           "path": "readings/bai01/calculation_checks.json",
-          "bytes": 825,
-          "sha256": "888ec8ed16ca191e4c5ee852b49bc8d2786474d2fc7a0eec68b06c55ec6f34cf"
+          "bytes": 1393,
+          "sha256": "ea1a1bdd87a0e971ba8e5c27277d306b71da73f1431d1bec91bb71c091ba8527"
         },
         {
           "path": "readings/bai01/content.json",
-          "bytes": 31998,
-          "sha256": "8659a69597d987e5976390f5d460253c8c6b90e118c38e4af34132b0bd04b728"
+          "bytes": 36322,
+          "sha256": "16ae982c1110c3ea738ba7b1e23df497e907773b87b810165a70b01976b5f811"
         },
         {
-          "path": "readings/bai01/Dieu_khoan_MovieLens.md",
-          "bytes": 8342,
-          "sha256": "63d22ac138e80fae37021797ed8e1b9424b5239dc576a137422adf783ae3f404"
+          "path": "readings/bai01/doi_chieu_v3.json",
+          "bytes": 851,
+          "sha256": "a8822b089e702f0fdf02aa3a901e394d64986a40cab94466d5a3bf2ef5338950"
         },
         {
           "path": "readings/bai01/du_lieu_vi_du.csv",
@@ -162,8 +160,8 @@
         },
         {
           "path": "readings/bai01/latex_formulas.json",
-          "bytes": 2803,
-          "sha256": "5501beece2058bc546914cc533771cc3432405f19e51b1970bae72f5867d3c8e"
+          "bytes": 3104,
+          "sha256": "39195a2ebc74a632992e6de92144f449cdc5f6ea2c0680dd0969b4564609475d"
         },
         {
           "path": "readings/bai01/movies.csv",
@@ -175,22 +173,9 @@
     {
       "lesson": 2,
       "title": "kNN và chuẩn hóa qua dữ liệu SMS",
-      "pdf_pages": 12,
-      "docx_tables": 11,
-      "docx_images": 22,
-      "blocks": 90,
-      "original_export_hashes_match": true,
+      "slide_version": "v3",
+      "pdf_pages": 14,
       "files": [
-        {
-          "path": "readings/bai02/01_Ke_hoach_va_ra_soat.md",
-          "bytes": 4665,
-          "sha256": "663ef35dc7183ba93f0885160ddbe9f998a5f2850fbbaf4d4339623b236c8329"
-        },
-        {
-          "path": "readings/bai02/02_Kiem_tra_va_hoan_tat.json",
-          "bytes": 762,
-          "sha256": "c104ff02177891427682dd89018a8b8ff09e910a53124a5e141b5941c0c7b246"
-        },
         {
           "path": "readings/bai02/assets/formula_01.png",
           "bytes": 14728,
@@ -218,6 +203,11 @@
         },
         {
           "path": "readings/bai02/assets/formula_06.png",
+          "bytes": 4826,
+          "sha256": "f26ceb9f8fd914e124bcd5156de0b24fe60087aa94da869567850158a987ab31"
+        },
+        {
+          "path": "readings/bai02/assets/formula_07.png",
           "bytes": 16491,
           "sha256": "2be03dc120d931b09d9901c6a8d56c85089d99588f55f0b7818df9e625284095"
         },
@@ -278,28 +268,38 @@
         },
         {
           "path": "readings/bai02/Bai02_Kien_thuc_nen_tang_va_doc_truoc.docx",
-          "bytes": 289813,
-          "sha256": "3b895b3d0c4c159b04c83c7831d4cf2e2028ee434340841b98bb560157284cc6"
+          "bytes": 296187,
+          "sha256": "8e92227b5a9dbf7f6232de728aa2a37c6932e02b7f60c6b55620d23bd3c6e989"
+        },
+        {
+          "path": "readings/bai02/Bai02_Kien_thuc_nen_tang_va_doc_truoc.md",
+          "bytes": 23025,
+          "sha256": "adece849922632bbfccb2a1beac6e1db782136d946c3f0874a7e848ba2305786"
         },
         {
           "path": "readings/bai02/Bai02_Kien_thuc_nen_tang_va_doc_truoc.pdf",
-          "bytes": 1174451,
-          "sha256": "7b64d7c9e2d96fa79934bbb8020c1cc236c8ba36adfaa83b61611786ce2c0bd7"
+          "bytes": 1195413,
+          "sha256": "183f9c5da6201839cbd20b0d4fa164e82dc6714b9a8e475bc7ffd120a7fc5245"
         },
         {
           "path": "readings/bai02/calculation_checks.json",
-          "bytes": 833,
-          "sha256": "e564fa4b81a564ba6021407b3122fc3ef534c99485b5258ebf7a5e2a3a7d17ef"
+          "bytes": 1415,
+          "sha256": "5220a83dee3a20243a8631a9a6ca72c6c0cbbed08f4e1cd1da552b231bcf8e09"
         },
         {
           "path": "readings/bai02/content.json",
-          "bytes": 33589,
-          "sha256": "026d6b36436754d6eba2f016845bf78ecb93eb4d87d4a2c47e4a011f363d6c76"
+          "bytes": 38136,
+          "sha256": "e07ec25ea2e67cdb27caed6afa1d52d4794180f91bfef8c61e388c89e9bfd069"
+        },
+        {
+          "path": "readings/bai02/doi_chieu_v3.json",
+          "bytes": 874,
+          "sha256": "29c70796252dab662dfdaf73bd56550d6cd108510e372d56bd2f99f656a1f248"
         },
         {
           "path": "readings/bai02/latex_formulas.json",
-          "bytes": 2163,
-          "sha256": "21176147e64898d7529fa97e9286828d03436011fb365d61b8a51a36d5eff925"
+          "bytes": 2442,
+          "sha256": "488a52aa43da7edd1f197b02d9cde800daafcf24d58d96116a88aa9311f64613"
         },
         {
           "path": "readings/bai02/real_sms_samples.csv",
@@ -336,22 +336,9 @@
     {
       "lesson": 3,
       "title": "Đánh giá phân loại và lựa chọn ngưỡng",
-      "pdf_pages": 12,
-      "docx_tables": 11,
-      "docx_images": 24,
-      "blocks": 93,
-      "original_export_hashes_match": true,
+      "slide_version": "v3",
+      "pdf_pages": 14,
       "files": [
-        {
-          "path": "readings/bai03/01_Ke_hoach_va_ra_soat.md",
-          "bytes": 3807,
-          "sha256": "84bc2c6cd74ff383faa865d7a017a5a076abec127de57e17b50ce5d5e8504faf"
-        },
-        {
-          "path": "readings/bai03/02_Kiem_tra_va_hoan_tat.json",
-          "bytes": 762,
-          "sha256": "3dbbdb65fd81cc51d054e4c4f5cadbb078d20110af96f7e3e762af0c800d410f"
-        },
         {
           "path": "readings/bai03/assets/baseline.png",
           "bytes": 48240,
@@ -399,6 +386,11 @@
         },
         {
           "path": "readings/bai03/assets/formula_08.png",
+          "bytes": 7364,
+          "sha256": "afe2cf3cda10d7353c7fa7e14ff351d59243462adccfa1d0df6c74e73199fb60"
+        },
+        {
+          "path": "readings/bai03/assets/formula_09.png",
           "bytes": 21425,
           "sha256": "9f6e6acf6851f142b7bb07758b6ebaf1574ebd2ba4272b713fd6a69111118e7d"
         },
@@ -434,13 +426,13 @@
         },
         {
           "path": "readings/bai03/assets/threshold.png",
-          "bytes": 43288,
-          "sha256": "67fbdeca7e9b55072f51b14930392a402f2c1f98226f6accc8e95a5cc385f9bf"
+          "bytes": 42695,
+          "sha256": "ea70d4efc636037d98ad8ed43c27f5d7b2799f819285dab30da2c2f57ff2a947"
         },
         {
           "path": "readings/bai03/assets/threshold.svg",
-          "bytes": 11097,
-          "sha256": "4f001406fea80d9a7d52e14f760661e1bed51c83d4227de21180a9b2dbd537ad"
+          "bytes": 11451,
+          "sha256": "64432b6a30c3e221ab279bc0f85850719ee3c6e8606d79fcab85bc91af0bc860"
         },
         {
           "path": "readings/bai03/assets/try.png",
@@ -449,28 +441,38 @@
         },
         {
           "path": "readings/bai03/Bai03_Kien_thuc_nen_tang_va_doc_truoc.docx",
-          "bytes": 309470,
-          "sha256": "10fbe59caa14a225e4ef07b6b1d2a6395f7a222e13f01a7ccbb1547ed8576847"
+          "bytes": 318634,
+          "sha256": "74db87446ab45e3265f1dad73c85014f1e724a011a62ce523745d9bedf3d1dc1"
+        },
+        {
+          "path": "readings/bai03/Bai03_Kien_thuc_nen_tang_va_doc_truoc.md",
+          "bytes": 22571,
+          "sha256": "e3f6c3441888031e12bf870712ae7b2c225ea5df260de3089421b3767b8b7eec"
         },
         {
           "path": "readings/bai03/Bai03_Kien_thuc_nen_tang_va_doc_truoc.pdf",
-          "bytes": 1086715,
-          "sha256": "562b87e49e14046e08a09550f7c89c93107e4bd1e275e61cea927d4154fd4d71"
+          "bytes": 1103365,
+          "sha256": "c80ffcafcad6bba4f0f87ae0bf0c26a75982488d4bc1e214edc23236c0d0c712"
         },
         {
           "path": "readings/bai03/calculation_checks.json",
-          "bytes": 1449,
-          "sha256": "1b9891cce6e6a187d9ae96759bdd71244e352f6f80e6dd6ae22f294216009dc2"
+          "bytes": 1394,
+          "sha256": "36c13377bf407ef8de254f1a9c93f8f58a7a5b7a67d8a0ded04ac95b21f87ac3"
         },
         {
           "path": "readings/bai03/content.json",
-          "bytes": 34800,
-          "sha256": "b666a6f22a9db8a112be7f0f1d1533fa3d6b90453558434d5a27ae36a7fa8869"
+          "bytes": 38938,
+          "sha256": "ee9f07dc7ef1701873978436b7bd2effeb22713480f02c65846345db90f1f207"
+        },
+        {
+          "path": "readings/bai03/doi_chieu_v3.json",
+          "bytes": 853,
+          "sha256": "6600a4af711325d313b01400bd4cf1713c5790b68a58e03e45e6c0c996f3f10b"
         },
         {
           "path": "readings/bai03/latex_formulas.json",
-          "bytes": 2438,
-          "sha256": "52769d41d8e053e0fa7db4d404fa2393b0d3f6fb84cf1d819c3904cf446ceef7"
+          "bytes": 2720,
+          "sha256": "5e3c1c3c322f272ee92ed4ee7cbaf7413898202849786a72567545460084dd45"
         },
         {
           "path": "readings/bai03/test_predictions.csv",
@@ -492,22 +494,9 @@
     {
       "lesson": 4,
       "title": "Hồi quy tuyến tính và Gradient Descent",
-      "pdf_pages": 12,
-      "docx_tables": 7,
-      "docx_images": 28,
-      "blocks": 90,
-      "original_export_hashes_match": true,
+      "slide_version": "v3",
+      "pdf_pages": 14,
       "files": [
-        {
-          "path": "readings/bai04/01_Ke_hoach_va_ra_soat.md",
-          "bytes": 5027,
-          "sha256": "5fb84243ad862ff026e773b284441f33a9d541a235a914dd6bf634c4a9e6e4a5"
-        },
-        {
-          "path": "readings/bai04/02_Kiem_tra_va_hoan_tat.json",
-          "bytes": 761,
-          "sha256": "422260107e0a3e2a9c2a480222b3bcc8d55778b9d5de7c0a7fb9f03a988e3672"
-        },
         {
           "path": "readings/bai04/assets/formula_01.png",
           "bytes": 8834,
@@ -535,26 +524,31 @@
         },
         {
           "path": "readings/bai04/assets/formula_06.png",
+          "bytes": 15092,
+          "sha256": "6c2da727f0a19521c2bf20cda19c4ab8ebb261fbff15550351704a71f31de59b"
+        },
+        {
+          "path": "readings/bai04/assets/formula_07.png",
           "bytes": 15643,
           "sha256": "5456242d0b9e086ce94cdf082a69707160077e62d8705a8bee5091d128bec1d2"
         },
         {
-          "path": "readings/bai04/assets/formula_07.png",
+          "path": "readings/bai04/assets/formula_08.png",
           "bytes": 14158,
           "sha256": "a962ad494c4a8f924118f7e0a741dd150b02c1444814e1f2dba33007e7bbf7a6"
         },
         {
-          "path": "readings/bai04/assets/formula_08.png",
+          "path": "readings/bai04/assets/formula_09.png",
           "bytes": 17401,
           "sha256": "d6cf1ad1da78dd4436b9f6501e90b7da435e74891b9e64a55747cd2e8a65ef37"
         },
         {
-          "path": "readings/bai04/assets/formula_09.png",
+          "path": "readings/bai04/assets/formula_10.png",
           "bytes": 9712,
           "sha256": "77a670b354d755a8d44c7c769908494a7c5ff33bf35038708a0809b45fcf4101"
         },
         {
-          "path": "readings/bai04/assets/formula_10.png",
+          "path": "readings/bai04/assets/formula_11.png",
           "bytes": 14012,
           "sha256": "b3f09164c61b6a8ffcfa2dbd65d93b957b442e7126548f9dcf434a78639edf04"
         },
@@ -619,6 +613,11 @@
           "sha256": "9fd3c6f37795b4c1ed2daf994322f87e33cc111b2311dea200bac0dd67c77f1c"
         },
         {
+          "path": "readings/bai04/assets/surface_v3.png",
+          "bytes": 653889,
+          "sha256": "98f9f127765758ecdb873b4c940b0bc15f9b06d8261d7a6e1fc112be225ee150"
+        },
+        {
           "path": "readings/bai04/assets/try.png",
           "bytes": 1831,
           "sha256": "2b6044272441d4f19b815bca7bce3baf110a5b8248b636ba51e5f7875d67c055"
@@ -635,28 +634,38 @@
         },
         {
           "path": "readings/bai04/Bai04_Kien_thuc_nen_tang_va_doc_truoc.docx",
-          "bytes": 462499,
-          "sha256": "aeafeafe4b0c64fc32264256fb6f069396fdef6a344b8b0b84b54764f81339d7"
+          "bytes": 1123734,
+          "sha256": "e95af27714ffbac0ac978137fe73c9ff071363bd5c4d7a845a7d11345f4186d9"
+        },
+        {
+          "path": "readings/bai04/Bai04_Kien_thuc_nen_tang_va_doc_truoc.md",
+          "bytes": 22950,
+          "sha256": "9edda41ac8856eece6079f577668fcafc65a8efab1cafa8049019e1e07797ffd"
         },
         {
           "path": "readings/bai04/Bai04_Kien_thuc_nen_tang_va_doc_truoc.pdf",
-          "bytes": 1296433,
-          "sha256": "9713a5cbc287313170559be2c1cfb6c6c21170b06f6dce2ed33a9b535900c15f"
+          "bytes": 1407320,
+          "sha256": "c61876f957bab4873609e191b1e61cc1f995b338fa11f183a3451ede09899487"
         },
         {
           "path": "readings/bai04/calculation_checks.json",
-          "bytes": 2245,
-          "sha256": "62845fa5a73c3bab157ed263f66dac86c76b748ad9218eb1cf8af3669d47bc28"
+          "bytes": 1470,
+          "sha256": "f5e79244d38adba44fd7138dc955e742d9a3da17ebb510ca41accac1fe82d616"
         },
         {
           "path": "readings/bai04/content.json",
-          "bytes": 32910,
-          "sha256": "683e3628273d708a66012c1a395f775c17d27f8169330f3daec66c7dbcfcfa8c"
+          "bytes": 36506,
+          "sha256": "7976773a482ea23ca845c004a74690793dbd2e792a18eaed9087c43b4e99a439"
+        },
+        {
+          "path": "readings/bai04/doi_chieu_v3.json",
+          "bytes": 920,
+          "sha256": "3adb58faca81359b7f281fdc7a089b645ea2c64baec7a83e0bf8485a7ba007c5"
         },
         {
           "path": "readings/bai04/latex_formulas.json",
-          "bytes": 3309,
-          "sha256": "72e5a40aee96505f82010c632cde44de8733ba38a656a98925da6aafaddaa50a"
+          "bytes": 3573,
+          "sha256": "0685213770721b23771de06d402830b781374019cd3eb9e416ef1f75fa1cdd89"
         },
         {
           "path": "readings/bai04/olist_four_real_orders.csv",
@@ -683,22 +692,9 @@
     {
       "lesson": 5,
       "title": "Hồi quy Logistic và quyết định cảnh báo",
-      "pdf_pages": 12,
-      "docx_tables": 13,
-      "docx_images": 28,
-      "blocks": 97,
-      "original_export_hashes_match": true,
+      "slide_version": "v3",
+      "pdf_pages": 14,
       "files": [
-        {
-          "path": "readings/bai05/01_Ke_hoach_va_ra_soat.md",
-          "bytes": 5283,
-          "sha256": "efb57752ffb5c9a26784ccbf2425249a9175899160264a053cf7d6d19026e596"
-        },
-        {
-          "path": "readings/bai05/02_Kiem_tra_va_hoan_tat.json",
-          "bytes": 762,
-          "sha256": "b412dbe5dcf86f765cb490301d3f5cec7105c3eea6c36279cb0111c94adf24e0"
-        },
         {
           "path": "readings/bai05/assets/bce.png",
           "bytes": 68304,
@@ -751,11 +747,16 @@
         },
         {
           "path": "readings/bai05/assets/formula_09.png",
+          "bytes": 9410,
+          "sha256": "9cc2c1fc5dc4d14d96e4941cb27995b9edef9ed27bce1e5ed5e07d687619ce4d"
+        },
+        {
+          "path": "readings/bai05/assets/formula_10.png",
           "bytes": 22376,
           "sha256": "402e8bb3b87d05fa06c916bdff360ff18e898617bc7c198d6dee9f792ff551c0"
         },
         {
-          "path": "readings/bai05/assets/formula_10.png",
+          "path": "readings/bai05/assets/formula_11.png",
           "bytes": 10669,
           "sha256": "d51ba5a9b393a735a58a17df87a12d8266fe28801bff2f17a2e30e08bbfc77bf"
         },
@@ -826,23 +827,33 @@
         },
         {
           "path": "readings/bai05/Bai05_Kien_thuc_nen_tang_va_doc_truoc.docx",
-          "bytes": 453302,
-          "sha256": "f52e47ef2611a494e4d1670c7bbb90f90d6b5226ba68cfbd4877e90fd4d4ad58"
+          "bytes": 464087,
+          "sha256": "c8ea22407d00c6b0ad64dbe276a66c0c3bbb07c0d6541f7fc3442c835017dc4e"
+        },
+        {
+          "path": "readings/bai05/Bai05_Kien_thuc_nen_tang_va_doc_truoc.md",
+          "bytes": 24568,
+          "sha256": "e545766ea98757d81ff480e53f465aa6d532a1a8ce408a3b302c37b9076e0fc0"
         },
         {
           "path": "readings/bai05/Bai05_Kien_thuc_nen_tang_va_doc_truoc.pdf",
-          "bytes": 1332086,
-          "sha256": "c2b63ace8f3bc612984ab17780b2f187f9581ee589fd6645e42c043068af5bb0"
+          "bytes": 1355986,
+          "sha256": "4c30a1555d1cbc2e5d99f59f8e4cc884f1cc550c79b7002c9e50295101e4e0f9"
         },
         {
           "path": "readings/bai05/calculation_checks.json",
-          "bytes": 8743,
-          "sha256": "4c822d81316801362f5af52b04b8537e9a4ff83b69c8f5bd7e7503d951b870da"
+          "bytes": 1321,
+          "sha256": "344387f0edab7d59584c916f3c434ae4f53a68a3e5a68802a64adb849aff3737"
         },
         {
           "path": "readings/bai05/content.json",
-          "bytes": 37205,
-          "sha256": "5c272a15d56fa07cabc463711020f90ba331fee67d1b0a2c4717ffe32e388ce6"
+          "bytes": 41824,
+          "sha256": "17eb4dc499ab31be9ea89a324629d5f10b1175318efa2819f5245d3f4afa6032"
+        },
+        {
+          "path": "readings/bai05/doi_chieu_v3.json",
+          "bytes": 779,
+          "sha256": "22cf61b17881187c1b8309911ac1ba64434c6e83d9a5613ab80125910f9e7e3e"
         },
         {
           "path": "readings/bai05/four_real_orders.csv",
@@ -851,8 +862,8 @@
         },
         {
           "path": "readings/bai05/latex_formulas.json",
-          "bytes": 3331,
-          "sha256": "f996a0f79fbb95b5af93f30cf5316922da3597b22b3fe079d530836c0c8e8dfc"
+          "bytes": 3652,
+          "sha256": "1bce1ae27ae113ad2d9e054ffd6dabbb2f3334c467ea72eab795e1ef349f9363"
         },
         {
           "path": "readings/bai05/model_policy.json",
@@ -889,22 +900,9 @@
     {
       "lesson": 6,
       "title": "Cây quyết định và cách học các điều kiện",
-      "pdf_pages": 12,
-      "docx_tables": 7,
-      "docx_images": 26,
-      "blocks": 84,
-      "original_export_hashes_match": true,
+      "slide_version": "v3",
+      "pdf_pages": 15,
       "files": [
-        {
-          "path": "readings/bai06/01_Ke_hoach_va_ra_soat.md",
-          "bytes": 4544,
-          "sha256": "2addaaeac067c170d6a24d1caf5302a98ad69c70911aa02f86d74db843b9d808"
-        },
-        {
-          "path": "readings/bai06/02_Kiem_tra_va_hoan_tat.json",
-          "bytes": 761,
-          "sha256": "0ef38f0992d79357b3865f3ba552ddffe4845d75823746c9993a1ca4d4750e7d"
-        },
         {
           "path": "readings/bai06/assets/formula_01.png",
           "bytes": 13321,
@@ -922,23 +920,38 @@
         },
         {
           "path": "readings/bai06/assets/formula_04.png",
+          "bytes": 14274,
+          "sha256": "a09b74f09542cf28304cd3ba7925b646a878acfbd529b6ff2b098f5d69e81461"
+        },
+        {
+          "path": "readings/bai06/assets/formula_05.png",
+          "bytes": 8189,
+          "sha256": "798348a603405b46d12980da3359586025228fc7fe1d6e9ba560e6282bdb50a9"
+        },
+        {
+          "path": "readings/bai06/assets/formula_06.png",
           "bytes": 16363,
           "sha256": "0bd981ba33b9e7ac3403e73bb89f449cdab054c4db081bbe28942259088cde9d"
         },
         {
-          "path": "readings/bai06/assets/formula_05.png",
+          "path": "readings/bai06/assets/formula_07.png",
           "bytes": 17147,
           "sha256": "b6b4e956009e4adc2e003848abcc2181a92d8c8c78ae34a2f97d7b320228a83a"
         },
         {
-          "path": "readings/bai06/assets/formula_06.png",
-          "bytes": 16482,
-          "sha256": "08e8a5ca16894a56004d6943717a369b0b8c1d689fa1e032c244e0b2348f710b"
+          "path": "readings/bai06/assets/formula_08.png",
+          "bytes": 9410,
+          "sha256": "9cc2c1fc5dc4d14d96e4941cb27995b9edef9ed27bce1e5ed5e07d687619ce4d"
         },
         {
-          "path": "readings/bai06/assets/formula_07.png",
-          "bytes": 25341,
-          "sha256": "eb1346dbe71be8890d334911490d5726b411a7bfd947d5fbabb4085c2443debd"
+          "path": "readings/bai06/assets/formula_09.png",
+          "bytes": 16682,
+          "sha256": "30bd08828c9aa62f01337baba37214b2856f973ed00210de952e5ee9af322cce"
+        },
+        {
+          "path": "readings/bai06/assets/formula_10.png",
+          "bytes": 21473,
+          "sha256": "a543e0b62bef7a637ab66f4aed45a70f78309775ce035cd0bce2f30e383c82ba"
         },
         {
           "path": "readings/bai06/assets/gains.png",
@@ -1017,23 +1030,33 @@
         },
         {
           "path": "readings/bai06/Bai06_Kien_thuc_nen_tang_va_doc_truoc.docx",
-          "bytes": 420552,
-          "sha256": "b67f21c2e606f003eba5c5f7cae985bc3ff110a5da36727fc72b8ad898432e1f"
+          "bytes": 450917,
+          "sha256": "5d3a7eb5017a10f39f0a2fcaa774b2ccf15ffebac909de48beb4e9affb8c4748"
+        },
+        {
+          "path": "readings/bai06/Bai06_Kien_thuc_nen_tang_va_doc_truoc.md",
+          "bytes": 20664,
+          "sha256": "d8c3254f8c89d9af46559baf6f9fbde4c87030969d25acae015142f6f4ee0232"
         },
         {
           "path": "readings/bai06/Bai06_Kien_thuc_nen_tang_va_doc_truoc.pdf",
-          "bytes": 1259811,
-          "sha256": "147155eae14368437cfb3696f334f7e48e42724da5060f8e33ad9c6cf687cf3d"
+          "bytes": 1303021,
+          "sha256": "d27d15c48e3830ee6cfdce0bd7b9256e2c4ddd7ec4b118fb8bb780aa71be75da"
         },
         {
           "path": "readings/bai06/calculation_checks.json",
-          "bytes": 3413,
-          "sha256": "7c11859944b44dc480b14ca7eb1437af066a5c25e2485ffc4be55ac5eba2ea78"
+          "bytes": 1236,
+          "sha256": "ea34903ab2b011c863f7f8e29dd34809d8f4d1b24e595051d18a137462db384c"
         },
         {
           "path": "readings/bai06/content.json",
-          "bytes": 29186,
-          "sha256": "b0399d5f80ab129e57eb2d25496bf819a688a33e90823e2974ffcb922428b917"
+          "bytes": 35971,
+          "sha256": "4f49c0f078e918c7e5f9e2e2d3f98f7cb0c0847b73e62cec70705e7ebb67fc93"
+        },
+        {
+          "path": "readings/bai06/doi_chieu_v3.json",
+          "bytes": 702,
+          "sha256": "afa9caf54a6b35cdf6aac4137579076f237dcf75504868f447c833fc115c3a46"
         },
         {
           "path": "readings/bai06/four_real_orders.csv",
@@ -1042,8 +1065,8 @@
         },
         {
           "path": "readings/bai06/latex_formulas.json",
-          "bytes": 2149,
-          "sha256": "04216ec45080b8403334e50a1bb4940311a056b454802b4527a1aa37f1b9f8ee"
+          "bytes": 2999,
+          "sha256": "8cfd7f5242abebbd056d5c1917de79a1face2fc9044e3ac14c3ed8344ced8898"
         },
         {
           "path": "readings/bai06/model_policy.json",
@@ -1080,22 +1103,9 @@
     {
       "lesson": 7,
       "title": "Đánh giá đáng tin cậy và phòng tránh rò rỉ",
-      "pdf_pages": 12,
-      "docx_tables": 7,
-      "docx_images": 23,
-      "blocks": 86,
-      "original_export_hashes_match": true,
+      "slide_version": "v2",
+      "pdf_pages": 14,
       "files": [
-        {
-          "path": "readings/bai07/01_Ke_hoach_va_ra_soat.md",
-          "bytes": 3472,
-          "sha256": "e65fd2c52f6fb71cbec9d3c9fd47857ba36e39bcffa4df89aeae4409445ff485"
-        },
-        {
-          "path": "readings/bai07/02_Kiem_tra_va_hoan_tat.json",
-          "bytes": 761,
-          "sha256": "7210c3eaab6f2af584f4d640d87b4fc1087ebc602ecb42f084f124334f31cb27"
-        },
         {
           "path": "readings/bai07/assets/folds.png",
           "bytes": 26990,
@@ -1203,23 +1213,33 @@
         },
         {
           "path": "readings/bai07/Bai07_Kien_thuc_nen_tang_va_doc_truoc.docx",
-          "bytes": 330708,
-          "sha256": "46a38f7a0c2d91c8c6c29e4587410ceb879457c3964f25777ba1d935c71a5095"
+          "bytes": 331888,
+          "sha256": "c8bdf5b38277eb65a44511f14b4a3f6e5caf49bfe955c96cbc2460da5811b13b"
+        },
+        {
+          "path": "readings/bai07/Bai07_Kien_thuc_nen_tang_va_doc_truoc.md",
+          "bytes": 20631,
+          "sha256": "838e069168ea9cea28d2141c6c6dccfde88001432ea59febd262252f63bff4be"
         },
         {
           "path": "readings/bai07/Bai07_Kien_thuc_nen_tang_va_doc_truoc.pdf",
-          "bytes": 1085882,
-          "sha256": "e5af6f6151308ef8952a152b5b2196ff28753d1891ca629bce755966f319cfc1"
+          "bytes": 1100868,
+          "sha256": "16d0067cceec8979c8779aa6580277290594e8b173b856c2b1ad24344607ff1a"
         },
         {
           "path": "readings/bai07/calculation_checks.json",
-          "bytes": 1547,
-          "sha256": "f5fe13af01567fe5dea6688dd8e539e134fff5bc3a698ce4ce2322c8e37a695d"
+          "bytes": 1068,
+          "sha256": "3fe715275f2255b28686c5fa34c118ac1766d5e7aa1791b4429921061bd0c0b7"
         },
         {
           "path": "readings/bai07/content.json",
-          "bytes": 29310,
-          "sha256": "af872e6a78070635bfdfb44c0c00cf3fef1dd3a52d06c8130cb5fad368930cbe"
+          "bytes": 33259,
+          "sha256": "9593cc8ad082dbd78068f2899f12069d99839991c8771a4ed5b6008b5f2ee793"
+        },
+        {
+          "path": "readings/bai07/doi_chieu_v3.json",
+          "bytes": 551,
+          "sha256": "735bb4c9fced40546ddf3e33f1015391431afcfc746f065104720b44a7958f0d"
         },
         {
           "path": "readings/bai07/labels_after_cutoff_examples.csv",
@@ -1246,22 +1266,9 @@
     {
       "lesson": 8,
       "title": "RFM và K-means để khám phá nhóm khách hàng",
-      "pdf_pages": 12,
-      "docx_tables": 7,
-      "docx_images": 29,
-      "blocks": 83,
-      "original_export_hashes_match": true,
+      "slide_version": "v3",
+      "pdf_pages": 14,
       "files": [
-        {
-          "path": "readings/bai08/01_Ke_hoach_va_ra_soat.md",
-          "bytes": 3528,
-          "sha256": "ecbbbdc59ad7df350db09246f1742737cb9bae6d651eea10597baa165df50bc1"
-        },
-        {
-          "path": "readings/bai08/02_Kiem_tra_va_hoan_tat.json",
-          "bytes": 761,
-          "sha256": "e8bb2103c9abe54836840f00fca6ebfa6be32d27947065658691a79864e5c897"
-        },
         {
           "path": "readings/bai08/assets/assign_update.png",
           "bytes": 48951,
@@ -1294,18 +1301,18 @@
         },
         {
           "path": "readings/bai08/assets/formula_03.png",
-          "bytes": 10076,
-          "sha256": "4dc1ac970686232b0e3c8594294183f8c2a42bf3e2173149d16977be614b77c3"
+          "bytes": 10181,
+          "sha256": "52eaf60aea80f4d0205ac27cf3fcd67cf098a77a1f4067106c20a96ad9de29d3"
         },
         {
           "path": "readings/bai08/assets/formula_04.png",
-          "bytes": 8499,
-          "sha256": "96742d063d0bfd493bf6efe5e06beea21996a36e98f914be7340c262b3087568"
+          "bytes": 8945,
+          "sha256": "0db97480413c39c2cff959d4997e7e4df6f21cd52bdfc67a0b2e3a4833f80fc0"
         },
         {
           "path": "readings/bai08/assets/formula_05.png",
-          "bytes": 18018,
-          "sha256": "feb2c023a45b55763f9f9798e5d1684cbefb62018eb79205585c3cea06fbc529"
+          "bytes": 18473,
+          "sha256": "8adbbb1754e01a7ce2bef350376eedafd691a30522e6cb035b862f93cdbfcfd4"
         },
         {
           "path": "readings/bai08/assets/formula_06.png",
@@ -1314,21 +1321,26 @@
         },
         {
           "path": "readings/bai08/assets/formula_07.png",
+          "bytes": 13269,
+          "sha256": "637b3db17f3683064dc596dd16a10c0808cc3ea2f40396ad21ac0fccb289371b"
+        },
+        {
+          "path": "readings/bai08/assets/formula_08.png",
           "bytes": 9941,
           "sha256": "4d8b9ba3947f97519488f1819820a14ee0df8d48403ec591b8f22d06115a229d"
         },
         {
-          "path": "readings/bai08/assets/formula_08.png",
+          "path": "readings/bai08/assets/formula_09.png",
           "bytes": 11770,
           "sha256": "f7129798a221ce11b8ff9c0d6a0b85db840197e86f7d52b5050e9155ed4fcec2"
         },
         {
-          "path": "readings/bai08/assets/formula_09.png",
+          "path": "readings/bai08/assets/formula_10.png",
           "bytes": 12172,
           "sha256": "4c2b59656f271c0fcfdf14b00ecb6186ca6c80e37859a4b603f0c9e51b2a4280"
         },
         {
-          "path": "readings/bai08/assets/formula_10.png",
+          "path": "readings/bai08/assets/formula_11.png",
           "bytes": 16993,
           "sha256": "9824d054a9ec5755958d15adea99dc3ee3a212a300b37639ddeb874939634c64"
         },
@@ -1389,18 +1401,23 @@
         },
         {
           "path": "readings/bai08/Bai08_Kien_thuc_nen_tang_va_doc_truoc.docx",
-          "bytes": 445162,
-          "sha256": "1d553253e961c7fbaa6184a5fe63d3435707edac785f2b86f46a4111d7ff6f00"
+          "bytes": 460684,
+          "sha256": "dd19bf268067feaf89395f6e4bb5ecd8596c5f22b6537ca3336d66eb538c3272"
+        },
+        {
+          "path": "readings/bai08/Bai08_Kien_thuc_nen_tang_va_doc_truoc.md",
+          "bytes": 20035,
+          "sha256": "ef573d5268909d050ad090c267b5f267ca3f80075bb5e1791c1dba92249fbefe"
         },
         {
           "path": "readings/bai08/Bai08_Kien_thuc_nen_tang_va_doc_truoc.pdf",
-          "bytes": 1279209,
-          "sha256": "07c3c5faacff79101b46131fdf6ab748ab1d2cbd63bf1c0ffcb1c675618661fe"
+          "bytes": 1302992,
+          "sha256": "5ea8972d698a3dc47b6e670c96e8653213f42f6f3e8bfa2fd72bbc8ffa9d33b5"
         },
         {
           "path": "readings/bai08/calculation_checks.json",
-          "bytes": 4417,
-          "sha256": "07db0fdcee8d3af4291c5200aae99eaf279eb4a3db559b8051b0a5abd34cb552"
+          "bytes": 1355,
+          "sha256": "e5a603afb3857749025e796dfcd8c3731f6a4f2598fb9500ad3e406ae51a7b02"
         },
         {
           "path": "readings/bai08/cluster_profiles.csv",
@@ -1409,8 +1426,13 @@
         },
         {
           "path": "readings/bai08/content.json",
-          "bytes": 29674,
-          "sha256": "f65d4cb45804813b6f077a8aca458a47d65629730382cde3b9d78200231dff90"
+          "bytes": 34231,
+          "sha256": "9ccd31ab2687048cb9ea663c42008d47d8b6a97e35b65a45cd15798257976289"
+        },
+        {
+          "path": "readings/bai08/doi_chieu_v3.json",
+          "bytes": 813,
+          "sha256": "09b5398a5ccff567f15cd343da46f931c1e1fef6c0ee57e79a791caed6f60ff7"
         },
         {
           "path": "readings/bai08/example_customer_lines.csv",
@@ -1419,8 +1441,8 @@
         },
         {
           "path": "readings/bai08/latex_formulas.json",
-          "bytes": 3216,
-          "sha256": "77a45d2ff94864b740a2f39eacf49166d48f8a62f6655850d48da602649cbae1"
+          "bytes": 3585,
+          "sha256": "167c35bf7b97ecfba2da40e092e451175d41acef4ce37698a28f75022951e99c"
         },
         {
           "path": "readings/bai08/retail_rfm.csv",
@@ -1442,22 +1464,9 @@
     {
       "lesson": 9,
       "title": "PCA: từ pixel ảnh đến biểu diễn ít chiều",
-      "pdf_pages": 12,
-      "docx_tables": 7,
-      "docx_images": 28,
-      "blocks": 80,
-      "original_export_hashes_match": true,
+      "slide_version": "v3",
+      "pdf_pages": 14,
       "files": [
-        {
-          "path": "readings/bai09/01_Ke_hoach_va_ra_soat.md",
-          "bytes": 5517,
-          "sha256": "fef75b339cbb4ee2ddbe4c1dcb1b879e0ead7fee05096a36f04de221dc530027"
-        },
-        {
-          "path": "readings/bai09/02_Kiem_tra_va_hoan_tat.json",
-          "bytes": 761,
-          "sha256": "204c8de6b6dfb7a9417b23f8816526cc50db446fa42c7bebc7ed7bdc762e72c1"
-        },
         {
           "path": "readings/bai09/anh_train_24814_pixel_uint8.csv",
           "bytes": 2303,
@@ -1480,46 +1489,56 @@
         },
         {
           "path": "readings/bai09/assets/formula_02.png",
+          "bytes": 5105,
+          "sha256": "9936fa619382dd2340dca2bb642798029d664675d8bd3ceb825294f55bd53745"
+        },
+        {
+          "path": "readings/bai09/assets/formula_03.png",
+          "bytes": 5973,
+          "sha256": "5cad2a33c79122bacbd0476df3e5d2e3f005c19544b244fe50f922e6fe08e9a4"
+        },
+        {
+          "path": "readings/bai09/assets/formula_04.png",
           "bytes": 9611,
           "sha256": "fae152c663ff1c232585fa276ad33673d9aad0019b65e28f5a7d30137c64da1a"
         },
         {
-          "path": "readings/bai09/assets/formula_03.png",
+          "path": "readings/bai09/assets/formula_05.png",
           "bytes": 10267,
           "sha256": "8eb3b078dc87eb896c956c5907a0f1934799dfe44b1b32231d6ec911908e4c2a"
         },
         {
-          "path": "readings/bai09/assets/formula_04.png",
+          "path": "readings/bai09/assets/formula_06.png",
           "bytes": 12765,
           "sha256": "0226fa5ffdbd424902a77575a5917c3d1d43494331181eb993b8d51425451aff"
         },
         {
-          "path": "readings/bai09/assets/formula_05.png",
+          "path": "readings/bai09/assets/formula_07.png",
           "bytes": 9936,
           "sha256": "59dc8c5c4205a06ba470bece5dc7ce3f5797210b28009db6db89c31ca79077fb"
         },
         {
-          "path": "readings/bai09/assets/formula_06.png",
+          "path": "readings/bai09/assets/formula_08.png",
           "bytes": 12950,
           "sha256": "1e332b6acaf238e0258aee7bd448527aec9d8db4fe326eaa4669068252e0b5ab"
         },
         {
-          "path": "readings/bai09/assets/formula_07.png",
+          "path": "readings/bai09/assets/formula_09.png",
           "bytes": 9508,
           "sha256": "7a42a39e9402acc1aa1139e0d69675ce8973a0ce7a391e7039c34bc702db199c"
         },
         {
-          "path": "readings/bai09/assets/formula_08.png",
+          "path": "readings/bai09/assets/formula_10.png",
           "bytes": 14389,
           "sha256": "1819ecf820d45efbc351c7ecc8a2ccabb828c032c61f058f71a634ae6d49033e"
         },
         {
-          "path": "readings/bai09/assets/formula_09.png",
+          "path": "readings/bai09/assets/formula_11.png",
           "bytes": 10521,
           "sha256": "c22fa214d8627c44c98457535f7271d7508b23a22b6d47d14b1edaad503f5ede"
         },
         {
-          "path": "readings/bai09/assets/formula_10.png",
+          "path": "readings/bai09/assets/formula_12.png",
           "bytes": 18631,
           "sha256": "2aa1bcbb5a72e20f6a8f53bee2ee15ecbecc5a3841fea6eec1f251a4d71a377e"
         },
@@ -1590,28 +1609,38 @@
         },
         {
           "path": "readings/bai09/Bai09_Kien_thuc_nen_tang_va_doc_truoc.docx",
-          "bytes": 455659,
-          "sha256": "251f346a170302bbf2f9b78e3ec2d5aa7753fa6430507af91295b32d6265065c"
+          "bytes": 468204,
+          "sha256": "db92416f3eafd10b1b068074b4471adb6d9d180354821f31b92ab05faa185c1a"
+        },
+        {
+          "path": "readings/bai09/Bai09_Kien_thuc_nen_tang_va_doc_truoc.md",
+          "bytes": 19133,
+          "sha256": "769a9978dc16c3b077368f8728c8a974b3d3192ba014ba67705c1a7e6fccbb64"
         },
         {
           "path": "readings/bai09/Bai09_Kien_thuc_nen_tang_va_doc_truoc.pdf",
-          "bytes": 1339849,
-          "sha256": "2ceb096f1b86a5185db3842bef9337aa0a57a224adbc773f17582aa0cc9c4c93"
+          "bytes": 1365189,
+          "sha256": "82b996595982296e48a2f40b2700894d8fe348e31ef9666ddc179d2ec5187763"
         },
         {
           "path": "readings/bai09/calculation_checks.json",
-          "bytes": 1651,
-          "sha256": "ec70f07bf15e7c268f596f8f17242f0e318af687732e66cb31e7dde54b178204"
+          "bytes": 1337,
+          "sha256": "61e633d5f87ba59f96d01c6ebdf30fb7cb83d1244645ab19f5609a9ca4c87751"
         },
         {
           "path": "readings/bai09/content.json",
-          "bytes": 27562,
-          "sha256": "12fc017997cf8e01cc4a2bf1b7b95827670663ceaadf52dd0c9efebbfa7bcc68"
+          "bytes": 32226,
+          "sha256": "83b88a8fb155a20e40a3acaa8105c56f7fcdd4b53acff81827e4ffb0959fa786"
+        },
+        {
+          "path": "readings/bai09/doi_chieu_v3.json",
+          "bytes": 795,
+          "sha256": "4b4c8ae7b41cbaac04c7038ea5655a8894776a88ae341d464c10626c664efcde"
         },
         {
           "path": "readings/bai09/latex_formulas.json",
-          "bytes": 2890,
-          "sha256": "07205cd74153e17d850edcd688545ce9f9d53d7f9716de405ac84bb865c28016"
+          "bytes": 3454,
+          "sha256": "ac9a1a522468b9db68305fb2b664faac4292ed64ccc08a0f509f25e17a4a50d5"
         },
         {
           "path": "readings/bai09/pca_results_recomputed.csv",
@@ -1633,22 +1662,9 @@
     {
       "lesson": 10,
       "title": "Mạng neural: học biểu diễn từ dữ liệu có nhãn",
-      "pdf_pages": 12,
-      "docx_tables": 8,
-      "docx_images": 27,
-      "blocks": 89,
-      "original_export_hashes_match": true,
+      "slide_version": "v3",
+      "pdf_pages": 14,
       "files": [
-        {
-          "path": "readings/bai10/01_Ke_hoach_va_ra_soat.md",
-          "bytes": 6349,
-          "sha256": "ef80cb05697c6c6f0cc57e287a00cb467568e81b34d2b2faaaa1cfaa1331965f"
-        },
-        {
-          "path": "readings/bai10/02_Kiem_tra_va_hoan_tat.json",
-          "bytes": 761,
-          "sha256": "e853a97f88f62008d1e8f89c2177612fe45b0236307f63dfa0e509de8fbf5996"
-        },
         {
           "path": "readings/bai10/assets/cycle.png",
           "bytes": 33502,
@@ -1666,8 +1682,8 @@
         },
         {
           "path": "readings/bai10/assets/formula_02.png",
-          "bytes": 21937,
-          "sha256": "a1799cc363eec745ab52f5d10cff6c20749111fdd82ae68ce0ed484c72a5aa00"
+          "bytes": 21264,
+          "sha256": "a1b40d237c4563712c9a3cb0450c79e226b442708d9d252c613fdc423047e6ab"
         },
         {
           "path": "readings/bai10/assets/formula_03.png",
@@ -1681,33 +1697,53 @@
         },
         {
           "path": "readings/bai10/assets/formula_05.png",
-          "bytes": 15947,
-          "sha256": "97bcf0a6942008bc2424025cb870715ea81b3eb2244474b39009594a006d1d1a"
+          "bytes": 9959,
+          "sha256": "a2d9622777c9ec45f11e5f5c21174fc331718495ca7d38fa6347558683f053e5"
         },
         {
           "path": "readings/bai10/assets/formula_06.png",
-          "bytes": 15820,
-          "sha256": "2b4fea8cf55cbc9557b9a991c89a4c5478c4bb0e6c808bc564bf6a086508870f"
+          "bytes": 10911,
+          "sha256": "3941648520cbbea3b4b21426ae569c37581d3841c4ae4862c58c20bdbd3ce9e0"
         },
         {
           "path": "readings/bai10/assets/formula_07.png",
+          "bytes": 17445,
+          "sha256": "e605bb41c83bd3d1c16f6aa303d321ca6184670c10bb276e773bda5ad39ff88f"
+        },
+        {
+          "path": "readings/bai10/assets/formula_08.png",
+          "bytes": 14318,
+          "sha256": "b1e609813b4391d0f8617bd54a839a606b2fafa0de87171bdcbef4072355644e"
+        },
+        {
+          "path": "readings/bai10/assets/formula_09.png",
+          "bytes": 16843,
+          "sha256": "d51539f585ea93e8d968b7d3a7fe65b8d1bc6c954082c888deced7abdef71b8d"
+        },
+        {
+          "path": "readings/bai10/assets/formula_10.png",
+          "bytes": 16233,
+          "sha256": "8ad9d969feb8027e8afc40779baa9db896593996588750949d97b404a438edc4"
+        },
+        {
+          "path": "readings/bai10/assets/formula_11.png",
           "bytes": 5221,
           "sha256": "65060a1579e33bbc46899e06bcad57603a2ce72c0ce0879575332e554e0e59c2"
         },
         {
-          "path": "readings/bai10/assets/formula_08.png",
+          "path": "readings/bai10/assets/formula_12.png",
           "bytes": 12162,
           "sha256": "6c7b2cdbc800a449b6335a822988b43aa8a5d0a28337d15588657c64d8d58986"
         },
         {
-          "path": "readings/bai10/assets/formula_09.png",
-          "bytes": 11687,
-          "sha256": "d590e3b9ea04fdd7606996932bc21571ff04a09150a487c0d120662f52bcb019"
+          "path": "readings/bai10/assets/formula_13.png",
+          "bytes": 12614,
+          "sha256": "3c157f6710464c29092999b8b57154e8b59acbe597fe0682a553328be1a0dd56"
         },
         {
-          "path": "readings/bai10/assets/formula_10.png",
-          "bytes": 15913,
-          "sha256": "be1e6de989dc0fd78e45d071c24817f1ffff62e08e41047e97127d6d9d2327e6"
+          "path": "readings/bai10/assets/formula_14.png",
+          "bytes": 16404,
+          "sha256": "c155b14485f712299c07753589de04e78232ca6decc60b5fd9bbc5a222eb9d9c"
         },
         {
           "path": "readings/bai10/assets/images.png",
@@ -1776,28 +1812,33 @@
         },
         {
           "path": "readings/bai10/Bai10_Kien_thuc_nen_tang_va_doc_truoc.docx",
-          "bytes": 436988,
-          "sha256": "e0ad1f1ade866b1566530bbf5b82cf6a82f828fb05af7262533018861a67dffa"
+          "bytes": 492356,
+          "sha256": "2bb5a6d8c80e8d1664b61ead37584158fdeefd4a60d48a45eb8addbccbf849e0"
+        },
+        {
+          "path": "readings/bai10/Bai10_Kien_thuc_nen_tang_va_doc_truoc.md",
+          "bytes": 21078,
+          "sha256": "c6eff30d3d1284af2dddc61fca0514379b8646a59445fed6a9146bda9ecc77cd"
         },
         {
           "path": "readings/bai10/Bai10_Kien_thuc_nen_tang_va_doc_truoc.pdf",
-          "bytes": 1277733,
-          "sha256": "4fa6e91c2b220dc900e1a0424a287df9e3b0af2cdbbcc81c9cd1c08e77fbf9ba"
+          "bytes": 1325912,
+          "sha256": "0e4ba7d2e0f59502726abce3d5b27e52b07a65d12f6ea03dd5ea713c3cd1c926"
         },
         {
           "path": "readings/bai10/calculation_checks.json",
-          "bytes": 10164,
-          "sha256": "3421955bbf50afa01b15c302b3ef943aaf34bdcb9e5dd5be19d66818682b36d9"
+          "bytes": 1481,
+          "sha256": "1ca1acb81d3566a70134898acc6ce8e32c21c3c11130dc7230bdd3523d0c8265"
         },
         {
           "path": "readings/bai10/content.json",
-          "bytes": 30651,
-          "sha256": "94dc78ae6a5c4e189baf9369c26bc635348307b28323e52666018cf0e1edcc5c"
+          "bytes": 35340,
+          "sha256": "7eadf3b1285f0c81a99bbc99ff2f622c6b3907f5ff6b36fee7310f72a85403b7"
         },
         {
-          "path": "readings/bai10/displayed_images.npz",
-          "bytes": 2061,
-          "sha256": "727804bf49f4100d769e7230c6b5d64df7c2672d4879126e8be8f3f6f167b2f9"
+          "path": "readings/bai10/doi_chieu_v3.json",
+          "bytes": 931,
+          "sha256": "55516f8c99b2b2b99cc3e8e4df6c71daf60dec476acd29b88adcdefe423a76b2"
         },
         {
           "path": "readings/bai10/frozen_decision_before_test.json",
@@ -1806,8 +1847,8 @@
         },
         {
           "path": "readings/bai10/latex_formulas.json",
-          "bytes": 3207,
-          "sha256": "fdbc6c25667cbee70eb2b8ca2bfcf0ca35e8e5092107356d8f4e2e18976c6030"
+          "bytes": 4300,
+          "sha256": "45759339c6d09655870846c5d258203ff00f8fa7d65594d883a0d4726ab09cb2"
         },
         {
           "path": "readings/bai10/primary_seed_history_recomputed.csv",

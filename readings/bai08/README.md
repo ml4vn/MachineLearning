@@ -4,24 +4,28 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang](Bai08_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai08_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai08/README.md)
+[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai08_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai08_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai08/README.md)
+
+**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
 ## Mục lục
 
 - [1 Bài học này giải quyết vấn đề gì](#muc-1)
-- [2 Bạn cần biết gì trước khi bắt đầu](#muc-2)
-- [3 Dữ liệu của bài học trông như thế nào](#muc-3)
-- [4 Ý tưởng chính của phương pháp là gì](#muc-4)
-- [5 Những khái niệm và công thức nào cần nắm](#muc-5)
-- [6 Phương pháp được thực hiện như thế nào](#muc-6)
-- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-7)
-- [8 Đọc kết quả và tránh hiểu nhầm](#muc-8)
-- [9 Tự kiểm tra trước khi đến lớp](#muc-9)
-- [10 Những điều cần nhớ](#muc-10)
-- [Phụ lục A Đáp án có giải thích](#muc-11)
-- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-12)
+- [Lộ trình đọc và đối chiếu với bài giảng](#muc-2)
+- [2 Bạn cần biết gì trước khi bắt đầu](#muc-3)
+- [3 Dữ liệu của bài học trông như thế nào](#muc-4)
+- [4 Ý tưởng chính của phương pháp là gì](#muc-5)
+- [5 Những khái niệm và công thức nào cần nắm](#muc-6)
+- [6 Phương pháp được thực hiện như thế nào](#muc-7)
+- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-8)
+- [Silhouette giải thích một điểm có hợp cụm không](#muc-9)
+- [8 Đọc kết quả và tránh hiểu nhầm](#muc-10)
+- [9 Tự kiểm tra trước khi đến lớp](#muc-11)
+- [10 Những điều cần nhớ](#muc-12)
+- [Phụ lục A Đáp án có giải thích](#muc-13)
+- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-14)
 
 <a id="muc-1"></a>
 
@@ -40,9 +44,34 @@ Một khách mua nhiều lần với số tiền nhỏ; một khách chỉ mua m
 - Giải thích vai trò của biến đổi thang, khởi tạo và K.
 - Đọc inertia, silhouette, quy mô và hồ sơ cụm cùng nhau.
 
-> ✏️ Dự kiến 30–40 phút; ôn vector/khoảng cách và chuẩn hóa. Không cần lập trình. Bài này dùng Online Retail của một cửa hàng khác Olist. Không có nhãn “phân khúc đúng” để chấm accuracy trong case.
+> ✏️ Dự kiến 40–50 phút; ôn vector/khoảng cách và chuẩn hóa. Không cần lập trình. Bài này dùng Online Retail của một cửa hàng khác Olist. Không có nhãn “phân khúc đúng” để chấm accuracy trong case.
 
 <a id="muc-2"></a>
+
+## Lộ trình đọc và đối chiếu với bài giảng
+
+Bản tài liệu cập nhật v3 • Đối chiếu Bài 8, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+
+### Đọc để chuẩn bị điều gì
+
+- Một khách hàng thành một điểm RFM
+- Biến đổi log và chuẩn hóa
+- Lặp gán cụm rồi cập nhật tâm
+- Silhouette và ý nghĩa kinh doanh
+
+Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học.
+
+| Slide | Mốc ôn tập trong bài giảng |
+| --- | --- |
+| 12 | Một khách hàng, ba góc nhìn |
+| 20 | Biểu diễn quyết định cách đo gần |
+| 35 | K-means: khởi tạo và hai bước lặp |
+| 55 | Đánh giá và lựa chọn số cụm |
+| 63 | Bài 8 · Phân nhóm khách hàng có căn cứ |
+
+> 📌 Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp.
+
+<a id="muc-3"></a>
 
 ## 2 Bạn cần biết gì trước khi bắt đầu
 
@@ -67,7 +96,7 @@ Nếu một trục dùng số tiền hàng nghìn còn một trục dùng số l
 
 > ✏️ **K1:** trung bình hai điểm (1,1),(2,1) là gì? **K2:** một hóa đơn gồm ba dòng hàng có làm F tăng thêm ba không?
 
-<a id="muc-3"></a>
+<a id="muc-4"></a>
 
 ## 3 Dữ liệu của bài học trông như thế nào
 
@@ -92,7 +121,7 @@ Bảng chỉ là lịch sử giữ lại trong cửa sổ dữ liệu. M không 
 
 > 📌 Giữ dòng trùng nguyên vẹn theo quy trình slide và công bố độ nhạy; chưa đủ bằng chứng để coi mọi dòng trùng là lỗi nghiệp vụ. Các điều kiện lọc chồng lấn không được cộng số loại một cách tùy ý.
 
-<a id="muc-4"></a>
+<a id="muc-5"></a>
 
 ## 4 Ý tưởng chính của phương pháp là gì
 
@@ -111,7 +140,7 @@ Các tên An, Bình, Chi, Dung, Hà, Lan là nhãn của sáu điểm thiết k�
 
 > ✏️ Sau cập nhật lần 1, tâm 0=(1,5;1), tâm 1=(5,25;4,25). Trước khi tính, dự đoán Chi=(3,3) có đổi cụm không?
 
-<a id="muc-5"></a>
+<a id="muc-6"></a>
 
 ## 5 Những khái niệm và công thức nào cần nắm
 
@@ -122,26 +151,26 @@ R=t_0-date(t_{cuoi}),\quad F=|\{InvoiceNo\}|,\quad M=\sum_{dong\ mua}Quantity\ti
 R dùng số ngày lịch đến mốc t₀; tập InvoiceNo gồm mã hóa đơn phân biệt của khách sau lọc. M cộng các dòng mua đủ điều kiện, giữ độ chính xác gốc rồi mới làm tròn trình bày.
 
 ```math
-u_j=\ln(1+x_j),\qquad z_j=\frac{u_j-\mu_j}{s_j}
+u_{ij}=\ln(1+r_{ij}),\qquad x_{ij}=\frac{u_{ij}-\bar u_j}{s_j}
 ```
 
-Ở case thật, x=(R,F,M); log1p rồi StandardScaler trên 4.338 khách cho phân tích khám phá tại mốc chốt. μj,sj là trung bình/độ lệch chuẩn cột log, sⱼ>0.
+Ở case thật, r=(R,F,M); log1p rồi StandardScaler trên 4.338 khách cho phân tích khám phá tại mốc chốt. ūj,sj là trung bình/độ lệch chuẩn cột log, sⱼ>0.
 
 ```math
-J=\sum_{i=1}^{n}\|z_i-\mu_{c_i}\|^2
+J=\sum_{i=1}^{n}\|x_i-\mu_{c_i}\|^2
 ```
 
-Trong công thức K-means, μk ký hiệu tâm cụm k, khác trung bình dùng chuẩn hóa ở công thức trước. cᵢ là mã cụm của điểm i. J còn gọi inertia, là tổng bình phương khoảng cách tới tâm được gán.
+Trong công thức K-means, μk ký hiệu tâm cụm k; ūj ở công thức trước là trung bình của cột log. cᵢ là mã cụm của điểm i. J còn gọi inertia, là tổng bình phương khoảng cách tới tâm được gán.
 
 ```math
-c_i=\arg\min_k\|z_i-\mu_k\|^2,\qquad\mu_k=\frac{1}{|C_k|}\sum_{i\in C_k}z_i
+c_i=\arg\min_k\|x_i-\mu_k\|^2,\qquad\mu_k=\frac{1}{|C_k|}\sum_{i\in C_k}x_i
 ```
 
 Cₖ là tập chỉ số điểm thuộc cụm k. Gán khi giữ tâm; lấy trung bình khi giữ cụm không rỗng. Nếu hòa khoảng cách cần quy tắc; ví dụ này chọn mã nhỏ hơn.
 
-> 📌 Không so trực tiếp J trên RFM thô với J trên log/chuẩn hóa: đơn vị và hình học đã đổi. Trong mục 7, thay z bằng tọa độ mô phỏng đã cho.
+> 📌 Không so trực tiếp J trên RFM thô với J trên log/chuẩn hóa: đơn vị và hình học đã đổi. Trong mục 7, thay x bằng tọa độ mô phỏng đã cho.
 
-<a id="muc-6"></a>
+<a id="muc-7"></a>
 
 ## 6 Phương pháp được thực hiện như thế nào
 
@@ -167,7 +196,7 @@ Với tâm cố định, gán gần nhất không tăng J. Với nhóm cố đ�
 
 > ✏️ Hội tụ nghĩa gì trong ví dụ? Gán thêm một lần không đổi nhóm và cập nhật không đổi tâm; không có nghĩa đã kiểm mọi phân hoạch có thể.
 
-<a id="muc-7"></a>
+<a id="muc-8"></a>
 
 ## 7 Cùng làm một ví dụ từ đầu đến cuối
 
@@ -196,7 +225,33 @@ d^2(Chi,\mu_0)=6.25,\quad d^2(Chi,\mu_1)=6.625
 
 > 📌 Cộng bình phương khoảng cách đến tâm mới được J=22/3≈7,3333. Gán thêm một vòng giữ nhóm và tâm. Số điểm trong ví dụ vẫn là sáu, không thay đổi theo vòng lặp.
 
-<a id="muc-8"></a>
+<a id="muc-9"></a>
+
+## Silhouette giải thích một điểm có hợp cụm không
+
+Inertia tối ưu không tăng khi tăng K, nên không thể chỉ chọn K có inertia nhỏ nhất. Silhouette so sánh độ gần trong cụm với khoảng cách sang cụm khác.
+
+```math
+s(i)=\frac{b(i)-a(i)}{\max\{a(i),b(i)\}}
+```
+
+a(i) là khoảng cách trung bình từ i tới các điểm khác trong cùng cụm. b(i) là nhỏ nhất trong các khoảng cách trung bình từ i tới từng cụm khác. Đây không phải khoảng cách tới tâm cụm.
+
+| Hai cụm trên trục số | Với điểm i = 2 |
+| --- | --- |
+| Cụm A = {0, 2} | a(2) = \|2 − 0\| = 2 |
+| Cụm B = {10, 12} | b(2) = (8 + 10)/2 = 9 |
+| Kết quả | s(2) = (9 − 2)/9 = 7/9 ≈ 0,778 |
+
+- Gần 1: điểm gần cụm của mình hơn các cụm khác.
+- Gần 0: nằm gần ranh giới theo thước đo này.
+- Âm: có thể được gán chưa phù hợp.
+
+Silhouette cần 2 ≤ K ≤ n − 1. Cụm chỉ có một điểm được quy ước điểm silhouette bằng 0 trong cách tính dùng ở bài. Điểm số tốt chưa chứng minh phân khúc có ích cho kinh doanh.
+
+> ✏️ Tự kiểm: vì sao K = 4 vẫn được phân tích trong case khi K = 2 có silhouette cao hơn? Vì K = 4 cho mô tả phân khúc chi tiết để cân nhắc hành động; cần trình bày rõ đánh đổi.
+
+<a id="muc-10"></a>
 
 ## 8 Đọc kết quả và tránh hiểu nhầm
 
@@ -217,7 +272,7 @@ Ví dụ cụm 2 có R trung vị 9 ngày, F=10, M≈3.726,08 GBP: nhóm mua g�
 
 > 📌 K4 giúp thảo luận bốn hồ sơ; chưa chứng minh có đúng bốn phân khúc tự nhiên hoặc chiến dịch sẽ hiệu quả. So K còn cần quy mô cụm, độ ổn định và khả năng sử dụng. Trên thang RFM thô, K2 từng tách 4.330 và 8 khách với silhouette mẫu≈0,988: phải đọc cả cấu trúc nhóm và mục tiêu.
 
-<a id="muc-9"></a>
+<a id="muc-11"></a>
 
 ## 9 Tự kiểm tra trước khi đến lớp
 
@@ -247,7 +302,7 @@ Ví dụ cụm 2 có R trung vị 9 ngày, F=10, M≈3.726,08 GBP: nhóm mua g�
 
 > ✏️ Câu 1 kiểm đơn vị quan sát; câu 2–3 kiểm thuật toán; câu 4 kiểm mục tiêu; câu 5–6 kiểm diễn giải.
 
-<a id="muc-10"></a>
+<a id="muc-12"></a>
 
 ## 10 Những điều cần nhớ
 
@@ -269,7 +324,7 @@ Ví dụ cụm 2 có R trung vị 9 ngày, F=10, M≈3.726,08 GBP: nhóm mua g�
 
 ### Nguồn và hiện vật
 
-Bám Bài 08 v2, 54 slide chính và 6 mở rộng. Dữ liệu được xử lý lại từ tệp gốc; kèm giao dịch khách 12755, bảng RFM, hồ sơ cụm, lịch sử tính tay và mã quét K. Dữ liệu phái sinh từ Chen (2015), CC BY 4.0; các bộ lọc và biến đổi nêu ở mục 3,5.
+Đối chiếu Bài 8 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu được xử lý lại từ tệp gốc; kèm giao dịch khách 12755, bảng RFM, hồ sơ cụm, lịch sử tính tay và mã quét K. Dữ liệu phái sinh từ Chen (2015), CC BY 4.0; các bộ lọc và biến đổi nêu ở mục 3,5.
 
 [\[1\] Chen (2015), Online Retail, UCI — CC BY 4.0](https://archive.ics.uci.edu/dataset/352/online+retail)
 
@@ -281,7 +336,7 @@ Bám Bài 08 v2, 54 slide chính và 6 mở rộng. Dữ liệu được xử l�
 
 > 🔎 Nối bài 9: khi một đối tượng là ảnh với 784 tọa độ, ta cần hiểu giảm chiều giữ lại và bỏ đi thông tin gì.
 
-<a id="muc-11"></a>
+<a id="muc-13"></a>
 
 ## Phụ lục A Đáp án có giải thích
 
@@ -321,7 +376,7 @@ Chưa thể. Cần kiểm quy mô/hồ sơ có phục vụ hành động cụ th
 
 > ✏️ Ôn câu 1 ở mục 3; câu 2–3 ở mục 4–7; câu 4 ở mục 6; câu 5–6 ở mục 8 và phụ lục B.
 
-<a id="muc-12"></a>
+<a id="muc-14"></a>
 
 ## Phụ lục B Kiến thức mở rộng tùy chọn
 

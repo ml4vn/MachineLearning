@@ -4,24 +4,28 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang](Bai02_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai02_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai02/README.md)
+[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai02_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai02_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai02/README.md)
+
+**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
 ## Mục lục
 
 - [1 Bài học này giải quyết vấn đề gì](#muc-1)
-- [2 Bạn cần biết gì trước khi bắt đầu](#muc-2)
-- [3 Dữ liệu của bài học trông như thế nào](#muc-3)
-- [4 Ý tưởng chính của phương pháp là gì](#muc-4)
-- [5 Những khái niệm và công thức nào cần nắm](#muc-5)
-- [6 Phương pháp được thực hiện như thế nào](#muc-6)
-- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-7)
-- [8 Đọc kết quả và tránh hiểu nhầm](#muc-8)
-- [9 Tự kiểm tra trước khi đến lớp](#muc-9)
-- [10 Những điều cần nhớ](#muc-10)
-- [Phụ lục A Đáp án có giải thích](#muc-11)
-- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-12)
+- [Lộ trình đọc và đối chiếu với bài giảng](#muc-2)
+- [2 Bạn cần biết gì trước khi bắt đầu](#muc-3)
+- [3 Dữ liệu của bài học trông như thế nào](#muc-4)
+- [4 Ý tưởng chính của phương pháp là gì](#muc-5)
+- [5 Những khái niệm và công thức nào cần nắm](#muc-6)
+- [6 Phương pháp được thực hiện như thế nào](#muc-7)
+- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-8)
+- [8 Đọc kết quả và tránh hiểu nhầm](#muc-9)
+- [Kết nối trực quan từ khoảng cách đến lựa chọn k](#muc-10)
+- [9 Tự kiểm tra trước khi đến lớp](#muc-11)
+- [10 Những điều cần nhớ](#muc-12)
+- [Phụ lục A Đáp án có giải thích](#muc-13)
+- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-14)
 
 <a id="muc-1"></a>
 
@@ -42,9 +46,34 @@ Bài 1 giúp bạn biểu diễn đối tượng bằng vector. Bài này bổ s
 - Áp dụng chuẩn hóa theo cột bằng thống kê của train.
 - Phân biệt ví dụ tính tay, ví dụ minh họa và kết quả đánh giá.
 
-> ✏️ **Cách học:** dành khoảng 30–40 phút, chuẩn bị giấy và máy tính căn. Đọc mục 1–8, làm mục 9 rồi xem phụ lục A. Không cần lập trình; phụ lục B dành cho người muốn hiểu sâu hơn.
+> ✏️ **Cách học:** dành khoảng 40–50 phút, chuẩn bị giấy và máy tính căn. Đọc mục 1–8, làm mục 9 rồi xem phụ lục A. Không cần lập trình; phụ lục B dành cho người muốn hiểu sâu hơn.
 
 <a id="muc-2"></a>
+
+## Lộ trình đọc và đối chiếu với bài giảng
+
+Bản tài liệu cập nhật v3 • Đối chiếu Bài 2, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+
+### Đọc để chuẩn bị điều gì
+
+- Khoảng cách giữa hai tin nhắn
+- Chuẩn hóa chỉ từ train
+- Bỏ phiếu của k láng giềng
+- Chọn k trên validation
+
+Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học.
+
+| Slide | Mốc ôn tập trong bài giảng |
+| --- | --- |
+| 14 | Tổng kết · Văn bản thành hai tọa độ |
+| 29 | Tổng kết · Từ khoảng cách đến một dự đoán |
+| 40 | Tổng kết · Một hệ tọa độ cho mọi tập |
+| 54 | Tổng kết · Kiểm từng bước của thực nghiệm |
+| 60 | Tổng quan · kNN học từ láng giềng |
+
+> 📌 Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp.
+
+<a id="muc-3"></a>
 
 ## 2 Bạn cần biết gì trước khi bắt đầu
 
@@ -69,7 +98,7 @@ Khoảng cách bằng 0 nghĩa là hai vector trùng tọa độ. Hai văn bản
 
 > ✏️ **Kiểm nhanh K1:** một chuỗi có 50 ký tự, trong đó 5 chữ số. Tỷ lệ chữ số bằng bao nhiêu? **K2:** khi μ = 100, σ = 20 và x = 80, hãy tính (x − μ)/σ. Đây là số mô phỏng. Đáp án ở phụ lục A.
 
-<a id="muc-3"></a>
+<a id="muc-4"></a>
 
 ## 3 Dữ liệu của bài học trông như thế nào
 
@@ -93,7 +122,7 @@ Diễn nghĩa để đọc: tin 2 nói người gửi chỉ đang đùa; tin 3 m
 
 Tệp và phép đếm đi kèm được giữ theo slide. Corpus tiếng Anh lịch sử này phục vụ học cơ chế; nhãn spam không phải kết luận đã xác minh về lừa đảo.
 
-<a id="muc-4"></a>
+<a id="muc-5"></a>
 
 ## 4 Ý tưởng chính của phương pháp là gì
 
@@ -112,7 +141,7 @@ Thứ tự theo d² là nhóm P1 và P2 đồng hạng, rồi P3, P5, P4. Với 
 
 > 📌 **Giới hạn kết luận:** query mô phỏng chưa có nhãn thật để chấm. Làm đúng quy tắc bỏ phiếu chưa chứng minh dự đoán đúng. Hai điểm đồng hạng ở đây đều được chọn; không cần tạo thứ tự giả giữa P1 và P2.
 
-<a id="muc-5"></a>
+<a id="muc-6"></a>
 
 ## 5 Những khái niệm và công thức nào cần nắm
 
@@ -141,7 +170,7 @@ z_j=\frac{x_j-\mu_j}{\sigma_j},\qquad \sigma_j>0
 
 > 📌 **Không đồng nhất:** tỷ lệ phiếu là mức đồng thuận của các láng giềng. Nó chưa phải xác suất được hiệu chỉnh hoặc lời bảo đảm về nhãn thật.
 
-<a id="muc-6"></a>
+<a id="muc-7"></a>
 
 ## 6 Phương pháp được thực hiện như thế nào
 
@@ -168,7 +197,7 @@ Các giá trị hiển thị đã làm tròn; phép tính dùng giá trị đầ
 
 > ✏️ **Tự kiểm quy trình:** nếu fit scaler riêng trên từng tập, các vector sẽ không còn cùng hệ tọa độ. Nếu fit trên cả test, thông tin của phép chấm cuối đã đi vào bước học. Trong pilot này không refit gộp train và validation.
 
-<a id="muc-7"></a>
+<a id="muc-8"></a>
 
 ## 7 Cùng làm một ví dụ từ đầu đến cuối
 
@@ -199,7 +228,7 @@ Với k = 3, trước chuẩn hóa có hai ham nên dự đoán ham; sau chuẩn
 
 > 📌 **Phạm vi:** query được chọn có chủ đích để minh họa cơ chế thay đổi. Một tin đúng hơn không chứng minh mọi tin đều đúng hơn.
 
-<a id="muc-8"></a>
+<a id="muc-9"></a>
 
 ## 8 Đọc kết quả và tránh hiểu nhầm
 
@@ -222,7 +251,31 @@ Trên test giữ riêng, cấu hình đã khóa có 29 lỗi: 12 ham bị dự �
 
 > 🔎 **Cần thêm bằng chứng khi đổi mục tiêu:** kết quả trên corpus tiếng Anh lịch sử chưa cho biết hiệu quả với SMS tiếng Việt hiện tại. Bỏ trùng chính xác cũng chưa loại mọi tin cùng mẫu chiến dịch.
 
-<a id="muc-9"></a>
+<a id="muc-10"></a>
+
+## Kết nối trực quan từ khoảng cách đến lựa chọn k
+
+Với mỗi tin nhắn mới, KNN đo khoảng cách tới các điểm train, lấy k điểm gần nhất rồi bỏ phiếu. Validation dùng để chọn k; test dùng để báo cáo sau khi đã khóa lựa chọn.
+
+```math
+z_j=\frac{x_j-\mu_j}{s_j}
+```
+
+Trung bình μ và độ lệch chuẩn s được ước lượng trên train. Dùng nguyên các giá trị này để biến đổi validation, test và tin nhắn mới.
+
+| Bước | Câu hỏi cần trả lời |
+| --- | --- |
+| Biểu diễn | Độ dài tin nhắn và tỷ lệ chữ số có đơn vị/thang đo gì? |
+| Chuẩn hóa | Đã dùng thống kê của train chưa? |
+| Tìm láng giềng | Khoảng cách được tính trong cùng không gian đã chuẩn hóa chưa? |
+| Bỏ phiếu | Đang dùng k nào? Có quy tắc xử lý hòa phiếu không? |
+| Chọn mô hình | Chọn k bằng F1 validation, không bằng kết quả test. |
+
+> 📌 Case-study dùng k = 11 vì F1 validation tốt nhất trong các giá trị đã thử. Đây không phải khẳng định k = 11 tốt cho mọi dữ liệu.
+
+> ✏️ Tự kiểm: vì sao không fit scaler trên toàn bộ dữ liệu? Vì thống kê của tập giữ lại sẽ đi vào quá trình xây dựng mô hình.
+
+<a id="muc-11"></a>
 
 ## 9 Tự kiểm tra trước khi đến lớp
 
@@ -258,7 +311,7 @@ Làm trước khi xem phụ lục A. Chọn một đáp án nếu có lựa ch�
 
 > ✏️ **Mang đến lớp:** một bảng d² bạn tự làm và một câu hỏi về dữ liệu hoặc scaler. Nếu chưa chắc mẫu số tỷ lệ chữ số, quay lại mục 3.
 
-<a id="muc-10"></a>
+<a id="muc-12"></a>
 
 ## 10 Những điều cần nhớ
 
@@ -281,7 +334,7 @@ kNN dự đoán bằng các ví dụ có nhãn ở gần query trong biểu di�
 
 ### Nguồn để đọc và kiểm lại
 
-Bám Bài 2 v2, slide 2–7, 11–30, 36–56. Số liệu và mã bản ghi khớp các CSV kèm tài liệu; bản SMS gốc giữ ở Bai02_v2/data. Dữ liệu UCI công bố theo CC BY 4.0; đã ghi tác giả và nguồn.
+Đối chiếu Bài 2 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Số liệu và mã bản ghi khớp các CSV kèm tài liệu; bản SMS gốc giữ ở Bai02_v2/data. Dữ liệu UCI công bố theo CC BY 4.0; đã ghi tác giả và nguồn.
 
 [\[1\] UCI SMS Spam Collection Almeida và Hidalgo 2011](https://archive.ics.uci.edu/dataset/228/sms+spam+collection)
 
@@ -291,7 +344,7 @@ Bám Bài 2 v2, slide 2–7, 11–30, 36–56. Số liệu và mã bản ghi kh�
 
 > 🔎 **Nối sang bài 3:** “sai 29 tin” còn quá gộp. Ta sẽ đọc riêng chặn nhầm ham, bỏ lọt spam và chọn chỉ số phù hợp với câu hỏi.
 
-<a id="muc-11"></a>
+<a id="muc-13"></a>
 
 ## Phụ lục A Đáp án có giải thích
 
@@ -327,7 +380,7 @@ Không dùng chính test như vậy để vừa chọn k vừa báo đánh giá 
 
 > ✏️ **Tự sửa:** lỗi phép tính → mục 2 và 4; lỗi quy trình → mục 6; lỗi kết luận → mục 7 và 8. Ghi rõ bước nào chưa hiểu để hỏi trên lớp.
 
-<a id="muc-12"></a>
+<a id="muc-14"></a>
 
 ## Phụ lục B Kiến thức mở rộng tùy chọn
 

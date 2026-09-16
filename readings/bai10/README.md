@@ -4,24 +4,28 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang](Bai10_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai10_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai10/README.md)
+[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai10_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai10_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai10/README.md)
+
+**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
 ## Mục lục
 
 - [1 Bài học này giải quyết vấn đề gì](#muc-1)
-- [2 Bạn cần biết gì trước khi bắt đầu](#muc-2)
-- [3 Dữ liệu của bài học trông như thế nào](#muc-3)
-- [4 Ý tưởng chính của phương pháp là gì](#muc-4)
-- [5 Những khái niệm và công thức nào cần nắm](#muc-5)
-- [6 Phương pháp được thực hiện như thế nào](#muc-6)
-- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-7)
-- [8 Đọc kết quả và tránh hiểu nhầm](#muc-8)
-- [9 Tự kiểm tra trước khi đến lớp](#muc-9)
-- [10 Những điều cần nhớ](#muc-10)
-- [Phụ lục A Đáp án có giải thích](#muc-11)
-- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-12)
+- [Lộ trình đọc và đối chiếu với bài giảng](#muc-2)
+- [2 Bạn cần biết gì trước khi bắt đầu](#muc-3)
+- [3 Dữ liệu của bài học trông như thế nào](#muc-4)
+- [4 Ý tưởng chính của phương pháp là gì](#muc-5)
+- [5 Những khái niệm và công thức nào cần nắm](#muc-6)
+- [6 Phương pháp được thực hiện như thế nào](#muc-7)
+- [Theo dõi một đường backprop trước khi học công thức tổng quát](#muc-8)
+- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-9)
+- [8 Đọc kết quả và tránh hiểu nhầm](#muc-10)
+- [9 Tự kiểm tra trước khi đến lớp](#muc-11)
+- [10 Những điều cần nhớ](#muc-12)
+- [Phụ lục A Đáp án có giải thích](#muc-13)
+- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-14)
 
 <a id="muc-1"></a>
 
@@ -42,9 +46,35 @@ Tính cả bias: 784×64 + 64 + 64×10 + 10 = 50.890 tham số được học. S
 - Phân biệt backprop với optimizer, batch với epoch.
 - Dùng validation để chọn checkpoint, đọc cả accuracy và lỗi theo lớp.
 
-> ✏️ Dự kiến 30–40 phút; không cần lập trình. Ôn tích vô hướng (bài 1), gradient descent (bài 4), logistic (bài 5), chia dữ liệu (bài 7). Đạo hàm đầy đủ ở phụ lục B là tùy chọn.
+> ✏️ Dự kiến 40–50 phút; không cần lập trình. Ôn tích vô hướng (bài 1), gradient descent (bài 4), logistic (bài 5), chia dữ liệu (bài 7). Đạo hàm đầy đủ ở phụ lục B là tùy chọn.
 
 <a id="muc-2"></a>
+
+## Lộ trình đọc và đối chiếu với bài giảng
+
+Bản tài liệu cập nhật v3 • Đối chiếu Bài 10, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+
+### Đọc để chuẩn bị điều gì
+
+- Vì sao XOR cần tầng ẩn
+- Forward và hàm mất mát
+- Backprop qua một trọng số
+- Validation, checkpoint và test
+
+Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học.
+
+| Slide | Mốc ôn tập trong bài giảng |
+| --- | --- |
+| 18 | Tổng kết · Học một biểu diễn mới |
+| 30 | Tổng kết · Forward rồi cập nhật |
+| 39 | Tổng kết · Một đường backprop |
+| 45 | Tổng kết · Thuật toán huấn luyện MLP |
+| 57 | Tổng kết · Đánh giá có quy trình |
+| 63 | Bài 10 · Từ biểu diễn đến bằng chứng |
+
+> 📌 Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp.
+
+<a id="muc-3"></a>
 
 ## 2 Bạn cần biết gì trước khi bắt đầu
 
@@ -64,7 +94,7 @@ Một neuron không phải lúc nào cũng là logistic regression. Trong tầng
 
 > ✏️ **K1:** ReLU(−0,4) và ReLU(0,7) bằng bao nhiêu? **K2:** với y=0 và xác suất nhãn 1 là p=0,2, xác suất mô hình gán cho nhãn đúng là bao nhiêu?
 
-<a id="muc-3"></a>
+<a id="muc-4"></a>
 
 ## 3 Dữ liệu của bài học trông như thế nào
 
@@ -88,7 +118,7 @@ Flatten giữ 784 giá trị và có thể reshape nếu biết thứ tự. PCA 
 
 > 📌 Ảnh 28×28 mức xám của benchmark không đại diện mọi ảnh chụp hàng hóa ngoài đời. Đọc sai lớp trong bảng là sai so với nhãn được cung cấp.
 
-<a id="muc-4"></a>
+<a id="muc-5"></a>
 
 ## 4 Ý tưởng chính của phương pháp là gì
 
@@ -117,17 +147,17 @@ Score s=2h₁−4h₂−1 lần lượt −1,+1,+1,−1. Quy tắc s≥0 → nh�
 
 > ✏️ Bỏ ReLU và chỉ chồng các lớp affine thì có thoát được giới hạn của một affine không? Không: hợp các phép affine vẫn là affine.
 
-<a id="muc-5"></a>
+<a id="muc-6"></a>
 
 ## 5 Những khái niệm và công thức nào cần nắm
 
 ### Mạng nhị phân nhỏ để tính tay
 
 ```math
-a_j=\sum_r W_{jr}x_r+b_j,\quad h_j=ReLU(a_j),\quad s=\sum_jv_jh_j+c
+a_j=\sum_r w_{jr}x_r+b_{1,j},\quad h_j=ReLU(a_j),\quad s=\sum_jv_jh_j+b
 ```
 
-W,b là trọng số/bias tầng ẩn; v,c của tầng ra. Chỉ số j chỉ đơn vị ẩn, r chỉ đầu vào; x ở ví dụ này là vector cột.
+W₁,b₁ là ma trận trọng số/vector bias tầng ẩn; v,b của tầng ra. Chỉ số j chỉ đơn vị ẩn, r chỉ đầu vào; x ở ví dụ này là vector cột.
 
 ```math
 p=\frac{1}{1+e^{-s}},\qquad L=-\frac{1}{n}\sum_i[y_i\ln p_i+(1-y_i)\ln(1-p_i)]
@@ -147,7 +177,7 @@ Nếu dự đoán đều 10 lớp, xác suất nhãn thật là 1/10 nên CE=ln1
 
 > 📌 Các công thức trên là loss dữ liệu. Huấn luyện MLP thật còn dùng L2 theo alpha=0,0001 của thư viện. Đường CE ở mục 8 được tính lại từ logits, không cộng phạt L2.
 
-<a id="muc-6"></a>
+<a id="muc-7"></a>
 
 ## 6 Phương pháp được thực hiện như thế nào
 
@@ -162,7 +192,7 @@ Nếu dự đoán đều 10 lớp, xác suất nhãn thật là 1/10 nên CE=ln1
 | Backprop | Áp dụng quy tắc dây chuyền để tính mọi gradient tại cùng tham số cũ. |
 | Optimizer | Dùng gradient để tạo tham số mới. GD: θ mới=θ cũ−η∇L; Adam còn dùng trạng thái tích lũy gradient [3]. |
 
-Nếu tầng ẩn được phép học, sai số phải truyền qua tầng ra và đạo hàm activation về W,b. Nếu giữ tầng ẩn cố định như XOR mục 7, chỉ cập nhật v,c. Dự đoán ảnh mới chỉ chạy forward, không cần nhãn và không cập nhật trọng số.
+Nếu tầng ẩn được phép học, sai số phải truyền qua tầng ra và đạo hàm activation về W₁,b₁. Nếu giữ tầng ẩn cố định như XOR mục 7, chỉ cập nhật v,b. Dự đoán ảnh mới chỉ chạy forward, không cần nhãn và không cập nhật trọng số.
 
 ### Từ một batch tới thí nghiệm hoàn chỉnh
 
@@ -170,13 +200,47 @@ Mini-batch là một nhóm ảnh dùng cho một lượt cập nhật. Một epo
 
 Case dùng Adam, tốc độ học ban đầu 0,001, 50 epoch và lưu checkpoint có CE validation nhỏ nhất [4]. Seed chính 42 được chỉ định trước. Chạy hết 50 epoch là hết ngân sách, không chứng minh hội tụ.
 
-> ✏️ Có được cập nhật v rồi dùng v mới để tính gradient W trong cùng lượt backprop không? Không trong phép cập nhật đồng thời đang mô tả.
+> ✏️ Có được cập nhật v rồi dùng v mới để tính gradient W₁ trong cùng lượt backprop không? Không trong phép cập nhật đồng thời đang mô tả.
 
-<a id="muc-7"></a>
+<a id="muc-8"></a>
+
+## Theo dõi một đường backprop trước khi học công thức tổng quát
+
+Xét một mẫu x = (0,6; 0,2), y = 1. Forward cho h₁ = 0,32; h₂ = 0,44; điểm s = 0,204; p = 0,550824. Trọng số từ h₁ đến đầu ra là v₁ = 0,7; trọng số đang theo dõi w₁₁ = 0,5.
+
+```math
+\delta=p-y=-0.449176
+```
+
+Với sigmoid và binary cross-entropy của một mẫu, δ là đạo hàm của loss theo điểm s.
+
+```math
+\frac{\partial\ell}{\partial w_{11}}=\delta\,v_1\,\mathbf{1}_{a_1>0}\,x_1
+```
+
+Đi ngược đầu ra → h₁ → a₁ → w₁₁. ReLU có đạo hàm 1 tại a₁ = 0,32 > 0; x₁ = 0,6 là đầu vào của trọng số này.
+
+```math
+\frac{\partial\ell}{\partial w_{11}}=(-0.449176)(0.7)(1)(0.6)=-0.188654
+```
+
+Mọi thừa số được lấy từ cùng lượt forward, trước khi cập nhật bất kỳ tham số nào.
+
+```math
+w_{11}^{new}=0.5-0.1(-0.188654)=0.518865
+```
+
+Learning rate η = 0,1. Đây là minh họa một thành phần của bước cập nhật; huấn luyện toàn mạng tính gradient cho tất cả tham số.
+
+> 📌 b là bias đầu ra; b₁ là vector bias tầng ẩn; W₁ là ma trận trọng số tầng ẩn và w₁₁ là một phần tử. Ký hiệu ⊙ nếu gặp nghĩa là nhân theo từng phần tử.
+
+> ✏️ Tự kiểm: nếu a₁ < 0 thì đường gradient qua ReLU này bằng bao nhiêu? Bằng 0; tại đúng a₁ = 0 cần quy ước đạo hàm.
+
+<a id="muc-9"></a>
 
 ## 7 Cùng làm một ví dụ từ đầu đến cuối
 
-Giữ h₁,h₂ ở mục 4; chỉ học v₁,v₂,c, khởi tạo cả ba bằng 0. Vì s=0 ở bốn điểm nên p=0,5 và L=ln2. Tính đóng góp gradient tại cùng bộ tham số ban đầu.
+Giữ h₁,h₂ ở mục 4; chỉ học v₁,v₂,b, khởi tạo cả ba bằng 0. Vì s=0 ở bốn điểm nên p=0,5 và L=ln2. Tính đóng góp gradient tại cùng bộ tham số ban đầu.
 
 | Điểm | y | (h₁,h₂) | p−y | (p−y)h₁ | (p−y)h₂ |
 | --- | --- | --- | --- | --- | --- |
@@ -186,13 +250,13 @@ Giữ h₁,h₂ ở mục 4; chỉ học v₁,v₂,c, khởi tạo cả ba bằn
 | D | 0 | (2,1) | 0,5 | 1 | 0,5 |
 
 ```math
-\frac{\partial L}{\partial v_j}=\frac{1}{4}\sum_i(p_i-y_i)h_{ij},\qquad\frac{\partial L}{\partial c}=\frac{1}{4}\sum_i(p_i-y_i)
+\frac{\partial L}{\partial v_j}=\frac{1}{4}\sum_i(p_i-y_i)h_{ij},\qquad\frac{\partial L}{\partial b}=\frac{1}{4}\sum_i(p_i-y_i)
 ```
 
-Cộng từng cột rồi chia 4: gradient theo (v₁,v₂,c)=(0;0,125;0). Chưa chia 4 thì đang lấy gradient tổng loss.
+Cộng từng cột rồi chia 4: gradient theo (v₁,v₂,b)=(0;0,125;0). Chưa chia 4 thì đang lấy gradient tổng loss.
 
 ```math
-(v_1,v_2,c)_{moi}=(0,0,0)-8(0,0.125,0)=(0,-1,0)
+(v_1,v_2,b)_{moi}=(0,0,0)-8(0,0.125,0)=(0,-1,0)
 ```
 
 Chọn η=8 chỉ cho phép tính minh họa này. Tính lại s=(0,0,0,−1), p≈(0,5;0,5;0,5;0,26894).
@@ -203,7 +267,7 @@ Bộ trọng số dựng (2,−4,−1) ở mục 4 cho đúng 4/4 nhưng loss≈
 
 > 📌 Gradient v₁ bằng 0 tại khởi tạo do các đóng góp triệt tiêu. Điều này không chứng minh h₁ vô ích: nghiệm dựng vẫn dùng hệ số v₁=2.
 
-<a id="muc-8"></a>
+<a id="muc-10"></a>
 
 ## 8 Đọc kết quả và tránh hiểu nhầm
 
@@ -222,7 +286,7 @@ Ba seed 42,43,44 có accuracy validation lần lượt 86,03%;86,33%;86,57%; che
 
 > 📌 Test cho MLP hơn 267 ảnh đúng, tức 2,67 điểm phần trăm trong cấu hình này. Hai mô hình chưa được tối ưu toàn diện; chưa suy ra MLP luôn tốt hơn hay dùng ngay được với ảnh cửa hàng. Test công khai đã được xem ở pilot trước; đây không phải một kiểm nghiệm hoàn toàn mới.
 
-<a id="muc-9"></a>
+<a id="muc-11"></a>
 
 ## 9 Tự kiểm tra trước khi đến lớp
 
@@ -254,7 +318,7 @@ Tự làm trước khi đọc phụ lục A. Viết rõ quy ước ngưỡng và
 
 > ✏️ Câu 1–3 kiểm cấu trúc và phép tính; câu 4 kiểm loss; câu 5–6 kiểm cách ra quyết định từ kết quả.
 
-<a id="muc-10"></a>
+<a id="muc-12"></a>
 
 ## 10 Những điều cần nhớ
 
@@ -276,7 +340,7 @@ Tự làm trước khi đọc phụ lục A. Viết rõ quy ước ngưỡng và
 
 ### Nguồn và hiện vật
 
-Bám Bài10_v2 và notes. Kèm ảnh minh họa, bảng XOR, lịch sử seed chính được chạy lại, báo cáo kiểm gradient và dự đoán. Mã tính kiểm tra thuộc bộ tài liệu đọc trước; số baseline giữ đúng snapshot bài 9.
+Đối chiếu Bài 10 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm ảnh minh họa, bảng XOR, lịch sử seed chính được chạy lại, báo cáo kiểm gradient và dự đoán. Mã tính kiểm tra thuộc bộ tài liệu đọc trước; số baseline giữ đúng snapshot bài 9.
 
 [\[1\] Zalando Research — Fashion-MNIST, ảnh và nhãn](https://github.com/zalandoresearch/fashion-mnist)
 
@@ -286,7 +350,7 @@ Bám Bài10_v2 và notes. Kèm ảnh minh họa, bảng XOR, lịch sử seed ch
 
 [\[4\] scikit-learn 1.6 — MLPClassifier và partial_fit](https://scikit-learn.org/1.6/modules/generated/sklearn.neural_network.MLPClassifier.html)
 
-<a id="muc-11"></a>
+<a id="muc-13"></a>
 
 ## Phụ lục A Đáp án có giải thích
 
@@ -326,13 +390,13 @@ Chưa đủ. Cần xem confusion/recall từng lớp và tính đại diện c�
 
 > ✏️ Ôn câu 1 ở mục 2; câu 2 ở sơ đồ và phụ lục B; câu 3 ở mục 7; câu 4 ở mục 5; câu 5–6 ở mục 6,8.
 
-<a id="muc-12"></a>
+<a id="muc-14"></a>
 
 ## Phụ lục B Kiến thức mở rộng tùy chọn
 
 ### Một lượt backprop qua cả hai tầng
 
-Ví dụ khác XOR, một điểm x=(0,6;0,2), y=1. Tầng ẩn: hàng W₁=(0,5;−0,4), W₂=(0,3;0,8), b=(0,1;0,1); tầng ra v=(0,7;−0,5), c=0,2. Cả chín tham số đều được phép học; không có L2 ở phép tính này.
+Ví dụ khác XOR, một điểm x=(0,6;0,2), y=1. Tầng ẩn: ma trận W₁ có hàng 1 là (0,5;−0,4), hàng 2 là (0,3;0,8), vector b₁=(0,1;0,1); tầng ra v=(0,7;−0,5), b=0,2. Cả chín tham số đều được phép học; không có L2 ở phép tính này.
 
 | Forward | Tính được |
 | --- | --- |
@@ -342,16 +406,16 @@ Ví dụ khác XOR, một điểm x=(0,6;0,2), y=1. Tầng ẩn: hàng W₁=(0,5
 | L = −ln p, vì y=1 | ≈0,596340 |
 
 ```math
-\delta=p-y,\quad\frac{\partial L}{\partial v_j}=\delta h_j,\quad\frac{\partial L}{\partial c}=\delta
+\delta=p-y,\quad\frac{\partial L}{\partial v_j}=\delta h_j,\quad\frac{\partial L}{\partial b}=\delta
 ```
 
 δ≈−0,449176. Đây là một điểm, không phải trung bình nhiều điểm. Tất cả số dùng tham số cũ.
 
 ```math
-\delta_j=\delta v_j\,\mathbf{1}_{a_j>0},\quad\frac{\partial L}{\partial W_{jr}}=\delta_jx_r,\quad\frac{\partial L}{\partial b_j}=\delta_j
+\delta_j=\delta v_j\,\mathbf{1}_{a_j>0},\quad\frac{\partial L}{\partial w_{jr}}=\delta_jx_r,\quad\frac{\partial L}{\partial b_{1,j}}=\delta_j
 ```
 
-Hệ số chỉ báo bằng 1 khi aⱼ>0 và bằng 0 khi aⱼ<0; tại 0, đạo hàm ReLU cần quy ước. δ₁≈−0,314423; δ₂≈0,224588. Ví dụ ∂L/∂W₁₁=δ₁×0,6≈−0,188654. GD với η=0,1 cho W₁₁ mới≈0,518865; các tham số khác cũng được cập nhật đồng thời.
+Hệ số chỉ báo bằng 1 khi aⱼ>0 và bằng 0 khi aⱼ<0; tại 0, đạo hàm ReLU cần quy ước. δ₁≈−0,314423; δ₂≈0,224588. Ví dụ ∂L/∂w₁₁=δ₁×0,6≈−0,188654. GD với η=0,1 cho w₁₁ mới≈0,518865; các tham số khác cũng được cập nhật đồng thời.
 
 ### Kiểm bằng cách khác
 

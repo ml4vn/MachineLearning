@@ -4,24 +4,28 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang](Bai09_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai09_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai09/README.md)
+[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai09_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai09_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai09/README.md)
+
+**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
 ## Mục lục
 
 - [1 Bài học này giải quyết vấn đề gì](#muc-1)
-- [2 Bạn cần biết gì trước khi bắt đầu](#muc-2)
-- [3 Dữ liệu của bài học trông như thế nào](#muc-3)
-- [4 Ý tưởng chính của phương pháp là gì](#muc-4)
-- [5 Những khái niệm và công thức nào cần nắm](#muc-5)
-- [6 Phương pháp được thực hiện như thế nào](#muc-6)
-- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-7)
-- [8 Đọc kết quả và tránh hiểu nhầm](#muc-8)
-- [9 Tự kiểm tra trước khi đến lớp](#muc-9)
-- [10 Những điều cần nhớ](#muc-10)
-- [Phụ lục A Đáp án có giải thích](#muc-11)
-- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-12)
+- [Lộ trình đọc và đối chiếu với bài giảng](#muc-2)
+- [2 Bạn cần biết gì trước khi bắt đầu](#muc-3)
+- [3 Dữ liệu của bài học trông như thế nào](#muc-4)
+- [4 Ý tưởng chính của phương pháp là gì](#muc-5)
+- [Vì sao PCA cần hiệp phương sai và trị riêng](#muc-6)
+- [5 Những khái niệm và công thức nào cần nắm](#muc-7)
+- [6 Phương pháp được thực hiện như thế nào](#muc-8)
+- [7 Cùng làm một ví dụ từ đầu đến cuối](#muc-9)
+- [8 Đọc kết quả và tránh hiểu nhầm](#muc-10)
+- [9 Tự kiểm tra trước khi đến lớp](#muc-11)
+- [10 Những điều cần nhớ](#muc-12)
+- [Phụ lục A Đáp án có giải thích](#muc-13)
+- [Phụ lục B Kiến thức mở rộng tùy chọn](#muc-14)
 
 <a id="muc-1"></a>
 
@@ -40,9 +44,34 @@ Một ảnh áo có 784 giá trị pixel. Có thể biểu diễn bằng ít t�
 - Phân biệt phương sai giữ lại, lỗi tái tạo và accuracy.
 - Giải thích vì sao PCA chỉ fit trên train trong quy trình dự đoán.
 
-> ✏️ Dự kiến 30–40 phút, không cần lập trình. Ôn vector/tích vô hướng ở bài 1 và chia dữ liệu ở bài 7. Phụ lục B là phần tùy chọn.
+> ✏️ Dự kiến 40–50 phút, không cần lập trình. Ôn vector/tích vô hướng ở bài 1 và chia dữ liệu ở bài 7. Phụ lục B là phần tùy chọn.
 
 <a id="muc-2"></a>
+
+## Lộ trình đọc và đối chiếu với bài giảng
+
+Bản tài liệu cập nhật v3 • Đối chiếu Bài 9, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+
+### Đọc để chuẩn bị điều gì
+
+- Chiếu dữ liệu lên hướng mới
+- Center và hiệp phương sai
+- Trị riêng, EVR và chọn k
+- Tái tạo ảnh và đánh giá nhiệm vụ
+
+Dành khoảng 40–50 phút cho phần chính, ví dụ và tự kiểm. Phụ lục A dùng để kiểm tra lập luận sau khi tự làm; phụ lục B là phần mở rộng, có thể đọc sau giờ học.
+
+| Slide | Mốc ôn tập trong bài giảng |
+| --- | --- |
+| 11 | Từ ảnh đến đầu vào PCA |
+| 22 | Chiếu rồi tái tạo: ba thao tác cốt lõi |
+| 31 | PCA giữ hướng biến thiên mạnh |
+| 38 | PCA: học một lần, áp dụng nhất quán |
+| 63 | PCA · Bản đồ toàn bài |
+
+> 📌 Tài liệu đọc trước tạo nền và đặt câu hỏi; các slide trên giúp nối lại kiến thức trong giờ học. Không cần học thuộc mọi kết quả số trước khi đến lớp.
+
+<a id="muc-3"></a>
 
 ## 2 Bạn cần biết gì trước khi bắt đầu
 
@@ -65,7 +94,7 @@ Khi dùng PCA, ta đổi cơ sở tọa độ và chỉ giữ một số trục 
 
 > ✏️ **K1:** 100 ảnh, mỗi ảnh 28×28 pixel, trải phẳng thành ma trận kích thước nào? **K2:** vector (1,1) có là vector đơn vị không?
 
-<a id="muc-3"></a>
+<a id="muc-4"></a>
 
 ## 3 Dữ liệu của bài học trông như thế nào
 
@@ -85,7 +114,7 @@ Train và validation ở đây được lấy từ 60.000 ảnh train chính th�
 
 > 📌 Giá trị đầu vào mô hình = pixel/255. Đây là phép đổi thang cố định. Nhãn chỉ dùng chia mẫu theo lớp và đánh giá phân loại, không dùng để fit trục PCA.
 
-<a id="muc-4"></a>
+<a id="muc-5"></a>
 
 ## 4 Ý tưởng chính của phương pháp là gì
 
@@ -104,7 +133,35 @@ Hãy đặt một đường thẳng qua trung bình của đám điểm. Chiếu
 
 > ✏️ Nếu A và B có nhãn khác nhau, việc chúng chiếu vào cùng vị trí có gây khó cho phân loại không? Phương sai lớn không tự động là thông tin tốt nhất cho mọi nhiệm vụ.
 
-<a id="muc-5"></a>
+<a id="muc-6"></a>
+
+## Vì sao PCA cần hiệp phương sai và trị riêng
+
+Sau khi trừ trung bình, ta cần tìm hướng mà dữ liệu trải rộng nhất. Hiệp phương sai mô tả từng trục biến thiên bao nhiêu và hai trục có cùng tăng giảm không.
+
+```math
+C=\frac{1}{n}X_c^{\mathsf{T}}X_c
+```
+
+Trong ví dụ bốn điểm, mỗi hàng Xc là một điểm đã center. Quy ước 1/n ở đây cho C có đường chéo 2,5 và ngoài đường chéo 2.
+
+```math
+Cw_j=\lambda_j w_j,\qquad \|w_j\|=1
+```
+
+w là hướng riêng đơn vị; λ là phương sai theo hướng đó với cùng quy ước chuẩn hóa. Sắp λ từ lớn xuống nhỏ để chọn hướng đầu.
+
+| Hướng | Phương sai | Ý nghĩa |
+| --- | --- | --- |
+| w₁ = (1,1)/√2 | λ₁ = 4,5 | Hai tọa độ cùng tăng giảm |
+| w₂ = (1,−1)/√2 | λ₂ = 0,5 | Phần biến thiên vuông góc nhỏ hơn |
+| Giữ một hướng | 4,5 / (4,5 + 0,5) = 90% | Giữ 90% phương sai, không phải 90% nhãn đúng |
+
+Dùng 1/(n−1) thay cho 1/n sẽ đổi trị riêng cùng một hệ số, nhưng không đổi hướng riêng hoặc tỷ lệ EVR. Một score là tọa độ trên hướng mới; điểm tái tạo quay về không gian ban đầu.
+
+> ✏️ Tự kiểm: cần nhãn lớp để tìm hướng PCA không? Không. Vì thế hướng giữ nhiều phương sai chưa chắc phân tách lớp tốt nhất.
+
+<a id="muc-7"></a>
 
 ## 5 Những khái niệm và công thức nào cần nắm
 
@@ -136,7 +193,7 @@ EVR(k)=\frac{\lambda_1+\cdots+\lambda_k}{\lambda_1+\cdots+\lambda_d}
 
 > 📌 Trong case không z-score từng pixel. Các pixel có cùng đơn vị cường độ; đổi cách chuẩn hóa sẽ đổi bài toán PCA. Không suy ra rằng chuẩn hóa luôn sai hay luôn cần.
 
-<a id="muc-6"></a>
+<a id="muc-8"></a>
 
 ## 6 Phương pháp được thực hiện như thế nào
 
@@ -157,7 +214,7 @@ Nếu tính lại μ hoặc trục trên validation, tọa độ đã thay đổ
 
 > ✏️ Dừng kiểm tra: ảnh mới rất sáng có được dùng để cập nhật μ ngay trước khi dự đoán không? Trong quy trình đánh giá đã chốt ở đây: không.
 
-<a id="muc-7"></a>
+<a id="muc-9"></a>
 
 ## 7 Cùng làm một ví dụ từ đầu đến cuối
 
@@ -188,7 +245,7 @@ Mỗi điểm có cùng tổng bình phương lỗi 0,5. Trung bình trên bốn
 
 > 📌 Nếu chỉ giữ trục x₁ thì trung bình lỗi mỗi điểm là 2,5; giữ PC1 được 0,5. Kết quả kiểm tra được từ bốn điểm thiết kế, không phải thống kê Fashion-MNIST.
 
-<a id="muc-8"></a>
+<a id="muc-10"></a>
 
 ## 8 Đọc kết quả và tránh hiểu nhầm
 
@@ -209,7 +266,7 @@ Logistic cùng C=1, fit trên 12.000 ảnh: pixel gốc đúng 2.500/3.000=83,33
 
 > 📌 Tăng k trong cùng cơ sở PCA lồng nhau không tăng lỗi tái tạo bình phương. Accuracy của một mô hình học trên biểu diễn đó có thể tăng hoặc giảm. Đừng dùng đường MSE để suy ra đường accuracy.
 
-<a id="muc-9"></a>
+<a id="muc-11"></a>
 
 ## 9 Tự kiểm tra trước khi đến lớp
 
@@ -241,7 +298,7 @@ Tự trả lời trước khi mở phụ lục A. Câu tính tay cần viết ph
 
 > ✏️ Nếu câu 3 khó: làm lần lượt trừ μ → tích vô hướng → nhân lại w → cộng μ. Không cần nhớ toàn bộ phép biến đổi trong một bước.
 
-<a id="muc-10"></a>
+<a id="muc-12"></a>
 
 ## 10 Những điều cần nhớ
 
@@ -262,7 +319,7 @@ Tự trả lời trước khi mở phụ lục A. Câu tính tay cần viết ph
 
 ### Nguồn và dữ liệu đi kèm
 
-Bám Bài09_v2 và notes. Kèm pixel ảnh train:24814, bảng toy, bảng kết quả và mã kiểm tính. Ảnh lấy từ Fashion-MNIST; hình phép chiếu và đường cong tự dựng từ các phép tính của case.
+Đối chiếu Bài 9 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm pixel ảnh train:24814, bảng toy, bảng kết quả và mã kiểm tính. Ảnh lấy từ Fashion-MNIST; hình phép chiếu và đường cong tự dựng từ các phép tính của case.
 
 [\[1\] Zalando Research — Fashion-MNIST, dữ liệu và nhãn chính thức](https://github.com/zalandoresearch/fashion-mnist)
 
@@ -272,7 +329,7 @@ Bám Bài09_v2 và notes. Kèm pixel ảnh train:24814, bảng toy, bảng kết
 
 > 🔎 Nối bài 10: từ biểu diễn tuyến tính sang mạng neural, vẫn giữ nguyên kỷ luật chia dữ liệu, baseline và đọc lỗi theo lớp.
 
-<a id="muc-11"></a>
+<a id="muc-13"></a>
 
 ## Phụ lục A Đáp án có giải thích
 
@@ -312,7 +369,7 @@ Bảng mục 8 dùng 0,09: lỗi trước clip. Clip thay đổi quy tắc tái 
 
 > ✏️ Ôn câu 1–2 ở mục 2,3,6; câu 3 ở mục 5,7; câu 4–6 ở mục 4,8.
 
-<a id="muc-12"></a>
+<a id="muc-14"></a>
 
 ## Phụ lục B Kiến thức mở rộng tùy chọn
 

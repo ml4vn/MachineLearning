@@ -51,9 +51,13 @@ def render_block(block: dict) -> str:
 
 def render_reading(content: dict) -> str:
     lesson = content["lesson"]
+    version = content.get("reading_version", "v2")
+    slide_version = content.get("slide_version", "v2")
+    pages = len(content["pages"])
     prefix = f"Bai{lesson:02d}_Kien_thuc_nen_tang_va_doc_truoc"
     parts = [f'# Bài {lesson:02d} · {content["title"]}', f"**{AUTHOR}**\n\n{AFFILIATION}",
-             f"[← Mục lục khóa học](../../README.md) · [📄 PDF 12 trang]({prefix}.pdf) · [📝 Word]({prefix}.docx) · [💻 Thực hành Python](../../lessons/bai{lesson:02d}/README.md)",
+             f"[← Mục lục khóa học](../../README.md) · [📄 PDF {pages} trang]({prefix}.pdf) · [📝 Word]({prefix}.docx) · [💻 Thực hành Python](../../lessons/bai{lesson:02d}/README.md)",
+             f"**Tài liệu đọc trước {version} · Đối chiếu slide {slide_version}.** Bộ Python hiện vẫn theo phiên bản trước; xem [các điểm cần đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).",
              "Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.",
              "## Mục lục", "\n".join(f'- [{p["title"]}](#muc-{i})' for i, p in enumerate(content["pages"], 1))]
     for i, page in enumerate(content["pages"], 1):

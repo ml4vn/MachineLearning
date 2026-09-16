@@ -1,42 +1,41 @@
 {
-  "source_slide_count": 68,
-  "source_data_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
-  "deduplicated_rows": 5159,
-  "split_counts": [
-    3095,
-    1032,
-    1032
-  ],
-  "real_records_recounted": 9,
-  "real_neighbor_sets_verified": 2,
-  "toy_squared_distances": [
-    2,
-    2,
-    5,
-    18,
-    9
-  ],
-  "exercise_squared_distances": [
-    5,
-    1,
-    8,
-    13,
-    10
-  ],
-  "train_mean": [
-    79.31017770597738,
-    0.01805199024951043
-  ],
-  "train_scale": [
-    59.10396149794299,
-    0.047064939324231815
-  ],
-  "questions": 6,
-  "prerequisite_questions": 2,
+  "source_alignment": {
+    "reading_version": "v3",
+    "slide_version": "v3",
+    "manifest": "Bai02_v3\\source\\slide_manifest.json",
+    "manifest_sha256": "9ce72f7a811c0dc8ea17f14cf14f64bca5e2446c2dd8f1e4d4e8138e3684c5a1",
+    "summary_slides": [
+      [
+        "14",
+        "Tổng kết · Văn bản thành hai tọa độ"
+      ],
+      [
+        "29",
+        "Tổng kết · Từ khoảng cách đến một dự đoán"
+      ],
+      [
+        "40",
+        "Tổng kết · Một hệ tọa độ cho mọi tập"
+      ],
+      [
+        "54",
+        "Tổng kết · Kiểm từng bước của thực nghiệm"
+      ],
+      [
+        "60",
+        "Tổng quan · kNN học từ láng giềng"
+      ]
+    ],
+    "new_core_bridge": "Kết nối trực quan từ khoảng cách đến lựa chọn k",
+    "original_source_sha256": "026d6b36436754d6eba2f016845bf78ecb93eb4d87d4a2c47e4a011f363d6c76"
+  },
+  "verification": "Updated examples and selected historical CSV metrics checked in KIEM_TRA_SO_LIEU_V3.json; all final rendered pages visually reviewed.",
   "status": "pass",
-  "planned_pages": 12,
+  "planned_pages": 14,
   "main_sections": 10,
-  "equations": 6,
+  "equations": 7,
   "figures": 4,
-  "docx_sha256": "3b895b3d0c4c159b04c83c7831d4cf2e2028ee434340841b98bb560157284cc6"
+  "docx_sha256": "8e92227b5a9dbf7f6232de728aa2a37c6932e02b7f60c6b55620d23bd3c6e989",
+  "pdf_sha256": "183f9c5da6201839cbd20b0d4fa164e82dc6714b9a8e475bc7ffd120a7fc5245",
+  "actual_pages": 14
 }

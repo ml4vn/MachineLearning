@@ -1,0 +1,30 @@
+{
+  "reading_version": "v3",
+  "slide_version": "v3",
+  "manifest": "Bai08_v3\\source\\slide_manifest.json",
+  "manifest_sha256": "50f54504ca2219482251b18696a444bc2c95b06826aaf713e59ed398f8a72f03",
+  "summary_slides": [
+    [
+      "12",
+      "Một khách hàng, ba góc nhìn"
+    ],
+    [
+      "20",
+      "Biểu diễn quyết định cách đo gần"
+    ],
+    [
+      "35",
+      "K-means: khởi tạo và hai bước lặp"
+    ],
+    [
+      "55",
+      "Đánh giá và lựa chọn số cụm"
+    ],
+    [
+      "63",
+      "Bài 8 · Phân nhóm khách hàng có căn cứ"
+    ]
+  ],
+  "new_core_bridge": "Silhouette giải thích một điểm có hợp cụm không",
+  "original_source_sha256": "f65d4cb45804813b6f077a8aca458a47d65629730382cde3b9d78200231dff90"
+}

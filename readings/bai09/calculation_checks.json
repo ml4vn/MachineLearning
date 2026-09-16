@@ -1,56 +1,41 @@
 {
-  "source_slide_count": 60,
-  "train_source_sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
-  "train_rows_recomputed": 12000,
-  "validation_rows_recomputed": 3000,
-  "display_source_id": "train:24814",
-  "display_raw_pixel_verified": true,
-  "pca_refitted": true,
-  "k90": 82,
-  "k90_evr": 0.9001215026744254,
-  "k90_previous_evr": 0.8992717959390805,
-  "reconstruction": [
-    {
-      "k": 2,
-      "train_evr": 0.46830407865190227,
-      "validation_mse": 0.04661844525914814,
-      "train_mse": 0.0463744081993328
-    },
-    {
-      "k": 16,
-      "train_evr": 0.7659102095648508,
-      "validation_mse": 0.02070311034786639,
-      "train_mse": 0.020417263065346462
-    },
-    {
-      "k": 64,
-      "train_evr": 0.8824213561722076,
-      "validation_mse": 0.010561734931280922,
-      "train_mse": 0.010255184975970858
-    },
-    {
-      "k": 128,
-      "train_evr": 0.9292814927013373,
-      "validation_mse": 0.006498545119837053,
-      "train_mse": 0.0061680535679125405
-    }
-  ],
-  "logistic_check": "Forward predictions recomputed from stored coefficients; logistic not refitted",
-  "validation_correct_pixel": 2500,
-  "validation_correct_pca64": 2511,
-  "test_metrics_computed": false,
-  "toy_coordinate_mse": 0.25,
-  "toy_ddof1_eigenvalues": [
-    5.999999999999999,
-    0.6666666666666669
-  ],
-  "angle_checks": 1801,
-  "questions": 6,
-  "prerequisite_questions": 2,
+  "source_alignment": {
+    "reading_version": "v3",
+    "slide_version": "v3",
+    "manifest": "Bai09_v3\\source\\slide_manifest.json",
+    "manifest_sha256": "e89905ab99146e3d183d431ea9465da972c65f87c7d5ac60c65adf57184e3b3a",
+    "summary_slides": [
+      [
+        "11",
+        "Từ ảnh đến đầu vào PCA"
+      ],
+      [
+        "22",
+        "Chiếu rồi tái tạo: ba thao tác cốt lõi"
+      ],
+      [
+        "31",
+        "PCA giữ hướng biến thiên mạnh"
+      ],
+      [
+        "38",
+        "PCA: học một lần, áp dụng nhất quán"
+      ],
+      [
+        "63",
+        "PCA · Bản đồ toàn bài"
+      ]
+    ],
+    "new_core_bridge": "Vì sao PCA cần hiệp phương sai và trị riêng",
+    "original_source_sha256": "12fc017997cf8e01cc4a2bf1b7b95827670663ceaadf52dd0c9efebbfa7bcc68"
+  },
+  "verification": "Updated examples and selected historical CSV metrics checked in KIEM_TRA_SO_LIEU_V3.json; all final rendered pages visually reviewed.",
   "status": "pass",
-  "planned_pages": 12,
+  "planned_pages": 14,
   "main_sections": 10,
-  "equations": 10,
+  "equations": 12,
   "figures": 6,
-  "docx_sha256": "251f346a170302bbf2f9b78e3ec2d5aa7753fa6430507af91295b32d6265065c"
+  "docx_sha256": "db92416f3eafd10b1b068074b4471adb6d9d180354821f31b92ab05faa185c1a",
+  "pdf_sha256": "82b996595982296e48a2f40b2700894d8fe348e31ef9666ddc179d2ec5187763",
+  "actual_pages": 14
 }

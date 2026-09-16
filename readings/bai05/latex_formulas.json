@@ -41,11 +41,16 @@
   },
   {
     "file": "formula_09.png",
+    "latex": "AP=\\sum_j(R_j-R_{j-1})P_j",
+    "meaning": "P và R là precision và recall tại các mức điểm giảm dần; AP cộng precision có trọng số theo phần recall tăng thêm. Không đồng nhất AP với mọi cách tính diện tích đường PR."
+  },
+  {
+    "file": "formula_10.png",
     "latex": "\\mathrm{odds}_{old}=\\frac{0.2}{0.8}=0.25,\\quad\\mathrm{odds}_{new}=0.50,\\quad p_{new}=\\frac{0.50}{1+0.50}=\\frac{1}{3}",
     "meaning": "Đáp án C. A nhân nhầm xác suất; B nhầm odds 0,50 với xác suất 0,50. Chuyển ngược từ odds o sang p bằng p=o/(1+o)."
   },
   {
-    "file": "formula_10.png",
+    "file": "formula_11.png",
     "latex": "z=-\\ln16+(\\ln2)x,\\qquad p=\\sigma(z)",
     "meaning": "Odds tăng gấp đôi giữa các nhóm, nên logit nằm trên đường có độ dốc ln 2. Công thức cho đúng p=1/9,1/5,1/3,1/2. Đây là cấu trúc được thiết kế, không chứng minh log-odds tuyến tính cho dữ liệu bất kỳ."
   }

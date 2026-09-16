@@ -1,0 +1,26 @@
+{
+  "reading_version": "v3",
+  "slide_version": "v3",
+  "manifest": "Bai06_v3\\source\\slide_manifest.json",
+  "manifest_sha256": "627a8b1ba2563df099b1129a74afd490d7addcf5c1b1b58055f11458d08bb1a9",
+  "summary_slides": [
+    [
+      "20",
+      "Tổng kết: cách tính và so sánh Gini"
+    ],
+    [
+      "31",
+      "Tổng kết: quét ngưỡng và dựng cây"
+    ],
+    [
+      "46",
+      "Tổng kết: CART, độ phức tạp và cắt tỉa"
+    ],
+    [
+      "67",
+      "Tổng quan Bài 6"
+    ]
+  ],
+  "new_core_bridge": "CART và ý nghĩa của cắt tỉa",
+  "original_source_sha256": "b0399d5f80ab129e57eb2d25496bf819a688a33e90823e2974ffcb922428b917"
+}
