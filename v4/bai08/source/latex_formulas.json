@@ -1,0 +1,329 @@
+[
+  {
+    "slide": 1,
+    "latex": []
+  },
+  {
+    "slide": 2,
+    "latex": []
+  },
+  {
+    "slide": 3,
+    "latex": []
+  },
+  {
+    "slide": 4,
+    "latex": []
+  },
+  {
+    "slide": 5,
+    "latex": []
+  },
+  {
+    "slide": 6,
+    "latex": [
+      "R=\\operatorname{date}(t_{chot})-\\operatorname{date}(t_{mua\\ cuoi})"
+    ]
+  },
+  {
+    "slide": 7,
+    "latex": [
+      "F=|\\{InvoiceNo\\}|",
+      "M=\\sum_{\\ell\\in\\text{dong giu}}q_\\ell p_\\ell"
+    ]
+  },
+  {
+    "slide": 8,
+    "latex": [
+      "\\mathbf r_{12755}=(281;\\ 2;\\ 3811{,}95)"
+    ]
+  },
+  {
+    "slide": 9,
+    "latex": []
+  },
+  {
+    "slide": 10,
+    "latex": []
+  },
+  {
+    "slide": 11,
+    "latex": []
+  },
+  {
+    "slide": 12,
+    "latex": [
+      "\\mathbf r=(R,F,M)"
+    ]
+  },
+  {
+    "slide": 13,
+    "latex": [
+      "d^2(\\mathbf r_i,\\mathbf r_j)=(R_i-R_j)^2+(F_i-F_j)^2+(M_i-M_j)^2"
+    ]
+  },
+  {
+    "slide": 14,
+    "latex": []
+  },
+  {
+    "slide": 15,
+    "latex": [
+      "u_j=\\ln(1+r_j)"
+    ]
+  },
+  {
+    "slide": 16,
+    "latex": [
+      "x_j=\\frac{u_j-\\bar u_j}{s_j}",
+      "s_j^2=\\frac1n\\sum_i(u_{ij}-\\bar u_j)^2"
+    ]
+  },
+  {
+    "slide": 17,
+    "latex": [
+      "x_R\\approx\\frac{5{,}642-3{,}857}{1{,}307}\\approx1{,}366"
+    ]
+  },
+  {
+    "slide": 18,
+    "latex": [
+      "d^2=\\Delta x_R^2+\\Delta x_F^2+\\Delta x_M^2"
+    ]
+  },
+  {
+    "slide": 19,
+    "latex": []
+  },
+  {
+    "slide": 20,
+    "latex": []
+  },
+  {
+    "slide": 21,
+    "latex": [
+      "x_F=(\\ln3-\\bar u_F)/s_F\\approx-0{,}362"
+    ]
+  },
+  {
+    "slide": 22,
+    "latex": [
+      "u_j=\\ln(1+r_j),\\quad x_j=(u_j-\\bar u_j)/s_j",
+      "d^2=\\sum_{j=1}^{3}(x_{ij}-x_{kj})^2"
+    ]
+  },
+  {
+    "slide": 23,
+    "latex": []
+  },
+  {
+    "slide": 24,
+    "latex": [
+      "\\text{Dung }(5;4):\\quad d_1^2=(5-1)^2+(4-1)^2=25,\\quad d_2^2=(5-3)^2+(4-3)^2=5"
+    ]
+  },
+  {
+    "slide": 25,
+    "latex": [
+      "c_i\\in\\operatorname*{arg\\,min}_{j=1,\\ldots,K}\\|\\mathbf x_i-\\boldsymbol\\mu_j\\|^2"
+    ]
+  },
+  {
+    "slide": 26,
+    "latex": [
+      "J=\\sum_i\\|\\mathbf x_i-\\boldsymbol\\mu_{c_i}\\|^2",
+      "J=0+1+0+5+13+20=39"
+    ]
+  },
+  {
+    "slide": 27,
+    "latex": [
+      "(1-m)^2+(2-m)^2=2(m-1{,}5)^2+0{,}5"
+    ]
+  },
+  {
+    "slide": 28,
+    "latex": [
+      "\\boldsymbol\\mu_j=\\frac1{|C_j|}\\sum_{i\\in C_j}\\mathbf x_i",
+      "J:39\\longrightarrow12"
+    ]
+  },
+  {
+    "slide": 29,
+    "latex": [
+      "J:12\\longrightarrow\\frac{93}{8}=11{,}625"
+    ]
+  },
+  {
+    "slide": 30,
+    "latex": [
+      "J:\\frac{93}{8}\\longrightarrow\\frac{22}{3}\\approx7{,}333"
+    ]
+  },
+  {
+    "slide": 31,
+    "latex": []
+  },
+  {
+    "slide": 32,
+    "latex": []
+  },
+  {
+    "slide": 33,
+    "latex": []
+  },
+  {
+    "slide": 34,
+    "latex": [
+      "\\boldsymbol\\mu_j=|C_j|^{-1}\\sum_{i\\in C_j}\\mathbf x_i"
+    ]
+  },
+  {
+    "slide": 35,
+    "latex": []
+  },
+  {
+    "slide": 36,
+    "latex": [
+      "\\|\\mathbf x-\\boldsymbol\\mu_1\\|^2=\\|\\mathbf x-\\boldsymbol\\mu_2\\|^2"
+    ]
+  },
+  {
+    "slide": 37,
+    "latex": [
+      "c_i\\in\\arg\\min_j\\|\\mathbf x_i-\\boldsymbol\\mu_j\\|^2",
+      "\\boldsymbol\\mu_j=|C_j|^{-1}\\sum_{i\\in C_j}\\mathbf x_i"
+    ]
+  },
+  {
+    "slide": 38,
+    "latex": []
+  },
+  {
+    "slide": 39,
+    "latex": []
+  },
+  {
+    "slide": 40,
+    "latex": []
+  },
+  {
+    "slide": 41,
+    "latex": []
+  },
+  {
+    "slide": 42,
+    "latex": []
+  },
+  {
+    "slide": 43,
+    "latex": [
+      "J_A=19/6<17/3=J_B"
+    ]
+  },
+  {
+    "slide": 44,
+    "latex": []
+  },
+  {
+    "slide": 45,
+    "latex": []
+  },
+  {
+    "slide": 46,
+    "latex": [
+      "a(2)=2,\\quad b(2)=(8+10)/2=9",
+      "s(2)=\\frac{b-a}{\\max(a,b)}=\\frac79\\approx0{,}778"
+    ]
+  },
+  {
+    "slide": 47,
+    "latex": [
+      "s_i=(b_i-a_i)/\\max(a_i,b_i)"
+    ]
+  },
+  {
+    "slide": 48,
+    "latex": []
+  },
+  {
+    "slide": 49,
+    "latex": []
+  },
+  {
+    "slide": 50,
+    "latex": []
+  },
+  {
+    "slide": 51,
+    "latex": [
+      "s=(1-2)/\\max(2,1)=-0{,}5"
+    ]
+  },
+  {
+    "slide": 52,
+    "latex": [
+      "J=\\sum_i\\|\\mathbf x_i-\\boldsymbol\\mu_{c_i}\\|^2",
+      "s_i=(b_i-a_i)/\\max(a_i,b_i)"
+    ]
+  },
+  {
+    "slide": 53,
+    "latex": []
+  },
+  {
+    "slide": 54,
+    "latex": []
+  },
+  {
+    "slide": 55,
+    "latex": []
+  },
+  {
+    "slide": 56,
+    "latex": [
+      "\\mathbf x\\approx(1{,}366;-0{,}362;1{,}314)"
+    ]
+  },
+  {
+    "slide": 57,
+    "latex": []
+  },
+  {
+    "slide": 58,
+    "latex": []
+  },
+  {
+    "slide": 59,
+    "latex": []
+  },
+  {
+    "slide": 60,
+    "latex": []
+  },
+  {
+    "slide": 61,
+    "latex": [
+      "S_{K=2}>S_{K=4}\\quad\\text{trong thi nghiem nay}"
+    ]
+  },
+  {
+    "slide": 62,
+    "latex": []
+  },
+  {
+    "slide": 63,
+    "latex": []
+  },
+  {
+    "slide": 64,
+    "latex": [
+      "c_i\\in\\arg\\min_j\\|\\mathbf x_i-\\boldsymbol\\mu_j\\|^2",
+      "\\boldsymbol\\mu_j=|C_j|^{-1}\\sum_{i\\in C_j}\\mathbf x_i"
+    ]
+  },
+  {
+    "slide": 65,
+    "latex": []
+  }
+]

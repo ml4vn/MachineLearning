@@ -1,3 +1,5 @@
+> **Học liệu hiện hành: [Bài 06 v4](../../v4/bai06/README.md).** Trang này giữ hướng dẫn CLI của bộ Python v3; notebook v4 và số liệu v4 nằm ở liên kết trên.
+
 # Bài 06 · Cây quyết định và cảnh báo giao trễ
 
 

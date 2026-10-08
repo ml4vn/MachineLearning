@@ -1,0 +1,403 @@
+{
+  "f1_toy": {
+    "type": "bar",
+    "categories": [
+      "Precision",
+      "Recall",
+      "F1"
+    ],
+    "xlabel": "Mô phỏng 10 tin · τ=0,50",
+    "ylabel": "Giá trị chỉ số",
+    "ymin": 0,
+    "ymax": 1.1,
+    "ytick": 0.2,
+    "percent": true,
+    "series": [
+      {
+        "name": "Chỉ số",
+        "values": [
+          0.6666666666666666,
+          1,
+          0.8
+        ],
+        "color": "#245a84"
+      }
+    ],
+    "labelFormat": "0.00%"
+  },
+  "class_counts": {
+    "type": "bar",
+    "grouping": "stacked",
+    "categories": [
+      "Validation",
+      "Test lịch sử"
+    ],
+    "xlabel": "Tập dữ liệu",
+    "ylabel": "Số tin",
+    "ymin": 0,
+    "ymax": 1100,
+    "ytick": 200,
+    "legend": true,
+    "series": [
+      {
+        "name": "ham",
+        "values": [
+          903,
+          904
+        ],
+        "color": "#245a84"
+      },
+      {
+        "name": "spam",
+        "values": [
+          129,
+          128
+        ],
+        "color": "#bc761a"
+      }
+    ],
+    "labelFormat": "0"
+  },
+  "validation_cost_full": {
+    "type": "scatter",
+    "xlabel": "Số phiếu tối thiểu m",
+    "ylabel": "Chi phí quy ước",
+    "xmin": 0,
+    "xmax": 12,
+    "xtick": 2,
+    "ymin": 0,
+    "ymax": 5000,
+    "ytick": 1000,
+    "legend": true,
+    "series": [
+      {
+        "name": "5FP+FN",
+        "color": "#245a84",
+        "xValues": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "values": [
+          4515,
+          677,
+          200,
+          146,
+          97,
+          88,
+          62,
+          48,
+          39,
+          44,
+          50,
+          63,
+          129
+        ],
+        "pointMarkers": true,
+        "size": 6
+      },
+      {
+        "name": "FP+5FN",
+        "color": "#bc761a",
+        "xValues": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "values": [
+          903,
+          169,
+          88,
+          82,
+          77,
+          80,
+          94,
+          96,
+          99,
+          124,
+          178,
+          243,
+          645
+        ],
+        "pointMarkers": true,
+        "size": 6
+      }
+    ]
+  },
+  "validation_cost_zoom": {
+    "type": "scatter",
+    "xlabel": "m · vùng phóng đại 3…9",
+    "ylabel": "Chi phí quy ước",
+    "xmin": 3,
+    "xmax": 9,
+    "xtick": 1,
+    "ymin": 0,
+    "ymax": 180,
+    "ytick": 30,
+    "legend": true,
+    "series": [
+      {
+        "name": "5FP+FN",
+        "color": "#245a84",
+        "xValues": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "values": [
+          146,
+          97,
+          88,
+          62,
+          48,
+          39,
+          44
+        ],
+        "pointMarkers": true,
+        "size": 6
+      },
+      {
+        "name": "FP+5FN",
+        "color": "#bc761a",
+        "xValues": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "values": [
+          82,
+          77,
+          80,
+          94,
+          96,
+          99,
+          124
+        ],
+        "pointMarkers": true,
+        "size": 6
+      }
+    ]
+  },
+  "roc": {
+    "type": "scatter",
+    "xlabel": "FPR · FP / ham thật",
+    "ylabel": "TPR · recall",
+    "xmin": 0,
+    "xmax": 1,
+    "xtick": 0.2,
+    "ymin": 0,
+    "ymax": 1,
+    "ytick": 0.2,
+    "percent": true,
+    "legend": true,
+    "series": [
+      {
+        "name": "ROC · score",
+        "color": "#245a84",
+        "xValues": [
+          0,
+          0,
+          0.00331858407079646,
+          0.0055309734513274336,
+          0.007743362831858407,
+          0.01327433628318584,
+          0.023230088495575223,
+          0.025442477876106196,
+          0.032079646017699116,
+          0.035398230088495575,
+          0.12721238938053098,
+          1
+        ],
+        "values": [
+          0,
+          0.703125,
+          0.7578125,
+          0.796875,
+          0.8359375,
+          0.8671875,
+          0.875,
+          0.890625,
+          0.90625,
+          0.9296875,
+          0.953125,
+          1
+        ]
+      },
+      {
+        "name": "m6 · mặc định",
+        "color": "#167a72",
+        "dots": true,
+        "symbol": "circle",
+        "size": 9,
+        "xValues": [
+          0.01327433628318584
+        ],
+        "values": [
+          0.8671875
+        ]
+      },
+      {
+        "name": "m8 · tránh FP",
+        "color": "#bc761a",
+        "dots": true,
+        "symbol": "diamond",
+        "size": 9,
+        "xValues": [
+          0.007743362831858407
+        ],
+        "values": [
+          0.8359375
+        ]
+      },
+      {
+        "name": "m4 · tránh FN",
+        "color": "#983f3f",
+        "dots": true,
+        "symbol": "triangle",
+        "size": 9,
+        "xValues": [
+          0.025442477876106196
+        ],
+        "values": [
+          0.890625
+        ]
+      }
+    ]
+  },
+  "pr": {
+    "type": "scatter",
+    "xlabel": "Recall · TP / spam thật",
+    "ylabel": "Precision · TP / cảnh báo",
+    "xmin": 0,
+    "xmax": 1,
+    "xtick": 0.2,
+    "ymin": 0,
+    "ymax": 1,
+    "ytick": 0.2,
+    "percent": true,
+    "legend": true,
+    "series": [
+      {
+        "name": "PR · bước AP",
+        "color": "#245a84",
+        "xValues": [
+          1,
+          0.953125,
+          0.953125,
+          0.9296875,
+          0.9296875,
+          0.90625,
+          0.90625,
+          0.890625,
+          0.890625,
+          0.875,
+          0.875,
+          0.8671875,
+          0.8671875,
+          0.8359375,
+          0.8359375,
+          0.796875,
+          0.796875,
+          0.7578125,
+          0.7578125,
+          0.703125,
+          0.703125,
+          0,
+          0
+        ],
+        "values": [
+          0.12403100775193798,
+          0.12403100775193798,
+          0.5147679324894515,
+          0.5147679324894515,
+          0.7880794701986755,
+          0.7880794701986755,
+          0.8,
+          0.8,
+          0.8321167883211679,
+          0.8321167883211679,
+          0.8421052631578947,
+          0.8421052631578947,
+          0.9024390243902439,
+          0.9024390243902439,
+          0.9385964912280702,
+          0.9385964912280702,
+          0.9532710280373832,
+          0.9532710280373832,
+          0.97,
+          0.97,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "m6 · mặc định",
+        "color": "#167a72",
+        "dots": true,
+        "symbol": "circle",
+        "size": 9,
+        "xValues": [
+          0.8671875
+        ],
+        "values": [
+          0.9024390243902439
+        ]
+      },
+      {
+        "name": "m8 · tránh FP",
+        "color": "#bc761a",
+        "dots": true,
+        "symbol": "diamond",
+        "size": 9,
+        "xValues": [
+          0.8359375
+        ],
+        "values": [
+          0.9385964912280702
+        ]
+      },
+      {
+        "name": "m4 · tránh FN",
+        "color": "#983f3f",
+        "dots": true,
+        "symbol": "triangle",
+        "size": 9,
+        "xValues": [
+          0.890625
+        ],
+        "values": [
+          0.8321167883211679
+        ]
+      }
+    ]
+  }
+}

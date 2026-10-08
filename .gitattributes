@@ -7,9 +7,21 @@
 *.pdf binary
 *.docx binary
 *.npz binary
+*.pptx binary
+*.zip binary
+*.gz binary
 *.ps1 text eol=crlf
 # Preserve byte-for-byte exports, including generated SVG path whitespace.
 readings/** -text -whitespace
 readings/**/README.md text eol=lf whitespace
 readings/bai01/Dieu_khoan_MovieLens.md conflict-marker-size=100
 third_party/MOVIELENS_README.txt conflict-marker-size=100
+# Keep approved v4 source assets and snapshot checksums byte-for-byte.
+v4/** -text -whitespace
+v4/README.md text eol=lf whitespace=blank-at-eol,blank-at-eof,space-before-tab
+v4/bai*/README.md text eol=lf whitespace=blank-at-eol,blank-at-eof,space-before-tab
+v4/bai*/READING.md text eol=lf whitespace=blank-at-eol,blank-at-eof,space-before-tab
+v4/run_labs.py text eol=lf whitespace=blank-at-eol,blank-at-eof,space-before-tab
+v4/source_manifest.json text eol=lf whitespace=blank-at-eol,blank-at-eof,space-before-tab
+v4/VALIDATION.json text eol=lf whitespace=blank-at-eol,blank-at-eof,space-before-tab
+v4/bai01/data/MovieLens_README.md conflict-marker-size=100

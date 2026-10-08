@@ -1,0 +1,378 @@
+[
+  {
+    "slide": 1,
+    "latex": []
+  },
+  {
+    "slide": 2,
+    "latex": []
+  },
+  {
+    "slide": 3,
+    "latex": []
+  },
+  {
+    "slide": 4,
+    "latex": []
+  },
+  {
+    "slide": 5,
+    "latex": []
+  },
+  {
+    "slide": 6,
+    "latex": [
+      "\\boldsymbol u=(1;0;1)^{\\mathsf T}"
+    ]
+  },
+  {
+    "slide": 7,
+    "latex": []
+  },
+  {
+    "slide": 8,
+    "latex": []
+  },
+  {
+    "slide": 9,
+    "latex": []
+  },
+  {
+    "slide": 10,
+    "latex": []
+  },
+  {
+    "slide": 11,
+    "latex": []
+  },
+  {
+    "slide": 12,
+    "latex": []
+  },
+  {
+    "slide": 13,
+    "latex": []
+  },
+  {
+    "slide": 14,
+    "latex": []
+  },
+  {
+    "slide": 15,
+    "latex": [
+      "\\boldsymbol u=\\begin{bmatrix}3\\\\4\\end{bmatrix},\\quad\\boldsymbol u^{\\mathsf T}=(3;4)"
+    ]
+  },
+  {
+    "slide": 16,
+    "latex": [
+      "1\\times1",
+      "0\\times1",
+      "1\\times1",
+      "\\boldsymbol{u}^{\\mathsf T}\\boldsymbol{v}=1\\times1+0\\times1+1\\times1=2"
+    ]
+  },
+  {
+    "slide": 17,
+    "latex": [
+      "\\boldsymbol u=(2;1)^{\\mathsf T},\\quad\\boldsymbol v=(1;2)^{\\mathsf T}",
+      "\\boldsymbol u^{\\mathsf T}\\boldsymbol v=2\\times1+1\\times2=4",
+      "\\boldsymbol u^{\\mathsf T}\\boldsymbol v=\\sum_{j=1}^{d}u_jv_j"
+    ]
+  },
+  {
+    "slide": 18,
+    "latex": [
+      "\\|\\boldsymbol{u}\\|_2=\\sqrt{3^2+4^2}=5"
+    ]
+  },
+  {
+    "slide": 19,
+    "latex": [
+      "\\widehat{\\boldsymbol u}=\\frac{\\boldsymbol u}{\\|\\boldsymbol u\\|_2}",
+      "(3;4)/5=(0{,}6;0{,}8)",
+      "0{,}6^2+0{,}8^2=1"
+    ]
+  },
+  {
+    "slide": 20,
+    "latex": []
+  },
+  {
+    "slide": 21,
+    "latex": [
+      "\\widehat{\\boldsymbol u}^{\\mathsf T}\\widehat{\\boldsymbol v}=\\left(\\frac{\\boldsymbol u}{\\|\\boldsymbol u\\|_2}\\right)^{\\mathsf T}\\left(\\frac{\\boldsymbol v}{\\|\\boldsymbol v\\|_2}\\right)",
+      "\\operatorname{cos}(\\boldsymbol u,\\boldsymbol v)=\\frac{\\boldsymbol u^{\\mathsf T}\\boldsymbol v}{\\|\\boldsymbol u\\|_2\\|\\boldsymbol v\\|_2}"
+    ]
+  },
+  {
+    "slide": 22,
+    "latex": [
+      "\\sqrt2",
+      "\\sqrt3"
+    ]
+  },
+  {
+    "slide": 23,
+    "latex": [
+      "-1\\leq\\operatorname{cos}(\\boldsymbol u,\\boldsymbol v)\\leq1"
+    ]
+  },
+  {
+    "slide": 24,
+    "latex": [
+      "[-1,1]",
+      "[0,1]"
+    ]
+  },
+  {
+    "slide": 25,
+    "latex": []
+  },
+  {
+    "slide": 26,
+    "latex": [
+      "\\|\\boldsymbol u\\|_2=\\sqrt{6^2+8^2}=10",
+      "\\widehat{\\boldsymbol u}=(0{,}6;0{,}8)^{\\mathsf T}"
+    ]
+  },
+  {
+    "slide": 27,
+    "latex": []
+  },
+  {
+    "slide": 28,
+    "latex": [
+      "\\boldsymbol u^{\\mathsf T}\\boldsymbol v=4",
+      "\\|\\boldsymbol u\\|_2=1,\\quad\\|\\boldsymbol v\\|_2=4",
+      "s=\\frac4{1\\times4}=1"
+    ]
+  },
+  {
+    "slide": 29,
+    "latex": [
+      "\\|(1,0,1)\\|_2=\\sqrt{2}",
+      "\\|(1,1,1)\\|_2=\\sqrt{3}",
+      "\\|\\boldsymbol{v}\\|_2=\\sqrt{\\sum_{j=1}^{d}v_j^2}"
+    ]
+  },
+  {
+    "slide": 30,
+    "latex": [
+      "\\boldsymbol u^{\\mathsf T}\\boldsymbol v=2",
+      "\\|\\boldsymbol u\\|_2=\\sqrt2,\\quad\\|\\boldsymbol v\\|_2=\\sqrt3",
+      "\\cos(\\boldsymbol u,\\boldsymbol v)=\\frac2{\\sqrt6}\\approx0{,}8165"
+    ]
+  },
+  {
+    "slide": 31,
+    "latex": [
+      "(1,0,1)",
+      "(1,1,1)",
+      "(1,0,1)",
+      "(0,0,1)",
+      "(0,1,0)"
+    ]
+  },
+  {
+    "slide": 32,
+    "latex": [
+      "1\\times1+0\\times0+1\\times1=2",
+      "\\sqrt2",
+      "2/(\\sqrt2\\times\\sqrt2)=1"
+    ]
+  },
+  {
+    "slide": 33,
+    "latex": [
+      "u^{\\mathsf T}v=2",
+      "\\|u\\|_2\\|v\\|_2=\\sqrt2\\sqrt3=\\sqrt6",
+      "\\operatorname{cos}(u,v)=\\frac{2}{\\sqrt6}\\approx0.8165"
+    ]
+  },
+  {
+    "slide": 34,
+    "latex": []
+  },
+  {
+    "slide": 35,
+    "latex": [
+      "u^{\\mathsf T}v=1\\times0+0\\times0+1\\times1=1",
+      "\\|u\\|_2=\\sqrt2,\\qquad\\|v\\|_2=\\sqrt{0^2+0^2+1^2}=1",
+      "\\operatorname{cos}(u,v)=\\frac{1}{\\sqrt2}\\approx0.7071"
+    ]
+  },
+  {
+    "slide": 36,
+    "latex": [
+      "(1,0,1)",
+      "(0,1,0)"
+    ]
+  },
+  {
+    "slide": 37,
+    "latex": [
+      "\\sqrt2",
+      "\\sqrt3",
+      "2/\\sqrt6",
+      "\\sqrt2",
+      "1/\\sqrt2"
+    ]
+  },
+  {
+    "slide": 38,
+    "latex": []
+  },
+  {
+    "slide": 39,
+    "latex": [
+      "(1,0,1)",
+      "(1,0,1)",
+      "(1,0,1)"
+    ]
+  },
+  {
+    "slide": 40,
+    "latex": [
+      "2",
+      "2/\\sqrt6",
+      "1",
+      "2/3"
+    ]
+  },
+  {
+    "slide": 41,
+    "latex": [
+      "s=\\frac{2}{\\sqrt2\\sqrt3}=\\frac2{\\sqrt6}\\approx0{,}8165"
+    ]
+  },
+  {
+    "slide": 42,
+    "latex": [
+      "\\cos(\\boldsymbol u,\\boldsymbol v)=\\frac{\\boldsymbol u^{\\mathsf T}\\boldsymbol v}{\\|\\boldsymbol u\\|_2\\|\\boldsymbol v\\|_2}"
+    ]
+  },
+  {
+    "slide": 43,
+    "latex": []
+  },
+  {
+    "slide": 44,
+    "latex": [
+      "\\operatorname{cos}(\\alpha u,\\beta v)=\\operatorname{cos}(u,v)",
+      "\\operatorname{cos}((1,2),(2,1))=0.8",
+      "\\operatorname{cos}((3,6),(2,1))=0.8"
+    ]
+  },
+  {
+    "slide": 45,
+    "latex": [
+      "d(\\boldsymbol u,\\boldsymbol v)=\\|\\boldsymbol u-\\boldsymbol v\\|_2",
+      "1/\\sqrt2"
+    ]
+  },
+  {
+    "slide": 46,
+    "latex": [
+      "\\|v\\|_2=0",
+      "\\frac{u^{\\mathsf T}v}{\\|u\\|_2\\|v\\|_2}=\\frac{0}{0}"
+    ]
+  },
+  {
+    "slide": 47,
+    "latex": []
+  },
+  {
+    "slide": 48,
+    "latex": [
+      "(1,0),(0,1)\\quad\\Rightarrow\\quad0",
+      "(1,0,1),(0,1,1)\\quad\\Rightarrow\\quad0.5",
+      "(1),(1)\\quad\\Rightarrow\\quad1",
+      "(1,0),(1,1)\\quad\\Rightarrow\\quad1/\\sqrt2"
+    ]
+  },
+  {
+    "slide": 49,
+    "latex": []
+  },
+  {
+    "slide": 50,
+    "latex": [
+      "0\\longrightarrow1/2",
+      "1\\longrightarrow1/\\sqrt2"
+    ]
+  },
+  {
+    "slide": 51,
+    "latex": []
+  },
+  {
+    "slide": 52,
+    "latex": []
+  },
+  {
+    "slide": 53,
+    "latex": []
+  },
+  {
+    "slide": 54,
+    "latex": [
+      "\\cos(\\alpha\\boldsymbol u,\\beta\\boldsymbol v)=\\cos(\\boldsymbol u,\\boldsymbol v)"
+    ]
+  },
+  {
+    "slide": 55,
+    "latex": []
+  },
+  {
+    "slide": 56,
+    "latex": []
+  },
+  {
+    "slide": 57,
+    "latex": []
+  },
+  {
+    "slide": 58,
+    "latex": [
+      "2/\\sqrt{3\\times3}=2/3",
+      "3/\\sqrt{3\\times4}=\\sqrt3/2"
+    ]
+  },
+  {
+    "slide": 59,
+    "latex": []
+  },
+  {
+    "slide": 60,
+    "latex": []
+  },
+  {
+    "slide": 61,
+    "latex": []
+  },
+  {
+    "slide": 62,
+    "latex": []
+  },
+  {
+    "slide": 63,
+    "latex": []
+  },
+  {
+    "slide": 64,
+    "latex": [
+      "s=\\frac1{\\sqrt2\\sqrt2}=\\frac12"
+    ]
+  },
+  {
+    "slide": 65,
+    "latex": [
+      "s=\\frac{\\boldsymbol u^{\\mathsf T}\\boldsymbol v}{\\|\\boldsymbol u\\|_2\\|\\boldsymbol v\\|_2}"
+    ]
+  },
+  {
+    "slide": 66,
+    "latex": []
+  }
+]

@@ -1,3 +1,5 @@
+> **Học liệu hiện hành: [Bài 05 v4](../../v4/bai05/README.md).** Trang này giữ hướng dẫn CLI của bộ Python v3; notebook v4 và số liệu v4 nằm ở liên kết trên.
+
 # Bài 05 · Logistic Regression và nguy cơ giao trễ
 
 

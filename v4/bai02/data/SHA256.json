@@ -1,0 +1,12 @@
+{
+  "duplicate_pair.json": "8f7e6abfcc55d218cb0198b5660ce13d6de2d4693189a03f9f38185702805375",
+  "real_sms_samples.csv": "4b1c1b696f3643dcfed2caeee1cbee6d1954b62df0c6abf7caf7965c2e058679",
+  "real_sms_samples.json": "137cfe7ce262e0d8e0144d14845f7bbb6fc666b9a590ac97fca71f62a0237752",
+  "scaling_demo.json": "f51643c5d96dfa2de3e1d86921ca31824dcc4654e0ca7829485e705b430cb98b",
+  "sms.zip": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "sms_core_test_predictions.csv": "a78e88ee1af5c8724e583601790f1deb4a390c3a6a18693b78775a5bb9adead7",
+  "sms_features.csv": "f11c9efe6c6121f054ca7c553f4f179ace270b8d530afb069f277d29ae8f072e",
+  "SMS_README_original.txt": "8753cd2d3cab68f80c8257851b8c2037778c267f55accb6fd1b5a2e32d36a84e",
+  "SMSSpamCollection": "7d039a24a6083ed9ef0f806ebad56bbb976e3aeb8de05669173bfdc4996c239d",
+  "toy_calculation.json": "7c8d0fdeb5c617ab5e02f81a908d62efbde9ca9ac53d8cea31c9b57966ba57f4"
+}

@@ -1,0 +1,70 @@
+{
+  "model": "StandardScaler(train) + uniform kNN(11); two B2 features",
+  "candidates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "positive_label": "spam=1",
+  "selection_uses": "validation only",
+  "costs_are_hypothetical": true,
+  "tie_rule": "minimum cost, then fewer alerts, then larger min_votes",
+  "validation_reuse": "The same validation selected k in B2; it is not an independent evaluation.",
+  "previous_test_exposure": "Already published historical B2/B3 test, not a new independent blind test.",
+  "chosen": {
+    "cost_5fp_fn": {
+      "min_votes": 8,
+      "validation": {
+        "min_votes": 8,
+        "tn": 899,
+        "fp": 4,
+        "fn": 19,
+        "tp": 110,
+        "n": 1032,
+        "alerts": 114,
+        "accuracy": 0.9777131782945736,
+        "precision": 0.9649122807017544,
+        "recall": 0.8527131782945736,
+        "f1": 0.9053497942386831,
+        "precision_defined": true,
+        "recall_defined": true,
+        "f1_count_defined": true,
+        "zero_division": 0,
+        "cost_5fp_fn": 39,
+        "cost_fp_5fn": 99
+      }
+    },
+    "cost_fp_5fn": {
+      "min_votes": 4,
+      "validation": {
+        "min_votes": 4,
+        "tn": 886,
+        "fp": 17,
+        "fn": 12,
+        "tp": 117,
+        "n": 1032,
+        "alerts": 134,
+        "accuracy": 0.9718992248062015,
+        "precision": 0.8731343283582089,
+        "recall": 0.9069767441860465,
+        "f1": 0.8897338403041825,
+        "precision_defined": true,
+        "recall_defined": true,
+        "f1_count_defined": true,
+        "zero_division": 0,
+        "cost_5fp_fn": 97,
+        "cost_fp_5fn": 77
+      }
+    }
+  }
+}

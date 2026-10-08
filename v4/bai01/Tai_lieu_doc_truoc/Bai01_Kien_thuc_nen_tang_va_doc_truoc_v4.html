@@ -1,0 +1,425 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><title>Đọc trước Bài 1 v4</title><style>body{font:20px/1.65 Arial,sans-serif;color:#132c3f;max-width:1080px;margin:45px auto;padding:0 35px}h1,h2{color:#245a84}h2{border-top:3px solid #167a72;padding-top:20px;margin-top:50px}table{border-collapse:collapse;width:100%;font-size:18px;margin:25px 0}th,td{padding:12px;border:1px solid #c5d5dc}th{background:#e4edf1;text-align:left}tr:nth-child(even){background:#f0f5f7}img{max-width:100%;display:block;margin:25px auto}.math{text-align:center;margin:28px 0;font-size:24px}a{color:#245a84}strong{color:#167a72}p{margin:20px 0}code{background:#eef4f7}blockquote{border-left:4px solid #bc761a;padding-left:20px}</style><link rel="stylesheet" href="../source/assets/katex/dist/katex.min.css"><script src="../source/assets/katex/dist/katex.min.js"></script><body><h1>Bài 1 v4 · Vector và độ tương đồng cosine</h1>
+<p>PGS.TS. Nguyễn Văn Hậu</p>
+<h2>1 Bài học này giải quyết vấn đề gì</h2>
+<p>Bạn muốn tìm những phim có nhãn gần với <strong>The Matrix</strong>. Một người có thể chọn theo diễn viên, người khác chọn theo nội dung. Để máy tính thực hiện được, ta cần chốt một nghĩa cụ thể của “gần”: trong bài này là tương tự theo các nhãn metadata được cung cấp.</p>
+<p><img alt="Hình 1. Một quy trình từ đối tượng đến điểm số. Mũi tên thể hiện các bước xử lý, không thể hiện quan hệ nhân quả." src="assets/opening.png" /></p>
+<p>Đầu vào là nhãn của phim tham chiếu và các phim ứng viên. Đầu ra là một điểm cosine cho mỗi cặp hợp lệ. <strong>Chưa có dữ liệu về sở thích của một người cụ thể</strong>, nên điểm số này chưa trả lời người đó sẽ thích phim nào.</p>
+<h3>Sau khi đọc bạn có thể</h3>
+<ul>
+<li>
+<p>Mã hóa nhãn của phim thành vector theo cùng thứ tự.</p>
+</li>
+<li>
+<p>Tính tích vô hướng, chuẩn L2 và cosine trên một ví dụ nhỏ.</p>
+</li>
+<li>
+<p>Phân biệt điểm 0 với trường hợp công thức không xác định.</p>
+</li>
+<li>
+<p>Đọc thứ hạng và giải thích giới hạn của biểu diễn.</p>
+</li>
+</ul>
+<p><strong>Cách học:</strong> đọc 10 mục chính, làm câu hỏi ở mục 9 rồi đối chiếu phụ lục A. Chuẩn bị giấy và máy tính căn bậc hai. Không cần biết Python; phụ lục B là tùy chọn. Dành khoảng 30–40 phút, điều chỉnh theo tốc độ của bạn.</p>
+<h2>2 Bạn cần biết gì trước khi bắt đầu</h2>
+<p>Một <strong>vector</strong> là một dãy số có thứ tự. Với vector phim, từng vị trí có một ý nghĩa cố định. Hai vector cùng có ba số vẫn chưa so sánh trực tiếp được nếu vị trí thứ hai của chúng chỉ hai nhãn khác nhau.</p>
+<table>
+<thead>
+<tr>
+<th>Kiến thức</th>
+<th>Cách đọc</th>
+<th>Ví dụ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tọa độ</td>
+<td>Giá trị tại từng vị trí</td>
+<td>u = (1; 0; 1) có 3 tọa độ</td>
+</tr>
+<tr>
+<td>Bình phương</td>
+<td>Nhân số với chính nó</td>
+<td>(−3)² = 9</td>
+</tr>
+<tr>
+<td>Căn bậc hai không âm</td>
+<td>Số không âm có bình phương bằng số đã cho</td>
+<td>√25 = 5</td>
+</tr>
+<tr>
+<td>Ký hiệu tổng</td>
+<td>Cộng các số hạng theo chỉ số</td>
+<td>Σ từ j = 1 đến 3 là cộng 3 hạng</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Hình 2. Ví dụ hình học 2D được tạo để ôn Pythagoras; hai trục cùng tỷ lệ. Đây không phải phép chiếu các phim xuống hai chiều." src="assets/norm.png" /></p>
+<div class="math" data-tex="\|(3;4)\|_2=\sqrt{3^2+4^2}=5"></div>
+<p>Chuẩn L2 đo độ dài mũi tên từ gốc đến (3; 4). Số 25 là bình phương độ dài; cần lấy căn để được độ dài.</p>
+<p><strong>Kiểm nhanh:</strong> (K1) tính 2×1 + 0×3 + 1×2; (K2) tính √(1² + 1² + 0²). Nếu vướng, làm theo thứ tự bình phương → cộng → căn. Đáp án ở phụ lục A.</p>
+<h2>3 Dữ liệu của bài học trông như thế nào</h2>
+<p>Nguồn <strong>MovieLens latest-small</strong> do GroupLens phát hành [1]. Bản lưu dùng trong slide có 9.742 phim. Ta dùng <strong>movies.csv</strong>, trong đó một hàng đại diện cho một phim, gồm movieId, title và genres. File ratings.csv lưu đánh giá của người dùng nhưng không tham gia phép so sánh ở bài này.</p>
+<table>
+<thead>
+<tr>
+<th>Cột</th>
+<th>Ý nghĩa và cách dùng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>movieId</td>
+<td>Khóa để tra lại phim; không dùng chênh lệch ID làm độ giống nội dung.</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Tên và năm của phim theo nguồn; giúp đọc bảng.</td>
+</tr>
+<tr>
+<td>genres</td>
+<td>Các nhãn ngăn bằng dấu &#124;; dấu này là ký tự phân cách, không phải phép toán.</td>
+</tr>
+</tbody>
+</table>
+<p>Giữ thứ tự <strong>Action → Comedy → Sci-Fi</strong>. Mỗi vị trí bằng 1 nếu nhãn có trong dòng dữ liệu, bằng 0 nếu không có. Vì một phim có thể mang nhiều nhãn, đây là mã hóa <strong>multi-hot</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Tên rút gọn</th>
+<th>Nhãn nguyên văn từ dữ liệu</th>
+<th>Vector 3 trục</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2571</td>
+<td>The Matrix</td>
+<td>Action|Sci-Fi|Thriller</td>
+<td>(1; 0; 1)</td>
+</tr>
+<tr>
+<td>260</td>
+<td>Star Wars IV</td>
+<td>Action|Adventure|Sci-Fi</td>
+<td>(1; 0; 1)</td>
+</tr>
+<tr>
+<td>1580</td>
+<td>Men in Black</td>
+<td>Action|Comedy|Sci-Fi</td>
+<td>(1; 1; 1)</td>
+</tr>
+<tr>
+<td>480</td>
+<td>Jurassic Park</td>
+<td>Action|Adventure|Sci-Fi|Thriller</td>
+<td>(1; 0; 1)</td>
+</tr>
+<tr>
+<td>1214</td>
+<td>Alien</td>
+<td>Horror|Sci-Fi</td>
+<td>(0; 0; 1)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Toy Story</td>
+<td>Adventure|Animation|Children|Comedy|Fantasy</td>
+<td>(0; 1; 0)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Đọc một hàng:</strong> The Matrix có Action, Sci-Fi và Thriller. Ba trục đang dùng giữ Action và Sci-Fi, nên vector là (1; 0; 1). Thriller chưa được mã hóa.</p>
+<p>Các phim trên được chọn có chủ đích để minh họa, không phải mẫu ngẫu nhiên của kho. Số 0 ở Comedy chỉ nói nhãn này không xuất hiện trong bản ghi; nó không phải điểm đánh giá 0 sao hay nhận xét về mọi cảnh phim.</p>
+<h2>4 Ý tưởng chính của phương pháp là gì</h2>
+<p>Hai mũi tên có thể dài khác nhau nhưng chỉ cùng một hướng. Cosine so sánh hướng của hai vector khác 0. Trong miền góc từ 0° đến 180°, góc càng nhỏ thì cosine càng lớn. Với vector nhãn không âm của bài, ta chỉ gặp các góc từ 0° đến 90°.</p>
+<p><img alt="Hình 3. Minh họa hình học 2D. Đường xanh là vector tham chiếu; đường vàng nét đứt là vector so sánh. Ở góc 0° hai vector chồng nhau." src="assets/angles.png" /></p>
+<h3>Vì sao chỉ đếm nhãn chung chưa đủ</h3>
+<p>Star Wars và Men in Black đều có hai nhãn chung với The Matrix trên ba trục. Tuy nhiên Men in Black có thêm Comedy. Số nhãn chung bằng nhau, nhưng tỷ lệ giữa phần chung và độ dài hai vector khác nhau. Cosine đưa cả hai độ dài vào mẫu số để phản ánh sự khác biệt này.</p>
+<div class="math" data-tex="\widehat u=\frac{u}{\|u\|_2},\qquad u\ne0"></div>
+<p>Chia mọi tọa độ của một vector khác 0 cho chuẩn L2 của nó tạo vector đơn vị, có độ dài 1 và giữ nguyên hướng.</p>
+<p>Ví dụ (3; 4) chia cho 5 thành (0,6; 0,8). Hai tọa độ không bằng 1, nhưng tổng bình phương của chúng bằng 1. Chuẩn hóa L2 là thao tác trên từng vector; chuẩn hóa theo trung bình và độ lệch chuẩn của một cột dữ liệu là thao tác khác, sẽ gặp ở bài 2.</p>
+<p><strong>Giữ đúng phạm vi hình:</strong> các hình phẳng ở đây giải thích hướng và độ dài. Không bỏ một tọa độ của vector phim rồi xem góc 2D là góc chính xác của vector 3D.</p>
+<h2>5 Những khái niệm và công thức nào cần nắm</h2>
+<p>Quy ước của bài: u và v là vector cột. Khi viết gọn (1; 0; 1) trong lời giải, ta đọc các tọa độ theo thứ tự đã định. Ký hiệu T là phép chuyển vị; nó đổi vector cột thành một hàng để tích uᵀv cho ra một số.</p>
+<div class="math" data-tex="u=(u_1;\ldots;u_d)^{\mathsf{T}}\in\mathbb{R}^{d},\qquad u^{\mathsf{T}}\in\mathbb{R}^{1\times d}"></div>
+<p>Cho u và v là hai vector thực có d tọa độ, được mã hóa theo cùng thứ tự. Chỉ số j xác định một vị trí; uⱼ và vⱼ là hai giá trị tại vị trí đó.</p>
+<div class="math" data-tex="u^{\mathsf{T}}v=\sum_{j=1}^{d}u_jv_j"></div>
+<p><strong>Tích vô hướng:</strong> nhân các tọa độ cùng vị trí rồi cộng. Với các bit 0/1, kết quả đếm số nhãn chung đang được mã hóa.</p>
+<div class="math" data-tex="\|u\|_2=\sqrt{\sum_{j=1}^{d}u_j^2}"></div>
+<p><strong>Chuẩn L2:</strong> bình phương từng tọa độ, cộng lại rồi lấy căn. Chuẩn không âm; chuẩn bằng 0 khi và chỉ khi mọi tọa độ đều bằng 0.</p>
+<div class="math" data-tex="\operatorname{cos}(u,v)=\frac{u^{\mathsf{T}}v}{\|u\|_2\|v\|_2},\qquad u\ne0,\ v\ne0"></div>
+<p><strong>Cosine:</strong> chia tích vô hướng cho tích hai chuẩn [2]. Tử và mẫu cần được tính từ cùng hai vector. Cùng số chiều chưa đủ; ý nghĩa các tọa độ cũng phải khớp.</p>
+<table>
+<thead>
+<tr>
+<th>Đại lượng</th>
+<th>Đầu vào</th>
+<th>Câu hỏi trả lời</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tích vô hướng</td>
+<td>Một cặp vector</td>
+<td>Các tích cùng vị trí cộng lại bằng bao nhiêu?</td>
+</tr>
+<tr>
+<td>Chuẩn L2</td>
+<td>Một vector</td>
+<td>Vector dài bao nhiêu?</td>
+</tr>
+<tr>
+<td>Cosine</td>
+<td>Một cặp khác 0</td>
+<td>Hai vector có hướng tương tự đến đâu?</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Miền giá trị:</strong> cosine của vector thực khác 0 thuộc [−1; 1]; với mọi tọa độ không âm thì thuộc [0; 1]. Cosine không có đơn vị. Không chia dot cho số chiều để thay mẫu số.</p>
+<h2>6 Phương pháp được thực hiện như thế nào</h2>
+<p>Ta có thể thực hiện phép so sánh bằng tay hoặc bằng chương trình. Trong case này, cosine là công thức được chọn trước; <strong>không có bước huấn luyện tham số từ ratings</strong>.</p>
+<p><img alt="Hình 4. Quy trình tính một cặp vector. Nếu có chuẩn bằng 0, dừng trước phép chia." src="assets/process.png" /></p>
+<h3>Quy trình xếp hạng ứng viên</h3>
+<ul>
+<li>
+<p>Chốt phim tham chiếu, danh sách nhãn và thứ tự tọa độ.</p>
+</li>
+<li>
+<p>Mã hóa phim tham chiếu và từng ứng viên bằng cùng quy tắc.</p>
+</li>
+<li>
+<p>Kiểm dữ liệu hợp lệ và chuẩn khác 0. Nếu vector 0, ghi không xác định trong biểu diễn hiện tại; không thay bằng một điểm số mà không nói rõ quy ước.</p>
+</li>
+<li>
+<p>Tính dot, hai chuẩn và cosine của từng cặp hợp lệ. Giữ số chính xác khi tính; chỉ làm tròn khi trình bày.</p>
+</li>
+<li>
+<p>Loại chính phim tham chiếu khỏi danh sách gợi ý. Xếp điểm giảm dần và giữ các nhóm đồng hạng.</p>
+</li>
+<li>
+<p>Đọc điểm cùng với nhãn. Nếu dùng ID để sắp các phim đồng hạng, coi đó là quy tắc hiển thị, không phải mức độ hay của phim.</p>
+</li>
+</ul>
+<p>Khi có nhiều phim, máy tính lặp lại cùng quy trình. Muốn kiểm cài đặt, ta tính tay vài dòng và đối chiếu từng dòng. Hai tổng bằng nhau chưa bảo đảm mọi dòng đúng vì các lỗi có thể triệt tiêu.</p>
+<p><strong>Tự nói lại:</strong> trước khi bấm phép chia, bạn cần kiểm hai điều gì? Hãy nêu điều kiện về tọa độ và điều kiện về chuẩn.</p>
+<h2>7 Cùng làm một ví dụ từ đầu đến cuối</h2>
+<p>So sánh The Matrix với Men in Black, giữ ba trục Action, Comedy, Sci-Fi. Dữ liệu ở mục 3 cho u = (1; 0; 1) và v = (1; 1; 1).</p>
+<table>
+<thead>
+<tr>
+<th>Tọa độ</th>
+<th>u</th>
+<th>v</th>
+<th>Tích uⱼvⱼ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Action</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Comedy</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sci-Fi</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Cộng ba tích</td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<div class="math" data-tex="\|u\|_2=\sqrt{2},\quad\|v\|_2=\sqrt{3},\quad\operatorname{cos}(u,v)=\frac{2}{\sqrt{6}}\approx0.8165"></div>
+<p>Dot bằng 2; tích hai chuẩn là √6, không phải 6. Cả hai chuẩn đều khác 0 nên phép chia hợp lệ.</p>
+<p>Kết luận: hai phim có cosine khoảng 0,8165 <strong>theo ba nhãn đã chọn</strong>. Đây không phải xác suất 81,65% một người sẽ thích Men in Black.</p>
+<table>
+<thead>
+<tr>
+<th>Ứng viên</th>
+<th>Dot</th>
+<th>Chuẩn ứng viên</th>
+<th>Cosine với Matrix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Star Wars</td>
+<td>2</td>
+<td>√2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Men in Black</td>
+<td>2</td>
+<td>√3</td>
+<td>2/√6 ≈ 0,8165</td>
+</tr>
+<tr>
+<td>Jurassic Park</td>
+<td>2</td>
+<td>√2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Alien</td>
+<td>1</td>
+<td>1</td>
+<td>1/√2 ≈ 0,7071</td>
+</tr>
+<tr>
+<td>Toy Story</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kiểm kết quả:</strong> Star Wars và Jurassic Park đồng hạng; Toy Story có chuẩn 1 nên điểm 0 hoàn toàn xác định. Hãy che hàng Alien và tự tính lại trước khi đọc tiếp.</p>
+<h2>8 Đọc kết quả và tránh hiểu nhầm</h2>
+<p>Mở rộng từ ba trục sang đủ 19 nhãn hợp lệ của bản dữ liệu làm thay đổi vector. Ký hiệu “no genres listed” được xem là thiếu nhãn và không trở thành một thể loại. Nhãn IMAX vẫn được giữ theo nguồn, nên ta dùng thuật ngữ metadata để bao quát cả nhãn định dạng.</p>
+<p><img alt="Hình 5. Tính lại từ cùng các bản ghi thật của mục 3. Điểm thay đổi do đổi biểu diễn; không phải do thay công thức cosine." src="assets/compare.png" /></p>
+<p>Với đủ nhãn, The Matrix có 3 nhãn. Star Wars có 3 nhãn và chung 2, nên điểm bằng 2/3. Jurassic Park có 4 nhãn và chung 3, nên điểm bằng 3/√12 ≈ 0,8660. Hai phim từng đồng hạng nay được phân biệt.</p>
+<table>
+<thead>
+<tr>
+<th>Dễ hiểu nhầm</th>
+<th>Cách đọc đúng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cosine 1 nghĩa là cùng bộ phim</td>
+<td>Chỉ cùng hướng vector; với multi-hot khác 0 thì cùng vector nhãn.</td>
+</tr>
+<tr>
+<td>Vector 0 nghĩa là không có metadata</td>
+<td>Có thể các nhãn chỉ nằm ngoài tập trục đã chọn, như Casablanca.</td>
+</tr>
+<tr>
+<td>Cosine lớn nghĩa là người xem thích</td>
+<td>Cần thêm dữ liệu và đánh giá về sở thích để kết luận điều này.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Điều kiện sử dụng:</strong> Casablanca có Drama và Romance nên thành vector 0 trên ba trục hiện tại; cosine không xác định. Toy Story có Comedy nên khác vector 0, dù cosine với Matrix bằng 0.</p>
+<h2>9 Tự kiểm tra trước khi đến lớp</h2>
+<p>Làm trước khi xem phụ lục A. Với câu trắc nghiệm, chọn một đáp án và giải thích ngắn một lựa chọn sai.</p>
+<p>Câu 1. Phim chỉ có Comedy và Sci-Fi được mã hóa thế nào theo Action, Comedy, Sci-Fi?</p>
+<p>A. (1; 1; 0)</p>
+<p>B. (0; 1; 1)</p>
+<p>C. (1; 0; 1)</p>
+<p>Câu 2. Tính dot, hai chuẩn và cosine của u = (1; 0; 1), v = (0; 1; 1).</p>
+<p>Câu 3. Với vector thực khác 0, nếu thay u bằng 3u thì cosine với v ra sao?</p>
+<p>A. Tăng ba lần</p>
+<p>B. Luôn bằng 1</p>
+<p>C. Giữ nguyên</p>
+<p>Câu 4. So sánh v = (0; 0; 0) với u = (1; 0; 1). Kết luận nào đúng?</p>
+<p>A. Cosine không xác định theo công thức</p>
+<p>B. Cosine bằng 0</p>
+<p>C. Phim chắc chắn không có metadata</p>
+<p>Câu 5. Đọc hình 5. Vì sao Jurassic Park tách khỏi Star Wars khi dùng đủ nhãn? Hãy nêu số nhãn chung và hai mẫu số.</p>
+<p>Câu 6. Một chương trình tính khớp các ví dụ trên đã chứng minh điều gì?</p>
+<p>A. Mọi người sẽ thích phim được xếp đầu</p>
+<p>B. Nhãn nguồn luôn đầy đủ và chính xác</p>
+<p>C. Cài đặt cho kết quả đúng ở các ca đã đối chiếu</p>
+<p><strong>Mang đến lớp:</strong> một phép tính bạn tự kiểm được và một câu hỏi còn vướng. Có thể chọn bất kỳ hai phim trong bảng mục 3 để thực hiện quy trình mục 6.</p>
+<h2>10 Những điều cần nhớ</h2>
+<p>Một điểm tương tự chỉ có ý nghĩa sau khi ta xác định rõ đối tượng, đặc trưng và phép đo. Bài này bắt đầu từ nhãn phim, mã hóa theo cùng thứ tự rồi dùng cosine để so hướng của hai vector khác 0.</p>
+<ul>
+<li>
+<p>Mã hóa cùng schema trước khi tính toán.</p>
+</li>
+<li>
+<p>Dot: nhân cùng vị trí rồi cộng. Chuẩn L2: bình phương, cộng, lấy căn.</p>
+</li>
+<li>
+<p>Cosine: dot chia tích hai chuẩn; kiểm mẫu khác 0.</p>
+</li>
+<li>
+<p>Diễn giải điểm trong đúng biểu diễn; giữ đồng hạng và các giới hạn.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Thuật ngữ</th>
+<th>Nghĩa trong bài</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metadata</td>
+<td>Thông tin mô tả đối tượng, ở đây là các nhãn phim.</td>
+</tr>
+<tr>
+<td>Đặc trưng</td>
+<td>Thuộc tính đã chọn để biểu diễn đối tượng.</td>
+</tr>
+<tr>
+<td>Multi-hot</td>
+<td>Mã 0/1 cho nhiều nhãn có thể đồng thời xuất hiện.</td>
+</tr>
+<tr>
+<td>Tích vô hướng</td>
+<td>Tổng các tích tọa độ tương ứng.</td>
+</tr>
+<tr>
+<td>Chuẩn L2</td>
+<td>Độ dài Euclid của một vector.</td>
+</tr>
+<tr>
+<td>Vector đơn vị</td>
+<td>Vector có chuẩn L2 bằng 1.</td>
+</tr>
+<tr>
+<td>Cosine similarity</td>
+<td>Độ tương tự hướng; không phải xác suất thích.</td>
+</tr>
+</tbody>
+</table>
+<h3>Nguồn để đọc và kiểm lại</h3>
+<p>Nhãn và phép tính trong tài liệu bám slide Bài 1 v4: dữ liệu và biểu diễn ở slide 5–14; phép tính ở 15–30; năm phim ở 31–42; điều kiện ở 44–54; toàn kho và vận dụng ở 55–65. Dữ liệu latest có thể thay đổi; khi tái lập, dùng bản movies.csv đi kèm. [1] mô tả dữ liệu; [2] mô tả phép tính và quy ước thư viện.</p>
+<p><a href="https://grouplens.org/datasets/movielens/latest/">[1] GroupLens MovieLens latest và README của bản dữ liệu</a></p>
+<p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html">[2] scikit-learn cosine_similarity</a></p>
+<p><strong>Nối sang bài 2:</strong> khi chuyển sang SMS, ta cần định nghĩa lại đặc trưng và cách đo gần nhau, sau đó dùng nhãn của các láng giềng để dự đoán. Không mang nguyên các trục thể loại phim sang dữ liệu tin nhắn.</p>
+<h2>Phụ lục A Đáp án có giải thích</h2>
+<p><strong>K1:</strong> 2×1 + 0×3 + 1×2 = 4. Nhân từng cặp trước rồi cộng. <strong>K2:</strong> √(1 + 1 + 0) = √2; số 2 là chuẩn bình phương.</p>
+<h3>Câu 1</h3>
+<p>Đáp án B, (0; 1; 1). Vị trí đầu là Action nên bằng 0. A và C đặt bit 1 vào Action, không khớp mô tả. Nếu sai, đọc lại thứ tự trục ở mục 3.</p>
+<h3>Câu 2</h3>
+<div class="math" data-tex="u^{\mathsf{T}}v=1,\quad\|u\|_2=\|v\|_2=\sqrt{2},\quad\operatorname{cos}(u,v)=\frac{1}{2}"></div>
+<p>Chỉ Sci-Fi đóng góp vào dot. Mẫu số là √2 × √2 = 2. Hai vector đều khác 0; cosine bằng 0,5.</p>
+<h3>Câu 3</h3>
+<p>Đáp án C. Khi nhân u với 3, dot và chuẩn u cùng tăng ba lần nên tỷ số không đổi. Đáp án A bỏ qua mẫu số; B nhầm bất biến độ dài với việc mọi cặp đều cùng hướng. Hệ số phải dương trong lập luận này.</p>
+<h3>Câu 4</h3>
+<p>Đáp án A. Chuẩn v bằng 0 nên mẫu số bằng 0. Tử số 0 không làm phép chia 0/0 hợp lệ. C sai vì các nhãn có thể nằm ngoài ba trục, như Casablanca; phải kiểm bản ghi nguồn.</p>
+<h3>Câu 5</h3>
+<p>The Matrix có 3 nhãn. Star Wars có 3, chung 2 nên cosine = 2/√9 = 2/3. Jurassic Park có 4, chung 3 nên cosine = 3/√12 = √3/2. Nhãn Thriller của Matrix nay được giữ lại và cũng có ở Jurassic Park. Kết luận chỉ về nhãn, chưa về chất lượng gợi ý.</p>
+<h3>Câu 6</h3>
+<p>Đáp án C. Phép đối chiếu hỗ trợ tính đúng của cài đặt ở các ca đã thử. A cần đánh giá người dùng; B cần kiểm chất lượng nhãn và không suy từ việc chương trình tính đúng. Nếu nhầm, quay lại mục 8.</p>
+<p><strong>Tự đánh giá:</strong> nếu sai thao tác số, ôn mục 2 và 7; nếu sai ý nghĩa, ôn mục 3 và 8. Ghi bước chưa hiểu để hỏi trên lớp, thay vì chỉ chép đáp án.</p>
+<h2>Phụ lục B Kiến thức mở rộng tùy chọn</h2>
+<h3>Nhân độ dài với hệ số dương</h3>
+<div class="math" data-tex="\operatorname{cos}(cu,v)=\frac{c\,u^{\mathsf{T}}v}{|c|\,\|u\|_2\|v\|_2}=\operatorname{cos}(u,v),\quad c&gt;0"></div>
+<p>Chuẩn của cu bằng |c| nhân chuẩn u. Với c dương, tử và mẫu rút gọn cùng hệ số. Với c âm, cosine đổi dấu; với c bằng 0, công thức mất điều kiện.</p>
+<h3>Liên hệ với khoảng cách sau chuẩn hóa</h3>
+<div class="math" data-tex="\|\widehat u-\widehat v\|_2^2=2-2\operatorname{cos}(u,v)"></div>
+<p>Hai vector mũ ở đây là vector đơn vị của u và v. Khai triển bình phương chuẩn của hiệu: mỗi chuẩn bình phương bằng 1; tích vô hướng của hai vector đơn vị chính là cosine.</p>
+<p>Trên các vector đã chuẩn hóa L2, xếp cosine giảm dần tương đương xếp khoảng cách Euclid tăng dần. Không bỏ điều kiện chuẩn hóa rồi áp dụng cho vector gốc có độ dài bất kỳ.</p>
+<h3>Một điểm số và một hệ thống gợi ý</h3>
+<p>Muốn gợi ý cá nhân, ta cần thêm định nghĩa người dùng, lịch sử được phép sử dụng, thời điểm gợi ý và tiêu chí đánh giá. Có thể tạo hồ sơ từ các phim đã được thích, nhưng phải định nghĩa “thích” và chỉ dùng tương tác quá khứ. Người chưa có lịch sử cần một phương án xử lý riêng.</p>
+<p><strong>Bài mở rộng:</strong> chọn u = (1; 0), v = (1; 1). Chuẩn hóa cả hai rồi tính khoảng cách bình phương. Kiểm kết quả có bằng 2 − √2 không. Nêu vì sao khoảng cách trên vector gốc không thỏa cùng đẳng thức.</p>
+<p>Trong lập trình, một thư viện có thể đặt quy ước đầu ra 0 cho vector 0 [2]. Khi dùng quy ước đó cần ghi rõ; nó không làm vector 0 có một hướng hình học. Các nội dung mở rộng này không bắt buộc để làm được phần chính.</p><script>window.mathErrors=[];document.querySelectorAll("[data-tex]").forEach(e=>{try{katex.render(e.dataset.tex,e,{displayMode:true,throwOnError:true})}catch(x){window.mathErrors.push(String(x))}})</script></body></html>

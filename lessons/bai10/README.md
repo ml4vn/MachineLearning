@@ -1,3 +1,5 @@
+> **Học liệu hiện hành: [Bài 10 v4](../../v4/bai10/README.md).** Trang này giữ hướng dẫn CLI của bộ Python v3; notebook v4 và số liệu v4 nằm ở liên kết trên.
+
 # Bài 10 · Mạng neuron: từ một bước tính tay đến nhận dạng ảnh
 
 

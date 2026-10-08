@@ -1,0 +1,9 @@
+{
+  "sms.zip": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "sms_core_test_predictions.csv": "a78e88ee1af5c8724e583601790f1deb4a390c3a6a18693b78775a5bb9adead7",
+  "sms_features.csv": "f11c9efe6c6121f054ca7c553f4f179ace270b8d530afb069f277d29ae8f072e",
+  "SMS_README_original.txt": "8753cd2d3cab68f80c8257851b8c2037778c267f55accb6fd1b5a2e32d36a84e",
+  "test_predictions.csv": "bb9819b4475497575ebe7de2b1634585f47fc6729787c8b09fe04f5c92996749",
+  "toy_scores.csv": "450c82bb52eeacd427c3e5dbf8de2819fb5639c1fc7324830e20ba77b36d5023",
+  "validation_predictions.csv": "687aaa6286c61ab1dea8308b81a273f56a93a887b8b99acbb37c5c9bd8786002"
+}

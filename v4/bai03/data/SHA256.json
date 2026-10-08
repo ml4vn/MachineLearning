@@ -1,0 +1,12 @@
+{
+  "pr_curve.csv": "8e7d862f7592cc4b6b72c525642bd558b2fe42fd5d2148309b028ac58d6e8671",
+  "roc_curve.csv": "e5f11fc58518140c4b161e308d0084879c8d880f9f7a0962acc176df8b3ef6f9",
+  "sms.zip": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "sms_core_test_predictions.csv": "a78e88ee1af5c8724e583601790f1deb4a390c3a6a18693b78775a5bb9adead7",
+  "sms_features.csv": "f11c9efe6c6121f054ca7c553f4f179ace270b8d530afb069f277d29ae8f072e",
+  "SMS_README_original.txt": "8753cd2d3cab68f80c8257851b8c2037778c267f55accb6fd1b5a2e32d36a84e",
+  "test_predictions.csv": "0a4642297754f757c8bfe3d4253f62fa08a6e9acfb13066fa8e40079c8a3cb51",
+  "toy_scores.csv": "7ae6780177ae9dd578a48197fe28e06b5f33a03d62a60c42bbea740c5bb093a0",
+  "validation_predictions.csv": "845a051a5be7653ba8bf1913f9b31c5f134703bbae181641dfddc7f8c0bbd797",
+  "validation_threshold_scan.csv": "067c8f903ae10a751b77f722f9bc15d3e2514bf45c7792efa94ff45d30747f34"
+}

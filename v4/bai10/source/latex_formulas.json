@@ -1,0 +1,459 @@
+[
+  {
+    "slide": 1,
+    "latex": []
+  },
+  {
+    "slide": 2,
+    "latex": []
+  },
+  {
+    "slide": 3,
+    "latex": []
+  },
+  {
+    "slide": 4,
+    "latex": []
+  },
+  {
+    "slide": 5,
+    "latex": []
+  },
+  {
+    "slide": 6,
+    "latex": [
+      "j=28r+c,\\quad 0\\le r,c<28",
+      "x_j=\\mathrm{pixel}_{r,c}/255"
+    ]
+  },
+  {
+    "slide": 7,
+    "latex": [
+      "z=\\sum_k w_kx_k+b,\\qquad h=\\mathrm{ReLU}(z)"
+    ]
+  },
+  {
+    "slide": 8,
+    "latex": [
+      "\\Delta z=x_1\\Delta w_1+\\Delta b"
+    ]
+  },
+  {
+    "slide": 9,
+    "latex": [
+      "\\mathrm{ReLU}(z)=\\max(0,z)"
+    ]
+  },
+  {
+    "slide": 10,
+    "latex": [
+      "W_2(W_1x+b_1)+b_2=(W_2W_1)x+(W_2b_1+b_2)"
+    ]
+  },
+  {
+    "slide": 11,
+    "latex": []
+  },
+  {
+    "slide": 12,
+    "latex": [
+      "m=(A+D)/2=(B+C)/2=(0.5,0.5)"
+    ]
+  },
+  {
+    "slide": 13,
+    "latex": [
+      "h_1=\\mathrm{ReLU}(x_1+x_2)",
+      "h_2=\\mathrm{ReLU}(x_1+x_2-1)"
+    ]
+  },
+  {
+    "slide": 14,
+    "latex": []
+  },
+  {
+    "slide": 15,
+    "latex": [
+      "s=2h_1-4h_2-1,\\quad \\widehat y=\\mathbf1[s\\ge0]"
+    ]
+  },
+  {
+    "slide": 16,
+    "latex": []
+  },
+  {
+    "slide": 17,
+    "latex": []
+  },
+  {
+    "slide": 18,
+    "latex": [
+      "h=\\mathrm{ReLU}(W_1x+b_1)",
+      "s=2h_1-4h_2-1"
+    ]
+  },
+  {
+    "slide": 19,
+    "latex": [
+      "W_1=\\begin{pmatrix}0.5&-0.4\\\\0.3&0.8\\end{pmatrix},\\quad b_1=\\binom{0.1}{0.1}",
+      "v=\\binom{0.7}{-0.5},\\ b=0.2,\\quad x=\\binom{0.6}{0.2},\\ y=1"
+    ]
+  },
+  {
+    "slide": 20,
+    "latex": [
+      "z_1=0.5(0.6)-0.4(0.2)+0.1=0.32",
+      "z_2=0.3(0.6)+0.8(0.2)+0.1=0.44",
+      "h=\\mathrm{ReLU}(z)=(0.32,0.44)^\\top"
+    ]
+  },
+  {
+    "slide": 21,
+    "latex": [
+      "s=0.7(0.32)-0.5(0.44)+0.2=0.204"
+    ]
+  },
+  {
+    "slide": 22,
+    "latex": [
+      "p=\\sigma(s)=\\frac1{1+e^{-s}}"
+    ]
+  },
+  {
+    "slide": 23,
+    "latex": [
+      "y=1:\\quad \\ell=-\\ln p",
+      "\\ell=-\\ln(0.550824)\\approx0.596340"
+    ]
+  },
+  {
+    "slide": 24,
+    "latex": [
+      "\\ell=-y\\ln p-(1-y)\\ln(1-p)"
+    ]
+  },
+  {
+    "slide": 25,
+    "latex": [
+      "L=\\frac{\\ell_1+\\ell_2}{2}\\approx0.615643"
+    ]
+  },
+  {
+    "slide": 26,
+    "latex": []
+  },
+  {
+    "slide": 27,
+    "latex": []
+  },
+  {
+    "slide": 28,
+    "latex": [
+      "p_k=\\frac{e^{s_k}}{\\sum_j e^{s_j}},\\quad\\sum_kp_k=1"
+    ]
+  },
+  {
+    "slide": 29,
+    "latex": [
+      "\\ell=-\\sum_k(e_y)_k\\ln p_k=-\\ln p_y",
+      "\\ell\\approx-\\ln(0.2447)\\approx1.408"
+    ]
+  },
+  {
+    "slide": 30,
+    "latex": []
+  },
+  {
+    "slide": 31,
+    "latex": []
+  },
+  {
+    "slide": 32,
+    "latex": []
+  },
+  {
+    "slide": 33,
+    "latex": []
+  },
+  {
+    "slide": 34,
+    "latex": [
+      "x\\to z\\to h\\to s\\to p\\to\\ell",
+      "L=\\frac1n\\sum_i\\ell_i"
+    ]
+  },
+  {
+    "slide": 35,
+    "latex": [
+      "\\frac{\\Delta F}{\\Delta t}\\ \\longrightarrow\\ F^{\\prime}(t)\\quad(\\Delta t\\to0)"
+    ]
+  },
+  {
+    "slide": 36,
+    "latex": [
+      "t=1\\Rightarrow u=2,\\quad v=5,\\quad F=25"
+    ]
+  },
+  {
+    "slide": 37,
+    "latex": [
+      "\\Delta F/\\Delta t=20.004\\approx20"
+    ]
+  },
+  {
+    "slide": 38,
+    "latex": [
+      "\\frac{dF}{dt}=\\frac{dF}{dv}\\frac{dv}{du}\\frac{du}{dt}=10\\times1\\times2=20"
+    ]
+  },
+  {
+    "slide": 39,
+    "latex": [
+      "G(t)=(2t+3)^2+3t,\\qquad G^{\\prime}(1)=20+3=23"
+    ]
+  },
+  {
+    "slide": 40,
+    "latex": []
+  },
+  {
+    "slide": 41,
+    "latex": []
+  },
+  {
+    "slide": 42,
+    "latex": [
+      "\\nabla_\\theta\\ell=\\left(\\frac{\\partial\\ell}{\\partial\\theta_1},\\ldots,\\frac{\\partial\\ell}{\\partial\\theta_9}\\right)"
+    ]
+  },
+  {
+    "slide": 43,
+    "latex": [
+      "\\frac{\\partial\\ell}{\\partial p}=\\frac{p-y}{p(1-p)},\\quad\\frac{dp}{ds}=p(1-p)",
+      "\\delta=\\frac{\\partial\\ell}{\\partial s}=p-y\\approx-0.449176"
+    ]
+  },
+  {
+    "slide": 44,
+    "latex": [
+      "\\frac{\\partial\\ell}{\\partial v_j}=\\delta h_j,\\qquad\\frac{\\partial\\ell}{\\partial b}=\\delta"
+    ]
+  },
+  {
+    "slide": 45,
+    "latex": [
+      "(p-y)x_1",
+      "(p-y)/h_1",
+      "p-y",
+      "(p-y)h_1"
+    ]
+  },
+  {
+    "slide": 46,
+    "latex": []
+  },
+  {
+    "slide": 47,
+    "latex": []
+  },
+  {
+    "slide": 48,
+    "latex": [
+      "\\delta_z=(\\delta v)\\odot\\mathbf1[z>0]"
+    ]
+  },
+  {
+    "slide": 49,
+    "latex": []
+  },
+  {
+    "slide": 50,
+    "latex": [
+      "\\frac{\\partial\\ell}{\\partial w_{11}}=(p-y)\\,v_1\\,\\mathrm{ReLU}^{\\prime}(z_1)\\,x_1",
+      "\\approx(-0.449176)\\times0.7\\times1\\times0.6=-0.188654"
+    ]
+  },
+  {
+    "slide": 51,
+    "latex": [
+      "\\nabla_{W_1}\\ell=\\delta_zx^\\top",
+      "\\nabla_{b_1}\\ell=\\delta_z"
+    ]
+  },
+  {
+    "slide": 52,
+    "latex": [
+      "(p-y)v_1\\mathrm{ReLU}^{\\prime}(z_1)x_2",
+      "(p-y)h_1",
+      "(p-y)v_2\\mathrm{ReLU}^{\\prime}(z_2)x_2",
+      "(p-y)v_1\\mathrm{ReLU}^{\\prime}(z_1)x_1"
+    ]
+  },
+  {
+    "slide": 53,
+    "latex": []
+  },
+  {
+    "slide": 54,
+    "latex": [
+      "\\theta_{\\mathrm{new}}=\\theta_{\\mathrm{old}}-0.1\\,\\nabla\\ell(\\theta_{\\mathrm{old}})"
+    ]
+  },
+  {
+    "slide": 55,
+    "latex": []
+  },
+  {
+    "slide": 56,
+    "latex": [
+      "g_j^{\\mathrm{num}}=\\frac{\\ell(\\theta+\\varepsilon e_j)-\\ell(\\theta-\\varepsilon e_j)}{2\\varepsilon}"
+    ]
+  },
+  {
+    "slide": 57,
+    "latex": [
+      "t_{\\mathrm{new}}=t-\\eta F^{\\prime}(t)"
+    ]
+  },
+  {
+    "slide": 58,
+    "latex": []
+  },
+  {
+    "slide": 59,
+    "latex": []
+  },
+  {
+    "slide": 60,
+    "latex": []
+  },
+  {
+    "slide": 61,
+    "latex": []
+  },
+  {
+    "slide": 62,
+    "latex": [
+      "\\frac{\\partial\\ell}{\\partial w_{jk}}=\\delta v_j\\mathrm{ReLU}^{\\prime}(z_j)x_k",
+      "\\theta_{\\mathrm{new}}=\\theta_{\\mathrm{old}}-\\eta g_{\\mathrm{old}}"
+    ]
+  },
+  {
+    "slide": 63,
+    "latex": []
+  },
+  {
+    "slide": 64,
+    "latex": []
+  },
+  {
+    "slide": 65,
+    "latex": [
+      "\\frac{\\partial\\ell}{\\partial s_k}=p_k-(e_y)_k,\\qquad \\sum_k\\delta_k=0"
+    ]
+  },
+  {
+    "slide": 66,
+    "latex": [
+      "\\lceil12000/256\\rceil=47\\ \\text{batch/epoch}"
+    ]
+  },
+  {
+    "slide": 67,
+    "latex": []
+  },
+  {
+    "slide": 68,
+    "latex": []
+  },
+  {
+    "slide": 69,
+    "latex": []
+  },
+  {
+    "slide": 70,
+    "latex": [
+      "t^*=\\arg\\min_{t=1,\\ldots,50}\\mathrm{CE}_{val}(t)"
+    ]
+  },
+  {
+    "slide": 71,
+    "latex": []
+  },
+  {
+    "slide": 72,
+    "latex": []
+  },
+  {
+    "slide": 73,
+    "latex": []
+  },
+  {
+    "slide": 74,
+    "latex": [
+      "L_B=\\frac1{|B|}\\sum_{i\\in B}\\ell_i",
+      "t^*=\\arg\\min_t\\mathrm{CE}_{val}(t)"
+    ]
+  },
+  {
+    "slide": 75,
+    "latex": [
+      "\\mathrm{Recall}_{6}=\\frac{CM_{6,6}}{\\sum_jCM_{6,j}}=208/300\\approx0.6933"
+    ]
+  },
+  {
+    "slide": 76,
+    "latex": [
+      "\\mathrm{Accuracy}=\\frac{\\sum_kCM_{k,k}}{3000}=0.8660"
+    ]
+  },
+  {
+    "slide": 77,
+    "latex": [
+      "165-67=98"
+    ]
+  },
+  {
+    "slide": 78,
+    "latex": []
+  },
+  {
+    "slide": 79,
+    "latex": []
+  },
+  {
+    "slide": 80,
+    "latex": []
+  },
+  {
+    "slide": 81,
+    "latex": []
+  },
+  {
+    "slide": 82,
+    "latex": []
+  },
+  {
+    "slide": 83,
+    "latex": []
+  },
+  {
+    "slide": 84,
+    "latex": []
+  },
+  {
+    "slide": 85,
+    "latex": []
+  },
+  {
+    "slide": 86,
+    "latex": [
+      "z=W_1x+b_1,\\quad h=\\mathrm{ReLU}(z)",
+      "p=\\mathrm{softmax}(W_2h+b_2)"
+    ]
+  },
+  {
+    "slide": 87,
+    "latex": []
+  }
+]

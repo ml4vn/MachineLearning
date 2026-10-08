@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checks_count": 7,
+  "checks": [
+    {
+      "slide": 11,
+      "space": "x",
+      "passed": true,
+      "equal_unit_scale": 245.0
+    },
+    {
+      "slide": 12,
+      "space": "x",
+      "passed": true,
+      "equal_unit_scale": 245.0
+    },
+    {
+      "slide": 15,
+      "space": "h",
+      "passed": true,
+      "equal_unit_scale": 189.99999999999994
+    },
+    {
+      "slide": 18,
+      "space": "x",
+      "passed": true,
+      "equal_unit_scale": 127.99999999999997
+    },
+    {
+      "slide": 18,
+      "space": "h",
+      "passed": true,
+      "equal_unit_scale": 130.00000000000023
+    },
+    {
+      "slide": 64,
+      "type": "64_actual_activations",
+      "passed": true
+    },
+    {
+      "slide": 64,
+      "type": "10_actual_probabilities",
+      "passed": true
+    }
+  ]
+}

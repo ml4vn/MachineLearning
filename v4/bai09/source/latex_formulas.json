@@ -1,0 +1,331 @@
+[
+  {
+    "slide": 1,
+    "latex": []
+  },
+  {
+    "slide": 2,
+    "latex": []
+  },
+  {
+    "slide": 3,
+    "latex": []
+  },
+  {
+    "slide": 4,
+    "latex": []
+  },
+  {
+    "slide": 5,
+    "latex": []
+  },
+  {
+    "slide": 6,
+    "latex": [
+      "j=28r+c\\quad(0\\le r,c<28)",
+      "\\mathbf x_i\\in\\mathbb R^{784},\\quad X\\in\\mathbb R^{n\\times784}"
+    ]
+  },
+  {
+    "slide": 7,
+    "latex": [
+      "x_{ij}=\\operatorname{pixel}_{ij}/255",
+      "\\boldsymbol\\mu=\\frac1n\\sum_i\\mathbf x_i",
+      "\\mathbf x_{c,i}=\\mathbf x_i-\\boldsymbol\\mu"
+    ]
+  },
+  {
+    "slide": 8,
+    "latex": []
+  },
+  {
+    "slide": 9,
+    "latex": []
+  },
+  {
+    "slide": 10,
+    "latex": []
+  },
+  {
+    "slide": 11,
+    "latex": []
+  },
+  {
+    "slide": 12,
+    "latex": []
+  },
+  {
+    "slide": 13,
+    "latex": []
+  },
+  {
+    "slide": 14,
+    "latex": [
+      "\\boldsymbol\\mu=(5,5)^\\top"
+    ]
+  },
+  {
+    "slide": 15,
+    "latex": [
+      "\\mathbf w=\\frac1{\\sqrt2}(1,1)^\\top",
+      "\\|\\mathbf w\\|^2=\\tfrac12+\\tfrac12=1"
+    ]
+  },
+  {
+    "slide": 16,
+    "latex": []
+  },
+  {
+    "slide": 17,
+    "latex": [
+      "\\mathbf w^\\top\\mathbf r=0",
+      "\\mathbf w^\\top\\mathbf x_c-z\\mathbf w^\\top\\mathbf w=0",
+      "z=\\mathbf w^\\top\\mathbf x_c",
+      "z_A=\\frac{-2-1}{\\sqrt2}=-\\frac3{\\sqrt2}"
+    ]
+  },
+  {
+    "slide": 18,
+    "latex": [
+      "\\mathbf x_{c,A}=z_A\\mathbf w+\\mathbf r_A",
+      "z_A\\mathbf w=(-1.5,-1.5)^\\top",
+      "\\mathbf r_A=(-0.5,0.5)^\\top",
+      "\\mathbf w^\\top\\mathbf r_A=0"
+    ]
+  },
+  {
+    "slide": 19,
+    "latex": []
+  },
+  {
+    "slide": 20,
+    "latex": [
+      "\\widehat{\\mathbf x}_A=\\boldsymbol\\mu+\\mathbf wz_A",
+      "=\\begin{bmatrix}5\\\\5\\end{bmatrix}+\\begin{bmatrix}-1.5\\\\-1.5\\end{bmatrix}=\\begin{bmatrix}3.5\\\\3.5\\end{bmatrix}"
+    ]
+  },
+  {
+    "slide": 21,
+    "latex": []
+  },
+  {
+    "slide": 22,
+    "latex": []
+  },
+  {
+    "slide": 23,
+    "latex": []
+  },
+  {
+    "slide": 24,
+    "latex": []
+  },
+  {
+    "slide": 25,
+    "latex": [
+      "\\mathbf x_c=\\mathbf x-\\boldsymbol\\mu",
+      "z=\\mathbf w^\\top\\mathbf x_c",
+      "\\widehat{\\mathbf x}=\\boldsymbol\\mu+\\mathbf wz"
+    ]
+  },
+  {
+    "slide": 26,
+    "latex": [
+      "\\operatorname{Var}_n(z)=\\frac14\\sum_i z_i^2"
+    ]
+  },
+  {
+    "slide": 27,
+    "latex": [
+      "C_{12}=\\frac{2+2+2+2}{4}=2"
+    ]
+  },
+  {
+    "slide": 28,
+    "latex": [
+      "C=\\frac1nX_c^\\top X_c=\\begin{bmatrix}2.5&2\\\\2&2.5\\end{bmatrix}"
+    ]
+  },
+  {
+    "slide": 29,
+    "latex": [
+      "C\\mathbf w_j=\\lambda_j\\mathbf w_j",
+      "\\mathbf w_1=\\frac{(1,1)^\\top}{\\sqrt2},\\quad\\lambda_1=4.5",
+      "\\mathbf w_2=\\frac{(1,-1)^\\top}{\\sqrt2},\\quad\\lambda_2=0.5"
+    ]
+  },
+  {
+    "slide": 30,
+    "latex": [
+      "\\mathbf w=\\alpha\\mathbf w_1+\\beta\\mathbf w_2",
+      "\\alpha^2+\\beta^2=1",
+      "\\operatorname{Var}_n(z)=4.5\\alpha^2+0.5\\beta^2\\le4.5"
+    ]
+  },
+  {
+    "slide": 31,
+    "latex": [
+      "\\|\\mathbf x_c\\|^2=z^2+\\|\\mathbf r\\|^2"
+    ]
+  },
+  {
+    "slide": 32,
+    "latex": [
+      "(-\\mathbf w)(-z)=\\mathbf wz"
+    ]
+  },
+  {
+    "slide": 33,
+    "latex": [
+      "\\operatorname{EVR}(k)=\\frac{\\sum_{j=1}^k\\lambda_j}{\\sum_{j=1}^d\\lambda_j}",
+      "\\operatorname{EVR}(1)=\\frac{4.5}{4.5+0.5}=90\\%"
+    ]
+  },
+  {
+    "slide": 34,
+    "latex": []
+  },
+  {
+    "slide": 35,
+    "latex": []
+  },
+  {
+    "slide": 36,
+    "latex": [
+      "\\mathbf z=W_k^\\top(\\mathbf x-\\boldsymbol\\mu)",
+      "\\widehat{\\mathbf x}=\\boldsymbol\\mu+W_k\\mathbf z"
+    ]
+  },
+  {
+    "slide": 37,
+    "latex": []
+  },
+  {
+    "slide": 38,
+    "latex": []
+  },
+  {
+    "slide": 39,
+    "latex": [
+      "C\\mathbf w_j=\\lambda_j\\mathbf w_j",
+      "\\mathbf z=W_k^\\top(\\mathbf x-\\boldsymbol\\mu)",
+      "\\widehat{\\mathbf x}=\\boldsymbol\\mu+W_k\\mathbf z"
+    ]
+  },
+  {
+    "slide": 40,
+    "latex": []
+  },
+  {
+    "slide": 41,
+    "latex": []
+  },
+  {
+    "slide": 42,
+    "latex": [
+      "z_j=\\mathbf w_j^\\top(\\mathbf x-\\boldsymbol\\mu)"
+    ]
+  },
+  {
+    "slide": 43,
+    "latex": [
+      "\\widehat{\\mathbf x}=\\boldsymbol\\mu+\\sum_{j=1}^kz_j\\mathbf w_j"
+    ]
+  },
+  {
+    "slide": 44,
+    "latex": []
+  },
+  {
+    "slide": 45,
+    "latex": [
+      "k^*=\\min\\{k:\\operatorname{EVR}(k)\\ge0.90\\}"
+    ]
+  },
+  {
+    "slide": 46,
+    "latex": []
+  },
+  {
+    "slide": 47,
+    "latex": []
+  },
+  {
+    "slide": 48,
+    "latex": []
+  },
+  {
+    "slide": 49,
+    "latex": []
+  },
+  {
+    "slide": 50,
+    "latex": []
+  },
+  {
+    "slide": 51,
+    "latex": []
+  },
+  {
+    "slide": 52,
+    "latex": []
+  },
+  {
+    "slide": 53,
+    "latex": []
+  },
+  {
+    "slide": 54,
+    "latex": []
+  },
+  {
+    "slide": 55,
+    "latex": []
+  },
+  {
+    "slide": 56,
+    "latex": [
+      "145-134=11"
+    ]
+  },
+  {
+    "slide": 57,
+    "latex": []
+  },
+  {
+    "slide": 58,
+    "latex": []
+  },
+  {
+    "slide": 59,
+    "latex": []
+  },
+  {
+    "slide": 60,
+    "latex": []
+  },
+  {
+    "slide": 61,
+    "latex": []
+  },
+  {
+    "slide": 62,
+    "latex": []
+  },
+  {
+    "slide": 63,
+    "latex": []
+  },
+  {
+    "slide": 64,
+    "latex": [
+      "\\mathbf z=W_k^\\top(\\mathbf x-\\boldsymbol\\mu)",
+      "\\widehat{\\mathbf x}=\\boldsymbol\\mu+W_k\\mathbf z",
+      "\\operatorname{EVR}(k)=\\frac{\\sum_{j\\le k}\\lambda_j}{\\sum_j\\lambda_j}"
+    ]
+  },
+  {
+    "slide": 65,
+    "latex": []
+  }
+]

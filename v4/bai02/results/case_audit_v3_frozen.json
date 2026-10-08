@@ -1,0 +1,403 @@
+{
+  "status": "pass",
+  "checks_count": 36,
+  "checks": {
+    "no_conflicting_normalized_labels": true,
+    "raw_count_5574": true,
+    "deduplicated_5159": true,
+    "split_counts_3095_1032_1032": true,
+    "nonempty_text": true,
+    "features_legal": true,
+    "no_normalized_overlap": true,
+    "matches_existing_ids": true,
+    "matches_existing_splits": true,
+    "matches_saved_features": true,
+    "scaler_train_mean": true,
+    "scaler_ddof0": true,
+    "train_z_mean_zero": true,
+    "train_z_std_one": true,
+    "validation_reproduced_2D_scaleFalse_k3": true,
+    "validation_reproduced_2D_scaleFalse_k5": true,
+    "validation_reproduced_2D_scaleFalse_k11": true,
+    "validation_reproduced_2D_scaleTrue_k3": true,
+    "validation_reproduced_2D_scaleTrue_k5": true,
+    "validation_reproduced_2D_scaleTrue_k11": true,
+    "fixed_test_predictions_unchanged": true,
+    "fixed_test_scores_unchanged": true,
+    "fixed_test_truth_unchanged": true,
+    "fixed_confusion_matrix": true,
+    "scaling_demo_available": true,
+    "hand_vote_matches_library_False": true,
+    "hand_vote_matches_library_True": true,
+    "percent_unit_invariance_after_scaling": true,
+    "distance_squared_same_order": true,
+    "toy_distances": true,
+    "odd_k_multiclass_can_tie": true,
+    "translation_cancels_in_pairwise_distances": true,
+    "exit_ticket_distances": true,
+    "exit_ticket_scaling": true,
+    "unit_change_reverses_example": true,
+    "displayed_ascii_digits_match_counts": true
+  },
+  "raw_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "text_file_sha256": "7d039a24a6083ed9ef0f806ebad56bbb976e3aeb8de05669173bfdc4996c239d",
+  "raw_rows": 5574,
+  "raw_labels": {
+    "ham": 4827,
+    "spam": 747
+  },
+  "deduplicated_rows": 5159,
+  "duplicate_rows_removed": 415,
+  "deduplicated_labels": {
+    "ham": 4517,
+    "spam": 642
+  },
+  "split_counts": {
+    "train": 3095,
+    "test": 1032,
+    "validation": 1032
+  },
+  "train_mean": [
+    79.31017770597738,
+    0.01805199024951043
+  ],
+  "train_scale_ddof0": [
+    59.10396149794299,
+    0.047064939324231815
+  ],
+  "validation_configurations": [
+    {
+      "name": "2D_scaleFalse_k3",
+      "scaled": false,
+      "k": 3,
+      "validation_f1": 0.7623318385650224,
+      "correct": 979,
+      "wrong": 53
+    },
+    {
+      "name": "2D_scaleFalse_k5",
+      "scaled": false,
+      "k": 5,
+      "validation_f1": 0.7358490566037735,
+      "correct": 976,
+      "wrong": 56
+    },
+    {
+      "name": "2D_scaleFalse_k11",
+      "scaled": false,
+      "k": 11,
+      "validation_f1": 0.5833333333333334,
+      "correct": 952,
+      "wrong": 80
+    },
+    {
+      "name": "2D_scaleTrue_k3",
+      "scaled": true,
+      "k": 3,
+      "validation_f1": 0.8837209302325582,
+      "correct": 1002,
+      "wrong": 30
+    },
+    {
+      "name": "2D_scaleTrue_k5",
+      "scaled": true,
+      "k": 5,
+      "validation_f1": 0.8862745098039215,
+      "correct": 1003,
+      "wrong": 29
+    },
+    {
+      "name": "2D_scaleTrue_k11",
+      "scaled": true,
+      "k": 11,
+      "validation_f1": 0.896,
+      "correct": 1006,
+      "wrong": 26
+    }
+  ],
+  "fixed_core_model": "2D_scaleTrue_k11",
+  "fixed_test_confusion_matrix": [
+    [
+      892,
+      12
+    ],
+    [
+      17,
+      111
+    ]
+  ],
+  "fixed_test_prediction_sha256": "a78e88ee1af5c8724e583601790f1deb4a390c3a6a18693b78775a5bb9adead7",
+  "scaling_demo": {
+    "query": {
+      "source_record": 4500,
+      "message_id": "dbd07f1e80d67e1dcbca62f6ff25e7ee07d3893d5b67317e6161acd850c545cc",
+      "text": "Latest Nokia Mobile or iPOD MP3 Player +£400 proze GUARANTEED! Reply with: WIN to 83355 now! Norcorp Ltd.£1,50/Mtmsgrcvd18+",
+      "label": "spam",
+      "n_chars": 123,
+      "n_digits": 14,
+      "digit_fraction": 0.11382113821138211,
+      "split": "validation",
+      "z_length": 0.7392029431993855,
+      "z_digit_fraction": 2.0348299463878
+    },
+    "unscaled": [
+      {
+        "source_record": 2780,
+        "message_id": "f47b2cf635f2bf49b360c91ffd0d2d74ce9f33a3e6b559bb45d20c4a10b8e83a",
+        "text": "For ur chance to win a £250 cash every wk TXT: ACTION to 80608. T's&C's www.movietrivia.tv custcare 08712405022, 1x150p/wk.",
+        "label": "spam",
+        "n_chars": 123,
+        "n_digits": 23,
+        "digit_fraction": 0.18699186991869918,
+        "split": "train",
+        "z_length": 0.7392029431993855,
+        "z_digit_fraction": 3.589505948480178,
+        "rank": 1,
+        "distance_squared": 0.005353955978584175,
+        "distance": 0.07317073170731707
+      },
+      {
+        "source_record": 626,
+        "message_id": "083ababcecc4d8bcf4d861cd3091c5e842fe974d89bc2a47cac436eea06ab323",
+        "text": "Nah it's straight, if you can just bring bud or drinks or something that's actually a little more useful than straight cash",
+        "label": "ham",
+        "n_chars": 123,
+        "n_digits": 0,
+        "digit_fraction": 0.0,
+        "split": "train",
+        "z_length": 0.7392029431993855,
+        "z_digit_fraction": -0.3835549457558994,
+        "rank": 2,
+        "distance_squared": 0.012955251503734548,
+        "distance": 0.11382113821138211
+      },
+      {
+        "source_record": 646,
+        "message_id": "97d6df96ffbaf65dd1873cb51089ab174e45a1b913fee31b7a1d88a49a11c0c3",
+        "text": "Allo! We have braved the buses and taken on the trains and triumphed. I mean we‘re in b‘ham. Have a jolly good rest of week",
+        "label": "ham",
+        "n_chars": 123,
+        "n_digits": 0,
+        "digit_fraction": 0.0,
+        "split": "train",
+        "z_length": 0.7392029431993855,
+        "z_digit_fraction": -0.3835549457558994,
+        "rank": 3,
+        "distance_squared": 0.012955251503734548,
+        "distance": 0.11382113821138211
+      }
+    ],
+    "scaled": [
+      {
+        "source_record": 4798,
+        "message_id": "397db18afe861c85caa6b686d0ef5d66a3d287f32535640e55015ab39b42a526",
+        "text": "URGENT This is our 2nd attempt to contact U. Your £900 prize from YESTERDAY is still awaiting collection. To claim CALL NOW 09061702893",
+        "label": "spam",
+        "n_chars": 135,
+        "n_digits": 15,
+        "digit_fraction": 0.1111111111111111,
+        "split": "train",
+        "z_length": 0.942235019152833,
+        "z_digit_fraction": 1.9772493537177118,
+        "rank": 1,
+        "distance_squared": 0.044537548518205086,
+        "distance": 0.2110392108547724
+      },
+      {
+        "source_record": 3969,
+        "message_id": "3b59885db74600558a24a70f0005bc8e0e09ee7342eff7d198929c62e239fc34",
+        "text": "YOU HAVE WON! As a valued Vodafone customer our computer has picked YOU to win a £150 prize. To collect is easy. Just call 09061743386",
+        "label": "spam",
+        "n_chars": 134,
+        "n_digits": 14,
+        "digit_fraction": 0.1044776119402985,
+        "split": "train",
+        "z_length": 0.9253156794900458,
+        "z_digit_fraction": 1.8363058134506305,
+        "rank": 2,
+        "distance_squared": 0.07404978196805176,
+        "distance": 0.2721208958680898
+      },
+      {
+        "source_record": 2353,
+        "message_id": "c7ddf43922e5ff46cd0302aed5cb843fd27cf3dd8fe06bf2bf31fd1d40060db4",
+        "text": "Download as many ringtones as u like no restrictions, 1000s 2 choose. U can even send 2 yr buddys. Txt Sir to 80082 £3 ",
+        "label": "spam",
+        "n_chars": 119,
+        "n_digits": 12,
+        "digit_fraction": 0.10084033613445378,
+        "split": "train",
+        "z_length": 0.6715255845482363,
+        "z_digit_fraction": 1.7590237462033445,
+        "rank": 3,
+        "distance_squared": 0.0806492849341842,
+        "distance": 0.28398817745495003
+      }
+    ],
+    "prediction_unscaled": "ham",
+    "prediction_scaled": "spam",
+    "selection": "Shortest printable validation SMS (then source record) with digits, <=200 characters, a k=3 prediction change after scaling, positive nearest distance, no third/fourth boundary tie, and no adult-marketing keywords in the query or six displayed neighbors. This filters display examples only; the training set is unchanged. Purposively selected mechanism example, not a random sample or accuracy estimate."
+  },
+  "source_samples": [
+    {
+      "source_record": 4500,
+      "message_id": "dbd07f1e80d67e1dcbca62f6ff25e7ee07d3893d5b67317e6161acd850c545cc",
+      "text": "Latest Nokia Mobile or iPOD MP3 Player +£400 proze GUARANTEED! Reply with: WIN to 83355 now! Norcorp Ltd.£1,50/Mtmsgrcvd18+",
+      "label": "spam",
+      "n_chars": 123,
+      "n_digits": 14,
+      "digit_fraction": 0.11382113821138211,
+      "split": "validation",
+      "z_length": 0.7392029431993855,
+      "z_digit_fraction": 2.0348299463878
+    },
+    {
+      "source_record": 2780,
+      "message_id": "f47b2cf635f2bf49b360c91ffd0d2d74ce9f33a3e6b559bb45d20c4a10b8e83a",
+      "text": "For ur chance to win a £250 cash every wk TXT: ACTION to 80608. T's&C's www.movietrivia.tv custcare 08712405022, 1x150p/wk.",
+      "label": "spam",
+      "n_chars": 123,
+      "n_digits": 23,
+      "digit_fraction": 0.18699186991869918,
+      "split": "train",
+      "z_length": 0.7392029431993855,
+      "z_digit_fraction": 3.589505948480178
+    },
+    {
+      "source_record": 626,
+      "message_id": "083ababcecc4d8bcf4d861cd3091c5e842fe974d89bc2a47cac436eea06ab323",
+      "text": "Nah it's straight, if you can just bring bud or drinks or something that's actually a little more useful than straight cash",
+      "label": "ham",
+      "n_chars": 123,
+      "n_digits": 0,
+      "digit_fraction": 0.0,
+      "split": "train",
+      "z_length": 0.7392029431993855,
+      "z_digit_fraction": -0.3835549457558994
+    },
+    {
+      "source_record": 646,
+      "message_id": "97d6df96ffbaf65dd1873cb51089ab174e45a1b913fee31b7a1d88a49a11c0c3",
+      "text": "Allo! We have braved the buses and taken on the trains and triumphed. I mean we‘re in b‘ham. Have a jolly good rest of week",
+      "label": "ham",
+      "n_chars": 123,
+      "n_digits": 0,
+      "digit_fraction": 0.0,
+      "split": "train",
+      "z_length": 0.7392029431993855,
+      "z_digit_fraction": -0.3835549457558994
+    },
+    {
+      "source_record": 4798,
+      "message_id": "397db18afe861c85caa6b686d0ef5d66a3d287f32535640e55015ab39b42a526",
+      "text": "URGENT This is our 2nd attempt to contact U. Your £900 prize from YESTERDAY is still awaiting collection. To claim CALL NOW 09061702893",
+      "label": "spam",
+      "n_chars": 135,
+      "n_digits": 15,
+      "digit_fraction": 0.1111111111111111,
+      "split": "train",
+      "z_length": 0.942235019152833,
+      "z_digit_fraction": 1.9772493537177118
+    },
+    {
+      "source_record": 3969,
+      "message_id": "3b59885db74600558a24a70f0005bc8e0e09ee7342eff7d198929c62e239fc34",
+      "text": "YOU HAVE WON! As a valued Vodafone customer our computer has picked YOU to win a £150 prize. To collect is easy. Just call 09061743386",
+      "label": "spam",
+      "n_chars": 134,
+      "n_digits": 14,
+      "digit_fraction": 0.1044776119402985,
+      "split": "train",
+      "z_length": 0.9253156794900458,
+      "z_digit_fraction": 1.8363058134506305
+    },
+    {
+      "source_record": 2353,
+      "message_id": "c7ddf43922e5ff46cd0302aed5cb843fd27cf3dd8fe06bf2bf31fd1d40060db4",
+      "text": "Download as many ringtones as u like no restrictions, 1000s 2 choose. U can even send 2 yr buddys. Txt Sir to 80082 £3 ",
+      "label": "spam",
+      "n_chars": 119,
+      "n_digits": 12,
+      "digit_fraction": 0.10084033613445378,
+      "split": "train",
+      "z_length": 0.6715255845482363,
+      "z_digit_fraction": 1.7590237462033445
+    },
+    {
+      "source_record": 2,
+      "message_id": "72043182860f3efd93f7cfddccc9d25eeeba0d0b7c7fc80aab7e14c031b22410",
+      "text": "Ok lar... Joking wif u oni...",
+      "label": "ham",
+      "n_chars": 29,
+      "n_digits": 0,
+      "digit_fraction": 0.0,
+      "split": "train",
+      "z_length": -0.8512149851026202,
+      "z_digit_fraction": -0.3835549457558994
+    },
+    {
+      "source_record": 3,
+      "message_id": "8dc346aa4e79657cc08047f7d19e287784c9dcf2961b7ef8a4be12fa7851265f",
+      "text": "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's",
+      "label": "spam",
+      "n_chars": 155,
+      "n_digits": 25,
+      "digit_fraction": 0.16129032258064516,
+      "split": "train",
+      "z_length": 1.2806218124085789,
+      "z_digit_fraction": 3.0434190373509558
+    }
+  ],
+  "toy_example": {
+    "points": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        0.0,
+        3.0
+      ],
+      [
+        4.0,
+        4.0
+      ],
+      [
+        1.0,
+        4.0
+      ]
+    ],
+    "query": [
+      1.0,
+      1.0
+    ],
+    "squared_distances": [
+      2.0,
+      2.0,
+      5.0,
+      18.0,
+      9.0
+    ],
+    "labels": [
+      "ham",
+      "spam",
+      "spam",
+      "ham",
+      "ham"
+    ]
+  },
+  "source_record_definition": "1-based parsed record in SMSSpamCollection, before deduplication; not a sender identity or timestamp.",
+  "feature_definition": "Count original Python Unicode characters, including spaces and punctuation; digit means str.isdigit(). Deduplication normalizes text only for identity, not before feature counting.",
+  "limitations": [
+    "Historical English public corpus; not present-day Vietnamese SMS.",
+    "No reliable timestamp/sender grouping.",
+    "Deduplication of normalized exact text does not remove all related templates.",
+    "Validation query selected for illustration only.",
+    "Real text is re-typeset for readability, not a screenshot of an actual phone.",
+    "The two features omit lexical meaning. Spam is not a verified fraud label."
+  ]
+}

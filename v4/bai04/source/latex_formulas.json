@@ -1,0 +1,374 @@
+[
+  {
+    "slide": 1,
+    "latex": []
+  },
+  {
+    "slide": 2,
+    "latex": []
+  },
+  {
+    "slide": 3,
+    "latex": []
+  },
+  {
+    "slide": 4,
+    "latex": []
+  },
+  {
+    "slide": 5,
+    "latex": [
+      "y_i=\\frac{\\Delta t_i\\;(\\mathrm{giay})}{86400\\;(\\mathrm{giay/ngay})}"
+    ]
+  },
+  {
+    "slide": 6,
+    "latex": []
+  },
+  {
+    "slide": 7,
+    "latex": [
+      "\\hat y_i=b+wx_i"
+    ]
+  },
+  {
+    "slide": 8,
+    "latex": [
+      "e_i=\\hat y_i-y_i"
+    ]
+  },
+  {
+    "slide": 9,
+    "latex": []
+  },
+  {
+    "slide": 10,
+    "latex": [
+      "\\mathrm{MSE}=\\frac1n\\sum_{i=1}^n e_i^2=\\frac{10}{4}=2{,}5",
+      "J=\\frac1{2n}\\sum_{i=1}^n e_i^2=1{,}25"
+    ]
+  },
+  {
+    "slide": 11,
+    "latex": []
+  },
+  {
+    "slide": 12,
+    "latex": [
+      "J=\\frac{4+1+1+4}{2\\times4}=1{,}25\\;\\mathrm{ngay}^2"
+    ]
+  },
+  {
+    "slide": 13,
+    "latex": [
+      "\\hat y_i=b+wx_i",
+      "J=\\frac1{2n}\\sum_i(\\hat y_i-y_i)^2"
+    ]
+  },
+  {
+    "slide": 14,
+    "latex": [
+      "\\hat y=b+wx,\\qquad e=\\hat y-y,\\qquad J=\\frac1{2n}\\sum_i e_i^2"
+    ]
+  },
+  {
+    "slide": 15,
+    "latex": [
+      "z_i=x_i-\\bar x,\\qquad\\bar x=2{,}5"
+    ]
+  },
+  {
+    "slide": 16,
+    "latex": [
+      "\\hat y_i=a+wz_i",
+      "\\frac{\\partial J}{\\partial a}=a+w\\bar z-\\bar y=a-5",
+      "a=5,\\qquad b=5-2{,}5w"
+    ]
+  },
+  {
+    "slide": 17,
+    "latex": [
+      "\\hat y_i=5+w_0z_i=5"
+    ]
+  },
+  {
+    "slide": 18,
+    "latex": []
+  },
+  {
+    "slide": 19,
+    "latex": [
+      "J(w)=0{,}625w^2-1{,}75w+1{,}25"
+    ]
+  },
+  {
+    "slide": 20,
+    "latex": []
+  },
+  {
+    "slide": 21,
+    "latex": [
+      "\\Delta w=-\\eta g,\\qquad\\eta>0"
+    ]
+  },
+  {
+    "slide": 22,
+    "latex": [
+      "\\frac{\\partial e_i}{\\partial w}=z_i",
+      "\\frac{\\partial(e_i^2)}{\\partial w}=2e_iz_i",
+      "g_0=\\frac1n\\sum_i z_ie_i=\\frac{-7}{4}=-1{,}75"
+    ]
+  },
+  {
+    "slide": 23,
+    "latex": [
+      "w_{t+1}=w_t-\\eta g_t",
+      "w_1=0-0{,}4(-1{,}75)=0{,}7"
+    ]
+  },
+  {
+    "slide": 24,
+    "latex": [
+      "J_1=\\frac{0{,}9025+0{,}4225+0{,}4225+0{,}9025}{8}",
+      "J_1=0{,}33125<1{,}25"
+    ]
+  },
+  {
+    "slide": 25,
+    "latex": []
+  },
+  {
+    "slide": 26,
+    "latex": [
+      "\\Delta w=-0{,}4(-1{,}75)=+0{,}7"
+    ]
+  },
+  {
+    "slide": 27,
+    "latex": []
+  },
+  {
+    "slide": 28,
+    "latex": [
+      "e_i=5+0{,}7z_i-y_i",
+      "g_1=\\frac1{4}\\sum_i z_ie_i",
+      "w_2=0{,}7-0{,}4g_1"
+    ]
+  },
+  {
+    "slide": 29,
+    "latex": []
+  },
+  {
+    "slide": 30,
+    "latex": [
+      "g_1=-0{,}875,\\qquad w_2=1{,}05,\\qquad J_2=0{,}1015625"
+    ]
+  },
+  {
+    "slide": 31,
+    "latex": [
+      "g_t=\\frac1n\\sum_i z_ie_i^{(t)}",
+      "w_{t+1}=w_t-\\eta g_t"
+    ]
+  },
+  {
+    "slide": 32,
+    "latex": [
+      "w_{t+1}=w_t-\\eta g_t"
+    ]
+  },
+  {
+    "slide": 33,
+    "latex": []
+  },
+  {
+    "slide": 34,
+    "latex": [
+      "w^*=1{,}4,\\qquad J(w^*)=0{,}025"
+    ]
+  },
+  {
+    "slide": 35,
+    "latex": [
+      "\\Delta w_t=-\\eta g_t"
+    ]
+  },
+  {
+    "slide": 36,
+    "latex": []
+  },
+  {
+    "slide": 37,
+    "latex": []
+  },
+  {
+    "slide": 38,
+    "latex": [
+      "w_1=0-1{,}8(-1{,}75)=3{,}15",
+      "J(3{,}15)=1{,}9390625>J(0)"
+    ]
+  },
+  {
+    "slide": 39,
+    "latex": []
+  },
+  {
+    "slide": 40,
+    "latex": []
+  },
+  {
+    "slide": 41,
+    "latex": []
+  },
+  {
+    "slide": 42,
+    "latex": []
+  },
+  {
+    "slide": 43,
+    "latex": [
+      "|w_t-1{,}4|:\\quad1{,}4\\to0{,}7\\to0{,}35"
+    ]
+  },
+  {
+    "slide": 44,
+    "latex": []
+  },
+  {
+    "slide": 45,
+    "latex": [
+      "\\Delta w=-\\eta g"
+    ]
+  },
+  {
+    "slide": 46,
+    "latex": [
+      "\\hat y=5+wz",
+      "\\hat y=b+wx"
+    ]
+  },
+  {
+    "slide": 47,
+    "latex": [
+      "J(w,b)=\\frac18\\sum_{i=1}^4(b+wx_i-y_i)^2"
+    ]
+  },
+  {
+    "slide": 48,
+    "latex": [
+      "g_w=\\frac1n\\sum_i x_ie_i=\\frac{-32}{4}=-8",
+      "g_b=\\frac1n\\sum_i e_i=\\frac{-11}{4}=-2{,}75"
+    ]
+  },
+  {
+    "slide": 49,
+    "latex": [
+      "w_1=0{,}5-0{,}05(-8)=0{,}9",
+      "b_1=1-0{,}05(-2{,}75)=1{,}1375"
+    ]
+  },
+  {
+    "slide": 50,
+    "latex": []
+  },
+  {
+    "slide": 51,
+    "latex": []
+  },
+  {
+    "slide": 52,
+    "latex": [
+      "u_i=\\frac{x_i-\\mu_{\\mathrm{train}}}{s_{\\mathrm{train}}}",
+      "w_s=ws,\\qquad b_s=b+w\\mu"
+    ]
+  },
+  {
+    "slide": 53,
+    "latex": []
+  },
+  {
+    "slide": 54,
+    "latex": []
+  },
+  {
+    "slide": 55,
+    "latex": []
+  },
+  {
+    "slide": 56,
+    "latex": []
+  },
+  {
+    "slide": 57,
+    "latex": []
+  },
+  {
+    "slide": 58,
+    "latex": [
+      "w_{t+1}=w_t-\\eta g_w,\\qquad b_{t+1}=b_t-\\eta g_b"
+    ]
+  },
+  {
+    "slide": 59,
+    "latex": [
+      "\\hat y\\approx7{,}90798+0{,}005639x"
+    ]
+  },
+  {
+    "slide": 60,
+    "latex": []
+  },
+  {
+    "slide": 61,
+    "latex": [
+      "\\hat y_{\\mathrm{baseline}}=\\bar y_{\\mathrm{train}}\\approx11{,}4176"
+    ]
+  },
+  {
+    "slide": 62,
+    "latex": []
+  },
+  {
+    "slide": 63,
+    "latex": []
+  },
+  {
+    "slide": 64,
+    "latex": [
+      "\\mathrm{MAE}=\\frac1m\\sum_i|e_i|",
+      "\\mathrm{RMSE}=\\sqrt{\\frac1m\\sum_i e_i^2}"
+    ]
+  },
+  {
+    "slide": 65,
+    "latex": []
+  },
+  {
+    "slide": 66,
+    "latex": []
+  },
+  {
+    "slide": 67,
+    "latex": []
+  },
+  {
+    "slide": 68,
+    "latex": []
+  },
+  {
+    "slide": 69,
+    "latex": []
+  },
+  {
+    "slide": 70,
+    "latex": [
+      "g_w=\\frac1n\\sum_i x_ie_i,\\qquad g_b=\\frac1n\\sum_i e_i",
+      "w_{t+1}=w_t-\\eta g_w,\\quad b_{t+1}=b_t-\\eta g_b"
+    ]
+  },
+  {
+    "slide": 71,
+    "latex": []
+  }
+]

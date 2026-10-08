@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "checks_count": 16,
+  "checks": [
+    {
+      "chart": "relu",
+      "series": "ReLU",
+      "passed": true
+    },
+    {
+      "chart": "sigmoid",
+      "series": "Sigmoid",
+      "passed": true
+    },
+    {
+      "chart": "sigmoid",
+      "series": "Mẫu chính",
+      "passed": true
+    },
+    {
+      "chart": "bce_y1",
+      "series": "−ln(p)",
+      "passed": true
+    },
+    {
+      "chart": "bce_y1",
+      "series": "Mẫu chính",
+      "passed": true
+    },
+    {
+      "chart": "bce_both",
+      "series": "y=1",
+      "passed": true
+    },
+    {
+      "chart": "bce_both",
+      "series": "y=0",
+      "passed": true
+    },
+    {
+      "chart": "slope",
+      "series": "Hàm F",
+      "passed": true
+    },
+    {
+      "chart": "slope",
+      "series": "Tiếp tuyến tại t=1",
+      "passed": true
+    },
+    {
+      "chart": "learning_rate",
+      "series": "Hàm F",
+      "passed": true
+    },
+    {
+      "chart": "learning_rate",
+      "series": "η=0,01",
+      "passed": true
+    },
+    {
+      "chart": "learning_rate",
+      "series": "η=0,5",
+      "passed": true
+    },
+    {
+      "chart": "history",
+      "series": "Train",
+      "passed": true
+    },
+    {
+      "chart": "history",
+      "series": "Validation",
+      "passed": true
+    },
+    {
+      "chart": "checkpoint",
+      "series": "CE validation",
+      "passed": true
+    },
+    {
+      "chart": "checkpoint",
+      "series": "Checkpoint",
+      "passed": true
+    }
+  ]
+}

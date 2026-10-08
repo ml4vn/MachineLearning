@@ -1,0 +1,337 @@
+[
+  {
+    "slide": 1,
+    "latex": []
+  },
+  {
+    "slide": 2,
+    "latex": []
+  },
+  {
+    "slide": 3,
+    "latex": []
+  },
+  {
+    "slide": 4,
+    "latex": []
+  },
+  {
+    "slide": 5,
+    "latex": [
+      "y=\\mathbf{1}\\{\\operatorname{date}(t_{giao})>\\operatorname{date}(t_{hen})\\}"
+    ]
+  },
+  {
+    "slide": 6,
+    "latex": []
+  },
+  {
+    "slide": 7,
+    "latex": [
+      "\\widehat p_{\\ell}=\\frac{n_{\\ell,tre}}{n_{\\ell}}=\\frac{2}{8}=0{,}25"
+    ]
+  },
+  {
+    "slide": 8,
+    "latex": [
+      "\\widehat y=\\mathbf{1}\\{\\widehat p\\geq\\tau\\}"
+    ]
+  },
+  {
+    "slide": 9,
+    "latex": []
+  },
+  {
+    "slide": 10,
+    "latex": [
+      "\\widehat p=2/8=0{,}25\\geq0{,}20\\Rightarrow\\widehat y=1"
+    ]
+  },
+  {
+    "slide": 11,
+    "latex": [
+      "\\widehat p_{\\ell}=n_{\\ell,tre}/n_{\\ell}",
+      "\\widehat y=\\mathbf{1}\\{\\widehat p\\geq\\tau\\}"
+    ]
+  },
+  {
+    "slide": 12,
+    "latex": []
+  },
+  {
+    "slide": 13,
+    "latex": []
+  },
+  {
+    "slide": 14,
+    "latex": []
+  },
+  {
+    "slide": 15,
+    "latex": [
+      "G(t)=1-\\sum_{k=1}^{K}p_{t,k}^{2}",
+      "G(t)=2p_t(1-p_t)"
+    ]
+  },
+  {
+    "slide": 16,
+    "latex": []
+  },
+  {
+    "slide": 17,
+    "latex": []
+  },
+  {
+    "slide": 18,
+    "latex": [
+      "G=1-(3/6)^2-(3/6)^2=1/2"
+    ]
+  },
+  {
+    "slide": 19,
+    "latex": [
+      "G_{sau}=\\frac{n_L}{n_t}G(L)+\\frac{n_R}{n_t}G(R)",
+      "\\Delta_t=G(t)-G_{sau}"
+    ]
+  },
+  {
+    "slide": 20,
+    "latex": [
+      "G_{sau}=\\frac6{12}\\frac49+\\frac6{12}\\frac49=\\frac49",
+      "\\Delta=\\frac12-\\frac49=\\frac1{18}"
+    ]
+  },
+  {
+    "slide": 21,
+    "latex": [
+      "G_{sau}=\\frac4{12}0+\\frac8{12}\\frac38=\\frac14",
+      "\\Delta=\\frac12-\\frac14=\\frac14"
+    ]
+  },
+  {
+    "slide": 22,
+    "latex": []
+  },
+  {
+    "slide": 23,
+    "latex": []
+  },
+  {
+    "slide": 24,
+    "latex": [
+      "G_{sau}=\\frac4{12}0+\\frac8{12}\\frac38=\\frac14"
+    ]
+  },
+  {
+    "slide": 25,
+    "latex": [
+      "G(t)=2p_t(1-p_t)",
+      "G_{sau}=\\frac{n_LG(L)+n_RG(R)}{n_t}",
+      "\\Delta_t=G(t)-G_{sau}"
+    ]
+  },
+  {
+    "slide": 26,
+    "latex": [
+      "c_i=\\frac{v_i+v_{i+1}}2,\\quad v_i<v_{i+1}"
+    ]
+  },
+  {
+    "slide": 27,
+    "latex": [
+      "(j^*,c^*)\\in\\operatorname*{arg\\,max}_{(j,c)\\in\\mathcal C_t}\\Delta_t(j,c)"
+    ]
+  },
+  {
+    "slide": 28,
+    "latex": []
+  },
+  {
+    "slide": 29,
+    "latex": []
+  },
+  {
+    "slide": 30,
+    "latex": [
+      "c=(9+11)/2=10",
+      "\\Delta_{phai}=\\frac38-0=\\frac38"
+    ]
+  },
+  {
+    "slide": 31,
+    "latex": [
+      "\\Delta_{phai}=\\frac38=0{,}375",
+      "\\frac{n_t}{N}\\Delta_t=\\frac8{12}\\frac38=\\frac14"
+    ]
+  },
+  {
+    "slide": 32,
+    "latex": []
+  },
+  {
+    "slide": 33,
+    "latex": []
+  },
+  {
+    "slide": 34,
+    "latex": []
+  },
+  {
+    "slide": 35,
+    "latex": []
+  },
+  {
+    "slide": 36,
+    "latex": []
+  },
+  {
+    "slide": 37,
+    "latex": []
+  },
+  {
+    "slide": 38,
+    "latex": [
+      "\\frac8{12}\\times0{,}375=0{,}25"
+    ]
+  },
+  {
+    "slide": 39,
+    "latex": [
+      "\\Delta_t=G(t)-G_{sau}",
+      "\\Delta_{toan\\ cay}=(n_t/N)\\Delta_t"
+    ]
+  },
+  {
+    "slide": 40,
+    "latex": []
+  },
+  {
+    "slide": 41,
+    "latex": []
+  },
+  {
+    "slide": 42,
+    "latex": []
+  },
+  {
+    "slide": 43,
+    "latex": []
+  },
+  {
+    "slide": 44,
+    "latex": []
+  },
+  {
+    "slide": 45,
+    "latex": [
+      "R(T)=\\sum_{\\ell\\in\\mathcal L(T)}\\frac{n_\\ell}{N}G(\\ell)"
+    ]
+  },
+  {
+    "slide": 46,
+    "latex": [
+      "R_\\alpha(T)=R(T)+\\alpha|\\mathcal L(T)|"
+    ]
+  },
+  {
+    "slide": 47,
+    "latex": []
+  },
+  {
+    "slide": 48,
+    "latex": []
+  },
+  {
+    "slide": 49,
+    "latex": []
+  },
+  {
+    "slide": 50,
+    "latex": [
+      "0{,}5+0{,}3\\times1=0{,}8"
+    ]
+  },
+  {
+    "slide": 51,
+    "latex": [
+      "R_\\alpha(T)=\\sum_\\ell\\frac{n_\\ell}{N}G(\\ell)+\\alpha|\\mathcal L(T)|"
+    ]
+  },
+  {
+    "slide": 52,
+    "latex": []
+  },
+  {
+    "slide": 53,
+    "latex": []
+  },
+  {
+    "slide": 54,
+    "latex": []
+  },
+  {
+    "slide": 55,
+    "latex": []
+  },
+  {
+    "slide": 56,
+    "latex": [
+      "K=FP+5FN"
+    ]
+  },
+  {
+    "slide": 57,
+    "latex": []
+  },
+  {
+    "slide": 58,
+    "latex": []
+  },
+  {
+    "slide": 59,
+    "latex": [
+      "Precision=\\frac{TP}{TP+FP},\\quad Recall=\\frac{TP}{TP+FN}"
+    ]
+  },
+  {
+    "slide": 60,
+    "latex": []
+  },
+  {
+    "slide": 61,
+    "latex": []
+  },
+  {
+    "slide": 62,
+    "latex": []
+  },
+  {
+    "slide": 63,
+    "latex": [
+      "G_{truoc}=\\frac38,\\quad G_{sau}=0,\\quad\\Delta=\\frac38"
+    ]
+  },
+  {
+    "slide": 64,
+    "latex": []
+  },
+  {
+    "slide": 65,
+    "latex": []
+  },
+  {
+    "slide": 66,
+    "latex": []
+  },
+  {
+    "slide": 67,
+    "latex": [
+      "\\Delta_t=G(t)-\\frac{n_LG(L)+n_RG(R)}{n_t}",
+      "R_\\alpha(T)=\\sum_\\ell\\frac{n_\\ell}{N}G(\\ell)+\\alpha L"
+    ]
+  },
+  {
+    "slide": 68,
+    "latex": []
+  }
+]

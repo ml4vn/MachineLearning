@@ -1,3 +1,5 @@
+> **Học liệu hiện hành: [Bài 02 v4](../../v4/bai02/README.md).** Trang này giữ hướng dẫn CLI của bộ Python v3; notebook v4 và số liệu v4 nằm ở liên kết trên.
+
 # Bài 02 · kNN: nhìn SMS thật, đo gần và bỏ phiếu
 
 

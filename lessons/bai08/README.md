@@ -1,3 +1,5 @@
+> **Học liệu hiện hành: [Bài 08 v4](../../v4/bai08/README.md).** Trang này giữ hướng dẫn CLI của bộ Python v3; notebook v4 và số liệu v4 nằm ở liên kết trên.
+
 # Bài 08 · K-means: từ hóa đơn thật đến nhóm khách hàng
 
 
