@@ -27,7 +27,7 @@ def main():
     runs = []
     for lesson in range(args.start, args.end + 1):
         name = f"bai{lesson:02d}"; dest = args.output_dir / name; dest.mkdir(parents=True, exist_ok=True)
-        command = [sys.executable, "-X", "utf8", "-m", f"lessons.{name}.main", "--mode", args.mode,
+        command = [sys.executable, "-X", "utf8", "-m", f"examples.{name}.main", "--mode", args.mode,
                    "--data-dir", str(args.data_dir), "--output-dir", str(dest), "--seed", str(args.seed), "--dpi", str(args.dpi)]
         if lesson == 10: command.extend(["--split-seed", str(args.seed)])
         print(f"Bắt đầu {name}: {args.mode}. Log: {dest / 'run.log'}", flush=True)

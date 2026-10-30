@@ -1,8 +1,8 @@
 {
   "source_alignment": {
-    "reading_version": "v3",
-    "slide_version": "v3",
-    "manifest": "Bai09_v3\\source\\slide_manifest.json",
+    "reading_version": "",
+    "slide_version": "",
+    "manifest": "Bai09\\source\\slide_manifest.json",
     "manifest_sha256": "e89905ab99146e3d183d431ea9465da972c65f87c7d5ac60c65adf57184e3b3a",
     "summary_slides": [
       [
@@ -29,7 +29,7 @@
     "new_core_bridge": "Vì sao PCA cần hiệp phương sai và trị riêng",
     "original_source_sha256": "12fc017997cf8e01cc4a2bf1b7b95827670663ceaadf52dd0c9efebbfa7bcc68"
   },
-  "verification": "Updated examples and selected historical CSV metrics checked in KIEM_TRA_SO_LIEU_V3.json; all final rendered pages visually reviewed.",
+  "verification": "Updated examples and selected historical CSV metrics checked in KIEM_TRA_SO_LIEU.json; all final rendered pages visually reviewed.",
   "status": "pass",
   "planned_pages": 14,
   "main_sections": 10,

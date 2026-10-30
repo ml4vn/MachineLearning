@@ -44,7 +44,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 1, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+          "text": "Bản tài liệu cập nhật  • Đối chiếu Bài 1, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide ."
         },
         {
           "type": "h",
@@ -752,7 +752,7 @@
         },
         {
           "type": "p",
-          "text": "Đối chiếu Bài 1 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu latest có thể thay đổi; khi tái lập, dùng bản movies.csv đi kèm. [1] mô tả dữ liệu; [2] mô tả phép tính và quy ước thư viện."
+          "text": "Đối chiếu Bài 1 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu latest có thể thay đổi; khi tái lập, dùng bản movies.csv đi kèm. [1] mô tả dữ liệu; [2] mô tả phép tính và quy ước thư viện."
         },
         {
           "type": "link",
@@ -891,6 +891,6 @@
       "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html"
     }
   ],
-  "reading_version": "v3",
-  "slide_version": "v3"
+  "reading_version": "",
+  "slide_version": ""
 }

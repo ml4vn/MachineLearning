@@ -1,0 +1,52 @@
+{
+  "lesson": 3,
+  "reading_version": "",
+  "slide_version": "",
+  "slide_manifest_sha256": "1797b901617b4520bed5b203dc5856d1314aa0e57a6352c1abbabd775e07c332",
+  "recap_title": "Điểm số khác với quyết định",
+  "stages": [
+    {
+      "title": "Chọn ngưỡng",
+      "explain": "Cùng mười tin A–J; spam thật là A, C, D, F.",
+      "formula": "$\\hat y=1[s\\geq\\tau]$"
+    },
+    {
+      "title": "Đếm trước khi chia",
+      "explain": "τ=0,80: TN=5, FP=1, FN=2, TP=2.",
+      "formula": "$P=2/3,\\ R=1/2$"
+    },
+    {
+      "title": "Chọn theo chi phí",
+      "explain": "Chọn chính sách bằng validation; test chỉ chấm lựa chọn đã khóa.",
+      "formula": "$K=FP+5FN$"
+    }
+  ],
+  "takeaway": "Tăng ngưỡng không bảo đảm precision tăng. Không học lại mô hình khi chỉ đổi ngưỡng.",
+  "question": "Từ τ=0,50 lên 0,80: những tin nào đổi quyết định? Nếu FN đắt gấp 5, ngưỡng nào tốt hơn trong hai ngưỡng?",
+  "answer": "D, E, F rời nhóm cảnh báo. K(0,50)=2; K(0,80)=11, nên 0,50 tốt hơn theo chi phí đó.",
+  "outputs": [
+    "toy_rows.csv",
+    "toy_thresholds.csv",
+    "toy_confusion.png"
+  ],
+  "slide_sections": [
+    {
+      "start": 11,
+      "end": 31,
+      "first_title": "Mười tin mô phỏng để tính tay",
+      "last_title": "Tổng kết · Chọn đúng mẫu số"
+    },
+    {
+      "start": 33,
+      "end": 40,
+      "first_title": "Một điểm số, nhiều cách ra quyết định",
+      "last_title": "Tổng kết · Chọn ngưỡng ở đâu?"
+    },
+    {
+      "start": 41,
+      "end": 56,
+      "first_title": "Với k = 11, ngưỡng là số phiếu tối thiểu",
+      "last_title": "Tổng quan · Từ dự đoán đến quyết định"
+    }
+  ]
+}

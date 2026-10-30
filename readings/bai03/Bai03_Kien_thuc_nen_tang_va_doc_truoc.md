@@ -1,5 +1,5 @@
 # Bài 3 — Đánh giá phân loại và lựa chọn ngưỡng
-Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật v3
+Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật 
 
 ## 1 Bài học này giải quyết vấn đề gì
 
@@ -20,7 +20,7 @@ kNN đã khóa đúng 1.003/1.032 tin và tìm được 111/128 spam. Nó tốt 
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 3, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 3, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -285,7 +285,7 @@ C. Validation theo tiêu chí đã định
 
 ### Nguồn để đọc và kiểm lại
 
-Đối chiếu Bài 3 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu UCI có ghi công Almeida và Hidalgo, CC BY 4.0. Các chỉ số được tái tính trực tiếp và đối chiếu thư viện.
+Đối chiếu Bài 3 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu UCI có ghi công Almeida và Hidalgo, CC BY 4.0. Các chỉ số được tái tính trực tiếp và đối chiếu thư viện.
 
 [[1] UCI SMS Spam Collection Almeida và Hidalgo 2011](https://archive.ics.uci.edu/dataset/228/sms+spam+collection)
 

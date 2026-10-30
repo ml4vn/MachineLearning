@@ -4,9 +4,9 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai07_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai07_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai07/README.md)
+[← Mục lục khóa học](../../README.md) · [Thực hành Python](../../examples/bai07/README.md)
 
-**Tài liệu đọc trước v3 · Đối chiếu slide v2.** Python đã đồng bộ ví dụ và hướng dẫn theo cùng nguồn slide; xem [các quy ước đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
+**Tài liệu hỗ trợ ví dụ thuật toán.** [Học liệu chính](../../README.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
@@ -50,7 +50,7 @@ Một cách dự đoán trễ Olist đạt accuracy 100%. Trước khi tin kết
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 7, slide v2. Bài 7 chưa có slide v3 trong bộ nguồn; tài liệu này ghi đúng nguồn v2 và cập nhật kết nối với các bài còn lại.
+Bản tài liệu cập nhật  • Đối chiếu Bài 7, slide . Bài 7 chưa có slide  trong bộ nguồn; tài liệu này ghi đúng nguồn  và cập nhật kết nối với các bài còn lại.
 
 ### Đọc để chuẩn bị điều gì
 
@@ -239,7 +239,7 @@ Mô phỏng có 200 nhóm ×4 dòng, nhãn cố định ngẫu nhiên trong nhó
 
 ## Nối quy trình kiểm chứng với các bài đã cập nhật
 
-Bài 7 hiện đối chiếu với slide v2, là bản mới nhất có trong bộ nguồn. Các nguyên tắc dưới đây liên kết trực tiếp với case-study trong Bài 2–6 và các phép biến đổi trong Bài 8–10.
+Bài 7 hiện đối chiếu với slide , là bản mới nhất có trong bộ nguồn. Các nguyên tắc dưới đây liên kết trực tiếp với case-study trong Bài 2–6 và các phép biến đổi trong Bài 8–10.
 
 | Tình huống | Cách làm đúng |
 | --- | --- |
@@ -304,7 +304,7 @@ Leakage: rò rỉ thông tin. Fold: một lần chia của CV. Group: đơn vị
 
 ### Nguồn và khả năng kiểm lại
 
-Bám Bài 07 v2, 54 slide chính và 6 mở rộng. Mã đi kèm tính lại nhãn, cửa sổ, số khách chung, scaler và hai mô phỏng. CSV ví dụ thật và mô phỏng được ghi rõ nguồn gốc.
+Bám Bài 07 , 54 slide chính và 6 mở rộng. Mã đi kèm tính lại nhãn, cửa sổ, số khách chung, scaler và hai mô phỏng. CSV ví dụ thật và mô phỏng được ghi rõ nguồn gốc.
 
 [\[1\] Olist – dữ liệu gốc Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
@@ -378,6 +378,6 @@ Vòng trong chọn cấu hình, vòng ngoài đánh giá toàn bộ quy trình l
 
 ## Chuyển sang thực hành
 
-Mở [hướng dẫn Python Bài 07](../../lessons/bai07/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.
+Mở [hướng dẫn Python Bài 07](../../examples/bai07/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.
 
-[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Ghi chú đối chiếu tài liệu với mã](../../docs/DOI_CHIEU_HOC_LIEU.md)
+[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Kiểm tra học liệu](../../docs/MAINTAINING.md)

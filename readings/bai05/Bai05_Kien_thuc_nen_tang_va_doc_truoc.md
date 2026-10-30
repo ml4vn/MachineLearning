@@ -1,5 +1,5 @@
 # Bài 5 — Hồi quy Logistic và quyết định cảnh báo
-Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật v3
+Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật 
 
 ## 1 Bài học này giải quyết vấn đề gì
 
@@ -24,7 +24,7 @@ Bài 4 dự đoán đơn Olist mất bao nhiêu ngày để giao. Bài 5 hỏi *
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 5, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 5, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -304,7 +304,7 @@ C. Mô hình đáng tin cho từng đơn vì logistic luôn hiệu chuẩn tốt
 
 ### Nguồn và dữ liệu để kiểm lại
 
-Đối chiếu Bài 5 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm bảng mô hình, dự đoán, toy bốn hàng, hai ví dụ ngày lịch và cấu hình đã khóa. Mọi điểm dự đoán được tái tính và đối chiếu bản slide; các bảng số đếm được tính lại từ CSV.
+Đối chiếu Bài 5 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm bảng mô hình, dự đoán, toy bốn hàng, hai ví dụ ngày lịch và cấu hình đã khóa. Mọi điểm dự đoán được tái tính và đối chiếu bản slide; các bảng số đếm được tính lại từ CSV.
 
 [[1] Olist Brazilian E-Commerce Public Dataset Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 

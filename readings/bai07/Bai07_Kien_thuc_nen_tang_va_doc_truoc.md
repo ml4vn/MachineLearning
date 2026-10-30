@@ -1,5 +1,5 @@
 # Bài 7 — Đánh giá đáng tin cậy và phòng tránh rò rỉ
-Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật v3
+Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật 
 
 ## 1 Bài học này giải quyết vấn đề gì
 
@@ -18,7 +18,7 @@ Dự kiến 40–50 phút; ôn scaler bài 2 và chỉ số bài 3. Không cần
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 7, slide v2. Bài 7 chưa có slide v3 trong bộ nguồn; tài liệu này ghi đúng nguồn v2 và cập nhật kết nối với các bài còn lại.
+Bản tài liệu cập nhật  • Đối chiếu Bài 7, slide . Bài 7 chưa có slide  trong bộ nguồn; tài liệu này ghi đúng nguồn  và cập nhật kết nối với các bài còn lại.
 
 ### Đọc để chuẩn bị điều gì
 
@@ -183,7 +183,7 @@ Olist có 363 khách xuất hiện cả train và test. Điều này có thể p
 
 ## Nối quy trình kiểm chứng với các bài đã cập nhật
 
-Bài 7 hiện đối chiếu với slide v2, là bản mới nhất có trong bộ nguồn. Các nguyên tắc dưới đây liên kết trực tiếp với case-study trong Bài 2–6 và các phép biến đổi trong Bài 8–10.
+Bài 7 hiện đối chiếu với slide , là bản mới nhất có trong bộ nguồn. Các nguyên tắc dưới đây liên kết trực tiếp với case-study trong Bài 2–6 và các phép biến đổi trong Bài 8–10.
 
 | Tình huống | Cách làm đúng |
 | --- | --- |
@@ -241,7 +241,7 @@ Leakage: rò rỉ thông tin. Fold: một lần chia của CV. Group: đơn vị
 
 ### Nguồn và khả năng kiểm lại
 
-Bám Bài 07 v2, 54 slide chính và 6 mở rộng. Mã đi kèm tính lại nhãn, cửa sổ, số khách chung, scaler và hai mô phỏng. CSV ví dụ thật và mô phỏng được ghi rõ nguồn gốc.
+Bám Bài 07 , 54 slide chính và 6 mở rộng. Mã đi kèm tính lại nhãn, cửa sổ, số khách chung, scaler và hai mô phỏng. CSV ví dụ thật và mô phỏng được ghi rõ nguồn gốc.
 
 [[1] Olist – dữ liệu gốc Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 

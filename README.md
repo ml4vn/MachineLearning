@@ -1,62 +1,62 @@
-# Khóa học Học máy
+![Học máy cơ bản — từ trực giác đến dự án](docs/assets/course-banner.svg)
 
-**PGS.TS. Nguyễn Văn Hậu**
+# Học máy cơ bản
 
-Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
+**PGS.TS. Nguyễn Văn Hậu** · Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-Học liệu hiện hành của **Bài 1–6 và 8–10 đã cập nhật v4**: kiến thức nền đọc trước, notebook và mã Python đầy đủ, dữ liệu thật, slide PowerPoint có notes, hình tổng kết và tài liệu bổ trợ. **Bài 7 giữ nguyên phiên bản hiện có**.
+**10 bài học · 150 phút/bài · 5 dự án nhỏ · Dữ liệu thật**
 
-Sinh viên có nền toán trung bình nên đọc tài liệu nền, làm ví dụ tính tay và câu tự kiểm, rồi chạy từng ô notebook. Bài học nối liên tục từ dữ liệu → biểu diễn → mô hình/thuật toán → đánh giá và giới hạn.
+Từ một phép tính tay đến một mô hình có thể kiểm chứng. Dành cho sinh viên mới học ML, có nền toán trung bình: quan sát trước, hiểu công thức, tự tính, rồi mới dùng thư viện.
 
-## Chọn bài học
+[Bắt đầu trong 10 phút](docs/START_HERE.md) · [Chọn bài học](#lộ-trình-10-bài) · [Làm dự án](projects/README.md) · [Nguồn dữ liệu](course/DATA_SOURCES.md)
 
-| Bài | Nội dung · case | Đọc trước | Thực hành, slide và tài liệu |
+## Bạn sẽ làm được gì?
+
+| Biểu diễn và tìm kiếm | Dự đoán và kiểm chứng | Khám phá và học biểu diễn |
+|---|---|---|
+| Gợi ý phim theo thể loại; nhận diện SMS spam | Dự đoán giao hàng; chọn ngưỡng và kiểm tra rò rỉ | Phân nhóm khách hàng; nén và phân loại ảnh |
+| Vector → cosine → kNN | Loss → học tham số → đánh giá | K-means → PCA → mạng neural |
+
+## Lộ trình 10 bài
+
+| Bài | Câu chuyện dẫn dắt | Kiến thức chính | Học liệu |
 |---|---|---|---|
-| 01 · v4 | Vector và cosine · MovieLens | [Đọc](v4/bai01/READING.md) | [Mở bài](v4/bai01/README.md) |
-| 02 · v4 | kNN và chuẩn hóa · SMS | [Đọc](v4/bai02/READING.md) | [Mở bài](v4/bai02/README.md) |
-| 03 · v4 | Đánh giá phân loại và ngưỡng · SMS | [Đọc](v4/bai03/READING.md) | [Mở bài](v4/bai03/README.md) |
-| 04 · v4 | Hồi quy tuyến tính và Gradient Descent · Olist | [Đọc](v4/bai04/READING.md) | [Mở bài](v4/bai04/README.md) |
-| 05 · v4 | Logistic, BCE và quyết định · Olist | [Đọc](v4/bai05/READING.md) | [Mở bài](v4/bai05/README.md) |
-| 06 · v4 | Cây quyết định · Olist | [Đọc](v4/bai06/READING.md) | [Mở bài](v4/bai06/README.md) |
-| 07 · giữ nguyên | Chia dữ liệu và đánh giá đáng tin cậy | [Đọc](readings/bai07/README.md) | [Mở bài](lessons/bai07/README.md) |
-| 08 · v4 | RFM và K-means · Online Retail | [Đọc](v4/bai08/READING.md) | [Mở bài](v4/bai08/README.md) |
-| 09 · v4 | PCA trên ảnh · Fashion-MNIST | [Đọc](v4/bai09/READING.md) | [Mở bài](v4/bai09/README.md) |
-| 10 · v4 | Mạng neural, MLP và học biểu diễn · Fashion-MNIST | [Đọc](v4/bai10/READING.md) | [Mở bài](v4/bai10/README.md) |
+| 01 | Tìm bộ phim có “gu” tương tự | Vector, chuẩn, tích vô hướng, cosine | [Đọc](course/bai01/READING.md) · [Thực hành](course/bai01/README.md) |
+| 02 | Tin nhắn này giống spam nào? | kNN, khoảng cách, chuẩn hóa | [Đọc](course/bai02/READING.md) · [Thực hành](course/bai02/README.md) |
+| 03 | Chặn nhầm hay bỏ sót? | Precision, recall, mất cân bằng, threshold | [Đọc](course/bai03/READING.md) · [Thực hành](course/bai03/README.md) |
+| 04 | Đơn hàng mất bao nhiêu ngày? | Hồi quy tuyến tính, loss, gradient descent | [Đọc](course/bai04/READING.md) · [Thực hành](course/bai04/README.md) |
+| 05 | Đơn hàng có nguy cơ trễ? | Logistic, BCE, xác suất và quyết định | [Đọc](course/bai05/READING.md) · [Thực hành](course/bai05/README.md) |
+| 06 | Giải thích một dự đoán | Cây quyết định, Gini, pruning | [Đọc](course/bai06/READING.md) · [Thực hành](course/bai06/README.md) |
+| 07 | Điểm số có đáng tin? | Chia dữ liệu, leakage, overfitting | [Đọc](readings/bai07/README.md) · [Thực hành](examples/bai07/README.md) |
+| 08 | Khách hàng có những nhóm nào? | RFM, K-means, diễn giải cụm | [Đọc](course/bai08/READING.md) · [Thực hành](course/bai08/README.md) |
+| 09 | Giữ ít số hơn, còn thấy chiếc áo? | PCA, phương sai, chiếu và tái dựng | [Đọc](course/bai09/READING.md) · [Thực hành](course/bai09/README.md) |
+| 10 | Máy học cách nhận ra trang phục | MLP, backpropagation, học biểu diễn | [Đọc](course/bai10/READING.md) · [Thực hành](course/bai10/README.md) |
 
-## Bắt đầu thực hành v4
+## Từ bài tập đến sản phẩm nhỏ
 
-Tải **Code → Download ZIP** và giải nén toàn bộ repository, hoặc dùng `git clone https://github.com/ml4vn/MachineLearning.git`. Cài Python 3.12 64-bit và mở terminal ở thư mục gốc.
+Mỗi notebook dự án đan xen **mã mẫu → TODO → gợi ý → kiểm thử → diễn giải**. Bạn hoàn thiện phần cốt lõi, chạy trên dữ liệu thật và đóng gói kết quả.
 
-**Windows PowerShell**:
+| Dự án | Sau bài | Sản phẩm |
+|---|---|---|
+| [Gợi ý phim](projects/01_movie_recommender/README.md) | 01 | Hàm tìm phim tương tự, bảng top-k và giải thích |
+| [Bộ lọc SMS](projects/02_sms_filter/README.md) | 03 | Bộ lọc, ngưỡng theo chi phí, báo cáo lỗi |
+| [Dự báo giao hàng](projects/03_delivery_estimator/README.md) | 07 | Pipeline hồi quy, baseline, đánh giá theo thời gian |
+| [Chân dung khách hàng](projects/04_customer_segments/README.md) | 08 | Bảng RFM, phân cụm, hồ sơ nhóm |
+| [Phòng thử ảnh thời trang](projects/05_fashion_lab/README.md) | 10 | PCA + MLP, ảnh tái dựng và model card |
 
-```powershell
-py -3.12 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements-v4.txt
-.\.venv\Scripts\python.exe v4/run_labs.py --lesson 1
-```
-
-**macOS/Linux**:
-
-```bash
-python3.12 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements-v4.txt
-python v4/run_labs.py --lesson 1
-```
-
-[Hướng dẫn v4 đầy đủ](v4/README.md) giải thích mở JupyterLab, chạy từng bài hoặc cả chín bài tuần tự, kiểm chứng và huấn luyện lại Bài 10. Dữ liệu đã kèm để chạy ngoại tuyến sau khi cài thư viện; không cần tài khoản Kaggle hoặc GPU. Bản HTML tương tác mở tại máy sau khi tải toàn bộ repository; bản Markdown đọc được ngay trên GitHub.
-
-## Phiên bản, kiểm chứng và nguồn
-
-- [Biên bản cập nhật v4](docs/CAP_NHAT_V4.md): phạm vi, đối chiếu và kết quả chạy lại.
-- [Nguồn dữ liệu v4](v4/DATA_SOURCES.md): tác giả, snapshot và điều kiện sử dụng.
-- [Manifest nguồn v4](v4/source_manifest.json): SHA256 và điều chỉnh đường dẫn để đóng gói.
-- [Bộ v3 được giữ lại](README_V3.md): Word/PDF, tài liệu đọc trước và CLI `lessons/`; các tệp này giữ nhãn phiên bản cũ.
+## Một môi trường, ba cách học
 
 ```bash
-python tools/check_v4.py
-python tools/build_v4_readings.py --check
-python v4/run_labs.py --audit-only
+python -m pip install -r requirements.txt
+python -m jupyterlab
 ```
 
-Các phép biến đổi học tham số dùng train; ngưỡng/checkpoint chọn trên validation. Dữ liệu và test công khai đã được xem trong các phiên bản trước: kết quả v4 là tái lập học liệu với cấu hình và giới hạn đã công bố.
+Cần Python 3.12 và môi trường ảo; xem [hướng dẫn cài đặt](docs/START_HERE.md). Mở `course/` để theo bài, `projects/` để tự xây sản phẩm, hoặc chạy ví dụ nhỏ trong `examples/`. Dữ liệu đã kèm; không cần tài khoản Kaggle hay GPU. Cài thư viện cần Internet.
+
+- [Hướng dẫn chạy bài học](course/README.md).
+- [Lộ trình dự án, cách nộp và rubric](projects/README.md).
+- Ví dụ thuật toán: `python -m examples.bai01.main --mode toy`.
+- [Kiểm tra chất lượng học liệu](docs/MAINTAINING.md).
+- [Kết quả kiểm chứng](docs/QUALITY_CHECKS.md) · [Thư viện hình minh họa](docs/HINH_MINH_HOA.md).
+
+Kho công khai **không phân phối file PowerPoint**. Dữ liệu có điều kiện sử dụng riêng; xem [nguồn và giấy phép](course/DATA_SOURCES.md). Test công khai phục vụ tái lập học liệu, không chứng minh hiệu quả triển khai thực tế.

@@ -1,8 +1,8 @@
 {
   "source_alignment": {
-    "reading_version": "v3",
-    "slide_version": "v3",
-    "manifest": "Bai08_v3\\source\\slide_manifest.json",
+    "reading_version": "",
+    "slide_version": "",
+    "manifest": "Bai08\\source\\slide_manifest.json",
     "manifest_sha256": "50f54504ca2219482251b18696a444bc2c95b06826aaf713e59ed398f8a72f03",
     "summary_slides": [
       [
@@ -29,7 +29,7 @@
     "new_core_bridge": "Silhouette giải thích một điểm có hợp cụm không",
     "original_source_sha256": "f65d4cb45804813b6f077a8aca458a47d65629730382cde3b9d78200231dff90"
   },
-  "verification": "Updated examples and selected historical CSV metrics checked in KIEM_TRA_SO_LIEU_V3.json; all final rendered pages visually reviewed.",
+  "verification": "Updated examples and selected historical CSV metrics checked in KIEM_TRA_SO_LIEU.json; all final rendered pages visually reviewed.",
   "status": "pass",
   "planned_pages": 14,
   "main_sections": 10,

@@ -69,7 +69,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 4, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+          "text": "Bản tài liệu cập nhật  • Đối chiếu Bài 4, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide ."
         },
         {
           "type": "h",
@@ -409,7 +409,7 @@
         },
         {
           "type": "figure",
-          "name": "surface_v3",
+          "name": "surface",
           "caption": "Mặt J theo hai tham số w và b. Điểm thấp nhất ở w = 1,4; b = 1,5; J = 0,025.",
           "width": 5.6
         },
@@ -697,7 +697,7 @@
         },
         {
           "type": "p",
-          "text": "Đối chiếu Bài 4 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. CSV bốn đơn thật có mã đầy đủ, bảng mô hình và bảng toy được kèm theo. Các phép tính tay, nhãn từ timestamps và MAE/RMSE đã được tái tính bằng nguồn dữ liệu này."
+          "text": "Đối chiếu Bài 4 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. CSV bốn đơn thật có mã đầy đủ, bảng mô hình và bảng toy được kèm theo. Các phép tính tay, nhãn từ timestamps và MAE/RMSE đã được tái tính bằng nguồn dữ liệu này."
         },
         {
           "type": "link",
@@ -846,6 +846,6 @@
       "url": "https://cs229.stanford.edu/notes2022fall/main_notes.pdf"
     }
   ],
-  "reading_version": "v3",
-  "slide_version": "v3"
+  "reading_version": "",
+  "slide_version": ""
 }

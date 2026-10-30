@@ -1,5 +1,5 @@
 # Bài 2 — kNN và chuẩn hóa qua dữ liệu SMS
-Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật v3
+Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật 
 
 ## 1 Bài học này giải quyết vấn đề gì
 
@@ -20,7 +20,7 @@ Bài 1 giúp bạn biểu diễn đối tượng bằng vector. Bài này bổ s
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 2, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 2, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -272,7 +272,7 @@ kNN dự đoán bằng các ví dụ có nhãn ở gần query trong biểu di�
 
 ### Nguồn để đọc và kiểm lại
 
-Đối chiếu Bài 2 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Số liệu và mã bản ghi khớp các CSV kèm tài liệu; bản SMS gốc giữ ở Bai02_v2/data. Dữ liệu UCI công bố theo CC BY 4.0; đã ghi tác giả và nguồn.
+Đối chiếu Bài 2 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Số liệu và mã bản ghi khớp các CSV kèm tài liệu; bản SMS gốc giữ ở Bai02/data. Dữ liệu UCI công bố theo CC BY 4.0; đã ghi tác giả và nguồn.
 
 [[1] UCI SMS Spam Collection Almeida và Hidalgo 2011](https://archive.ics.uci.edu/dataset/228/sms+spam+collection)
 

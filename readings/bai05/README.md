@@ -4,9 +4,9 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai05_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai05_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai05/README.md)
+[← Mục lục khóa học](../../README.md) · [Thực hành Python](../../examples/bai05/README.md)
 
-**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Python đã đồng bộ ví dụ và hướng dẫn theo cùng nguồn slide; xem [các quy ước đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
+**Tài liệu hỗ trợ ví dụ thuật toán.** [Học liệu chính](../../README.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
@@ -56,7 +56,7 @@ Bài 4 dự đoán đơn Olist mất bao nhiêu ngày để giao. Bài 5 hỏi *
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 5, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 5, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -369,7 +369,7 @@ Làm trước khi đọc phụ lục A. Ghi cả phép tính và câu giải th�
 
 ### Nguồn và dữ liệu để kiểm lại
 
-Đối chiếu Bài 5 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm bảng mô hình, dự đoán, toy bốn hàng, hai ví dụ ngày lịch và cấu hình đã khóa. Mọi điểm dự đoán được tái tính và đối chiếu bản slide; các bảng số đếm được tính lại từ CSV.
+Đối chiếu Bài 5 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm bảng mô hình, dự đoán, toy bốn hàng, hai ví dụ ngày lịch và cấu hình đã khóa. Mọi điểm dự đoán được tái tính và đối chiếu bản slide; các bảng số đếm được tính lại từ CSV.
 
 [\[1\] Olist Brazilian E-Commerce Public Dataset Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
@@ -453,6 +453,6 @@ Bốn điểm ở mục 7 phân tách được bởi một biên giữa x=0 và 
 
 ## Chuyển sang thực hành
 
-Mở [hướng dẫn Python Bài 05](../../lessons/bai05/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.
+Mở [hướng dẫn Python Bài 05](../../examples/bai05/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.
 
-[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Ghi chú đối chiếu tài liệu với mã](../../docs/DOI_CHIEU_HOC_LIEU.md)
+[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Kiểm tra học liệu](../../docs/MAINTAINING.md)

@@ -40,7 +40,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 8, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+          "text": "Bản tài liệu cập nhật  • Đối chiếu Bài 8, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide ."
         },
         {
           "type": "h",
@@ -723,7 +723,7 @@
         },
         {
           "type": "p",
-          "text": "Đối chiếu Bài 8 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu được xử lý lại từ tệp gốc; kèm giao dịch khách 12755, bảng RFM, hồ sơ cụm, lịch sử tính tay và mã quét K. Dữ liệu phái sinh từ Chen (2015), CC BY 4.0; các bộ lọc và biến đổi nêu ở mục 3,5."
+          "text": "Đối chiếu Bài 8 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu được xử lý lại từ tệp gốc; kèm giao dịch khách 12755, bảng RFM, hồ sơ cụm, lịch sử tính tay và mã quét K. Dữ liệu phái sinh từ Chen (2015), CC BY 4.0; các bộ lọc và biến đổi nêu ở mục 3,5."
         },
         {
           "type": "link",
@@ -881,6 +881,6 @@
       "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.metrics.silhouette_score.html"
     }
   ],
-  "reading_version": "v3",
-  "slide_version": "v3"
+  "reading_version": "",
+  "slide_version": ""
 }

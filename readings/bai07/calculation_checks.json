@@ -1,8 +1,8 @@
 {
   "source_alignment": {
-    "reading_version": "v3",
-    "slide_version": "v2",
-    "manifest": "Bai07_v2\\source\\slide_manifest.json",
+    "reading_version": "",
+    "slide_version": "",
+    "manifest": "Bai07\\source\\slide_manifest.json",
     "manifest_sha256": "c24c477b4566b424a42c655825efaa4af493e0e2506b6377a12ecfe647865581",
     "summary_slides": [
       [
@@ -17,7 +17,7 @@
     "new_core_bridge": "Nối quy trình kiểm chứng với các bài đã cập nhật",
     "original_source_sha256": "af872e6a78070635bfdfb44c0c00cf3fef1dd3a52d06c8130cb5fad368930cbe"
   },
-  "verification": "Updated examples and selected historical CSV metrics checked in KIEM_TRA_SO_LIEU_V3.json; all final rendered pages visually reviewed.",
+  "verification": "Updated examples and selected historical CSV metrics checked in KIEM_TRA_SO_LIEU.json; all final rendered pages visually reviewed.",
   "status": "pass",
   "planned_pages": 14,
   "main_sections": 10,

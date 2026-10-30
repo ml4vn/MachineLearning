@@ -6,3 +6,8 @@ scikit-learn==1.6.1
 matplotlib==3.10.3
 openpyxl>=3.1.5,<4
 threadpoolctl>=3.5,<4
+
+lxml>=5,<7
+nbclient>=0.10,<1
+nbformat>=5.10,<6
+jupyterlab>=4.4,<5

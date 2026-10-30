@@ -1,5 +1,5 @@
 # Bài 6 — Cây quyết định và cách học các điều kiện
-Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật v3
+Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật 
 
 ## 1 Bài học này giải quyết vấn đề gì
 
@@ -18,7 +18,7 @@ Bài 5 tạo xác suất trễ bằng logistic. Bài 6 giữ mục tiêu Olist �
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 6, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 6, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -281,7 +281,7 @@ C. Cần kiểm dữ liệu ngoài train và so mức phức tạp phù hợp.
 
 ### Nguồn và cách kiểm
 
-Đối chiếu Bài 6 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Mã nguồn tính lại các phép chia toy, học lại hai cây và đối chiếu toàn bộ điểm dự đoán đã lưu. CSV ví dụ, cấu hình và báo cáo phép tính đi kèm.
+Đối chiếu Bài 6 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Mã nguồn tính lại các phép chia toy, học lại hai cây và đối chiếu toàn bộ điểm dự đoán đã lưu. CSV ví dụ, cấu hình và báo cáo phép tính đi kèm.
 
 [[1] Olist – dữ liệu thương mại điện tử Brazil](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 

@@ -1,0 +1,52 @@
+{
+  "lesson": 2,
+  "reading_version": "",
+  "slide_version": "",
+  "slide_manifest_sha256": "9ce72f7a811c0dc8ea17f14cf14f64bca5e2446c2dd8f1e4d4e8138e3684c5a1",
+  "recap_title": "Một hệ tọa độ, một tập láng giềng",
+  "stages": [
+    {
+      "title": "Đếm đặc trưng",
+      "explain": "Độ dài và tỷ lệ ký tự số; nhãn y không là đặc trưng.",
+      "formula": "$x=(n_{chars},n_{digits}/n_{chars})$"
+    },
+    {
+      "title": "Đo và bỏ phiếu",
+      "explain": "Trong toy, P2, P1, P3 là ba điểm gần query nhất.",
+      "formula": "$d^2=\\sum_j(x_j-q_j)^2$"
+    },
+    {
+      "title": "Chốt quy trình",
+      "explain": "Fit scaler trên train; chọn k trên validation rồi mới báo test.",
+      "formula": "$z_j=(x_j-\\mu_j)/\\sigma_j$"
+    }
+  ],
+  "takeaway": "Đổi thang đo có thể đổi láng giềng; tỷ lệ phiếu chưa là xác suất đã hiệu chỉnh.",
+  "question": "Vì sao không fit scaler riêng cho query hoặc validation?",
+  "answer": "Mỗi tập sẽ có một hệ tọa độ khác; scaler học từ train phải được dùng lại để đo khoảng cách nhất quán.",
+  "outputs": [
+    "toy_neighbors.csv",
+    "real_query_neighbors.csv",
+    "real_neighbors.png"
+  ],
+  "slide_sections": [
+    {
+      "start": 11,
+      "end": 29,
+      "first_title": "Hai đặc trưng nhìn và đếm được",
+      "last_title": "Tổng kết · Từ khoảng cách đến một dự đoán"
+    },
+    {
+      "start": 31,
+      "end": 43,
+      "first_title": "Hai trục SMS có thang số rất khác",
+      "last_title": "Chuẩn hóa SMS bằng thống kê train thật"
+    },
+    {
+      "start": 44,
+      "end": 60,
+      "first_title": "Ba láng giềng khi chưa chuẩn hóa",
+      "last_title": "Tổng quan · kNN học từ láng giềng"
+    }
+  ]
+}
