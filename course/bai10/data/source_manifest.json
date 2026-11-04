@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "path": "data\\raw\\fashion_train_images.gz",
+      "bytes": 26421880,
+      "sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
+      "md5": "8d4fb7e6c68d591d4c3dfef9ec88bf0d"
+    },
+    {
+      "path": "data\\raw\\fashion_train_labels.gz",
+      "bytes": 29515,
+      "sha256": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845",
+      "md5": "25c81989df183df01b3e8a0aad5dffbe"
+    },
+    {
+      "path": "data\\raw\\fashion_test_images.gz",
+      "bytes": 4422102,
+      "sha256": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073",
+      "md5": "bef4ecab320f06d8554ea6380940ec79"
+    },
+    {
+      "path": "data\\raw\\fashion_test_labels.gz",
+      "bytes": 5148,
+      "sha256": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5",
+      "md5": "bb300cfdad3c16e7a12a480ee83cd310"
+    }
+  ],
+  "source": "https://github.com/zalandoresearch/fashion-mnist",
+  "kaggle": "https://www.kaggle.com/datasets/zalando-research/fashionmnist",
+  "label_names": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "split_seed": 42,
+  "split_id_convention": "train:<0-based official train row>; test:<0-based official test row>",
+  "test_use": "No test metric in B9. Official test was evaluated in B10 ; it is not globally unseen."
+}

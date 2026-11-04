@@ -1,0 +1,52 @@
+{
+  "lesson": 10,
+  "reading_version": "",
+  "slide_version": "",
+  "slide_manifest_sha256": "53ee3a696adc93b40906c5b621396d52c1c7a10ed629c9375144c65b5bd20536",
+  "recap_title": "Từ một đường gradient đến học biểu diễn",
+  "stages": [
+    {
+      "title": "Forward",
+      "explain": "Tính a, ReLU thành h, score s rồi xác suất p.",
+      "formula": "$s=v^Th+b,\\ p=\\sigma(s)$"
+    },
+    {
+      "title": "Backprop",
+      "explain": "Đi ngược theo một đường, dùng các trọng số cũ.",
+      "formula": "$\\partial L/\\partial w_{11}=\\delta v_1 1_{a_1>0}x_1$"
+    },
+    {
+      "title": "Cập nhật và kiểm",
+      "explain": "η=0,1: w₁₁ từ 0,5 thành 0,518865; chọn checkpoint bằng validation.",
+      "formula": "$w\\leftarrow w-\\eta g$"
+    }
+  ],
+  "takeaway": "Backprop tính gradient; GD hoặc Adam dùng gradient để cập nhật. Test không dùng chọn checkpoint.",
+  "question": "Vì sao gradient của w₁₁ cần nhân với x₁ và v₁? Giá trị cập nhật là bao nhiêu?",
+  "answer": "Đó là các đạo hàm cục bộ dọc đường w₁₁→a₁→h₁→s→L. Gradient≈−0,188654; w mới≈0,518865.",
+  "outputs": [
+    "toy_backprop_path.png",
+    "toy_backprop.png",
+    "toy_backprop.csv"
+  ],
+  "slide_sections": [
+    {
+      "start": 8,
+      "end": 30,
+      "first_title": "XOR: bốn điểm, một khó khăn thật rõ",
+      "last_title": "Tổng kết · Forward rồi cập nhật"
+    },
+    {
+      "start": 32,
+      "end": 45,
+      "first_title": "Bây giờ cho phép lớp ẩn thay đổi",
+      "last_title": "Tổng kết · Thuật toán huấn luyện MLP"
+    },
+    {
+      "start": 46,
+      "end": 63,
+      "first_title": "Cố định thí nghiệm trước khi đọc kết quả",
+      "last_title": "Bài 10 · Từ biểu diễn đến bằng chứng"
+    }
+  ]
+}

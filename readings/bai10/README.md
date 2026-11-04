@@ -4,9 +4,9 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai10_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai10_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai10/README.md)
+[← Mục lục khóa học](../../README.md) · [Thực hành Python](../../examples/bai10/README.md)
 
-**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Python đã đồng bộ ví dụ và hướng dẫn theo cùng nguồn slide; xem [các quy ước đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
+**Tài liệu hỗ trợ ví dụ thuật toán.** [Học liệu chính](../../README.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
@@ -52,7 +52,7 @@ Tính cả bias: 784×64 + 64 + 64×10 + 10 = 50.890 tham số được học. S
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 10, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 10, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -340,7 +340,7 @@ Tự làm trước khi đọc phụ lục A. Viết rõ quy ước ngưỡng và
 
 ### Nguồn và hiện vật
 
-Đối chiếu Bài 10 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm ảnh minh họa, bảng XOR, lịch sử seed chính được chạy lại, báo cáo kiểm gradient và dự đoán. Mã tính kiểm tra thuộc bộ tài liệu đọc trước; số baseline giữ đúng snapshot bài 9.
+Đối chiếu Bài 10 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm ảnh minh họa, bảng XOR, lịch sử seed chính được chạy lại, báo cáo kiểm gradient và dự đoán. Mã tính kiểm tra thuộc bộ tài liệu đọc trước; số baseline giữ đúng snapshot bài 9.
 
 [\[1\] Zalando Research — Fashion-MNIST, ảnh và nhãn](https://github.com/zalandoresearch/fashion-mnist)
 
@@ -425,6 +425,6 @@ Thay riêng mỗi tham số θⱼ bởi θⱼ±10⁻⁶ và lấy [L(θ+εeⱼ)�
 
 ## Chuyển sang thực hành
 
-Mở [hướng dẫn Python Bài 10](../../lessons/bai10/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.
+Mở [hướng dẫn Python Bài 10](../../examples/bai10/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.
 
-[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Ghi chú đối chiếu tài liệu với mã](../../docs/DOI_CHIEU_HOC_LIEU.md)
+[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Kiểm tra học liệu](../../docs/MAINTAINING.md)

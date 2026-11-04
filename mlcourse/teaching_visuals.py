@@ -1,4 +1,4 @@
-"""Minh họa v3 dùng lại thuật toán của từng bài, không huấn luyện mô hình mới."""
+"""Minh họa  dùng lại thuật toán của từng bài, không huấn luyện mô hình mới."""
 import json
 import textwrap
 import numpy as np
@@ -7,7 +7,7 @@ from .common import ROOT, COLORS, figure, save_figure, write_csv
 
 def recap(args, lesson):
     """Bản đồ ba chặng lấy từ cùng nguồn với hướng dẫn thực hành."""
-    config = json.loads((ROOT / f'lessons/bai{lesson:02d}/teaching.json').read_text(encoding='utf-8'))
+    config = json.loads((ROOT / f'examples/bai{lesson:02d}/teaching.json').read_text(encoding='utf-8'))
     fig, axes = figure(f'Bài {lesson} · {config["recap_title"]}', 3)
     for i, (ax, stage) in enumerate(zip(axes[0], config['stages'])):
         ax.axis('off')
@@ -20,11 +20,11 @@ def recap(args, lesson):
             ax.annotate('', xy=(1.06,.73), xytext=(.9,.73), xycoords='axes fraction',
                         arrowprops=dict(arrowstyle='->', lw=2, color=COLORS[2]), annotation_clip=False)
     fig.text(.08, .18, '\n'.join(textwrap.wrap(config['takeaway'], 112)), fontsize=15, weight='bold')
-    save_figure(fig, args, 'summary_v3', 'Tổng kết ví dụ chuẩn · Dự đoán bằng tay → chạy ví dụ → đọc số liệu → giải thích giới hạn.')
+    save_figure(fig, args, 'summary', 'Tổng kết ví dụ chuẩn · Dự đoán bằng tay → chạy ví dụ → đọc số liệu → giải thích giới hạn.')
 
 
 def gd_two_parameters(args):
-    from lessons.bai04.algorithms import loss_gradient
+    from examples.bai04.algorithms import loss_gradient
     x=np.array([1.,2.,3.,4.]); y=np.array([3.,4.,6.,7.]); A=np.c_[x,np.ones(4)]
     old=np.array([.5,1.]); eta=.05
     loss, grad=loss_gradient(A,y,old); updated=old-eta*grad
@@ -66,7 +66,7 @@ def gd_two_parameters(args):
 
 
 def gini_trace(args):
-    from lessons.bai06.algorithms import toy_data, gini
+    from examples.bai06.algorithms import toy_data, gini
     X,y=toy_data(); left=X[:,1]<=15
     groups=[('Gốc',y),('Trái: ≤ 15 ngày',y[left]),('Phải: > 15 ngày',y[~left])]
     rows=[dict(node=name,n=len(labels),positive=int(labels.sum()),p=float(labels.mean()),gini=gini(labels)) for name,labels in groups]
@@ -88,7 +88,7 @@ def gini_trace(args):
 
 
 def silhouette_trace(args):
-    from lessons.bai08.algorithms import silhouette_manual
+    from examples.bai08.algorithms import silhouette_manual
     X=np.array([[0.],[2.],[10.],[12.]])
     s=silhouette_manual(X,[0,0,1,1])
     fig,axes=figure('Bài 8 · Silhouette: gần cụm mình, xa cụm khác',2)
@@ -105,7 +105,7 @@ def silhouette_trace(args):
 
 
 def covariance_trace(args):
-    from lessons.bai09.algorithms import POINTS,fit_pca_eigh
+    from examples.bai09.algorithms import POINTS,fit_pca_eigh
     mean,values,W=fit_pca_eigh(POINTS); C=(POINTS-mean).T@(POINTS-mean)/len(POINTS)
     fig,axes=figure('Bài 9 · Hiệp phương sai dẫn tới hướng giữ nhiều biến thiên',2)
     ax=axes[0,0]; ax.imshow(C,cmap='Blues',vmin=0,vmax=3)
@@ -121,7 +121,7 @@ def covariance_trace(args):
 
 
 def backprop_path(args, tiny):
-    from lessons.bai10.algorithms import TINY_THETA
+    from examples.bai10.algorithms import TINY_THETA
     d=float(tiny['delta']); v=float(TINY_THETA[6]); x=float(tiny['x'][0]); grad=d*v*x
     np.testing.assert_allclose(grad,tiny['gradient'][0],atol=1e-14)
     fig,axes=figure('Bài 10 · Theo đúng một đường từ w₁₁ đến loss',2)

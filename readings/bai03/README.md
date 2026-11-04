@@ -4,9 +4,9 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai03_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai03_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai03/README.md)
+[← Mục lục khóa học](../../README.md) · [Thực hành Python](../../examples/bai03/README.md)
 
-**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Python đã đồng bộ ví dụ và hướng dẫn theo cùng nguồn slide; xem [các quy ước đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
+**Tài liệu hỗ trợ ví dụ thuật toán.** [Học liệu chính](../../README.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
@@ -52,7 +52,7 @@ kNN đã khóa đúng 1.003/1.032 tin và tìm được 111/128 spam. Nó tốt 
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 3, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 3, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -346,7 +346,7 @@ Tự trả lời trước khi xem phụ lục A. Với câu trắc nghiệm, ch�
 
 ### Nguồn để đọc và kiểm lại
 
-Đối chiếu Bài 3 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu UCI có ghi công Almeida và Hidalgo, CC BY 4.0. Các chỉ số được tái tính trực tiếp và đối chiếu thư viện.
+Đối chiếu Bài 3 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu UCI có ghi công Almeida và Hidalgo, CC BY 4.0. Các chỉ số được tái tính trực tiếp và đối chiếu thư viện.
 
 [\[1\] UCI SMS Spam Collection Almeida và Hidalgo 2011](https://archive.ics.uci.edu/dataset/228/sms+spam+collection)
 
@@ -426,6 +426,6 @@ Quét m từ 1 đến 12 trên validation cho A chọn m = 8, B chọn m = 4. m 
 
 ## Chuyển sang thực hành
 
-Mở [hướng dẫn Python Bài 03](../../lessons/bai03/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.
+Mở [hướng dẫn Python Bài 03](../../examples/bai03/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.
 
-[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Ghi chú đối chiếu tài liệu với mã](../../docs/DOI_CHIEU_HOC_LIEU.md)
+[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Kiểm tra học liệu](../../docs/MAINTAINING.md)

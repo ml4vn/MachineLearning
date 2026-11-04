@@ -1,5 +1,5 @@
 # Bài 4 — Hồi quy tuyến tính và Gradient Descent
-Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật v3
+Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật 
 
 ## 1 Bài học này giải quyết vấn đề gì
 
@@ -26,7 +26,7 @@ Một người mua muốn biết **đơn hàng mất khoảng bao nhiêu ngày t
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 4, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 4, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -164,7 +164,7 @@ $$
 
 Bốn điểm là (1,3), (2,4), (3,6), (4,7). Mỗi cặp tham số (w,b) xác định một đường dự đoán và một độ cao J.
 
-![Mặt J theo hai tham số w và b. Điểm thấp nhất ở w = 1,4; b = 1,5; J = 0,025.](assets/surface_v3.png)
+![Mặt J theo hai tham số w và b. Điểm thấp nhất ở w = 1,4; b = 1,5; J = 0,025.](assets/surface.png)
 
 Nhìn từ trên xuống, nối các cặp (w,b) có cùng J ta được đường đồng mức. Trục w và b là tham số của mô hình, không phải hai đặc trưng đầu vào.
 
@@ -271,7 +271,7 @@ C. Ngày giao của một đơn mới được bảo đảm trong khoảng đó.
 
 ### Nguồn và dữ liệu để kiểm lại
 
-Đối chiếu Bài 4 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. CSV bốn đơn thật có mã đầy đủ, bảng mô hình và bảng toy được kèm theo. Các phép tính tay, nhãn từ timestamps và MAE/RMSE đã được tái tính bằng nguồn dữ liệu này.
+Đối chiếu Bài 4 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. CSV bốn đơn thật có mã đầy đủ, bảng mô hình và bảng toy được kèm theo. Các phép tính tay, nhãn từ timestamps và MAE/RMSE đã được tái tính bằng nguồn dữ liệu này.
 
 [[1] Olist Brazilian E-Commerce Public Dataset Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 

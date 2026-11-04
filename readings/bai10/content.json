@@ -44,7 +44,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 10, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+          "text": "Bản tài liệu cập nhật  • Đối chiếu Bài 10, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide ."
         },
         {
           "type": "h",
@@ -700,7 +700,7 @@
         },
         {
           "type": "p",
-          "text": "Đối chiếu Bài 10 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm ảnh minh họa, bảng XOR, lịch sử seed chính được chạy lại, báo cáo kiểm gradient và dự đoán. Mã tính kiểm tra thuộc bộ tài liệu đọc trước; số baseline giữ đúng snapshot bài 9."
+          "text": "Đối chiếu Bài 10 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm ảnh minh họa, bảng XOR, lịch sử seed chính được chạy lại, báo cáo kiểm gradient và dự đoán. Mã tính kiểm tra thuộc bộ tài liệu đọc trước; số baseline giữ đúng snapshot bài 9."
         },
         {
           "type": "link",
@@ -876,6 +876,6 @@
       "url": "https://scikit-learn.org/1.6/modules/generated/sklearn.neural_network.MLPClassifier.html"
     }
   ],
-  "reading_version": "v3",
-  "slide_version": "v3"
+  "reading_version": "",
+  "slide_version": ""
 }

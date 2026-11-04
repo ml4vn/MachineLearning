@@ -1,5 +1,5 @@
 # Bài 8 — RFM và K-means để khám phá nhóm khách hàng
-Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật v3
+Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật 
 
 ## 1 Bài học này giải quyết vấn đề gì
 
@@ -18,7 +18,7 @@ Dự kiến 40–50 phút; ôn vector/khoảng cách và chuẩn hóa. Không c�
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 8, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 8, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -261,7 +261,7 @@ Câu 1 kiểm đơn vị quan sát; câu 2–3 kiểm thuật toán; câu 4 ki�
 
 ### Nguồn và hiện vật
 
-Đối chiếu Bài 8 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu được xử lý lại từ tệp gốc; kèm giao dịch khách 12755, bảng RFM, hồ sơ cụm, lịch sử tính tay và mã quét K. Dữ liệu phái sinh từ Chen (2015), CC BY 4.0; các bộ lọc và biến đổi nêu ở mục 3,5.
+Đối chiếu Bài 8 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu được xử lý lại từ tệp gốc; kèm giao dịch khách 12755, bảng RFM, hồ sơ cụm, lịch sử tính tay và mã quét K. Dữ liệu phái sinh từ Chen (2015), CC BY 4.0; các bộ lọc và biến đổi nêu ở mục 3,5.
 
 [[1] Chen (2015), Online Retail, UCI — CC BY 4.0](https://archive.ics.uci.edu/dataset/352/online+retail)
 

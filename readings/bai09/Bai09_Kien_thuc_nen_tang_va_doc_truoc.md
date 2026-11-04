@@ -1,5 +1,5 @@
 # Bài 9 — PCA: từ pixel ảnh đến biểu diễn ít chiều
-Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật v3
+Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật 
 
 ## 1 Bài học này giải quyết vấn đề gì
 
@@ -18,7 +18,7 @@ Dự kiến 40–50 phút, không cần lập trình. Ôn vector/tích vô hư�
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 9, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 9, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -256,7 +256,7 @@ Nếu câu 3 khó: làm lần lượt trừ μ → tích vô hướng → nhân 
 
 ### Nguồn và dữ liệu đi kèm
 
-Đối chiếu Bài 9 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm pixel ảnh train:24814, bảng toy, bảng kết quả và mã kiểm tính. Ảnh lấy từ Fashion-MNIST; hình phép chiếu và đường cong tự dựng từ các phép tính của case.
+Đối chiếu Bài 9 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm pixel ảnh train:24814, bảng toy, bảng kết quả và mã kiểm tính. Ảnh lấy từ Fashion-MNIST; hình phép chiếu và đường cong tự dựng từ các phép tính của case.
 
 [[1] Zalando Research — Fashion-MNIST, dữ liệu và nhãn chính thức](https://github.com/zalandoresearch/fashion-mnist)
 

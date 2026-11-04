@@ -65,7 +65,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 5, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+          "text": "Bản tài liệu cập nhật  • Đối chiếu Bài 5, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide ."
         },
         {
           "type": "h",
@@ -882,7 +882,7 @@
         },
         {
           "type": "p",
-          "text": "Đối chiếu Bài 5 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm bảng mô hình, dự đoán, toy bốn hàng, hai ví dụ ngày lịch và cấu hình đã khóa. Mọi điểm dự đoán được tái tính và đối chiếu bản slide; các bảng số đếm được tính lại từ CSV."
+          "text": "Đối chiếu Bài 5 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm bảng mô hình, dự đoán, toy bốn hàng, hai ví dụ ngày lịch và cấu hình đã khóa. Mọi điểm dự đoán được tái tính và đối chiếu bản slide; các bảng số đếm được tính lại từ CSV."
         },
         {
           "type": "link",
@@ -1086,6 +1086,6 @@
       "url": "https://cs229.stanford.edu/notes2022fall/main_notes.pdf"
     }
   ],
-  "reading_version": "v3",
-  "slide_version": "v3"
+  "reading_version": "",
+  "slide_version": ""
 }

@@ -1,5 +1,5 @@
 # Bài 10 — Mạng neural: học biểu diễn từ dữ liệu có nhãn
-Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật v3
+Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật 
 
 ## 1 Bài học này giải quyết vấn đề gì
 
@@ -20,7 +20,7 @@ Dự kiến 40–50 phút; không cần lập trình. Ôn tích vô hướng (b�
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 10, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 10, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -275,7 +275,7 @@ Câu 1–3 kiểm cấu trúc và phép tính; câu 4 kiểm loss; câu 5–6 ki
 
 ### Nguồn và hiện vật
 
-Đối chiếu Bài 10 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm ảnh minh họa, bảng XOR, lịch sử seed chính được chạy lại, báo cáo kiểm gradient và dự đoán. Mã tính kiểm tra thuộc bộ tài liệu đọc trước; số baseline giữ đúng snapshot bài 9.
+Đối chiếu Bài 10 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm ảnh minh họa, bảng XOR, lịch sử seed chính được chạy lại, báo cáo kiểm gradient và dự đoán. Mã tính kiểm tra thuộc bộ tài liệu đọc trước; số baseline giữ đúng snapshot bài 9.
 
 [[1] Zalando Research — Fashion-MNIST, ảnh và nhãn](https://github.com/zalandoresearch/fashion-mnist)
 

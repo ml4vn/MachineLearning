@@ -40,7 +40,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Bản tài liệu cập nhật v3 • Đối chiếu Bài 6, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3."
+          "text": "Bản tài liệu cập nhật  • Đối chiếu Bài 6, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide ."
         },
         {
           "type": "h",
@@ -781,7 +781,7 @@
         },
         {
           "type": "p",
-          "text": "Đối chiếu Bài 6 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Mã nguồn tính lại các phép chia toy, học lại hai cây và đối chiếu toàn bộ điểm dự đoán đã lưu. CSV ví dụ, cấu hình và báo cáo phép tính đi kèm."
+          "text": "Đối chiếu Bài 6 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Mã nguồn tính lại các phép chia toy, học lại hai cây và đối chiếu toàn bộ điểm dự đoán đã lưu. CSV ví dụ, cấu hình và báo cáo phép tính đi kèm."
         },
         {
           "type": "link",
@@ -961,6 +961,6 @@
       "url": "https://scikit-learn.org/1.6/auto_examples/tree/plot_cost_complexity_pruning.html"
     }
   ],
-  "reading_version": "v3",
-  "slide_version": "v3"
+  "reading_version": "",
+  "slide_version": ""
 }

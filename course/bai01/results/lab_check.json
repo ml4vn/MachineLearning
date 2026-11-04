@@ -1,0 +1,256 @@
+{
+  "status": "pass",
+  "checks_count": 38,
+  "checks": {
+    "hand_numpy_sklearn_260": true,
+    "independent_label_intersection_260": true,
+    "hand_numpy_sklearn_1580": true,
+    "independent_label_intersection_1580": true,
+    "hand_numpy_sklearn_480": true,
+    "independent_label_intersection_480": true,
+    "hand_numpy_sklearn_1214": true,
+    "independent_label_intersection_1214": true,
+    "hand_numpy_sklearn_1": true,
+    "independent_label_intersection_1": true,
+    "all_9707_scores_match_set_formula": true,
+    "exactly_42_full_label_matches": true,
+    "19_metadata_labels_with_IMAX": true,
+    "34_missing_rows": true,
+    "4196_zero_3d_rows": true,
+    "Casablanca_projected_zero": true,
+    "Casablanca_full_orthogonal": true,
+    "sklearn_zero_policy_differs": true,
+    "exit_ticket_vector_110": true,
+    "exit_vector_011": true,
+    "normalize_6_8": true,
+    "general_dot_2_1_1_2": true,
+    "norm_3_4": true,
+    "positive_scaling": true,
+    "Euclidean_counterexample": true,
+    "adding_axis_increases": true,
+    "adding_axis_decreases": true,
+    "negative_cosine_squared_wrong_order": true,
+    "unit_euclidean_identity": true,
+    "weighted_cosine_sqrt_transform": true,
+    "weighted_not_direct_alpha_transform": true,
+    "negative_scaling_flips_sign": true,
+    "checksum_seven": true,
+    "reject_different_dimensions": true,
+    "reject_nan": true,
+    "reject_inf": true,
+    "reject_empty": true,
+    "reject_matrix": true
+  },
+  "tolerance": 1e-12,
+  "maximum_full_score_error": 2.220446049250313e-16,
+  "candidate_pool": 9707,
+  "exact_equal_label_count": 42,
+  "axes_full": [
+    "Action",
+    "Adventure",
+    "Animation",
+    "Children",
+    "Comedy",
+    "Crime",
+    "Documentary",
+    "Drama",
+    "Fantasy",
+    "Film-Noir",
+    "Horror",
+    "IMAX",
+    "Musical",
+    "Mystery",
+    "Romance",
+    "Sci-Fi",
+    "Thriller",
+    "War",
+    "Western"
+  ],
+  "comparison": [
+    {
+      "movieId": 260,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "vector3": [
+        1,
+        0,
+        1
+      ],
+      "dot": 2,
+      "norm_v_squared": 2,
+      "hand": 1.0,
+      "numpy": 0.9999999999999998,
+      "sklearn": 0.9999999999999998,
+      "full": 0.6666666666666666
+    },
+    {
+      "movieId": 1580,
+      "title": "Men in Black (a.k.a. MIB) (1997)",
+      "vector3": [
+        1,
+        1,
+        1
+      ],
+      "dot": 2,
+      "norm_v_squared": 3,
+      "hand": 0.8164965809277261,
+      "numpy": 0.816496580927726,
+      "sklearn": 0.816496580927726,
+      "full": 0.6666666666666666
+    },
+    {
+      "movieId": 480,
+      "title": "Jurassic Park (1993)",
+      "vector3": [
+        1,
+        0,
+        1
+      ],
+      "dot": 2,
+      "norm_v_squared": 2,
+      "hand": 1.0,
+      "numpy": 0.9999999999999998,
+      "sklearn": 0.9999999999999998,
+      "full": 0.8660254037844387
+    },
+    {
+      "movieId": 1214,
+      "title": "Alien (1979)",
+      "vector3": [
+        0,
+        0,
+        1
+      ],
+      "dot": 1,
+      "norm_v_squared": 1,
+      "hand": 0.7071067811865475,
+      "numpy": 0.7071067811865475,
+      "sklearn": 0.7071067811865475,
+      "full": 0.4082482904638631
+    },
+    {
+      "movieId": 1,
+      "title": "Toy Story (1995)",
+      "vector3": [
+        0,
+        1,
+        0
+      ],
+      "dot": 0,
+      "norm_v_squared": 1,
+      "hand": 0.0,
+      "numpy": 0.0,
+      "sklearn": 0.0,
+      "full": 0.0
+    }
+  ],
+  "same_label_ids": [
+    66,
+    76,
+    172,
+    338,
+    379,
+    541,
+    692,
+    748,
+    1240,
+    1882,
+    2600,
+    3527,
+    3697,
+    3981,
+    3986,
+    4443,
+    4553,
+    4887,
+    5181,
+    5903,
+    6078,
+    6574,
+    7163,
+    8371,
+    34319,
+    45499,
+    49278,
+    51412,
+    68319,
+    71254,
+    71530,
+    75985,
+    79057,
+    88699,
+    92420,
+    93563,
+    95875,
+    100579,
+    122920,
+    130490,
+    140956,
+    149902
+  ],
+  "top10_display": [
+    {
+      "movieId": 66,
+      "title": "Lawnmower Man 2: Beyond Cyberspace (1996)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "cosine": 1.0000000000000002
+    },
+    {
+      "movieId": 76,
+      "title": "Screamers (1995)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "cosine": 1.0000000000000002
+    },
+    {
+      "movieId": 172,
+      "title": "Johnny Mnemonic (1995)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "cosine": 1.0000000000000002
+    },
+    {
+      "movieId": 338,
+      "title": "Virtuosity (1995)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "cosine": 1.0000000000000002
+    },
+    {
+      "movieId": 379,
+      "title": "Timecop (1994)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "cosine": 1.0000000000000002
+    },
+    {
+      "movieId": 541,
+      "title": "Blade Runner (1982)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "cosine": 1.0000000000000002
+    },
+    {
+      "movieId": 692,
+      "title": "Solo (1996)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "cosine": 1.0000000000000002
+    },
+    {
+      "movieId": 748,
+      "title": "Arrival, The (1996)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "cosine": 1.0000000000000002
+    },
+    {
+      "movieId": 1240,
+      "title": "Terminator, The (1984)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "cosine": 1.0000000000000002
+    },
+    {
+      "movieId": 1882,
+      "title": "Godzilla (1998)",
+      "genres": "Action|Sci-Fi|Thriller",
+      "cosine": 1.0000000000000002
+    }
+  ],
+  "weighted_example": 0.7407785326716213,
+  "library_zero_convention": 0,
+  "own_zero_convention": null,
+  "interpretation": "Similarity of encoded item metadata; no user-preference or usefulness claim."
+}

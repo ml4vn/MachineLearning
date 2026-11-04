@@ -1,5 +1,5 @@
 # Bài 1 — Vector và độ tương đồng cosine
-Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật v3
+Kiến thức nền tảng và tài liệu đọc trước — bản cập nhật 
 
 ## 1 Bài học này giải quyết vấn đề gì
 
@@ -20,7 +20,7 @@ Bạn muốn tìm những phim có nhãn gần với **The Matrix**. Một ngư�
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 1, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 1, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -273,7 +273,7 @@ Một điểm tương tự chỉ có ý nghĩa sau khi ta xác định rõ đố
 
 ### Nguồn để đọc và kiểm lại
 
-Đối chiếu Bài 1 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu latest có thể thay đổi; khi tái lập, dùng bản movies.csv đi kèm. [1] mô tả dữ liệu; [2] mô tả phép tính và quy ước thư viện.
+Đối chiếu Bài 1 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Dữ liệu latest có thể thay đổi; khi tái lập, dùng bản movies.csv đi kèm. [1] mô tả dữ liệu; [2] mô tả phép tính và quy ước thư viện.
 
 [[1] GroupLens MovieLens latest và README của bản dữ liệu](https://grouplens.org/datasets/movielens/latest/)
 

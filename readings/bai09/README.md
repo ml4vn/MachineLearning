@@ -4,9 +4,9 @@
 
 Khoa Công nghệ Thông tin, Trường Đại học Công nghệ Kỹ thuật Hưng Yên
 
-[← Mục lục khóa học](../../README.md) · [📄 PDF 14 trang](Bai09_Kien_thuc_nen_tang_va_doc_truoc.pdf) · [📝 Word](Bai09_Kien_thuc_nen_tang_va_doc_truoc.docx) · [💻 Thực hành Python](../../lessons/bai09/README.md)
+[← Mục lục khóa học](../../README.md) · [Thực hành Python](../../examples/bai09/README.md)
 
-**Tài liệu đọc trước v3 · Đối chiếu slide v3.** Python đã đồng bộ ví dụ và hướng dẫn theo cùng nguồn slide; xem [các quy ước đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).
+**Tài liệu hỗ trợ ví dụ thuật toán.** [Học liệu chính](../../README.md).
 
 Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.
 
@@ -50,7 +50,7 @@ Một ảnh áo có 784 giá trị pixel. Có thể biểu diễn bằng ít t�
 
 ## Lộ trình đọc và đối chiếu với bài giảng
 
-Bản tài liệu cập nhật v3 • Đối chiếu Bài 9, slide v3. Nội dung và các mốc tổng kết dưới đây theo bản slide v3.
+Bản tài liệu cập nhật  • Đối chiếu Bài 9, slide . Nội dung và các mốc tổng kết dưới đây theo bản slide .
 
 ### Đọc để chuẩn bị điều gì
 
@@ -319,7 +319,7 @@ Tự trả lời trước khi mở phụ lục A. Câu tính tay cần viết ph
 
 ### Nguồn và dữ liệu đi kèm
 
-Đối chiếu Bài 9 v3; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm pixel ảnh train:24814, bảng toy, bảng kết quả và mã kiểm tính. Ảnh lấy từ Fashion-MNIST; hình phép chiếu và đường cong tự dựng từ các phép tính của case.
+Đối chiếu Bài 9 ; các mốc tổng kết được ghi ở bảng lộ trình đầu tài liệu. Kèm pixel ảnh train:24814, bảng toy, bảng kết quả và mã kiểm tính. Ảnh lấy từ Fashion-MNIST; hình phép chiếu và đường cong tự dựng từ các phép tính của case.
 
 [\[1\] Zalando Research — Fashion-MNIST, dữ liệu và nhãn chính thức](https://github.com/zalandoresearch/fashion-mnist)
 
@@ -397,6 +397,6 @@ SVD của ma trận train đã định tâm tìm các hướng trực giao và �
 
 ## Chuyển sang thực hành
 
-Mở [hướng dẫn Python Bài 09](../../lessons/bai09/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.
+Mở [hướng dẫn Python Bài 09](../../examples/bai09/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.
 
-[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Ghi chú đối chiếu tài liệu với mã](../../docs/DOI_CHIEU_HOC_LIEU.md)
+[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Kiểm tra học liệu](../../docs/MAINTAINING.md)

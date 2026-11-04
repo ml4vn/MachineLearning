@@ -51,20 +51,20 @@ def render_block(block: dict) -> str:
 
 def render_reading(content: dict) -> str:
     lesson = content["lesson"]
-    version = content.get("reading_version", "v2")
-    slide_version = content.get("slide_version", "v2")
+    version = content.get("reading_version", "")
+    slide_version = content.get("slide_version", "")
     pages = len(content["pages"])
     prefix = f"Bai{lesson:02d}_Kien_thuc_nen_tang_va_doc_truoc"
     parts = [f'# Bài {lesson:02d} · {content["title"]}', f"**{AUTHOR}**\n\n{AFFILIATION}",
-             f"[← Mục lục khóa học](../../README.md) · [📄 PDF {pages} trang]({prefix}.pdf) · [📝 Word]({prefix}.docx) · [💻 Thực hành Python](../../lessons/bai{lesson:02d}/README.md)",
-             f"**Tài liệu đọc trước {version} · Đối chiếu slide {slide_version}.** Python đã đồng bộ ví dụ và hướng dẫn theo cùng nguồn slide; xem [các quy ước đối chiếu](../../docs/DOI_CHIEU_HOC_LIEU.md).",
+             f"[← Mục lục khóa học](../../README.md) · [Thực hành Python](../../examples/bai{lesson:02d}/README.md)",
+             "**Tài liệu hỗ trợ ví dụ thuật toán.** [Học liệu chính](../../README.md).",
              "Đọc mục 1–8, tự làm mục 9 trước khi xem phụ lục A, dùng mục 10 để ôn tập. Phụ lục B dành cho người muốn tìm hiểu sâu hơn.",
              "## Mục lục", "\n".join(f'- [{p["title"]}](#muc-{i})' for i, p in enumerate(content["pages"], 1))]
     for i, page in enumerate(content["pages"], 1):
         parts.extend([f'<a id="muc-{i}"></a>', "## " + page["title"]])
         parts.extend(render_block(block) for block in page["blocks"])
-    parts += ["## Chuyển sang thực hành", f"Mở [hướng dẫn Python Bài {lesson:02d}](../../lessons/bai{lesson:02d}/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.",
-              "[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Ghi chú đối chiếu tài liệu với mã](../../docs/DOI_CHIEU_HOC_LIEU.md)"]
+    parts += ["## Chuyển sang thực hành", f"Mở [hướng dẫn Python Bài {lesson:02d}](../../examples/bai{lesson:02d}/README.md), chạy ví dụ nhỏ trước rồi mới chạy dữ liệu thật. Các bảng CSV và JSON trong thư mục đọc trước lưu kết quả tham chiếu của lần biên soạn; chương trình thực hành tự tính lại và lưu kết quả mới trong `outputs/`.",
+              "[Nguồn dữ liệu và điều kiện sử dụng](../../docs/DU_LIEU_VA_NGUON.md) · [Kiểm tra học liệu](../../docs/MAINTAINING.md)"]
     return "\n\n".join(parts).rstrip() + "\n"
 
 

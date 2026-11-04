@@ -8,7 +8,7 @@ from sklearn.metrics import log_loss,brier_score_loss,average_precision_score,ro
 from sklearn.exceptions import ConvergenceWarning
 from threadpoolctl import threadpool_limits
 from mlcourse.olist import FEATURES
-from lessons.bai03.algorithms import measure
+from examples.bai03.algorithms import measure
 
 THRESHOLDS=[.05,.10,.15,.20,.30,.50]
 
