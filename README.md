@@ -1,3 +1,5 @@
+![Học máy cơ bản — từ dữ liệu đến vector và độ tương đồng](assets/hoc-may-co-ban.png)
+
 # Học máy cơ bản
 
 Kho học liệu dành cho sinh viên, gồm **10 bài học**, tài liệu đọc trước, notebook thực hành và dự án khởi đầu.
