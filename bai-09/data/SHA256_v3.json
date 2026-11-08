@@ -1,0 +1,9 @@
+{
+  "fashion_subset.npz": "0b0b57d05b59b91365d8cadd0c86fa0703fb8aeba3d9f09d6616fd4e7aa52241",
+  "pca_arrays_v3.npz": "14903ce4f57bb7748a2ffb9df4f23d0661bf1dffab121ff853c59c63bcf4509e",
+  "project_subset.npz": "e02d55dc389ca008060794ae7dd0ce578807257d68e12e22d1be3e618d11c034",
+  "raw/t10k-images-idx3-ubyte.gz": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073",
+  "raw/t10k-labels-idx1-ubyte.gz": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5",
+  "raw/train-images-idx3-ubyte.gz": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
+  "raw/train-labels-idx1-ubyte.gz": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845"
+}

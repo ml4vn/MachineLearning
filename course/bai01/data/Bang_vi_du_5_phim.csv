@@ -1,6 +1,0 @@
-﻿movieId,title,genres,vector3,dot3,norm3_squared,cosine3,cosine_full
-260,Star Wars: Episode IV - A New Hope (1977),Action|Adventure|Sci-Fi,"[1, 0, 1]",2,2,1.0,0.6666666666666666
-1580,Men in Black (a.k.a. MIB) (1997),Action|Comedy|Sci-Fi,"[1, 1, 1]",2,3,0.8164965809277261,0.6666666666666666
-480,Jurassic Park (1993),Action|Adventure|Sci-Fi|Thriller,"[1, 0, 1]",2,2,1.0,0.8660254037844387
-1214,Alien (1979),Horror|Sci-Fi,"[0, 0, 1]",1,1,0.7071067811865475,0.4082482904638631
-1,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy,"[0, 1, 0]",0,1,0.0,0.0

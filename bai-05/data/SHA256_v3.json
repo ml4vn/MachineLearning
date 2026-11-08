@@ -1,0 +1,7 @@
+{
+  "olist_download_manifest.json": "2cf3ca01600aa3996d30f0c1fdc7c7756a97f83be75daf7c29459de925191011",
+  "olist_model_table.csv": "cee5d8df21bb930d03c1130bff0478edc1934c5206030e9be6ec5223d1783825",
+  "olist_test_scores_v3.csv": "24c932ac0d8be6d33e9056b8b3f924d78f339ca3deb136580d7f82e6e875b1f0",
+  "olist_train_scores_v3.csv": "94ff08c4bc49c5dc8d82f7a504beae7c858b718d2e15f3692aed48eaf3ec1005",
+  "olist_validation_scores_v3.csv": "583924cecfd76c7bdae50ea1b36cb0f7d14b7b7b6f4f2fb74a58ea1c4a335b08"
+}

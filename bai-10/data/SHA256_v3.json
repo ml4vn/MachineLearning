@@ -1,0 +1,12 @@
+{
+  "bai09_project_indices.npz": "ede8c8c28cf4e87ae88c666bcebd12a6379a3d79b5db211c7c03a54b55559c30",
+  "bai09_v3_reference.json": "f13ba205525c4f584b188f5b633821d94b04b430d42c8e1e97db25c8a8fa42bb",
+  "fashion_subset.npz": "0b0b57d05b59b91365d8cadd0c86fa0703fb8aeba3d9f09d6616fd4e7aa52241",
+  "mlp_arrays_v3.npz": "4ec0212dad2929ba2ce6fa67f6f7730cfe455244bd1bc01ab32970e82ac4a9ba",
+  "project_subset_bai10.npz": "66b61c82372b31c96eb02a7741152de31fc334eb1fe1150768351f9a77950ee0",
+  "raw/t10k-images-idx3-ubyte.gz": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073",
+  "raw/t10k-labels-idx1-ubyte.gz": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5",
+  "raw/train-images-idx3-ubyte.gz": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
+  "raw/train-labels-idx1-ubyte.gz": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845",
+  "toy_arrays_v3.npz": "0d82da679bdb1e730b291c04c3d1889efa7accd435972ff7e4709e41b020e40b"
+}

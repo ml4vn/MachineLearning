@@ -1,0 +1,9 @@
+{
+  "source": "Olist (2018). Brazilian E-Commerce Public Dataset by Olist. Kaggle. https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+  "file": "olist.zip",
+  "bytes": 44717580,
+  "sha256": "967e41e04fc306fe604e2a693f488995a8b41e5047418f8a5c8e4abd6deca784",
+  "also_in": "Bai05_v2/data/olist.zip (v3 chép từ tệp này)",
+  "used_by": "source/logistic_case_v3.py (đối chiếu ngày với bảng gốc; đo thiên lệch do quy tắc biết nhãn)",
+  "note": "Không đưa vào gói v3 vì vượt 30 MB mỗi tệp khi chép về máy. Đặt tệp vào data/olist.zip trước khi chạy lại logistic_case_v3.py."
+}

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Học máy cơ bản: Trực giác, toán học, dữ liệu, dự án">
-<rect width="1200" height="320" rx="24" fill="#10243a"/>
-<g font-family="Arial, sans-serif"><text x="52" y="65" fill="#5eead4" font-size="19" letter-spacing="3">MACHINE LEARNING · HỌC ĐỂ HIỂU</text>
-<text x="52" y="132" fill="white" font-size="48" font-weight="700">HỌC MÁY CƠ BẢN</text>
-<text x="52" y="177" fill="#cbd5e1" font-size="24">Từ trực giác đến dự án có thể kiểm chứng</text>
-<path d="M90 252H1080" stroke="#46617a" stroke-width="3"/>
-<g fill="#10243a" stroke="#5eead4" stroke-width="3"><circle cx="85" cy="252" r="9"/><circle cx="400" cy="252" r="9"/><circle cx="720" cy="252" r="9"/><circle cx="1080" cy="252" r="9"/></g>
-<g fill="#f8fafc" font-size="19"><text x="52" y="293">TRỰC GIÁC</text><text x="353" y="293">TÍNH TAY</text><text x="668" y="293">DỮ LIỆU THẬT</text><text x="1020" y="293">DỰ ÁN NHỎ</text></g>
-<g transform="translate(920,55)"><rect width="200" height="125" rx="16" fill="#183952"/><path d="M20 100L60 76L100 82L140 40L180 20" fill="none" stroke="#5eead4" stroke-width="4"/><g fill="#fbbf24"><circle cx="20" cy="100" r="5"/><circle cx="60" cy="76" r="5"/><circle cx="100" cy="82" r="5"/><circle cx="140" cy="40" r="5"/><circle cx="180" cy="20" r="5"/></g></g></g></svg>
